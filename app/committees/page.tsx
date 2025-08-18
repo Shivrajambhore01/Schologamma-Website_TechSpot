@@ -66,267 +66,467 @@ export default function CommitteesPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCommittee, setSelectedCommittee] = useState<Committee | null>(null)
 
-  const committees: Committee[] = [
-    {
-      id: "content-editor",
-      name: "Content Editor Committee",
-      description: "Managing content creation, editorial processes, and digital storytelling for the forum.",
-      fullDescription:
-        "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma Forum. We focus on maintaining high-quality standards in communication, documentation, and creative writing while ensuring consistent brand messaging across all platforms.",
-      logo: "/placeholder.svg?height=80&width=80&text=📝",
-      color: "blue",
-      members: 12,
-      established: "2020-01-15",
-      focus: ["Content Creation", "Editorial Review", "Digital Marketing", "Brand Communication", "Documentation"],
-      leadership: {
-        head: {
-          name: "Priya Sharma",
-          image: "/creative-female-student.png",
-          bio: "Final year CSE student passionate about content strategy and digital communication. Leading content initiatives for 2+ years.",
-          achievements: [
-            "Increased forum engagement by 150% through strategic content",
-            "Led successful rebranding campaign in 2023",
-            "Published 50+ technical articles and tutorials",
-          ],
-          contact: { email: "priya.content@schologamma.com", phone: "+91 98765 43210" },
-          social: { linkedin: "https://linkedin.com/in/priyasharma", instagram: "https://instagram.com/priya_content" },
-        },
-        coHead: {
-          name: "Rahul Verma",
-          image: "/professional-male-student.png",
-          bio: "Third year student specializing in technical writing and content strategy. Expert in SEO and digital marketing.",
-          achievements: [
-            "Developed content guidelines and standards",
-            "Managed social media growth to 10K+ followers",
-            "Created comprehensive documentation system",
-          ],
-          contact: { email: "rahul.content@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/rahulverma" },
-        },
+  const committees: Committee[] =[
+     {
+    "id": "techspot",
+    "name": "Techspot committee",
+    "description": "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
+    "fullDescription": "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🧰",
+    "color": "blue",
+    "members": 9,
+    "established": "2020-07-22",
+    "focus": ["Hardware Demos", "Gadget Reviews", "Maker Projects", "Talks"],
+    "leadership": {
+      "head": {
+        "name": "Mehul Trivedi",
+        "image": "/professional-male-student.png",
+        "bio": "Hardware hacker and reviewer.",
+        "achievements": [
+          "Built 10+ DIY projects",
+          "Monthly Techspot talks since 2021"
+        ],
+        "contact": { "email": "mehul.techspot@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/mehultrivedi" }
+      }
+    },
+    "membersList": [
+      { "name": "Pallavi Joshi", "role": "Workshop Lead", "image": "/professional-female-student.png", "year": "3rd Year" },
+      { "name": "Rudra Mehta", "role": "Reviewer", "image": "/professional-male-student.png", "year": "2nd Year" }
+    ],
+    "achievements": [
+      { "title": "Makers Month 2023", "description": "Campus-wide maker showcase", "date": "2023-10-01", "impact": "Project culture" }
+    ],
+    "events": [
+      { "title": "Raspberry Pi Night", "description": "IoT + automation mini builds", "date": "2024-03-05", "status": "upcoming", "image": "/techspot-pi-night.png", "participants": 70 }
+    ],
+    "activities": ["Weekly talks", "Hands-on builds", "Review sessions"],
+    "gallery": ["/techspot-pi-night.png"]
+  },
+  {
+    "id": "content-editor",
+    "name": "Content Editor Committee",
+    "description": "Managing content creation, editorial processes, and digital storytelling for the forum.",
+    "fullDescription": "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
+    "logo": "/placeholder.svg?height=80&width=80&text=📝",
+    "color": "indigo",
+    "members": 12,
+    "established": "2020-01-15",
+    "focus": ["Content Creation", "Editorial Review", "Documentation", "Copy Editing", "Blog/Newsletter"],
+    "leadership": {
+      "head": {
+        "name": "Priya Sharma",
+        "image": "/creative-female-student.png",
+        "bio": "Final year student passionate about content strategy and digital communication.",
+        "achievements": [
+          "Increased forum engagement by 150% through content strategy",
+          "Led rebranding campaign in 2023",
+          "Published 50+ technical/creative articles"
+        ],
+        "contact": { "email": "priya.content@schologamma.com", "phone": "+91 98765 43210" },
+        "social": { "linkedin": "https://linkedin.com/in/priyasharma" }
       },
-      membersList: [
-        { name: "Anita Patel", role: "Senior Writer", image: "/professional-female-student.png", year: "3rd Year" },
-        {
-          name: "Vikash Kumar",
-          role: "Social Media Manager",
-          image: "/professional-male-student-glasses.png",
-          year: "2nd Year",
-        },
-        { name: "Sneha Reddy", role: "Content Reviewer", image: "/creative-female-student.png", year: "4th Year" },
-        { name: "Arjun Singh", role: "Technical Writer", image: "/technical-student-laptop.png", year: "3rd Year" },
-      ],
+      "coHead": {
+        "name": "Rahul Verma",
+        "image": "/professional-male-student.png",
+        "bio": "Tech writer and SEO enthusiast driving documentation standards.",
+        "achievements": [
+          "Drafted content guidelines",
+          "Scaled social reach to 10K+",
+          "Set up documentation workflow"
+        ],
+        "contact": { "email": "rahul.content@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/rahulverma" }
+      }
+    },
+    "membersList": [
+      { "name": "Anita Patel", "role": "Senior Writer", "image": "/professional-female-student.png", "year": "3rd Year" },
+      { "name": "Vikash Kumar", "role": "Social Media Manager", "image": "/professional-male-student-glasses.png", "year": "2nd Year" },
+      { "name": "Sneha Reddy", "role": "Content Reviewer", "image": "/creative-female-student.png", "year": "4th Year" },
+      { "name": "Arjun Singh", "role": "Technical Writer", "image": "/technical-student-laptop.png", "year": "3rd Year" }
+    ],
+    "achievements": [
+      { "title": "Best Content Strategy 2023", "description": "Recognized for innovative content planning", "date": "2023-12-15", "impact": "200% engagement increase" }
+    ],
+    "events": [
+      { "title": "Content Writing Workshop", "description": "Hands-on writing and editing", "date": "2024-02-15", "status": "upcoming", "image": "/web-dev-bootcamp-poster.png", "participants": 45 },
+      { "title": "Digital Marketing Seminar", "description": "Content + SEO fundamentals", "date": "2023-11-10", "status": "completed", "image": "/digital-marketing-masterclass-poster.png", "participants": 60 }
+    ],
+    "activities": [
+      "Weekly content planning",
+      "Monthly newsletter",
+      "Docs & guides",
+      "Event coverage",
+      "Editorial reviews"
+    ],
+    "gallery": ["/canva-tutorial-poster.png", "/digital-marketing-masterclass-poster.png"]
+  },
+  {
+    "id": "technical",
+    "name": "Technical Committee",
+    "description": "Focused on coding, development, and technical projects for the forum.",
+    "fullDescription": "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
+    "logo": "/placeholder.svg?height=80&width=80&text=💻",
+    "color": "blue",
+    "members": 12,
+    "established": "2019-01-15",
+    "focus": ["Web Development", "App Development", "AI/ML", "Blockchain", "Hackathons"],
+    "leadership": {
+      "head": {
+        "name": "Arjun Sharma",
+        "image": "/professional-male-student.png",
+        "bio": "Full-stack developer keen on modern web and AI.",
+        "achievements": [
+          "Built Schologamma website",
+          "Hosted 5 hackathons",
+          "Contributed to open source"
+        ],
+        "contact": { "email": "arjun.tech@schologamma.com", "phone": "+91 91234 56789" },
+        "social": { "linkedin": "https://linkedin.com/in/arjunsharma", "instagram": "https://instagram.com/kavya_designs" }
+      }
+    },
+    "membersList": [
+      { "name": "Sneha Verma", "role": "Frontend Developer", "image": "/professional-female-student.png", "year": "3rd Year" },
+      { "name": "Rohit Agarwal", "role": "Backend Developer", "image": "/professional-male-student.png", "year": "2nd Year" },
+      { "name": "Kunal Joshi", "role": "AI/ML Specialist", "image": "/professional-male-student-glasses.png", "year": "3rd Year" }
+    ],
+    "achievements": [
+      { "title": "Hackathon Excellence 2023", "description": "Largest coding competition on campus", "date": "2023-10-10", "impact": "Tech culture boost" }
+    ],
+    "events": [
+      { "title": "Web Development Bootcamp", "description": "HTML/CSS/JS crash course", "date": "2024-01-25", "status": "completed", "image": "/web-dev-bootcamp-poster.png", "participants": 90 },
+      { "title": "AI & ML Hackathon", "description": "24-hour challenge", "date": "2024-03-15", "status": "upcoming", "image": "/hackathon-poster.png", "participants": 120 }
+    ],
+    "activities": ["Website maintenance", "Tech workshops", "Open-source sprints", "Event tech support"],
+    "gallery": ["/web-dev-bootcamp-poster.png"]
+  },
+  {
+    "id": "creative",
+    "name": "Creative Committee",
+    "description": "Handling design, graphics, multimedia content, and creative project development.",
+    "fullDescription": "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🎨",
+    "color": "pink",
+    "members": 10,
+    "established": "2020-03-10",
+    "focus": ["Graphic Design", "Video Production", "Photography", "Brand Identity", "Creative Campaigns"],
+    "leadership": {
+      "head": {
+        "name": "Kavya Mehta",
+        "image": "/creative-female-student.png",
+        "bio": "Designer focused on brand systems and visual storytelling.",
+        "achievements": [
+          "Award-winning forum branding",
+          "100+ event creatives",
+          "Visual identity redesign"
+        ],
+        "contact": { "email": "kavya.creative@schologamma.com", "phone": "+91 98765 43212" },
+        "social": { "linkedin": "https://linkedin.com/in/kavyamehta", "instagram": "https://instagram.com/kavya_designs" }
+      }
+    },
+    "membersList": [
+      { "name": "Ravi Kumar", "role": "Video Editor", "image": "/professional-male-student.png", "year": "3rd Year" },
+      { "name": "Pooja Singh", "role": "Graphic Designer", "image": "/professional-female-student.png", "year": "2nd Year" },
+      { "name": "Nisha Patel", "role": "UI/UX Designer", "image": "/creative-female-student.png", "year": "3rd Year" }
+    ],
+    "achievements": [
+      { "title": "Best Design Portfolio 2023", "description": "Outstanding creative work and innovation", "date": "2023-11-20", "impact": "Brand uplift" }
+    ],
+    "events": [
+      { "title": "Canva Advanced Tutorial", "description": "Design workflows & shortcuts", "date": "2024-01-08", "status": "completed", "image": "/canva-tutorial-poster.png", "participants": 65 },
+      { "title": "Photography Workshop", "description": "Shooting + post-processing", "date": "2024-02-25", "status": "upcoming", "image": "/web-dev-bootcamp-poster.png", "participants": 40 }
+    ],
+    "activities": ["Poster design", "Social graphics", "Event photo/video", "Brand guidelines"],
+    "gallery": ["/canva-tutorial-poster.png"]
+  },
+  {
+    "id": "sports",
+    "name": "Sports Committee",
+    "description": "Encourages athletic spirit and organizes sports tournaments.",
+    "fullDescription": "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🏅",
+    "color": "emerald",
+    "members": 12,
+    "established": "2017-09-15",
+    "focus": ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
+    "leadership": {
+      "head": {
+        "name": "Kabir Singh",
+        "image": "/professional-male-student.png",
+        "bio": "Athlete and organizer focused on inclusive sports culture.",
+        "achievements": [
+          "Organized biggest sports meet 2023",
+          "Campus fitness drive lead"
+        ],
+        "contact": { "email": "kabir.sports@schologamma.com", "phone": "+91 97777 55555" },
+        "social": { "linkedin": "https://linkedin.com/in/kabirsingh" }
+      }
+    },
+    "membersList": [
+      { "name": "Aisha Khan", "role": "Athletics Captain", "image": "/professional-female-student.png", "year": "3rd Year" },
+      { "name": "Rohit Mehra", "role": "Football Lead", "image": "/professional-male-student.png", "year": "2nd Year" },
+      { "name": "Diya Jain", "role": "Badminton Lead", "image": "/professional-female-student.png", "year": "1st Year" }
+    ],
+    "achievements": [
+      { "title": "Intercollege Winners 2023", "description": "Gold in athletics relay", "date": "2023-12-05", "impact": "Reputation boost" }
+    ],
+    "events": [
+      { "title": "Sports Meet", "description": "Track and field + team sports", "date": "2024-03-10", "status": "upcoming", "image": "/sports-meet.png", "participants": 350 }
+    ],
+    "activities": ["Weekly training", "Intra-college leagues", "Fitness sessions"],
+    "gallery": ["/sports-meet.png"]
+  },
+  {
+    "id": "publicity",
+    "name": "Publicity Committee",
+    "description": "Spreads the word through PR, announcements, and outreach.",
+    "fullDescription": "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
+    "logo": "/placeholder.svg?height=80&width=80&text=📣",
+    "color": "orange",
+    "members": 9,
+    "established": "2018-08-01",
+    "focus": ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
+    "leadership": {
+      "head": {
+        "name": "Ishita Roy",
+        "image": "/professional-female-student.png",
+        "bio": "Campus PR lead who loves storytelling and outreach.",
+        "achievements": [
+          "Press coverage in 4 local outlets",
+          "Launched campus-wide notice system"
+        ],
+        "contact": { "email": "ishita.publicity@schologamma.com", "phone": "+91 90000 33333" },
+        "social": { "linkedin": "https://linkedin.com/in/ishitaroy" }
+      }
+    },
+    "membersList": [
+      { "name": "Harsh Vaid", "role": "Announcements Lead", "image": "/professional-male-student.png", "year": "3rd Year" },
+      { "name": "Mahek Jain", "role": "Outreach Coordinator", "image": "/professional-female-student.png", "year": "2nd Year" }
+    ],
+    "achievements": [
+      { "title": "Campus Awareness 2023", "description": "Record event impressions", "date": "2023-10-28", "impact": "High turnout" }
+    ],
+    "events": [
+      { "title": "Publicity Drive", "description": "Standees, posters, and mic announcements", "date": "2024-01-30", "status": "completed", "image": "/publicity-drive.png", "participants": 60 }
+    ],
+    "activities": ["Posters & standees", "Press notes", "Mic announcements", "Classroom visits"],
+    "gallery": ["/publicity-drive.png"]
+  },
+  {
+    "id": "discipline",
+    "name": "Discipline Committee",
+    "description": "Maintains decorum, safety, and code of conduct at events.",
+    "fullDescription": "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🛡️",
+    "color": "indigo",
+    "members": 10,
+    "established": "2018-01-20",
+    "focus": ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
+    "leadership": {
+      "head": {
+        "name": "Sanjana Kulkarni",
+        "image": "/professional-female-student.png",
+        "bio": "Focused on fair, friendly, and safe events.",
+        "achievements": [
+          "Developed standard event SOP",
+          "Zero-incident cultural fest 2023"
+        ],
+        "contact": { "email": "sanjana.discipline@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/sanjanak" }
+      }
+    },
+    "membersList": [
+      { "name": "Mohit Patil", "role": "Security Marshal", "image": "/professional-male-student.png", "year": "3rd Year" },
+      { "name": "Riya Sen", "role": "Volunteer Lead", "image": "/professional-female-student.png", "year": "2nd Year" }
+    ],
+    "achievements": [
+      { "title": "Safe Fest 2023", "description": "Managed 2k+ attendees without incident", "date": "2023-12-18", "impact": "Model SOP adopted" }
+    ],
+    "events": [
+      { "title": "Volunteer Orientation", "description": "Rules, roles, and emergency drills", "date": "2024-02-05", "status": "completed", "image": "/discipline-orientation.png", "participants": 80 }
+    ],
+    "activities": ["Queue & entry systems", "Backstage control", "Emergency response readiness"],
+    "gallery": ["/discipline-orientation.png"]
+  },
+  {
+    "id": "event",
+    "name": "Event committee",
+    "description": "Plans, schedules, and executes club/forum events.",
+    "fullDescription": "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🗓️",
+    "color": "orange",
+    "members": 11,
+    "established": "2018-06-10",
+    "focus": ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
+    "leadership": {
+      "head": {
+        "name": "Dhruv Malhotra",
+        "image": "/professional-male-student.png",
+        "bio": "Event planner who loves timelines and checklists.",
+        "achievements": [
+          "Delivered 30+ events on time",
+          "Introduced shared runbook"
+        ],
+        "contact": { "email": "dhruv.events@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/dhruvmalhotra" }
+      }
+    },
+    "membersList": [
+      { "name": "Kripa Shah", "role": "Stage Manager", "image": "/professional-female-student.png", "year": "3rd Year" },
+      { "name": "Yash Tiwari", "role": "Logistics", "image": "/professional-male-student.png", "year": "2nd Year" }
+    ],
+    "achievements": [
+      { "title": "Zero-Delay Fest 2022", "description": "All slots started on time", "date": "2022-12-12", "impact": "Operational excellence" }
+    ],
+    "events": [
+      { "title": "Annual Forum Day", "description": "Flagship multi-track event", "date": "2024-02-20", "status": "completed", "image": "/forum-day.png", "participants": 800 }
+    ],
+    "activities": ["Event timelines", "Volunteer rosters", "Stage/backstage ops"],
+    "gallery": ["/forum-day.png"]
+  },
+  {
+    "id": "digital",
+    "name": "Digital Committee",
+    "description": "Oversees digital platforms, streaming, and analytics.",
+    "fullDescription": "The Digital Committee focuses on livestreams, recordings, on-site AV, analytics, and website/app enhancements to improve digital reach.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🔗",
+    "color": "emerald",
+    "members": 8,
+    "established": "2019-09-01",
+    "focus": ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
+    "leadership": {
+      "head": {
+        "name": "Parth Desai",
+        "image": "/professional-male-student.png",
+        "bio": "AV + web tinkerer making events digital-first.",
+        "achievements": [
+          "Hybrid events with 1k+ online viewers",
+          "Analytics dashboards for organizers"
+        ],
+        "contact": { "email": "parth.digital@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/parthdesai" }
+      }
+    },
+    "membersList": [
+      { "name": "Sana Qureshi", "role": "Stream Engineer", "image": "/professional-female-student.png", "year": "2nd Year" },
+      { "name": "Aman Gupta", "role": "Editor", "image": "/professional-male-student.png", "year": "3rd Year" }
+    ],
+    "achievements": [
+      { "title": "Seamless Hybrid 2023", "description": "Zero-downtime streaming across tracks", "date": "2023-11-05", "impact": "Remote reach" }
+    ],
+    "events": [
+      { "title": "Live AV Setup 101", "description": "Hands-on with mixers/cams", "date": "2024-01-18", "status": "completed", "image": "/digital-av-workshop.png", "participants": 55 }
+    ],
+    "activities": ["Livestream & recording", "On-site AV setup", "Post-event editing", "Site analytics"],
+    "gallery": ["/digital-av-workshop.png"]
+  },
+ 
+  {
+    "id": "startup",
+    "name": "Startup Committee",
+    "description": "Fosters entrepreneurship, ideation, and incubation.",
+    "fullDescription": "The Startup Committee helps students validate ideas, build MVPs, connect with mentors, and pitch to investors.",
+    "logo": "/placeholder.svg?height=80&width=80&text=💡",
+    "color": "indigo",
+    "members": 10,
+    "established": "2021-01-05",
+    "focus": ["Ideation", "MVP Building", "Pitching", "Mentoring", "Networking"],
+    "leadership": {
+      "head": {
+        "name": "Tanya Arora",
+        "image": "/professional-female-student.png",
+        "bio": "Product thinker helping peers go from idea to MVP.",
+        "achievements": [
+          "3 campus startups incubated",
+          "Monthly founder roundtables"
+        ],
+        "contact": { "email": "tanya.startup@schologamma.com" },
+        "social": { "linkedin": "https://linkedin.com/in/tanyaarora" }
+      }
+    },
+    "membersList": [
+      { "name": "Kartik Rao", "role": "Pitch Coach", "image": "/professional-male-student.png", "year": "4th Year" },
+      { "name": "Nivedita Paul", "role": "Research Lead", "image": "/professional-female-student.png", "year": "2nd Year" }
+    ],
+    "achievements": [
+      { "title": "Demo Day 2023", "description": "Raised seed grants for 2 teams", "date": "2023-09-05", "impact": "Early funding" }
+    ],
+    "events": [
+      { "title": "Startup Bootcamp", "description": "Problem → MVP → Pitch", "date": "2024-02-28", "status": "completed", "image": "/startup-bootcamp.png", "participants": 110 }
+    ],
+    "activities": ["Idea jams", "Mentor office hours", "Pitch practice", "Investor connects"],
+    "gallery": ["/startup-bootcamp.png"]
+  },
+  {
+  id: "nss",
+  name: "NSS Committee",
+  description: "Encouraging student participation in community service, social responsibility, and nation-building activities.",
+  fullDescription:
+    "The NSS (National Service Scheme) Committee inspires students to contribute towards community service and social responsibility. Through awareness drives, social activities, and volunteering, we work for the welfare of society while promoting leadership, discipline, and empathy among students.",
+  logo: "/placeholder.svg?height=80&width=80&text=🌍",
+  color: "green",
+  members: 25,
+  established: "2018-07-15",
+  focus: ["Community Service", "Social Awareness", "Health Camps", "Environmental Initiatives", "Volunteering"],
+  leadership: {
+    head: {
+      name: "Arjun Deshmukh",
+      image: "/professional-male-student.png",
+      bio: "Dedicated NSS volunteer with a passion for community development, social service, and youth empowerment.",
       achievements: [
-        {
-          title: "Best Content Strategy Award 2023",
-          description: "Recognized for innovative digital content strategy that increased engagement by 200%",
-          date: "2023-12-15",
-          impact: "200% engagement increase",
-        },
-        {
-          title: "Successful Forum Rebranding",
-          description: "Led complete visual and content rebranding of Schologamma Forum",
-          date: "2023-08-20",
-          impact: "Enhanced brand recognition",
-        },
+        "Led 10+ social awareness drives",
+        "Organized blood donation camps with 500+ donors",
+        "Promoted Swachh Bharat cleanliness campaigns",
       ],
-      events: [
-        {
-          title: "Content Writing Workshop",
-          description: "Comprehensive workshop on technical and creative writing skills",
-          date: "2024-02-15",
-          status: "upcoming",
-          image: "/web-dev-bootcamp-poster.png",
-          participants: 45,
-        },
-        {
-          title: "Digital Marketing Seminar",
-          description: "Advanced strategies for social media and content marketing",
-          date: "2023-11-10",
-          status: "completed",
-          image: "/digital-marketing-masterclass-poster.png",
-          participants: 60,
-        },
-      ],
-      activities: [
-        "Weekly content planning and strategy sessions",
-        "Monthly newsletter creation and distribution",
-        "Social media content calendar management",
-        "Technical documentation and user guides",
-        "Event coverage and photography coordination",
-      ],
-      gallery: ["/canva-tutorial-poster.png", "/digital-marketing-masterclass-poster.png"],
+      contact: { email: "arjun.nss@schologamma.com", phone: "+91 98765 11111" },
+      social: { linkedin: "https://linkedin.com/in/arjundeshmukh", instagram: "https://instagram.com/arjun_nss" },
+    },
+  },
+  membersList: [
+    { name: "Sneha Rathi", role: "Volunteer Coordinator", image: "/professional-female-student.png", year: "3rd Year" },
+    { name: "Manoj Yadav", role: "Health Camp Organizer", image: "/professional-male-student.png", year: "2nd Year" },
+    { name: "Priya Nair", role: "Environment Lead", image: "/professional-female-student.png", year: "4th Year" },
+    { name: "Rahul Patil", role: "Event Volunteer", image: "/professional-male-student.png", year: "1st Year" },
+  ],
+  achievements: [
+    {
+      title: "Best NSS Unit Award",
+      description: "Awarded for outstanding contribution to community service in 2023",
+      date: "2023-12-10",
+      impact: "Enhanced social impact and student engagement",
+    },
+  ],
+  events: [
+    {
+      title: "Blood Donation Camp",
+      description: "Organized a blood donation drive with local hospitals",
+      date: "2024-03-12",
+      status: "completed",
+      image: "/blood-donation-camp.png",
+      participants: 150,
     },
     {
-      id: "technical",
-      name: "Technical Committee",
-      description: "Organizing technical workshops, coding competitions, and innovation-driven events.",
-      fullDescription:
-        "The Technical Committee is the backbone of Schologamma's technical initiatives. We organize workshops, hackathons, coding competitions, and technical seminars to enhance the programming and technical skills of our community members. Our focus is on emerging technologies, practical learning, and industry-relevant skill development.",
-      logo: "/placeholder.svg?height=80&width=80&text=⚙️",
-      color: "green",
-      members: 15,
-      established: "2019-09-01",
-      focus: ["Web Development", "AI/ML", "Mobile Development", "DevOps", "Competitive Programming"],
-      leadership: {
-        head: {
-          name: "Danish Chavada",
-          image:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221212-XxvN84Yq6G9BBVc2OYj6ZD4xgMyWNH.png",
-          bio: "GDSC Lead and final year CSE student with expertise in full-stack development and machine learning. Passionate about teaching and mentoring.",
-          achievements: [
-            "Led 25+ successful technical workshops",
-            "Organized LogicQuest coding competition series",
-            "Mentored 100+ students in competitive programming",
-          ],
-          contact: { email: "danish.tech@schologamma.com", phone: "+91 98765 43211" },
-          social: { linkedin: "https://linkedin.com/in/danishchavada", instagram: "https://instagram.com/danish_tech" },
-        },
-        coHead: {
-          name: "Aryan Patel",
-          image: "/technical-student-laptop.png",
-          bio: "Third year student specializing in AI/ML and data science. Active contributor to open-source projects.",
-          achievements: [
-            "Published research paper on ML algorithms",
-            "Won 3 national-level hackathons",
-            "Contributed to 15+ open-source projects",
-          ],
-          contact: { email: "aryan.tech@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/aryanpatel" },
-        },
-      },
-      membersList: [
-        {
-          name: "Kiran Joshi",
-          role: "Full Stack Developer",
-          image: "/professional-male-student.png",
-          year: "4th Year",
-        },
-        { name: "Meera Gupta", role: "AI/ML Specialist", image: "/professional-female-student.png", year: "3rd Year" },
-        {
-          name: "Rohit Sharma",
-          role: "Mobile App Developer",
-          image: "/professional-male-student-glasses.png",
-          year: "2nd Year",
-        },
-        { name: "Divya Nair", role: "DevOps Engineer", image: "/creative-female-student.png", year: "4th Year" },
-      ],
-      achievements: [
-        {
-          title: "LogicQuest 1.1 Success",
-          description: "Successfully organized annual coding competition with 200+ participants",
-          date: "2024-03-01",
-          impact: "200+ participants",
-        },
-        {
-          title: "AI/ML Workshop Series",
-          description: "Conducted comprehensive workshop series on artificial intelligence and machine learning",
-          date: "2023-10-15",
-          impact: "150+ students trained",
-        },
-      ],
-      events: [
-        {
-          title: "Introduction to Figma",
-          description: "Design workshop covering Figma fundamentals and UI/UX principles",
-          date: "2023-10-27",
-          status: "completed",
-          image:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
-          participants: 80,
-        },
-        {
-          title: "LogicQuest 1.1",
-          description: "Annual coding competition featuring algorithmic challenges and problem-solving",
-          date: "2024-03-01",
-          status: "upcoming",
-          image: "/logic-quest-coding-competition.png",
-          participants: 200,
-        },
-        {
-          title: "AI/ML Workshop",
-          description: "Hands-on workshop on machine learning algorithms and practical applications",
-          date: "2024-02-20",
-          status: "upcoming",
-          image: "/ai-ml-workshop-poster.png",
-          participants: 120,
-        },
-      ],
-      activities: [
-        "Weekly coding practice sessions and algorithm discussions",
-        "Monthly technical seminars on emerging technologies",
-        "Hackathon organization and participation coordination",
-        "Open-source project development and contribution",
-        "Industry expert sessions and networking events",
-      ],
-      gallery: ["/logic-quest-coding-competition.png", "/ai-ml-workshop-poster.png"],
+      title: "Tree Plantation Drive",
+      description: "Encouraging green initiatives and awareness on environmental conservation",
+      date: "2024-06-05",
+      status: "upcoming",
+      image: "/tree-plantation-drive.png",
+      participants: 80,
     },
-    {
-      id: "creative",
-      name: "Creative Committee",
-      description: "Handling design, graphics, multimedia content, and creative project development.",
-      fullDescription:
-        "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle all visual aspects of the forum including branding, event posters, social media graphics, and creative campaigns that represent Schologamma's dynamic spirit.",
-      logo: "/placeholder.svg?height=80&width=80&text=🎨",
-      color: "pink",
-      members: 10,
-      established: "2020-03-10",
-      focus: ["Graphic Design", "Video Production", "Photography", "Brand Identity", "Creative Campaigns"],
-      leadership: {
-        head: {
-          name: "Kavya Mehta",
-          image: "/creative-female-student.png",
-          bio: "Final year student with expertise in graphic design and brand strategy. Leading creative initiatives with innovative design solutions.",
-          achievements: [
-            "Designed award-winning forum branding",
-            "Created 100+ event posters and graphics",
-            "Led successful visual identity redesign",
-          ],
-          contact: { email: "kavya.creative@schologamma.com", phone: "+91 98765 43212" },
-          social: { linkedin: "https://linkedin.com/in/kavyamehta", instagram: "https://instagram.com/kavya_designs" },
-        },
-      },
-      membersList: [
-        { name: "Ravi Kumar", role: "Video Editor", image: "/professional-male-student.png", year: "3rd Year" },
-        { name: "Pooja Singh", role: "Graphic Designer", image: "/professional-female-student.png", year: "2nd Year" },
-        { name: "Amit Jain", role: "Photographer", image: "/professional-male-student-glasses.png", year: "4th Year" },
-        { name: "Nisha Patel", role: "UI/UX Designer", image: "/creative-female-student.png", year: "3rd Year" },
-      ],
-      achievements: [
-        {
-          title: "Best Design Portfolio 2023",
-          description: "Recognition for outstanding creative work and design innovation",
-          date: "2023-11-20",
-          impact: "Enhanced visual brand identity",
-        },
-      ],
-      events: [
-        {
-          title: "Canva Advanced Tutorial",
-          description: "Advanced design techniques and creative workflows using Canva",
-          date: "2024-01-08",
-          status: "completed",
-          image: "/canva-tutorial-poster.png",
-          participants: 65,
-        },
-        {
-          title: "Photography Workshop",
-          description: "Professional photography techniques and post-processing skills",
-          date: "2024-02-25",
-          status: "upcoming",
-          image: "/web-dev-bootcamp-poster.png",
-          participants: 40,
-        },
-      ],
-      activities: [
-        "Event poster and promotional material design",
-        "Social media graphics and content creation",
-        "Photography and videography for events",
-        "Brand identity development and maintenance",
-        "Creative campaign planning and execution",
-      ],
-      gallery: ["/canva-tutorial-poster.png"],
-    },
-  ]
+  ],
+  activities: [
+    "Organizing health and blood donation camps",
+    "Awareness drives on social issues",
+    "Environmental activities like tree plantation",
+    "Volunteering for community welfare programs",
+    "Promoting youth leadership in social work",
+  ],
+  gallery: ["/blood-donation-camp.png", "/tree-plantation-drive.png"],
+}
+
+]
+
+
 
   const filteredCommittees = committees.filter(
     (committee) =>

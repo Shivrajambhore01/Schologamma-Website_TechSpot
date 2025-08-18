@@ -30,19 +30,19 @@ export default function HomePage() {
       title: "Innovation Meets Excellence",
       subtitle: "Join the premier student forum at JD College of Engineering & Management",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-14%20223324-0KI5TyovEk2vyFyMYfVXN3A2XDIUfS.png",
+        "technical-student-laptop.png",
     },
     {
       title: "Empowering Future Leaders",
       subtitle: "Discover opportunities, build connections, and shape your career",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-14%20223324-0KI5TyovEk2vyFyMYfVXN3A2XDIUfS.png",
+        "college.jpeg",
     },
     {
       title: "Learn, Grow, Achieve",
       subtitle: "Participate in workshops, seminars, and technical events",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
+        "jdcoemstudent.jpeg",
     },
   ]
 
@@ -102,58 +102,60 @@ export default function HomePage() {
     { name: "Events", href: "/events" },
     { name: "Committees", href: "/committees" },
     { name: "Our Team", href: "/team" },
-    { name: "Gallery", href: "#gallery" },
+    { name: "Gallery", href: "/gallery" },
   ]
 
   const committees = [
-    {
-      name: "Content Editor Committee",
-      description: "Managing content creation and editorial processes",
-      icon: "📝",
-      members: 12,
-      color: "from-blue-500/20 to-purple-500/20",
-      hoverColor: "hover:shadow-blue-500/30",
-    },
+    // {
+    //   name: "Content Editor Committee",
+    //   description: "Managing content creation and editorial processes",
+    //   icon: "📝",
+    //   members: 12,
+    //   color: "from-blue-500/20 to-purple-500/20",
+    //   hoverColor: "hover:shadow-blue-500/30",
+    // },
     {
       name: "Technical Committee",
       description: "Organizing technical workshops and coding events",
-      icon: "⚙️",
-      members: 15,
+      // icon: "⚙️",
+      image: "jdcoemlogo.png",
+      members: 8,
       color: "from-green-500/20 to-teal-500/20",
       hoverColor: "hover:shadow-green-500/30",
     },
-    {
-      name: "Creative Committee",
-      description: "Handling design, graphics, and creative projects",
-      icon: "🎨",
-      members: 10,
-      color: "from-pink-500/20 to-rose-500/20",
-      hoverColor: "hover:shadow-pink-500/30",
-    },
-    {
-      name: "Event Management",
-      description: "Planning and executing all forum events",
-      icon: "📅",
+      {
+      name: "TechSpot Committee",
+      description: "Planning and executing all forum technical events",
+      image: "jdcoemlogo.png",
       members: 8,
       color: "from-orange-500/20 to-yellow-500/20",
       hoverColor: "hover:shadow-orange-500/30",
     },
     {
-      name: "Public Relations",
-      description: "Managing external communications and partnerships",
-      icon: "🤝",
-      members: 6,
-      color: "from-indigo-500/20 to-blue-500/20",
-      hoverColor: "hover:shadow-indigo-500/30",
+      name: "Creative Committee",
+      description: "Handling design, graphics, and creative projects",
+       image: "jdcoemlogo.png",
+      members: 8,
+      color: "from-pink-500/20 to-rose-500/20",
+      hoverColor: "hover:shadow-pink-500/30",
     },
-    {
-      name: "Finance Committee",
-      description: "Handling budgets and financial planning",
-      icon: "💰",
-      members: 5,
-      color: "from-emerald-500/20 to-green-500/20",
-      hoverColor: "hover:shadow-emerald-500/30",
-    },
+  
+    // {
+    //   name: "Public Relations",
+    //   description: "Managing external communications and partnerships",
+    //   icon: "🤝",
+    //   members: 6,
+    //   color: "from-indigo-500/20 to-blue-500/20",
+    //   hoverColor: "hover:shadow-indigo-500/30",
+    // },
+    // {
+    //   name: "Finance Committee",
+    //   description: "Handling budgets and financial planning",
+    //   icon: "💰",
+    //   members: 5,
+    //   color: "from-emerald-500/20 to-green-500/20",
+    //   hoverColor: "hover:shadow-emerald-500/30",
+    // },
   ]
 
   const latestUpdates = [
@@ -233,7 +235,7 @@ export default function HomePage() {
         },
       ],
       icon: <Award className="w-6 h-6" />,
-      color: "from-blue-500/20 to-purple-500/20",
+      color: "from-dark-500/20 to-purple-500/20",
     },
     {
       title: "Team Activities",
@@ -496,9 +498,17 @@ export default function HomePage() {
                 <CardContent className="p-8 text-center space-y-6 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                     {committee.icon}
-                  </div>
+                  </div> */}
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
+   <img 
+    src={committee.image} 
+    alt={committee.name} 
+    className="w-full h-full object-cover" 
+  />
+</div>
+
                   <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
                     {committee.name}
                   </h3>
@@ -509,12 +519,14 @@ export default function HomePage() {
                     <Users className="w-4 h-4" />
                     <span>{committee.members} Members</span>
                   </div>
+                  <a href="/committees">
                   <Button
                     variant="outline"
                     className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent transform group-hover:scale-105 transition-all duration-300"
                   >
                     Learn More
                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -560,15 +572,15 @@ export default function HomePage() {
               </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">80+</div>
                   <div className="text-gray-400">Active Members</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-orange-400 mb-2">25+</div>
                   <div className="text-gray-400">Events Organized</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">6</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">11</div>
                   <div className="text-gray-400">Active Committees</div>
                 </div>
               </div>
@@ -615,13 +627,13 @@ export default function HomePage() {
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                     {update.description}
                   </p>
-                  <Button
+                  {/* <Button
                     variant="outline"
                     size="sm"
                     className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent"
                   >
                     Read More
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             ))}
@@ -690,12 +702,12 @@ export default function HomePage() {
                       <span>{event.venue}</span>
                     </div>
                   </div>
-                  <Button
+                  {/* <Button
                     variant="outline"
                     className="border-gray-600 text-white hover:bg-blue-500 hover:border-blue-500 w-full bg-transparent"
                   >
                     {event.status === "upcoming" ? "Register Now" : "View Details"}
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             ))}

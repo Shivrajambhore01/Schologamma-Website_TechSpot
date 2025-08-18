@@ -21,7 +21,7 @@ interface TeamMember {
   dob: string
   email: string
   phone: string
-  achievements: string[]
+  // achievements: string[]
   responsibilities: string[]
   social: {
     linkedin?: string
@@ -29,7 +29,7 @@ interface TeamMember {
     facebook?: string
     twitter?: string
   }
-  joinDate: string
+  // joinDate: string
   skills: string[]
 }
 
@@ -53,12 +53,12 @@ export default function TeamPage() {
       dob: "1998-03-15",
       email: "devanshu@schologamma.com",
       phone: "+91 98765 43210",
-      achievements: [
-        "Led 50+ successful events",
-        "Increased forum membership by 200%",
-        "Winner of Best Student Leader Award 2023",
-        "Published research paper on AI in Education",
-      ],
+      // achievements: [
+      //   "Led 50+ successful events",
+      //   "Increased forum membership by 200%",
+      //   "Winner of Best Student Leader Award 2023",
+      //   "Published research paper on AI in Education",
+      // ],
       responsibilities: [
         "Overall forum leadership and strategic planning",
         "Coordination with college administration",
@@ -70,7 +70,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/devanshu",
         facebook: "https://facebook.com/devanshu",
       },
-      joinDate: "2022-08-01",
+      // joinDate: "2022-08-01",
       skills: ["Leadership", "Public Speaking", "Project Management", "Strategic Planning"],
     },
     {
@@ -84,12 +84,12 @@ export default function TeamPage() {
       dob: "1999-07-22",
       email: "shifa@schologamma.com",
       phone: "+91 98765 43211",
-      achievements: [
-        "Organized 30+ workshops and seminars",
-        "Excellence in Team Management Award",
-        "Increased student participation by 150%",
-        "Led successful fundraising campaigns",
-      ],
+      // achievements: [
+      //   "Organized 30+ workshops and seminars",
+      //   "Excellence in Team Management Award",
+      //   "Increased student participation by 150%",
+      //   "Led successful fundraising campaigns",
+      // ],
       responsibilities: [
         "Assist president in strategic decisions",
         "Coordinate between different committees",
@@ -101,7 +101,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/shifa",
         facebook: "https://facebook.com/shifa",
       },
-      joinDate: "2022-08-01",
+      // joinDate: "2022-08-01",
       skills: ["Event Management", "Team Coordination", "Communication", "Problem Solving"],
     },
     {
@@ -115,12 +115,12 @@ export default function TeamPage() {
       dob: "1999-01-10",
       email: "kalyani@schologamma.com",
       phone: "+91 98765 43212",
-      achievements: [
-        "Streamlined documentation processes",
-        "Maintained 100% meeting attendance record",
-        "Implemented digital record-keeping system",
-        "Best Administrative Support Award",
-      ],
+      // achievements: [
+      //   "Streamlined documentation processes",
+      //   "Maintained 100% meeting attendance record",
+      //   "Implemented digital record-keeping system",
+      //   "Best Administrative Support Award",
+      // ],
       responsibilities: [
         "Meeting documentation and minutes",
         "Maintain member records and databases",
@@ -132,7 +132,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/kalyani",
         facebook: "https://facebook.com/kalyani",
       },
-      joinDate: "2022-08-01",
+      // joinDate: "2022-08-01",
       skills: ["Documentation", "Organization", "Communication", "Database Management"],
     },
     {
@@ -146,12 +146,12 @@ export default function TeamPage() {
       dob: "1998-11-05",
       email: "om@schologamma.com",
       phone: "+91 98765 43213",
-      achievements: [
-        "Managed ₹5L+ annual budget efficiently",
-        "Reduced operational costs by 20%",
-        "Implemented transparent financial reporting",
-        "Excellence in Financial Management Award",
-      ],
+      // achievements: [
+      //   "Managed ₹5L+ annual budget efficiently",
+      //   "Reduced operational costs by 20%",
+      //   "Implemented transparent financial reporting",
+      //   "Excellence in Financial Management Award",
+      // ],
       responsibilities: [
         "Budget planning and management",
         "Financial reporting and transparency",
@@ -163,7 +163,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/om",
         facebook: "https://facebook.com/om",
       },
-      joinDate: "2022-08-01",
+      // joinDate: "2022-08-01",
       skills: ["Financial Management", "Budget Planning", "Analytics", "Negotiation"],
     },
     {
@@ -177,12 +177,12 @@ export default function TeamPage() {
       dob: "1999-04-18",
       email: "prathamesh@schologamma.com",
       phone: "+91 98765 43214",
-      achievements: [
-        "Assisted in managing ₹5L+ budget",
-        "Developed financial tracking systems",
-        "Improved expense reporting accuracy",
-        "Outstanding Support Staff Award",
-      ],
+      // achievements: [
+      //   "Assisted in managing ₹5L+ budget",
+      //   "Developed financial tracking systems",
+      //   "Improved expense reporting accuracy",
+      //   "Outstanding Support Staff Award",
+      // ],
       responsibilities: [
         "Assist in budget management",
         "Maintain financial records",
@@ -194,26 +194,26 @@ export default function TeamPage() {
         instagram: "https://instagram.com/prathamesh",
         facebook: "https://facebook.com/prathamesh",
       },
-      joinDate: "2022-09-01",
+      // joinDate: "2022-09-01",
       skills: ["Financial Analysis", "Record Keeping", "Excel", "Attention to Detail"],
     },
     {
       id: "6",
-      name: "Rushang Chandekar",
+      name: "Piyush Kolte",
       role: "Joint-Secretary",
       committee: "Executive Board",
       position: "Admin",
-      image: "/professional-male-student.png",
+      image: "20240924_094947 - Piyush Kolte (1).jpg",
       bio: "Joint-secretary providing administrative support and ensuring efficient communication across all committees and members.",
-      dob: "1999-09-12",
-      email: "rushang@schologamma.com",
-      phone: "+91 98765 43215",
-      achievements: [
-        "Improved inter-committee communication",
-        "Streamlined administrative processes",
-        "Maintained comprehensive member database",
-        "Best Administrative Assistant Award",
-      ],
+      dob: "2006-06-01",
+      email: "piyushkolthe05@gmail.com",
+      phone: "+91 9370591452",
+      // achievements: [
+      //   "Improved inter-committee communication",
+      //   "Streamlined administrative processes",
+      //   "Maintained comprehensive member database",
+      //   "Best Administrative Assistant Award",
+      // ],
       responsibilities: [
         "Assist secretary in documentation",
         "Coordinate committee communications",
@@ -221,11 +221,11 @@ export default function TeamPage() {
         "Support event administrative tasks",
       ],
       social: {
-        linkedin: "https://linkedin.com/in/rushang-chandekar",
-        instagram: "https://instagram.com/rushang",
-        facebook: "https://facebook.com/rushang",
+        linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+        instagram: "https://www.instagram.com/piyush_kolte01?igsh=MWF2YWgxYmx4a3UxOA==",
+        facebook: "/team",
       },
-      joinDate: "2022-09-01",
+      // joinDate: "2022-09-01",
       skills: ["Administration", "Communication", "Organization", "Database Management"],
     },
     {
@@ -239,12 +239,12 @@ export default function TeamPage() {
       dob: "1999-06-30",
       email: "mansi@schologamma.com",
       phone: "+91 98765 43216",
-      achievements: [
-        "Represented forum in 20+ media interviews",
-        "Increased social media engagement by 300%",
-        "Best Public Speaker Award 2023",
-        "Successfully managed crisis communications",
-      ],
+      // achievements: [
+      //   "Represented forum in 20+ media interviews",
+      //   "Increased social media engagement by 300%",
+      //   "Best Public Speaker Award 2023",
+      //   "Successfully managed crisis communications",
+      // ],
       responsibilities: [
         "Official forum representation",
         "Media relations and communications",
@@ -257,7 +257,7 @@ export default function TeamPage() {
         facebook: "https://facebook.com/mansi",
         twitter: "https://twitter.com/mansi",
       },
-      joinDate: "2022-08-15",
+      // joinDate: "2022-08-15",
       skills: ["Public Speaking", "Media Relations", "Social Media", "Communication Strategy"],
     },
     {
@@ -271,12 +271,12 @@ export default function TeamPage() {
       dob: "1999-02-14",
       email: "arjun@schologamma.com",
       phone: "+91 98765 43217",
-      achievements: [
-        "Led 25+ technical workshops",
-        "Developed forum's official website",
-        "Winner of State-level Hackathon",
-        "Published 3 technical articles",
-      ],
+      // achievements: [
+      //   "Led 25+ technical workshops",
+      //   "Developed forum's official website",
+      //   "Winner of State-level Hackathon",
+      //   "Published 3 technical articles",
+      // ],
       responsibilities: [
         "Lead technical committee activities",
         "Organize coding competitions and hackathons",
@@ -288,7 +288,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/arjun",
         facebook: "https://facebook.com/arjun",
       },
-      joinDate: "2022-09-15",
+      // joinDate: "2022-09-15",
       skills: ["Full Stack Development", "AI/ML", "Cloud Computing", "Technical Leadership"],
     },
     {
@@ -302,12 +302,12 @@ export default function TeamPage() {
       dob: "1999-05-20",
       email: "priya@schologamma.com",
       phone: "+91 98765 43218",
-      achievements: [
-        "Designed 100+ event posters and materials",
-        "Rebranded forum visual identity",
-        "Won Best Design Award at college fest",
-        "Led creative workshops for 200+ students",
-      ],
+      // achievements: [
+      //   "Designed 100+ event posters and materials",
+      //   "Rebranded forum visual identity",
+      //   "Won Best Design Award at college fest",
+      //   "Led creative workshops for 200+ students",
+      // ],
       responsibilities: [
         "Lead creative committee projects",
         "Design event materials and branding",
@@ -319,7 +319,7 @@ export default function TeamPage() {
         instagram: "https://instagram.com/priya",
         facebook: "https://facebook.com/priya",
       },
-      joinDate: "2022-10-01",
+      // joinDate: "2022-10-01",
       skills: ["Graphic Design", "UI/UX Design", "Brand Strategy", "Creative Leadership"],
     },
     {
@@ -333,12 +333,12 @@ export default function TeamPage() {
       dob: "1998-12-08",
       email: "rahul@schologamma.com",
       phone: "+91 98765 43219",
-      achievements: [
-        "Published 50+ articles and blog posts",
-        "Increased content engagement by 250%",
-        "Won Best Content Creator Award",
-        "Established forum's content guidelines",
-      ],
+      // achievements: [
+      //   "Published 50+ articles and blog posts",
+      //   "Increased content engagement by 250%",
+      //   "Won Best Content Creator Award",
+      //   "Established forum's content guidelines",
+      // ],
       responsibilities: [
         "Lead content creation strategy",
         "Edit and review all published content",
@@ -350,19 +350,55 @@ export default function TeamPage() {
         instagram: "https://instagram.com/rahul",
         facebook: "https://facebook.com/rahul",
       },
-      joinDate: "2022-09-20",
+      // joinDate: "2022-09-20",
+      skills: ["Content Writing", "Editorial", "SEO", "Content Strategy"],
+    },
+     {
+      id: "11",
+      name: "Rahul Verm",
+      role: "Content Co-Head",
+      committee: "Content Editor Committee",
+      position: "Co-Head",
+      image: "/placeholder-sxulj.png",
+      bio: "Content strategist and editor ensuring high-quality communication across all forum channels. Expert in content creation and editorial processes.",
+      dob: "1998-10-08",
+      email: "rafdfl@schologamma.com",
+      phone: "+91 98765 42219",
+      // achievements: [
+      //   "Published 50+ articles and blog posts",
+      //   "Increased content engagement by 250%",
+      //   "Won Best Content Creator Award",
+      //   "Established forum's content guidelines",
+      // ],
+      responsibilities: [
+        "Lead content creation strategy",
+        "Edit and review all published content",
+        "Coordinate with social media team",
+        "Train content creators",
+      ],
+      social: {
+        linkedin: "https://linkedin.com/in/rahul-verma",
+        instagram: "https://instagram.com/rahul",
+        facebook: "https://facebook.com/rahul",
+      },
+      // joinDate: "2022-09-20",
       skills: ["Content Writing", "Editorial", "SEO", "Content Strategy"],
     },
   ]
 
   const committees = [
-    "Executive Board",
-    "Technical Committee",
-    "Creative Committee",
-    "Content Editor Committee",
-    "Event Management",
-    "Public Relations",
-    "Finance Committee",
+   "TechSpot Committee",
+"Technical Committee",
+"Creative Committee",
+"Content Editor Committee",
+"Event Management",
+"Publicity Relations",
+"Digital Committee",
+"Sports Committee",
+"Discipline Committee",
+"Startup Committee",
+"NSS Committee",
+
   ]
 
   const positions = ["Admin", "Head", "Co-Head", "Member"]
@@ -395,13 +431,17 @@ export default function TeamPage() {
 
   const getCommitteeColor = (committee: string) => {
     const colors = {
-      "Executive Board": "bg-gold-500/20 text-yellow-400 border-yellow-500/30",
-      "Technical Committee": "bg-purple-500/20 text-purple-400 border-purple-500/30",
-      "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
       "Content Editor Committee": "bg-orange-500/20 text-orange-400 border-orange-500/30",
-      "Event Management": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-      "Public Relations": "bg-green-500/20 text-green-400 border-green-500/30",
-      "Finance Committee": "bg-indigo-500/20 text-indigo-400 border-indigo-500/30",
+  "Technical Committee": "bg-purple-500/20 text-purple-400 border-purple-500/30",
+  "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
+  "Sports Committee": "bg-red-500/20 text-red-400 border-red-500/30",
+  "Publicity Committee": "bg-teal-500/20 text-teal-400 border-teal-500/30",
+  "Discipline Committee": "bg-gray-500/20 text-gray-400 border-gray-500/30",
+  "Event Committee": "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  "Digital Committee": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
+  "Techspot Committee": "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+  "Startup Committee": "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+  "NSS Committee": "bg-lime-500/20 text-lime-400 border-lime-500/30"
     }
     return colors[committee as keyof typeof colors] || "bg-gray-500/20 text-gray-400 border-gray-500/30"
   }
@@ -676,7 +716,7 @@ export default function TeamPage() {
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <Users className="w-4 h-4 text-purple-400" />
-                      <span>Joined: {new Date(selectedMember.joinDate).toLocaleDateString()}</span>
+                      {/* <span>Joined: {new Date(selectedMember.joinDate).toLocaleDateString()}</span> */}
                     </div>
                   </div>
 
@@ -760,15 +800,15 @@ export default function TeamPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">Achievements</h3>
-                    <ul className="space-y-2">
-                      {selectedMember.achievements.map((achievement, index) => (
+                    {/* <h3 className="text-xl font-semibold text-white mb-3">Achievements</h3>
+                    <ul className="space-y-2"> */}
+                      {/* {selectedMember.achievements.map((achievement, index) => (
                         <li key={index} className="flex items-start space-x-3 text-gray-300">
                           <Award className="w-4 h-4 text-orange-400 mt-1 flex-shrink-0" />
                           <span>{achievement}</span>
                         </li>
-                      ))}
-                    </ul>
+                      ))} */}
+                    {/* </ul> */}
                   </div>
                 </div>
               </div>

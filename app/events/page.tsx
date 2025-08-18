@@ -233,9 +233,14 @@ export default function EventsPage() {
     "Technical Committee",
     "Creative Committee",
     "Content Editor Committee",
-    "Event Management",
-    "Public Relations",
-    "Finance Committee",
+    "Event committee",
+    "Publicity Committee",
+    "TechSpot Committee",
+    "Digital  Committee",
+    "Startup Committee",
+    "Sports committee",
+    "Discipline Committee",
+    "NSS Committee",
   ]
 
   const categories = ["Workshop", "Seminar", "Competition", "Bootcamp", "Tutorial", "Masterclass", "Webinar"]
@@ -271,8 +276,13 @@ export default function EventsPage() {
       "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
       "Content Editor Committee": "bg-orange-500/20 text-orange-400 border-orange-500/30",
       "Event Management": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-      "Public Relations": "bg-green-500/20 text-green-400 border-green-500/30",
-      "Finance Committee": "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+       "Publicity Committee":"bg-blue-500/20 text-blue-400 border-blue-500/30",
+      "TechSpot Committee":"bg-blue-500/20 text-blue-400 border-blue-500/30",
+    "Digital  Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
+     "Startup Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
+    "Sports committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
+    "Discipline Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
+    "NSS Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
     }
     return colors[committee as keyof typeof colors] || "bg-gray-500/20 text-gray-400 border-gray-500/30"
   }
@@ -474,7 +484,7 @@ export default function EventsPage() {
                     </div>
                   </div>
 
-                  {event.registrationOpen && (
+                  {/* {event.registrationOpen && (
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm text-gray-400">
                         <span>Participants</span>
@@ -491,9 +501,9 @@ export default function EventsPage() {
                         ></div>
                       </div>
                     </div>
-                  )}
+                  )} */}
 
-                  <Button
+                  {/* <Button
                     className={
                       event.registrationOpen
                         ? "w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-200"
@@ -502,7 +512,7 @@ export default function EventsPage() {
                     disabled={!event.registrationOpen}
                   >
                     {event.registrationOpen ? "Register Now" : "Registration Closed"}
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

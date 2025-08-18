@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Techspot Committee",
+    "description": "Handles all technical activities including coding events, hackathons, and workshops."
+  },
+  {
+    "name": "Event Committee",
+    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
+  },
+  {
+    "name": "Sports Committee",
+    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
+  },
+  {
+    "name": "Startup Committee",
+    "description": "Supports startups, idea incubation, and business competitions."
+  },
+  {
+    "name": "creative Committee",
+    "description": "Handles all technical activities including coding events, hackathons, and workshops."
+  },
+  {
+    "name": "Publicity Committee",
+    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
+  },
+  {
+    "name": "Decipline Committee",
+    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
+  },
+  {
+    "name": "Techniqual Committee",
+    "description": "Supports startups, idea incubation, and business competitions."
+  },
+   {
+    "name": "NSS Committee",
+    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
+  },
+  {
+    "name": "Content Editor Committee",
+    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
+  },
+  {
+    "name": "Techniqual Committee",
+    "description": "Supports startups, idea incubation, and business competitions."
+  }
+]
