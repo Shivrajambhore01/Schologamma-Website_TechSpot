@@ -1,560 +1,986 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Search, ArrowLeft, X, Users, Award, Calendar, Target, TrendingUp, Mail, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Link from "next/link"
-import Footer from "@/components/footer"
+import { useState } from "react";
+import {
+  Search,
+  ArrowLeft,
+  X,
+  Users,
+  Award,
+  Calendar,
+  Target,
+  TrendingUp,
+  Mail,
+  Phone,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 interface Committee {
-  id: string
-  name: string
-  description: string
-  fullDescription: string
-  logo: string
-  color: string
-  members: number
-  established: string
-  focus: string[]
+  id: string;
+  name: string;
+  description: string;
+  fullDescription: string;
+  logo: string;
+  color: string;
+  members: number;
+  established: string;
+  focus: string[];
   leadership: {
     head: {
-      name: string
-      image: string
-      bio: string
-      achievements: string[]
-      contact: { email?: string; phone?: string }
-      social: { linkedin?: string; instagram?: string; facebook?: string }
-    }
+      name: string;
+      image: string;
+      bio: string;
+      achievements: string[];
+      contact: { email?: string; phone?: string };
+      social: { linkedin?: string; instagram?: string; facebook?: string };
+    };
     coHead?: {
-      name: string
-      image: string
-      bio: string
-      achievements: string[]
-      contact: { email?: string; phone?: string }
-      social: { linkedin?: string; instagram?: string; facebook?: string }
-    }
-  }
+      name: string;
+      image: string;
+      bio: string;
+      achievements: string[];
+      contact: { email?: string; phone?: string };
+      social: { linkedin?: string; instagram?: string; facebook?: string };
+    };
+  };
   membersList: {
-    name: string
-    role: string
-    image: string
-    year: string
-  }[]
+    name: string;
+    role: string;
+    image: string;
+    year: string;
+  }[];
   achievements: {
-    title: string
-    description: string
-    date: string
-    impact: string
-  }[]
+    title: string;
+    description: string;
+    date: string;
+    impact: string;
+  }[];
   events: {
-    title: string
-    description: string
-    date: string
-    status: "completed" | "upcoming" | "ongoing"
-    image: string
-    participants: number
-  }[]
-  activities: string[]
-  gallery: string[]
+    title: string;
+    description: string;
+    date: string;
+    status: "completed" | "upcoming" | "ongoing";
+    image: string;
+    participants: number;
+  }[];
+  activities: string[];
+  gallery: string[];
 }
 
 export default function CommitteesPage() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCommittee, setSelectedCommittee] = useState<Committee | null>(null)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCommittee, setSelectedCommittee] = useState<Committee | null>(
+    null
+  );
 
-  const committees: Committee[] =[
-     {
-    "id": "techspot",
-    "name": "Techspot committee",
-    "description": "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
-    "fullDescription": "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🧰",
-    "color": "blue",
-    "members": 9,
-    "established": "2020-07-22",
-    "focus": ["Hardware Demos", "Gadget Reviews", "Maker Projects", "Talks"],
-    "leadership": {
-      "head": {
-        "name": "Mehul Trivedi",
-        "image": "/professional-male-student.png",
-        "bio": "Hardware hacker and reviewer.",
-        "achievements": [
-          "Built 10+ DIY projects",
-          "Monthly Techspot talks since 2021"
-        ],
-        "contact": { "email": "mehul.techspot@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/mehultrivedi" }
-      }
-    },
-    "membersList": [
-      { "name": "Pallavi Joshi", "role": "Workshop Lead", "image": "/professional-female-student.png", "year": "3rd Year" },
-      { "name": "Rudra Mehta", "role": "Reviewer", "image": "/professional-male-student.png", "year": "2nd Year" }
-    ],
-    "achievements": [
-      { "title": "Makers Month 2023", "description": "Campus-wide maker showcase", "date": "2023-10-01", "impact": "Project culture" }
-    ],
-    "events": [
-      { "title": "Raspberry Pi Night", "description": "IoT + automation mini builds", "date": "2024-03-05", "status": "upcoming", "image": "/techspot-pi-night.png", "participants": 70 }
-    ],
-    "activities": ["Weekly talks", "Hands-on builds", "Review sessions"],
-    "gallery": ["/techspot-pi-night.png"]
-  },
-  {
-    "id": "content-editor",
-    "name": "Content Editor Committee",
-    "description": "Managing content creation, editorial processes, and digital storytelling for the forum.",
-    "fullDescription": "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
-    "logo": "/placeholder.svg?height=80&width=80&text=📝",
-    "color": "indigo",
-    "members": 12,
-    "established": "2020-01-15",
-    "focus": ["Content Creation", "Editorial Review", "Documentation", "Copy Editing", "Blog/Newsletter"],
-    "leadership": {
-      "head": {
-        "name": "Priya Sharma",
-        "image": "/creative-female-student.png",
-        "bio": "Final year student passionate about content strategy and digital communication.",
-        "achievements": [
-          "Increased forum engagement by 150% through content strategy",
-          "Led rebranding campaign in 2023",
-          "Published 50+ technical/creative articles"
-        ],
-        "contact": { "email": "priya.content@schologamma.com", "phone": "+91 98765 43210" },
-        "social": { "linkedin": "https://linkedin.com/in/priyasharma" }
+  const committees: Committee[] = [
+    {
+      id: "techspot",
+      name: "Techspot Committee",
+      description:
+        "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
+      fullDescription:
+        "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
+      logo: "/placeholder.svg?height=80&width=80&text=🧰",
+      color: "blue",
+      members: 9,
+      established: "2020-07-22",
+      focus: ["Hardware Demos", "Gadget Reviews", "Maker Projects", "Talks"],
+      leadership: {
+        head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "Hi I am Shivraj",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
       },
-      "coHead": {
-        "name": "Rahul Verma",
-        "image": "/professional-male-student.png",
-        "bio": "Tech writer and SEO enthusiast driving documentation standards.",
-        "achievements": [
-          "Drafted content guidelines",
-          "Scaled social reach to 10K+",
-          "Set up documentation workflow"
-        ],
-        "contact": { "email": "rahul.content@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/rahulverma" }
-      }
-    },
-    "membersList": [
-      { "name": "Anita Patel", "role": "Senior Writer", "image": "/professional-female-student.png", "year": "3rd Year" },
-      { "name": "Vikash Kumar", "role": "Social Media Manager", "image": "/professional-male-student-glasses.png", "year": "2nd Year" },
-      { "name": "Sneha Reddy", "role": "Content Reviewer", "image": "/creative-female-student.png", "year": "4th Year" },
-      { "name": "Arjun Singh", "role": "Technical Writer", "image": "/technical-student-laptop.png", "year": "3rd Year" }
-    ],
-    "achievements": [
-      { "title": "Best Content Strategy 2023", "description": "Recognized for innovative content planning", "date": "2023-12-15", "impact": "200% engagement increase" }
-    ],
-    "events": [
-      { "title": "Content Writing Workshop", "description": "Hands-on writing and editing", "date": "2024-02-15", "status": "upcoming", "image": "/web-dev-bootcamp-poster.png", "participants": 45 },
-      { "title": "Digital Marketing Seminar", "description": "Content + SEO fundamentals", "date": "2023-11-10", "status": "completed", "image": "/digital-marketing-masterclass-poster.png", "participants": 60 }
-    ],
-    "activities": [
-      "Weekly content planning",
-      "Monthly newsletter",
-      "Docs & guides",
-      "Event coverage",
-      "Editorial reviews"
-    ],
-    "gallery": ["/canva-tutorial-poster.png", "/digital-marketing-masterclass-poster.png"]
-  },
-  {
-    "id": "technical",
-    "name": "Technical Committee",
-    "description": "Focused on coding, development, and technical projects for the forum.",
-    "fullDescription": "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
-    "logo": "/placeholder.svg?height=80&width=80&text=💻",
-    "color": "blue",
-    "members": 12,
-    "established": "2019-01-15",
-    "focus": ["Web Development", "App Development", "AI/ML", "Blockchain", "Hackathons"],
-    "leadership": {
-      "head": {
-        "name": "Arjun Sharma",
-        "image": "/professional-male-student.png",
-        "bio": "Full-stack developer keen on modern web and AI.",
-        "achievements": [
-          "Built Schologamma website",
-          "Hosted 5 hackathons",
-          "Contributed to open source"
-        ],
-        "contact": { "email": "arjun.tech@schologamma.com", "phone": "+91 91234 56789" },
-        "social": { "linkedin": "https://linkedin.com/in/arjunsharma", "instagram": "https://instagram.com/kavya_designs" }
-      }
-    },
-    "membersList": [
-      { "name": "Sneha Verma", "role": "Frontend Developer", "image": "/professional-female-student.png", "year": "3rd Year" },
-      { "name": "Rohit Agarwal", "role": "Backend Developer", "image": "/professional-male-student.png", "year": "2nd Year" },
-      { "name": "Kunal Joshi", "role": "AI/ML Specialist", "image": "/professional-male-student-glasses.png", "year": "3rd Year" }
-    ],
-    "achievements": [
-      { "title": "Hackathon Excellence 2023", "description": "Largest coding competition on campus", "date": "2023-10-10", "impact": "Tech culture boost" }
-    ],
-    "events": [
-      { "title": "Web Development Bootcamp", "description": "HTML/CSS/JS crash course", "date": "2024-01-25", "status": "completed", "image": "/web-dev-bootcamp-poster.png", "participants": 90 },
-      { "title": "AI & ML Hackathon", "description": "24-hour challenge", "date": "2024-03-15", "status": "upcoming", "image": "/hackathon-poster.png", "participants": 120 }
-    ],
-    "activities": ["Website maintenance", "Tech workshops", "Open-source sprints", "Event tech support"],
-    "gallery": ["/web-dev-bootcamp-poster.png"]
-  },
-  {
-    "id": "creative",
-    "name": "Creative Committee",
-    "description": "Handling design, graphics, multimedia content, and creative project development.",
-    "fullDescription": "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🎨",
-    "color": "pink",
-    "members": 10,
-    "established": "2020-03-10",
-    "focus": ["Graphic Design", "Video Production", "Photography", "Brand Identity", "Creative Campaigns"],
-    "leadership": {
-      "head": {
-        "name": "Kavya Mehta",
-        "image": "/creative-female-student.png",
-        "bio": "Designer focused on brand systems and visual storytelling.",
-        "achievements": [
-          "Award-winning forum branding",
-          "100+ event creatives",
-          "Visual identity redesign"
-        ],
-        "contact": { "email": "kavya.creative@schologamma.com", "phone": "+91 98765 43212" },
-        "social": { "linkedin": "https://linkedin.com/in/kavyamehta", "instagram": "https://instagram.com/kavya_designs" }
-      }
-    },
-    "membersList": [
-      { "name": "Ravi Kumar", "role": "Video Editor", "image": "/professional-male-student.png", "year": "3rd Year" },
-      { "name": "Pooja Singh", "role": "Graphic Designer", "image": "/professional-female-student.png", "year": "2nd Year" },
-      { "name": "Nisha Patel", "role": "UI/UX Designer", "image": "/creative-female-student.png", "year": "3rd Year" }
-    ],
-    "achievements": [
-      { "title": "Best Design Portfolio 2023", "description": "Outstanding creative work and innovation", "date": "2023-11-20", "impact": "Brand uplift" }
-    ],
-    "events": [
-      { "title": "Canva Advanced Tutorial", "description": "Design workflows & shortcuts", "date": "2024-01-08", "status": "completed", "image": "/canva-tutorial-poster.png", "participants": 65 },
-      { "title": "Photography Workshop", "description": "Shooting + post-processing", "date": "2024-02-25", "status": "upcoming", "image": "/web-dev-bootcamp-poster.png", "participants": 40 }
-    ],
-    "activities": ["Poster design", "Social graphics", "Event photo/video", "Brand guidelines"],
-    "gallery": ["/canva-tutorial-poster.png"]
-  },
-  {
-    "id": "sports",
-    "name": "Sports Committee",
-    "description": "Encourages athletic spirit and organizes sports tournaments.",
-    "fullDescription": "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🏅",
-    "color": "emerald",
-    "members": 12,
-    "established": "2017-09-15",
-    "focus": ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
-    "leadership": {
-      "head": {
-        "name": "Kabir Singh",
-        "image": "/professional-male-student.png",
-        "bio": "Athlete and organizer focused on inclusive sports culture.",
-        "achievements": [
-          "Organized biggest sports meet 2023",
-          "Campus fitness drive lead"
-        ],
-        "contact": { "email": "kabir.sports@schologamma.com", "phone": "+91 97777 55555" },
-        "social": { "linkedin": "https://linkedin.com/in/kabirsingh" }
-      }
-    },
-    "membersList": [
-      { "name": "Aisha Khan", "role": "Athletics Captain", "image": "/professional-female-student.png", "year": "3rd Year" },
-      { "name": "Rohit Mehra", "role": "Football Lead", "image": "/professional-male-student.png", "year": "2nd Year" },
-      { "name": "Diya Jain", "role": "Badminton Lead", "image": "/professional-female-student.png", "year": "1st Year" }
-    ],
-    "achievements": [
-      { "title": "Intercollege Winners 2023", "description": "Gold in athletics relay", "date": "2023-12-05", "impact": "Reputation boost" }
-    ],
-    "events": [
-      { "title": "Sports Meet", "description": "Track and field + team sports", "date": "2024-03-10", "status": "upcoming", "image": "/sports-meet.png", "participants": 350 }
-    ],
-    "activities": ["Weekly training", "Intra-college leagues", "Fitness sessions"],
-    "gallery": ["/sports-meet.png"]
-  },
-  {
-    "id": "publicity",
-    "name": "Publicity Committee",
-    "description": "Spreads the word through PR, announcements, and outreach.",
-    "fullDescription": "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
-    "logo": "/placeholder.svg?height=80&width=80&text=📣",
-    "color": "orange",
-    "members": 9,
-    "established": "2018-08-01",
-    "focus": ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
-    "leadership": {
-      "head": {
-        "name": "Ishita Roy",
-        "image": "/professional-female-student.png",
-        "bio": "Campus PR lead who loves storytelling and outreach.",
-        "achievements": [
-          "Press coverage in 4 local outlets",
-          "Launched campus-wide notice system"
-        ],
-        "contact": { "email": "ishita.publicity@schologamma.com", "phone": "+91 90000 33333" },
-        "social": { "linkedin": "https://linkedin.com/in/ishitaroy" }
-      }
-    },
-    "membersList": [
-      { "name": "Harsh Vaid", "role": "Announcements Lead", "image": "/professional-male-student.png", "year": "3rd Year" },
-      { "name": "Mahek Jain", "role": "Outreach Coordinator", "image": "/professional-female-student.png", "year": "2nd Year" }
-    ],
-    "achievements": [
-      { "title": "Campus Awareness 2023", "description": "Record event impressions", "date": "2023-10-28", "impact": "High turnout" }
-    ],
-    "events": [
-      { "title": "Publicity Drive", "description": "Standees, posters, and mic announcements", "date": "2024-01-30", "status": "completed", "image": "/publicity-drive.png", "participants": 60 }
-    ],
-    "activities": ["Posters & standees", "Press notes", "Mic announcements", "Classroom visits"],
-    "gallery": ["/publicity-drive.png"]
-  },
-  {
-    "id": "discipline",
-    "name": "Discipline Committee",
-    "description": "Maintains decorum, safety, and code of conduct at events.",
-    "fullDescription": "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🛡️",
-    "color": "indigo",
-    "members": 10,
-    "established": "2018-01-20",
-    "focus": ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
-    "leadership": {
-      "head": {
-        "name": "Sanjana Kulkarni",
-        "image": "/professional-female-student.png",
-        "bio": "Focused on fair, friendly, and safe events.",
-        "achievements": [
-          "Developed standard event SOP",
-          "Zero-incident cultural fest 2023"
-        ],
-        "contact": { "email": "sanjana.discipline@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/sanjanak" }
-      }
-    },
-    "membersList": [
-      { "name": "Mohit Patil", "role": "Security Marshal", "image": "/professional-male-student.png", "year": "3rd Year" },
-      { "name": "Riya Sen", "role": "Volunteer Lead", "image": "/professional-female-student.png", "year": "2nd Year" }
-    ],
-    "achievements": [
-      { "title": "Safe Fest 2023", "description": "Managed 2k+ attendees without incident", "date": "2023-12-18", "impact": "Model SOP adopted" }
-    ],
-    "events": [
-      { "title": "Volunteer Orientation", "description": "Rules, roles, and emergency drills", "date": "2024-02-05", "status": "completed", "image": "/discipline-orientation.png", "participants": 80 }
-    ],
-    "activities": ["Queue & entry systems", "Backstage control", "Emergency response readiness"],
-    "gallery": ["/discipline-orientation.png"]
-  },
-  {
-    "id": "event",
-    "name": "Event committee",
-    "description": "Plans, schedules, and executes club/forum events.",
-    "fullDescription": "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🗓️",
-    "color": "orange",
-    "members": 11,
-    "established": "2018-06-10",
-    "focus": ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
-    "leadership": {
-      "head": {
-        "name": "Dhruv Malhotra",
-        "image": "/professional-male-student.png",
-        "bio": "Event planner who loves timelines and checklists.",
-        "achievements": [
-          "Delivered 30+ events on time",
-          "Introduced shared runbook"
-        ],
-        "contact": { "email": "dhruv.events@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/dhruvmalhotra" }
-      }
-    },
-    "membersList": [
-      { "name": "Kripa Shah", "role": "Stage Manager", "image": "/professional-female-student.png", "year": "3rd Year" },
-      { "name": "Yash Tiwari", "role": "Logistics", "image": "/professional-male-student.png", "year": "2nd Year" }
-    ],
-    "achievements": [
-      { "title": "Zero-Delay Fest 2022", "description": "All slots started on time", "date": "2022-12-12", "impact": "Operational excellence" }
-    ],
-    "events": [
-      { "title": "Annual Forum Day", "description": "Flagship multi-track event", "date": "2024-02-20", "status": "completed", "image": "/forum-day.png", "participants": 800 }
-    ],
-    "activities": ["Event timelines", "Volunteer rosters", "Stage/backstage ops"],
-    "gallery": ["/forum-day.png"]
-  },
-  {
-    "id": "digital",
-    "name": "Digital Committee",
-    "description": "Oversees digital platforms, streaming, and analytics.",
-    "fullDescription": "The Digital Committee focuses on livestreams, recordings, on-site AV, analytics, and website/app enhancements to improve digital reach.",
-    "logo": "/placeholder.svg?height=80&width=80&text=🔗",
-    "color": "emerald",
-    "members": 8,
-    "established": "2019-09-01",
-    "focus": ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
-    "leadership": {
-      "head": {
-        "name": "Parth Desai",
-        "image": "/professional-male-student.png",
-        "bio": "AV + web tinkerer making events digital-first.",
-        "achievements": [
-          "Hybrid events with 1k+ online viewers",
-          "Analytics dashboards for organizers"
-        ],
-        "contact": { "email": "parth.digital@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/parthdesai" }
-      }
-    },
-    "membersList": [
-      { "name": "Sana Qureshi", "role": "Stream Engineer", "image": "/professional-female-student.png", "year": "2nd Year" },
-      { "name": "Aman Gupta", "role": "Editor", "image": "/professional-male-student.png", "year": "3rd Year" }
-    ],
-    "achievements": [
-      { "title": "Seamless Hybrid 2023", "description": "Zero-downtime streaming across tracks", "date": "2023-11-05", "impact": "Remote reach" }
-    ],
-    "events": [
-      { "title": "Live AV Setup 101", "description": "Hands-on with mixers/cams", "date": "2024-01-18", "status": "completed", "image": "/digital-av-workshop.png", "participants": 55 }
-    ],
-    "activities": ["Livestream & recording", "On-site AV setup", "Post-event editing", "Site analytics"],
-    "gallery": ["/digital-av-workshop.png"]
-  },
- 
-  {
-    "id": "startup",
-    "name": "Startup Committee",
-    "description": "Fosters entrepreneurship, ideation, and incubation.",
-    "fullDescription": "The Startup Committee helps students validate ideas, build MVPs, connect with mentors, and pitch to investors.",
-    "logo": "/placeholder.svg?height=80&width=80&text=💡",
-    "color": "indigo",
-    "members": 10,
-    "established": "2021-01-05",
-    "focus": ["Ideation", "MVP Building", "Pitching", "Mentoring", "Networking"],
-    "leadership": {
-      "head": {
-        "name": "Tanya Arora",
-        "image": "/professional-female-student.png",
-        "bio": "Product thinker helping peers go from idea to MVP.",
-        "achievements": [
-          "3 campus startups incubated",
-          "Monthly founder roundtables"
-        ],
-        "contact": { "email": "tanya.startup@schologamma.com" },
-        "social": { "linkedin": "https://linkedin.com/in/tanyaarora" }
-      }
-    },
-    "membersList": [
-      { "name": "Kartik Rao", "role": "Pitch Coach", "image": "/professional-male-student.png", "year": "4th Year" },
-      { "name": "Nivedita Paul", "role": "Research Lead", "image": "/professional-female-student.png", "year": "2nd Year" }
-    ],
-    "achievements": [
-      { "title": "Demo Day 2023", "description": "Raised seed grants for 2 teams", "date": "2023-09-05", "impact": "Early funding" }
-    ],
-    "events": [
-      { "title": "Startup Bootcamp", "description": "Problem → MVP → Pitch", "date": "2024-02-28", "status": "completed", "image": "/startup-bootcamp.png", "participants": 110 }
-    ],
-    "activities": ["Idea jams", "Mentor office hours", "Pitch practice", "Investor connects"],
-    "gallery": ["/startup-bootcamp.png"]
-  },
-  {
-  id: "nss",
-  name: "NSS Committee",
-  description: "Encouraging student participation in community service, social responsibility, and nation-building activities.",
-  fullDescription:
-    "The NSS (National Service Scheme) Committee inspires students to contribute towards community service and social responsibility. Through awareness drives, social activities, and volunteering, we work for the welfare of society while promoting leadership, discipline, and empathy among students.",
-  logo: "/placeholder.svg?height=80&width=80&text=🌍",
-  color: "green",
-  members: 25,
-  established: "2018-07-15",
-  focus: ["Community Service", "Social Awareness", "Health Camps", "Environmental Initiatives", "Volunteering"],
-  leadership: {
-    head: {
-      name: "Arjun Deshmukh",
-      image: "/professional-male-student.png",
-      bio: "Dedicated NSS volunteer with a passion for community development, social service, and youth empowerment.",
-      achievements: [
-        "Led 10+ social awareness drives",
-        "Organized blood donation camps with 500+ donors",
-        "Promoted Swachh Bharat cleanliness campaigns",
+      membersList: [
+        {
+          name: "Pallavi Joshi",
+          role: "Workshop Lead",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Rudra Mehta",
+          role: "Reviewer",
+          image: "/professional-male-student.png",
+          year: "2nd Year",
+        },
       ],
-      contact: { email: "arjun.nss@schologamma.com", phone: "+91 98765 11111" },
-      social: { linkedin: "https://linkedin.com/in/arjundeshmukh", instagram: "https://instagram.com/arjun_nss" },
-    },
-  },
-  membersList: [
-    { name: "Sneha Rathi", role: "Volunteer Coordinator", image: "/professional-female-student.png", year: "3rd Year" },
-    { name: "Manoj Yadav", role: "Health Camp Organizer", image: "/professional-male-student.png", year: "2nd Year" },
-    { name: "Priya Nair", role: "Environment Lead", image: "/professional-female-student.png", year: "4th Year" },
-    { name: "Rahul Patil", role: "Event Volunteer", image: "/professional-male-student.png", year: "1st Year" },
-  ],
-  achievements: [
-    {
-      title: "Best NSS Unit Award",
-      description: "Awarded for outstanding contribution to community service in 2023",
-      date: "2023-12-10",
-      impact: "Enhanced social impact and student engagement",
-    },
-  ],
-  events: [
-    {
-      title: "Blood Donation Camp",
-      description: "Organized a blood donation drive with local hospitals",
-      date: "2024-03-12",
-      status: "completed",
-      image: "/blood-donation-camp.png",
-      participants: 150,
+      achievements: [
+        {
+          title: "Makers Month 2023",
+          description: "Campus-wide maker showcase",
+          date: "2023-10-01",
+          impact: "Project culture",
+        },
+      ],
+      events: [
+        {
+          title: "Raspberry Pi Night",
+          description: "IoT + automation mini builds",
+          date: "2024-03-05",
+          status: "upcoming",
+          image: "/techspot-pi-night.png",
+          participants: 70,
+        },
+      ],
+      activities: ["Weekly talks", "Hands-on builds", "Review sessions"],
+      gallery: ["/techspot-pi-night.png"],
     },
     {
-      title: "Tree Plantation Drive",
-      description: "Encouraging green initiatives and awareness on environmental conservation",
-      date: "2024-06-05",
-      status: "upcoming",
-      image: "/tree-plantation-drive.png",
-      participants: 80,
+      id: "content-editor",
+      name: "Content Editor Committee",
+      description:
+        "Managing content creation, editorial processes, and digital storytelling for the forum.",
+      fullDescription:
+        "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
+      logo: "/placeholder.svg?height=80&width=80&text=📝",
+      color: "indigo",
+      members: 12,
+      established: "2020-01-15",
+      focus: [
+        "Content Creation",
+        "Editorial Review",
+        "Documentation",
+        "Copy Editing",
+        "Blog/Newsletter",
+      ],
+      leadership: {
+        head: {
+          name: "Priya Sharma",
+          image: "/creative-female-student.png",
+          bio: "Final year student passionate about content strategy and digital communication.",
+          achievements: [
+            "Increased forum engagement by 150% through content strategy",
+            "Led rebranding campaign in 2023",
+            "Published 50+ technical/creative articles",
+          ],
+          contact: {
+            email: "priya.content@schologamma.com",
+            phone: "+91 98765 43210",
+          },
+          social: { linkedin: "https://linkedin.com/in/priyasharma" },
+        },
+        coHead: {
+          name: "Rahul Verma",
+          image: "/professional-male-student.png",
+          bio: "Tech writer and SEO enthusiast driving documentation standards.",
+          achievements: [
+            "Drafted content guidelines",
+            "Scaled social reach to 10K+",
+            "Set up documentation workflow",
+          ],
+          contact: { email: "rahul.content@schologamma.com" },
+          social: { linkedin: "https://linkedin.com/in/rahulverma" },
+        },
+      },
+      membersList: [
+        {
+          name: "Anita Patel",
+          role: "Senior Writer",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Vikash Kumar",
+          role: "Social Media Manager",
+          image: "/professional-male-student-glasses.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Sneha Reddy",
+          role: "Content Reviewer",
+          image: "/creative-female-student.png",
+          year: "4th Year",
+        },
+        {
+          name: "Arjun Singh",
+          role: "Technical Writer",
+          image: "/technical-student-laptop.png",
+          year: "3rd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Best Content Strategy 2023",
+          description: "Recognized for innovative content planning",
+          date: "2023-12-15",
+          impact: "200% engagement increase",
+        },
+      ],
+      events: [
+        {
+          title: "Content Writing Workshop",
+          description: "Hands-on writing and editing",
+          date: "2024-02-15",
+          status: "upcoming",
+          image: "/web-dev-bootcamp-poster.png",
+          participants: 45,
+        },
+        {
+          title: "Digital Marketing Seminar",
+          description: "Content + SEO fundamentals",
+          date: "2023-11-10",
+          status: "completed",
+          image: "/digital-marketing-masterclass-poster.png",
+          participants: 60,
+        },
+      ],
+      activities: [
+        "Weekly content planning",
+        "Monthly newsletter",
+        "Docs & guides",
+        "Event coverage",
+        "Editorial reviews",
+      ],
+      gallery: [
+        "/canva-tutorial-poster.png",
+        "/digital-marketing-masterclass-poster.png",
+      ],
     },
-  ],
-  activities: [
-    "Organizing health and blood donation camps",
-    "Awareness drives on social issues",
-    "Environmental activities like tree plantation",
-    "Volunteering for community welfare programs",
-    "Promoting youth leadership in social work",
-  ],
-  gallery: ["/blood-donation-camp.png", "/tree-plantation-drive.png"],
-}
+    {
+      id: "technical",
+      name: "Technical Committee",
+      description:
+        "Focused on coding, development, and technical projects for the forum.",
+      fullDescription:
+        "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
+      logo: "/placeholder.svg?height=80&width=80&text=💻",
+      color: "blue",
+      members: 12,
+      established: "2019-01-15",
+      focus: [
+        "Web Development",
+        "App Development",
+        "AI/ML",
+        "Blockchain",
+        "Hackathons",
+      ],
+      leadership: {
+        head: {
+          name: "Arjun Sharma",
+          image: "/professional-male-student.png",
+          bio: "Full-stack developer keen on modern web and AI.",
+          achievements: [
+            "Built Schologamma website",
+            "Hosted 5 hackathons",
+            "Contributed to open source",
+          ],
+          contact: {
+            email: "arjun.tech@schologamma.com",
+            phone: "+91 91234 56789",
+          },
+          social: {
+            linkedin: "https://linkedin.com/in/arjunsharma",
+            instagram: "https://instagram.com/kavya_designs",
+          },
+        },
+      },
+      membersList: [
+        {
+          name: "Sneha Verma",
+          role: "Frontend Developer",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Rohit Agarwal",
+          role: "Backend Developer",
+          image: "/professional-male-student.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Kunal Joshi",
+          role: "AI/ML Specialist",
+          image: "/professional-male-student-glasses.png",
+          year: "3rd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Hackathon Excellence 2023",
+          description: "Largest coding competition on campus",
+          date: "2023-10-10",
+          impact: "Tech culture boost",
+        },
+      ],
+      events: [
+        {
+          title: "Web Development Bootcamp",
+          description: "HTML/CSS/JS crash course",
+          date: "2024-01-25",
+          status: "completed",
+          image: "/web-dev-bootcamp-poster.png",
+          participants: 90,
+        },
+        {
+          title: "AI & ML Hackathon",
+          description: "24-hour challenge",
+          date: "2024-03-15",
+          status: "upcoming",
+          image: "/hackathon-poster.png",
+          participants: 120,
+        },
+      ],
+      activities: [
+        "Website maintenance",
+        "Tech workshops",
+        "Open-source sprints",
+        "Event tech support",
+      ],
+      gallery: ["/web-dev-bootcamp-poster.png"],
+    },
+    {
+      id: "creative",
+      name: "Creative Committee",
+      description:
+        "Handling design, graphics, multimedia content, and creative project development.",
+      fullDescription:
+        "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
+      logo: "/placeholder.svg?height=80&width=80&text=🎨",
+      color: "pink",
+      members: 10,
+      established: "2020-03-10",
+      focus: [
+        "Graphic Design",
+        "Video Production",
+        "Photography",
+        "Brand Identity",
+        "Creative Campaigns",
+      ],
+      leadership: {
+        head: {
+          name: "Kavya Mehta",
+          image: "/creative-female-student.png",
+          bio: "Designer focused on brand systems and visual storytelling.",
+          achievements: [
+            "Award-winning forum branding",
+            "100+ event creatives",
+            "Visual identity redesign",
+          ],
+          contact: {
+            email: "kavya.creative@schologamma.com",
+            phone: "+91 98765 43212",
+          },
+          social: {
+            linkedin: "https://linkedin.com/in/kavyamehta",
+            instagram: "https://instagram.com/kavya_designs",
+          },
+        },
+      },
+      membersList: [
+        {
+          name: "Ravi Kumar",
+          role: "Video Editor",
+          image: "/professional-male-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Pooja Singh",
+          role: "Graphic Designer",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Nisha Patel",
+          role: "UI/UX Designer",
+          image: "/creative-female-student.png",
+          year: "3rd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Best Design Portfolio 2023",
+          description: "Outstanding creative work and innovation",
+          date: "2023-11-20",
+          impact: "Brand uplift",
+        },
+      ],
+      events: [
+        {
+          title: "Canva Advanced Tutorial",
+          description: "Design workflows & shortcuts",
+          date: "2024-01-08",
+          status: "completed",
+          image: "/canva-tutorial-poster.png",
+          participants: 65,
+        },
+        {
+          title: "Photography Workshop",
+          description: "Shooting + post-processing",
+          date: "2024-02-25",
+          status: "upcoming",
+          image: "/web-dev-bootcamp-poster.png",
+          participants: 40,
+        },
+      ],
+      activities: [
+        "Poster design",
+        "Social graphics",
+        "Event photo/video",
+        "Brand guidelines",
+      ],
+      gallery: ["/canva-tutorial-poster.png"],
+    },
+    {
+      id: "sports",
+      name: "Sports Committee",
+      description:
+        "Encourages athletic spirit and organizes sports tournaments.",
+      fullDescription:
+        "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
+      logo: "/placeholder.svg?height=80&width=80&text=🏅",
+      color: "emerald",
+      members: 12,
+      established: "2017-09-15",
+      focus: ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
+      leadership: {
+        head: {
+          name: "Kabir Singh",
+          image: "/professional-male-student.png",
+          bio: "Athlete and organizer focused on inclusive sports culture.",
+          achievements: [
+            "Organized biggest sports meet 2023",
+            "Campus fitness drive lead",
+          ],
+          contact: {
+            email: "kabir.sports@schologamma.com",
+            phone: "+91 97777 55555",
+          },
+          social: { linkedin: "https://linkedin.com/in/kabirsingh" },
+        },
+      },
+      membersList: [
+        {
+          name: "Aisha Khan",
+          role: "Athletics Captain",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Rohit Mehra",
+          role: "Football Lead",
+          image: "/professional-male-student.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Diya Jain",
+          role: "Badminton Lead",
+          image: "/professional-female-student.png",
+          year: "1st Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Intercollege Winners 2023",
+          description: "Gold in athletics relay",
+          date: "2023-12-05",
+          impact: "Reputation boost",
+        },
+      ],
+      events: [
+        {
+          title: "Sports Meet",
+          description: "Track and field + team sports",
+          date: "2024-03-10",
+          status: "upcoming",
+          image: "/sports-meet.png",
+          participants: 350,
+        },
+      ],
+      activities: [
+        "Weekly training",
+        "Intra-college leagues",
+        "Fitness sessions",
+      ],
+      gallery: ["/sports-meet.png"],
+    },
+    {
+      id: "publicity",
+      name: "Publicity Committee",
+      description: "Spreads the word through PR, announcements, and outreach.",
+      fullDescription:
+        "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
+      logo: "/placeholder.svg?height=80&width=80&text=📣",
+      color: "orange",
+      members: 9,
+      established: "2018-08-01",
+      focus: ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
+      leadership: {
+        head: {
+          name: "Ishita Roy",
+          image: "/professional-female-student.png",
+          bio: "Campus PR lead who loves storytelling and outreach.",
+          achievements: [
+            "Press coverage in 4 local outlets",
+            "Launched campus-wide notice system",
+          ],
+          contact: {
+            email: "ishita.publicity@schologamma.com",
+            phone: "+91 90000 33333",
+          },
+          social: { linkedin: "https://linkedin.com/in/ishitaroy" },
+        },
+      },
+      membersList: [
+        {
+          name: "Harsh Vaid",
+          role: "Announcements Lead",
+          image: "/professional-male-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Mahek Jain",
+          role: "Outreach Coordinator",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Campus Awareness 2023",
+          description: "Record event impressions",
+          date: "2023-10-28",
+          impact: "High turnout",
+        },
+      ],
+      events: [
+        {
+          title: "Publicity Drive",
+          description: "Standees, posters, and mic announcements",
+          date: "2024-01-30",
+          status: "completed",
+          image: "/publicity-drive.png",
+          participants: 60,
+        },
+      ],
+      activities: [
+        "Posters & standees",
+        "Press notes",
+        "Mic announcements",
+        "Classroom visits",
+      ],
+      gallery: ["/publicity-drive.png"],
+    },
+    {
+      id: "discipline",
+      name: "Discipline Committee",
+      description: "Maintains decorum, safety, and code of conduct at events.",
+      fullDescription:
+        "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
+      logo: "/placeholder.svg?height=80&width=80&text=🛡️",
+      color: "indigo",
+      members: 10,
+      established: "2018-01-20",
+      focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
+      leadership: {
+        head: {
+          name: "Sanjana Kulkarni",
+          image: "/professional-female-student.png",
+          bio: "Focused on fair, friendly, and safe events.",
+          achievements: [
+            "Developed standard event SOP",
+            "Zero-incident cultural fest 2023",
+          ],
+          contact: { email: "sanjana.discipline@schologamma.com" },
+          social: { linkedin: "https://linkedin.com/in/sanjanak" },
+        },
+      },
+      membersList: [
+        {
+          name: "Mohit Patil",
+          role: "Security Marshal",
+          image: "/professional-male-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Riya Sen",
+          role: "Volunteer Lead",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Safe Fest 2023",
+          description: "Managed 2k+ attendees without incident",
+          date: "2023-12-18",
+          impact: "Model SOP adopted",
+        },
+      ],
+      events: [
+        {
+          title: "Volunteer Orientation",
+          description: "Rules, roles, and emergency drills",
+          date: "2024-02-05",
+          status: "completed",
+          image: "/discipline-orientation.png",
+          participants: 80,
+        },
+      ],
+      activities: [
+        "Queue & entry systems",
+        "Backstage control",
+        "Emergency response readiness",
+      ],
+      gallery: ["/discipline-orientation.png"],
+    },
+    {
+      id: "event",
+      name: "Event committee",
+      description: "Plans, schedules, and executes club/forum events.",
+      fullDescription:
+        "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
+      logo: "/placeholder.svg?height=80&width=80&text=🗓️",
+      color: "orange",
+      members: 11,
+      established: "2018-06-10",
+      focus: ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
+      leadership: {
+        head: {
+          name: "Dhruv Malhotra",
+          image: "/professional-male-student.png",
+          bio: "Event planner who loves timelines and checklists.",
+          achievements: [
+            "Delivered 30+ events on time",
+            "Introduced shared runbook",
+          ],
+          contact: { email: "dhruv.events@schologamma.com" },
+          social: { linkedin: "https://linkedin.com/in/dhruvmalhotra" },
+        },
+      },
+      membersList: [
+        {
+          name: "Kripa Shah",
+          role: "Stage Manager",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Yash Tiwari",
+          role: "Logistics",
+          image: "/professional-male-student.png",
+          year: "2nd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Zero-Delay Fest 2022",
+          description: "All slots started on time",
+          date: "2022-12-12",
+          impact: "Operational excellence",
+        },
+      ],
+      events: [
+        {
+          title: "Annual Forum Day",
+          description: "Flagship multi-track event",
+          date: "2024-02-20",
+          status: "completed",
+          image: "/forum-day.png",
+          participants: 800,
+        },
+      ],
+      activities: [
+        "Event timelines",
+        "Volunteer rosters",
+        "Stage/backstage ops",
+      ],
+      gallery: ["/forum-day.png"],
+    },
+    {
+      id: "digital",
+      name: "Digital Committee",
+      description: "Oversees digital platforms, streaming, and analytics.",
+      fullDescription:
+        "The Digital Committee focuses on livestreams, recordings, on-site AV, analytics, and website/app enhancements to improve digital reach.",
+      logo: "/placeholder.svg?height=80&width=80&text=🔗",
+      color: "emerald",
+      members: 8,
+      established: "2019-09-01",
+      focus: ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
+      leadership: {
+        head: {
+          name: "Parth Desai",
+          image: "/professional-male-student.png",
+          bio: "AV + web tinkerer making events digital-first.",
+          achievements: [
+            "Hybrid events with 1k+ online viewers",
+            "Analytics dashboards for organizers",
+          ],
+          contact: { email: "parth.digital@schologamma.com" },
+          social: { linkedin: "https://linkedin.com/in/parthdesai" },
+        },
+      },
+      membersList: [
+        {
+          name: "Sana Qureshi",
+          role: "Stream Engineer",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Aman Gupta",
+          role: "Editor",
+          image: "/professional-male-student.png",
+          year: "3rd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Seamless Hybrid 2023",
+          description: "Zero-downtime streaming across tracks",
+          date: "2023-11-05",
+          impact: "Remote reach",
+        },
+      ],
+      events: [
+        {
+          title: "Live AV Setup 101",
+          description: "Hands-on with mixers/cams",
+          date: "2024-01-18",
+          status: "completed",
+          image: "/digital-av-workshop.png",
+          participants: 55,
+        },
+      ],
+      activities: [
+        "Livestream & recording",
+        "On-site AV setup",
+        "Post-event editing",
+        "Site analytics",
+      ],
+      gallery: ["/digital-av-workshop.png"],
+    },
 
-]
-
-
+    {
+      id: "startup",
+      name: "Startup Committee",
+      description: "Fosters entrepreneurship, ideation, and incubation.",
+      fullDescription:
+        "The Startup Committee helps students validate ideas, build MVPs, connect with mentors, and pitch to investors.",
+      logo: "/placeholder.svg?height=80&width=80&text=💡",
+      color: "indigo",
+      members: 10,
+      established: "2021-01-05",
+      focus: [
+        "Ideation",
+        "MVP Building",
+        "Pitching",
+        "Mentoring",
+        "Networking",
+      ],
+      leadership: {
+        head: {
+          name: "Tanya Arora",
+          image: "/professional-female-student.png",
+          bio: "Product thinker helping peers go from idea to MVP.",
+          achievements: [
+            "3 campus startups incubated",
+            "Monthly founder roundtables",
+          ],
+          contact: { email: "tanya.startup@schologamma.com" },
+          social: { linkedin: "https://linkedin.com/in/tanyaarora" },
+        },
+      },
+      membersList: [
+        {
+          name: "Kartik Rao",
+          role: "Pitch Coach",
+          image: "/professional-male-student.png",
+          year: "4th Year",
+        },
+        {
+          name: "Nivedita Paul",
+          role: "Research Lead",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Demo Day 2023",
+          description: "Raised seed grants for 2 teams",
+          date: "2023-09-05",
+          impact: "Early funding",
+        },
+      ],
+      events: [
+        {
+          title: "Startup Bootcamp",
+          description: "Problem → MVP → Pitch",
+          date: "2024-02-28",
+          status: "completed",
+          image: "/startup-bootcamp.png",
+          participants: 110,
+        },
+      ],
+      activities: [
+        "Idea jams",
+        "Mentor office hours",
+        "Pitch practice",
+        "Investor connects",
+      ],
+      gallery: ["/startup-bootcamp.png"],
+    },
+    {
+      id: "nss",
+      name: "NSS Committee",
+      description:
+        "Encouraging student participation in community service, social responsibility, and nation-building activities.",
+      fullDescription:
+        "The NSS (National Service Scheme) Committee inspires students to contribute towards community service and social responsibility. Through awareness drives, social activities, and volunteering, we work for the welfare of society while promoting leadership, discipline, and empathy among students.",
+      logo: "/placeholder.svg?height=80&width=80&text=🌍",
+      color: "green",
+      members: 25,
+      established: "2018-07-15",
+      focus: [
+        "Community Service",
+        "Social Awareness",
+        "Health Camps",
+        "Environmental Initiatives",
+        "Volunteering",
+      ],
+      leadership: {
+        head: {
+          name: "Arjun Deshmukh",
+          image: "/professional-male-student.png",
+          bio: "Dedicated NSS volunteer with a passion for community development, social service, and youth empowerment.",
+          achievements: [
+            "Led 10+ social awareness drives",
+            "Organized blood donation camps with 500+ donors",
+            "Promoted Swachh Bharat cleanliness campaigns",
+          ],
+          contact: {
+            email: "arjun.nss@schologamma.com",
+            phone: "+91 98765 11111",
+          },
+          social: {
+            linkedin: "https://linkedin.com/in/arjundeshmukh",
+            instagram: "https://instagram.com/arjun_nss",
+          },
+        },
+      },
+      membersList: [
+        {
+          name: "Sneha Rathi",
+          role: "Volunteer Coordinator",
+          image: "/professional-female-student.png",
+          year: "3rd Year",
+        },
+        {
+          name: "Manoj Yadav",
+          role: "Health Camp Organizer",
+          image: "/professional-male-student.png",
+          year: "2nd Year",
+        },
+        {
+          name: "Priya Nair",
+          role: "Environment Lead",
+          image: "/professional-female-student.png",
+          year: "4th Year",
+        },
+        {
+          name: "Rahul Patil",
+          role: "Event Volunteer",
+          image: "/professional-male-student.png",
+          year: "1st Year",
+        },
+      ],
+      achievements: [
+        {
+          title: "Best NSS Unit Award",
+          description:
+            "Awarded for outstanding contribution to community service in 2023",
+          date: "2023-12-10",
+          impact: "Enhanced social impact and student engagement",
+        },
+      ],
+      events: [
+        {
+          title: "Blood Donation Camp",
+          description: "Organized a blood donation drive with local hospitals",
+          date: "2024-03-12",
+          status: "completed",
+          image: "/blood-donation-camp.png",
+          participants: 150,
+        },
+        {
+          title: "Tree Plantation Drive",
+          description:
+            "Encouraging green initiatives and awareness on environmental conservation",
+          date: "2024-06-05",
+          status: "upcoming",
+          image: "/tree-plantation-drive.png",
+          participants: 80,
+        },
+      ],
+      activities: [
+        "Organizing health and blood donation camps",
+        "Awareness drives on social issues",
+        "Environmental activities like tree plantation",
+        "Volunteering for community welfare programs",
+        "Promoting youth leadership in social work",
+      ],
+      gallery: ["/blood-donation-camp.png", "/tree-plantation-drive.png"],
+    },
+  ];
 
   const filteredCommittees = committees.filter(
     (committee) =>
       committee.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       committee.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      committee.focus.some((focus) => focus.toLowerCase().includes(searchQuery.toLowerCase())),
-  )
+      committee.focus.some((focus) =>
+        focus.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+  );
 
   const getColorClasses = (color: string) => {
-    const colorMap = {
-      blue: "from-blue-500/20 to-purple-500/20 border-blue-500/30",
-      green: "from-green-500/20 to-teal-500/20 border-green-500/30",
-      pink: "from-pink-500/20 to-rose-500/20 border-pink-500/30",
-      orange: "from-orange-500/20 to-yellow-500/20 border-orange-500/30",
-      indigo: "from-indigo-500/20 to-blue-500/20 border-indigo-500/30",
-      emerald: "from-emerald-500/20 to-green-500/20 border-emerald-500/30",
-    }
-    return colorMap[color] || colorMap.blue
-  }
+    const colorMap: Record<
+      "blue" | "green" | "pink" | "orange" | "indigo" | "emerald",
+      string
+    > = {
+      blue: "text-blue-500",
+      green: "text-green-500",
+      pink: "text-pink-500",
+      orange: "text-orange-500",
+      indigo: "text-indigo-500",
+      emerald: "text-emerald-500",
+    };
 
-  const getStatusColor = (status: string) => {
-    const statusMap = {
+    function getColor(color: keyof typeof colorMap): string {
+      return colorMap[color] || colorMap.blue;
+    }
+
+    return colorMap[color] || colorMap.blue;
+  };
+
+  type Status = "completed" | "ongoing" | "upcoming";
+
+  const getStatusColor = (status: Status): string => {
+    const statusMap: Record<Status, string> = {
       completed: "bg-green-500/20 text-green-400 border-green-500/30",
       ongoing: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
       upcoming: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-    }
-    return statusMap[status] || statusMap.upcoming
-  }
+    };
+
+    return statusMap[status];
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -574,7 +1000,10 @@ export default function CommitteesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="/"
+                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+              >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Home</span>
               </Link>
@@ -601,8 +1030,9 @@ export default function CommitteesPage() {
             Our Committees
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover the dedicated teams that drive Schologamma's success. Each committee brings unique expertise and
-            passion to create meaningful impact in our community.
+            Discover the dedicated teams that drive Schologamma's success. Each
+            committee brings unique expertise and passion to create meaningful
+            impact in our community.
           </p>
         </div>
 
@@ -624,7 +1054,9 @@ export default function CommitteesPage() {
           {filteredCommittees.map((committee) => (
             <Card
               key={committee.id}
-              className={`bg-gradient-to-br ${getColorClasses(committee.color)} backdrop-blur-sm border transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group cursor-pointer`}
+              className={`bg-gradient-to-br ${getColorClasses(
+                committee.color
+              )} backdrop-blur-sm border transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group cursor-pointer`}
             >
               <CardContent className="p-6 text-center space-y-4 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -692,7 +1124,9 @@ export default function CommitteesPage() {
           <div className="bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-gray-700">
             <div className="relative">
               <div
-                className={`h-32 bg-gradient-to-r ${getColorClasses(selectedCommittee.color)} rounded-t-2xl flex items-center justify-center`}
+                className={`h-32 bg-gradient-to-r ${getColorClasses(
+                  selectedCommittee.color
+                )} rounded-t-2xl flex items-center justify-center`}
               >
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
@@ -702,7 +1136,9 @@ export default function CommitteesPage() {
                       className="w-10 h-10 object-contain"
                     />
                   </div>
-                  <h2 className="text-3xl font-bold text-white">{selectedCommittee.name}</h2>
+                  <h2 className="text-3xl font-bold text-white">
+                    {selectedCommittee.name}
+                  </h2>
                 </div>
               </div>
 
@@ -728,15 +1164,24 @@ export default function CommitteesPage() {
 
                 <TabsContent value="overview" className="space-y-6 mt-6">
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">About</h3>
-                    <p className="text-gray-300 leading-relaxed">{selectedCommittee.fullDescription}</p>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      About
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      {selectedCommittee.fullDescription}
+                    </p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">Focus Areas</h3>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      Focus Areas
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedCommittee.focus.map((focus, index) => (
-                        <Badge key={index} className="bg-purple-500/20 text-purple-400 border-purple-500/30">
+                        <Badge
+                          key={index}
+                          className="bg-purple-500/20 text-purple-400 border-purple-500/30"
+                        >
                           {focus}
                         </Badge>
                       ))}
@@ -744,10 +1189,15 @@ export default function CommitteesPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">Key Activities</h3>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      Key Activities
+                    </h3>
                     <ul className="space-y-2">
                       {selectedCommittee.activities.map((activity, index) => (
-                        <li key={index} className="flex items-start space-x-3 text-gray-300">
+                        <li
+                          key={index}
+                          className="flex items-start space-x-3 text-gray-300"
+                        >
                           <Target className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
                           <span>{activity}</span>
                         </li>
@@ -758,19 +1208,24 @@ export default function CommitteesPage() {
                   <div className="grid md:grid-cols-3 gap-4 text-center">
                     <div className="bg-gray-800/50 rounded-lg p-4">
                       <Users className="w-8 h-8 text-purple-400 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-white">{selectedCommittee.members}</div>
+                      <div className="text-2xl font-bold text-white">
+                        {selectedCommittee.members}
+                      </div>
                       <div className="text-gray-400">Active Members</div>
                     </div>
                     <div className="bg-gray-800/50 rounded-lg p-4">
                       <Calendar className="w-8 h-8 text-blue-400 mx-auto mb-2" />
                       <div className="text-2xl font-bold text-white">
-                        {new Date().getFullYear() - new Date(selectedCommittee.established).getFullYear()}
+                        {new Date().getFullYear() -
+                          new Date(selectedCommittee.established).getFullYear()}
                       </div>
                       <div className="text-gray-400">Years Active</div>
                     </div>
                     <div className="bg-gray-800/50 rounded-lg p-4">
                       <Award className="w-8 h-8 text-orange-400 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-white">{selectedCommittee.achievements.length}</div>
+                      <div className="text-2xl font-bold text-white">
+                        {selectedCommittee.achievements.length}
+                      </div>
                       <div className="text-gray-400">Major Achievements</div>
                     </div>
                   </div>
@@ -781,62 +1236,104 @@ export default function CommitteesPage() {
                     {/* Head */}
                     <Card className="bg-gray-800/50 border-gray-700">
                       <CardContent className="p-6 text-center space-y-4">
-                        <Badge className="bg-red-500/20 text-red-400 border-red-500/30">Committee Head</Badge>
+                        <Badge className="bg-red-500/20 text-red-400 border-red-500/30">
+                          Committee Head
+                        </Badge>
                         <div className="w-24 h-24 mx-auto">
                           <img
-                            src={selectedCommittee.leadership.head.image || "/placeholder.svg"}
+                            src={
+                              selectedCommittee.leadership.head.image ||
+                              "/placeholder.svg"
+                            }
                             alt={selectedCommittee.leadership.head.name}
                             className="w-full h-full rounded-full object-cover border-2 border-purple-500"
                           />
                         </div>
                         <div>
-                          <h4 className="text-xl font-bold text-white">{selectedCommittee.leadership.head.name}</h4>
-                          <p className="text-gray-300 text-sm mt-2">{selectedCommittee.leadership.head.bio}</p>
+                          <h4 className="text-xl font-bold text-white">
+                            {selectedCommittee.leadership.head.name}
+                          </h4>
+                          <p className="text-gray-300 text-sm mt-2">
+                            {selectedCommittee.leadership.head.bio}
+                          </p>
                         </div>
 
                         <div className="space-y-2">
                           {selectedCommittee.leadership.head.contact.email && (
                             <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                               <Mail className="w-4 h-4" />
-                              <span>{selectedCommittee.leadership.head.contact.email}</span>
+                              <span>
+                                {
+                                  selectedCommittee.leadership.head.contact
+                                    .email
+                                }
+                              </span>
                             </div>
                           )}
                           {selectedCommittee.leadership.head.contact.phone && (
                             <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                               <Phone className="w-4 h-4" />
-                              <span>{selectedCommittee.leadership.head.contact.phone}</span>
+                              <span>
+                                {
+                                  selectedCommittee.leadership.head.contact
+                                    .phone
+                                }
+                              </span>
                             </div>
                           )}
                         </div>
 
                         <div>
-                          <h5 className="text-sm font-semibold text-white mb-2">Key Achievements</h5>
+                          <h5 className="text-sm font-semibold text-white mb-2">
+                            Key Achievements
+                          </h5>
                           <ul className="space-y-1 text-xs text-gray-400">
-                            {selectedCommittee.leadership.head.achievements.slice(0, 3).map((achievement, index) => (
-                              <li key={index} className="flex items-start space-x-2">
-                                <Award className="w-3 h-3 text-orange-400 mt-0.5 flex-shrink-0" />
-                                <span>{achievement}</span>
-                              </li>
-                            ))}
+                            {selectedCommittee.leadership.head.achievements
+                              .slice(0, 3)
+                              .map((achievement, index) => (
+                                <li
+                                  key={index}
+                                  className="flex items-start space-x-2"
+                                >
+                                  <Award className="w-3 h-3 text-orange-400 mt-0.5 flex-shrink-0" />
+                                  <span>{achievement}</span>
+                                </li>
+                              ))}
                           </ul>
                         </div>
                         <div className="flex justify-center space-x-3">
-                          {selectedCommittee.leadership.head.social.linkedin && (
+                          {selectedCommittee.leadership.head.social
+                            .linkedin && (
                             <a
-                              href={selectedCommittee.leadership.head.social.linkedin}
+                              href={
+                                selectedCommittee.leadership.head.social
+                                  .linkedin
+                              }
                               className="text-blue-400 hover:text-blue-300 transition-colors"
                             >
-                              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                              <svg
+                                className="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                               </svg>
                             </a>
                           )}
-                          {selectedCommittee.leadership.head.social.instagram && (
+                          {selectedCommittee.leadership.head.social
+                            .instagram && (
                             <a
-                              href={selectedCommittee.leadership.head.social.instagram}
+                              href={
+                                selectedCommittee.leadership.head.social
+                                  .instagram
+                              }
                               className="text-pink-400 hover:text-pink-300 transition-colors"
                             >
-                              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                              <svg
+                                className="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
                                 <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
                               </svg>
                             </a>
@@ -849,41 +1346,67 @@ export default function CommitteesPage() {
                     {selectedCommittee.leadership.coHead && (
                       <Card className="bg-gray-800/50 border-gray-700">
                         <CardContent className="p-6 text-center space-y-4">
-                          <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">Co-Head</Badge>
+                          <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+                            Co-Head
+                          </Badge>
                           <div className="w-24 h-24 mx-auto">
                             <img
-                              src={selectedCommittee.leadership.coHead.image || "/placeholder.svg"}
+                              src={
+                                selectedCommittee.leadership.coHead.image ||
+                                "/placeholder.svg"
+                              }
                               alt={selectedCommittee.leadership.coHead.name}
                               className="w-full h-full rounded-full object-cover border-2 border-blue-500"
                             />
                           </div>
                           <div>
-                            <h4 className="text-xl font-bold text-white">{selectedCommittee.leadership.coHead.name}</h4>
-                            <p className="text-gray-300 text-sm mt-2">{selectedCommittee.leadership.coHead.bio}</p>
+                            <h4 className="text-xl font-bold text-white">
+                              {selectedCommittee.leadership.coHead.name}
+                            </h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                              {selectedCommittee.leadership.coHead.bio}
+                            </p>
                           </div>
 
                           <div className="space-y-2">
-                            {selectedCommittee.leadership.coHead.contact.email && (
+                            {selectedCommittee.leadership.coHead.contact
+                              .email && (
                               <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                                 <Mail className="w-4 h-4" />
-                                <span>{selectedCommittee.leadership.coHead.contact.email}</span>
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead.contact
+                                      .email
+                                  }
+                                </span>
                               </div>
                             )}
-                            {selectedCommittee.leadership.coHead.contact.phone && (
+                            {selectedCommittee.leadership.coHead.contact
+                              .phone && (
                               <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                                 <Phone className="w-4 h-4" />
-                                <span>{selectedCommittee.leadership.coHead.contact.phone}</span>
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead.contact
+                                      .phone
+                                  }
+                                </span>
                               </div>
                             )}
                           </div>
 
                           <div>
-                            <h5 className="text-sm font-semibold text-white mb-2">Key Achievements</h5>
+                            <h5 className="text-sm font-semibold text-white mb-2">
+                              Key Achievements
+                            </h5>
                             <ul className="space-y-1 text-xs text-gray-400">
                               {selectedCommittee.leadership.coHead.achievements
                                 .slice(0, 3)
                                 .map((achievement, index) => (
-                                  <li key={index} className="flex items-start space-x-2">
+                                  <li
+                                    key={index}
+                                    className="flex items-start space-x-2"
+                                  >
                                     <Award className="w-3 h-3 text-orange-400 mt-0.5 flex-shrink-0" />
                                     <span>{achievement}</span>
                                   </li>
@@ -891,22 +1414,38 @@ export default function CommitteesPage() {
                             </ul>
                           </div>
                           <div className="flex justify-center space-x-3">
-                            {selectedCommittee.leadership.coHead.social.linkedin && (
+                            {selectedCommittee.leadership.coHead.social
+                              .linkedin && (
                               <a
-                                href={selectedCommittee.leadership.coHead.social.linkedin}
+                                href={
+                                  selectedCommittee.leadership.coHead.social
+                                    .linkedin
+                                }
                                 className="text-blue-400 hover:text-blue-300 transition-colors"
                               >
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
                                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
                               </a>
                             )}
-                            {selectedCommittee.leadership.coHead.social.instagram && (
+                            {selectedCommittee.leadership.coHead.social
+                              .instagram && (
                               <a
-                                href={selectedCommittee.leadership.coHead.social.instagram}
+                                href={
+                                  selectedCommittee.leadership.coHead.social
+                                    .instagram
+                                }
                                 className="text-pink-400 hover:text-pink-300 transition-colors"
                               >
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
                                   <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
                                 </svg>
                               </a>
@@ -921,7 +1460,10 @@ export default function CommitteesPage() {
                 <TabsContent value="members" className="space-y-6 mt-6">
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {selectedCommittee.membersList.map((member, index) => (
-                      <Card key={index} className="bg-gray-800/50 border-gray-700">
+                      <Card
+                        key={index}
+                        className="bg-gray-800/50 border-gray-700"
+                      >
                         <CardContent className="p-4 text-center space-y-3">
                           <div className="w-16 h-16 mx-auto">
                             <img
@@ -931,9 +1473,15 @@ export default function CommitteesPage() {
                             />
                           </div>
                           <div>
-                            <h4 className="text-sm font-bold text-white">{member.name}</h4>
-                            <p className="text-xs text-purple-400">{member.role}</p>
-                            <p className="text-xs text-gray-400">{member.year}</p>
+                            <h4 className="text-sm font-bold text-white">
+                              {member.name}
+                            </h4>
+                            <p className="text-xs text-purple-400">
+                              {member.role}
+                            </p>
+                            <p className="text-xs text-gray-400">
+                              {member.year}
+                            </p>
                           </div>
                         </CardContent>
                       </Card>
@@ -944,7 +1492,10 @@ export default function CommitteesPage() {
                 <TabsContent value="events" className="space-y-6 mt-6">
                   <div className="space-y-4">
                     {selectedCommittee.events.map((event, index) => (
-                      <Card key={index} className="bg-gray-800/50 border-gray-700">
+                      <Card
+                        key={index}
+                        className="bg-gray-800/50 border-gray-700"
+                      >
                         <CardContent className="p-6">
                           <div className="flex items-start justify-between mb-4">
                             <div className="flex space-x-4">
@@ -956,22 +1507,33 @@ export default function CommitteesPage() {
                                 />
                               </div>
                               <div className="flex-1">
-                                <h4 className="text-lg font-bold text-white mb-2">{event.title}</h4>
-                                <p className="text-gray-300 mb-3">{event.description}</p>
+                                <h4 className="text-lg font-bold text-white mb-2">
+                                  {event.title}
+                                </h4>
+                                <p className="text-gray-300 mb-3">
+                                  {event.description}
+                                </p>
                                 <div className="flex items-center space-x-4 text-sm text-gray-400">
                                   <div className="flex items-center space-x-1">
                                     <Calendar className="w-4 h-4" />
-                                    <span>{new Date(event.date).toLocaleDateString()}</span>
+                                    <span>
+                                      {new Date(
+                                        event.date
+                                      ).toLocaleDateString()}
+                                    </span>
                                   </div>
                                   <div className="flex items-center space-x-1">
                                     <Users className="w-4 h-4" />
-                                    <span>{event.participants} participants</span>
+                                    <span>
+                                      {event.participants} participants
+                                    </span>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <Badge className={getStatusColor(event.status)}>
-                              {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
+                              {event.status.charAt(0).toUpperCase() +
+                                event.status.slice(1)}
                             </Badge>
                           </div>
                         </CardContent>
@@ -982,29 +1544,42 @@ export default function CommitteesPage() {
 
                 <TabsContent value="achievements" className="space-y-6 mt-6">
                   <div className="space-y-4">
-                    {selectedCommittee.achievements.map((achievement, index) => (
-                      <Card key={index} className="bg-gray-800/50 border-gray-700">
-                        <CardContent className="p-6">
-                          <div className="flex items-start space-x-4">
-                            <Award className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
-                            <div className="flex-1">
-                              <h4 className="text-lg font-bold text-white mb-2">{achievement.title}</h4>
-                              <p className="text-gray-300 mb-3">{achievement.description}</p>
-                              <div className="flex items-center justify-between text-sm">
-                                <div className="flex items-center space-x-1 text-gray-400">
-                                  <Calendar className="w-4 h-4" />
-                                  <span>{new Date(achievement.date).toLocaleDateString()}</span>
-                                </div>
-                                <div className="flex items-center space-x-1 text-green-400">
-                                  <TrendingUp className="w-4 h-4" />
-                                  <span>{achievement.impact}</span>
+                    {selectedCommittee.achievements.map(
+                      (achievement, index) => (
+                        <Card
+                          key={index}
+                          className="bg-gray-800/50 border-gray-700"
+                        >
+                          <CardContent className="p-6">
+                            <div className="flex items-start space-x-4">
+                              <Award className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                              <div className="flex-1">
+                                <h4 className="text-lg font-bold text-white mb-2">
+                                  {achievement.title}
+                                </h4>
+                                <p className="text-gray-300 mb-3">
+                                  {achievement.description}
+                                </p>
+                                <div className="flex items-center justify-between text-sm">
+                                  <div className="flex items-center space-x-1 text-gray-400">
+                                    <Calendar className="w-4 h-4" />
+                                    <span>
+                                      {new Date(
+                                        achievement.date
+                                      ).toLocaleDateString()}
+                                    </span>
+                                  </div>
+                                  <div className="flex items-center space-x-1 text-green-400">
+                                    <TrendingUp className="w-4 h-4" />
+                                    <span>{achievement.impact}</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
+                          </CardContent>
+                        </Card>
+                      )
+                    )}
                   </div>
                 </TabsContent>
               </Tabs>
@@ -1016,5 +1591,5 @@ export default function CommitteesPage() {
       {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }

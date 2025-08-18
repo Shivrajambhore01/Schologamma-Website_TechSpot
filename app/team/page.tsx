@@ -1,450 +1,545 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Search, Filter, ArrowLeft, X, ChevronDown, Mail, Phone, Calendar, Award, Users } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import Link from "next/link"
-import Footer from "@/components/footer"
+import { useState } from "react";
+import {
+  Search,
+  Filter,
+  ArrowLeft,
+  X,
+  ChevronDown,
+  Mail,
+  Phone,
+  Calendar,
+  Award,
+  Users,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 interface TeamMember {
-  id: string
-  name: string
-  role: string
-  committee: string
-  position: "Admin" | "Head" | "Co-Head" | "Member"
-  image: string
-  bio: string
-  dob: string
-  email: string
-  phone: string
+  id: string;
+  name: string;
+  role: string;
+  committee: string;
+  position: "Admin" | "Head" | "Co-Head" | "Member" | "Spokesperson" | "Student Co-ordinator";
+  image: string;
+  bio: string;
+  dob: string;
+  email: string;
+  phone: string;
   // achievements: string[]
-  responsibilities: string[]
+  responsibilities: string[];
   social: {
-    linkedin?: string
-    instagram?: string
-    facebook?: string
-    twitter?: string
-  }
+    linkedin?: string;
+    instagram?: string;
+    facebook?: string;
+    twitter?: string;
+  };
   // joinDate: string
-  skills: string[]
+  skills: string[];
 }
 
 export default function TeamPage() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCommittee, setSelectedCommittee] = useState("all")
-  const [selectedPosition, setSelectedPosition] = useState("all")
-  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
-  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCommittee, setSelectedCommittee] = useState("all");
+  const [selectedPosition, setSelectedPosition] = useState("all");
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const teamMembers: TeamMember[] = [
     {
       id: "1",
-      name: "Devanshu",
-      role: "President",
-      committee: "Executive Board",
-      position: "Admin",
+      name: "Shivraj Ambhore",
+      role: "TechSpot Committee Head",
+      committee: "TechSpot",
+      position: "Head",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221212-XxvN84Yq6G9BBVc2OYj6ZD4xgMyWNH.png",
-      bio: "Passionate leader with a vision to transform the student experience at JD College. Leading Schologamma Forum towards innovation and excellence in technical education and community building.",
-      dob: "1998-03-15",
-      email: "devanshu@schologamma.com",
-      phone: "+91 98765 43210",
-      // achievements: [
-      //   "Led 50+ successful events",
-      //   "Increased forum membership by 200%",
-      //   "Winner of Best Student Leader Award 2023",
-      //   "Published research paper on AI in Education",
-      // ],
-      responsibilities: [
-        "Overall forum leadership and strategic planning",
-        "Coordination with college administration",
-        "Event planning and execution oversight",
-        "Member mentorship and development",
-      ],
+        "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+      bio: "Hi I am shivraj",
+      dob: "2004-02-19",
+      email: "shivrajambhore01@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/devanshu",
-        instagram: "https://instagram.com/devanshu",
-        facebook: "https://facebook.com/devanshu",
+        linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+        instagram:
+          "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+        facebook: "",
       },
-      // joinDate: "2022-08-01",
-      skills: ["Leadership", "Public Speaking", "Project Management", "Strategic Planning"],
+      skills: ["Java", "DSA", "Full stack Development"],
     },
     {
       id: "2",
-      name: "Shifa",
-      role: "Vice-President",
-      committee: "Executive Board",
+      name: "Tanvi Sanghani",
+      role: "Spokesperson",
+      committee: "Admin",
       position: "Admin",
-      image: "/placeholder-mxq9p.png",
-      bio: "Dynamic vice-president focused on operational excellence and team coordination. Specializes in event management and student engagement initiatives.",
-      dob: "1999-07-22",
-      email: "shifa@schologamma.com",
-      phone: "+91 98765 43211",
-      // achievements: [
-      //   "Organized 30+ workshops and seminars",
-      //   "Excellence in Team Management Award",
-      //   "Increased student participation by 150%",
-      //   "Led successful fundraising campaigns",
-      // ],
-      responsibilities: [
-        "Assist president in strategic decisions",
-        "Coordinate between different committees",
-        "Event logistics and management",
-        "Student welfare and engagement",
-      ],
+      image:
+        "https://drive.google.com/open?id=1y_xz0aW-z6iTmN0TuinCTUG_2RzwkjOT",
+      bio: "Passion for connecting people. I convey our ideas, events, and achievements with clarity, enthusiasm, and impact. I believe in the power of words to inspire participation, foster collaboration, and make our forum a space where creativity and teamwork thrive.",
+      dob: "2006-01-24",
+      email: "tanvisanghani9@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/shifa",
-        instagram: "https://instagram.com/shifa",
-        facebook: "https://facebook.com/shifa",
+        linkedin:
+          "https://www.linkedin.com/in/tanvi-sanghani-381076375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/_tanu__24?igsh=MTFwMWxvdW84ZjV3bA==",
+        facebook: "",
       },
-      // joinDate: "2022-08-01",
-      skills: ["Event Management", "Team Coordination", "Communication", "Problem Solving"],
+      skills: [],
     },
     {
       id: "3",
-      name: "Kalyani",
-      role: "Secretary",
-      committee: "Executive Board",
+      name: "Piyush Sunil Kolte",
+      role: "Joint-Treasure",
+      committee: "",
       position: "Admin",
-      image: "/professional-female-student.png",
-      bio: "Meticulous secretary ensuring smooth operations and maintaining comprehensive records. Expert in documentation and administrative processes.",
-      dob: "1999-01-10",
-      email: "kalyani@schologamma.com",
-      phone: "+91 98765 43212",
-      // achievements: [
-      //   "Streamlined documentation processes",
-      //   "Maintained 100% meeting attendance record",
-      //   "Implemented digital record-keeping system",
-      //   "Best Administrative Support Award",
-      // ],
-      responsibilities: [
-        "Meeting documentation and minutes",
-        "Maintain member records and databases",
-        "Coordinate official communications",
-        "Administrative support to all committees",
-      ],
+      image:
+        "https://drive.google.com/open?id=1fpmfn5vaCSDoOPzPtYz9oDxWxCK27NqZ",
+      bio: "I’m Piyush Kolte. I’m an engineering student passionate about technology, innovation, and creative problem-solving. I love exploring new ideas, especially in data, design, and digital ethics, and I'm always looking to learn and grow through real-world experiences.",
+      dob: "2005-06-01",
+      email: "piyushkolte05@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/kalyani",
-        instagram: "https://instagram.com/kalyani",
-        facebook: "https://facebook.com/kalyani",
+        linkedin:
+          "https://www.linkedin.com/in/piyush-kolte-3939282a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/piyush_kolte01?igsh=MWF2YWgxYmx4a3UxOA==",
+        facebook: "",
       },
-      // joinDate: "2022-08-01",
-      skills: ["Documentation", "Organization", "Communication", "Database Management"],
+      skills: [],
     },
     {
       id: "4",
-      name: "Om",
-      role: "Treasurer",
-      committee: "Executive Board",
-      position: "Admin",
-      image: "/professional-male-student.png",
-      bio: "Financial expert managing forum budgets and ensuring transparent financial operations. Skilled in budget planning and resource allocation.",
-      dob: "1998-11-05",
-      email: "om@schologamma.com",
-      phone: "+91 98765 43213",
-      // achievements: [
-      //   "Managed ₹5L+ annual budget efficiently",
-      //   "Reduced operational costs by 20%",
-      //   "Implemented transparent financial reporting",
-      //   "Excellence in Financial Management Award",
-      // ],
-      responsibilities: [
-        "Budget planning and management",
-        "Financial reporting and transparency",
-        "Vendor negotiations and contracts",
-        "Fundraising and sponsorship coordination",
-      ],
+      name: "Aditya Wankhede",
+      role: "Technical Committee Head",
+      committee: "Technical Committee",
+      position: "Head",
+      image:
+        "https://drive.google.com/open?id=1imNu69wJhneI6UIc8QwfXYnnH80Zgd7l",
+      bio: "Technical Committee Head",
+      dob: "2004-09-16",
+      email: "adiwankhede01@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/om",
-        instagram: "https://instagram.com/om",
-        facebook: "https://facebook.com/om",
+        linkedin:
+          "https://www.linkedin.com/in/aditya-wankhede-348676309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/a.d.i.t.y.a_01._?igsh=ZHoya2J1dXA4am1x",
+        facebook: "",
       },
-      // joinDate: "2022-08-01",
-      skills: ["Financial Management", "Budget Planning", "Analytics", "Negotiation"],
+      skills: [],
     },
     {
       id: "5",
-      name: "Prathamesh",
-      role: "Joint-Treasurer",
-      committee: "Executive Board",
-      position: "Admin",
-      image: "/professional-male-student-glasses.png",
-      bio: "Assistant treasurer supporting financial operations and maintaining detailed financial records. Expert in financial analysis and reporting.",
-      dob: "1999-04-18",
-      email: "prathamesh@schologamma.com",
-      phone: "+91 98765 43214",
-      // achievements: [
-      //   "Assisted in managing ₹5L+ budget",
-      //   "Developed financial tracking systems",
-      //   "Improved expense reporting accuracy",
-      //   "Outstanding Support Staff Award",
-      // ],
-      responsibilities: [
-        "Assist in budget management",
-        "Maintain financial records",
-        "Expense tracking and reporting",
-        "Support fundraising activities",
-      ],
+      name: "Yuvtika Rahangdale",
+      role: "Creative Committee Co-Head",
+      committee: "Creative Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1MkZeIDUnXrNEnZToBTCo67k0IpqC5MJp",
+      bio: "",
+      dob: "2006-02-22",
+      email: "yuvtikarahangdale@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/prathamesh",
-        instagram: "https://instagram.com/prathamesh",
-        facebook: "https://facebook.com/prathamesh",
+        linkedin: "https://www.linkedin.com/in/yuvtika-rahangdale",
+        instagram:
+          "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ==",
+        facebook: "",
       },
-      // joinDate: "2022-09-01",
-      skills: ["Financial Analysis", "Record Keeping", "Excel", "Attention to Detail"],
-    },
-    {
-      id: "6",
-      name: "Piyush Kolte",
-      role: "Joint-Secretary",
-      committee: "Executive Board",
-      position: "Admin",
-      image: "20240924_094947 - Piyush Kolte (1).jpg",
-      bio: "Joint-secretary providing administrative support and ensuring efficient communication across all committees and members.",
-      dob: "2006-06-01",
-      email: "piyushkolthe05@gmail.com",
-      phone: "+91 9370591452",
-      // achievements: [
-      //   "Improved inter-committee communication",
-      //   "Streamlined administrative processes",
-      //   "Maintained comprehensive member database",
-      //   "Best Administrative Assistant Award",
-      // ],
-      responsibilities: [
-        "Assist secretary in documentation",
-        "Coordinate committee communications",
-        "Maintain member attendance records",
-        "Support event administrative tasks",
-      ],
-      social: {
-        linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-        instagram: "https://www.instagram.com/piyush_kolte01?igsh=MWF2YWgxYmx4a3UxOA==",
-        facebook: "/team",
-      },
-      // joinDate: "2022-09-01",
-      skills: ["Administration", "Communication", "Organization", "Database Management"],
+      skills: [],
     },
     {
       id: "7",
-      name: "Mansi",
-      role: "Spoke Person",
-      committee: "Public Relations",
-      position: "Admin",
-      image: "/female-student-spokesperson.png",
-      bio: "Official spokesperson representing Schologamma Forum in media interactions and public communications. Expert in public relations and media management.",
-      dob: "1999-06-30",
-      email: "mansi@schologamma.com",
-      phone: "+91 98765 43216",
-      // achievements: [
-      //   "Represented forum in 20+ media interviews",
-      //   "Increased social media engagement by 300%",
-      //   "Best Public Speaker Award 2023",
-      //   "Successfully managed crisis communications",
-      // ],
-      responsibilities: [
-        "Official forum representation",
-        "Media relations and communications",
-        "Social media strategy and management",
-        "Public speaking and presentations",
-      ],
+      name: "Nikhil Rathod",
+      role: "StartUp Committee Head",
+      committee: "StartUp Committee",
+      position: "Head",
+      image:
+        "https://drive.google.com/open?id=1Z-XmUD3qoSwnSH_of3iMlBm28hOuCgEr",
+      bio: "Full Stack Developer",
+      dob: "2003-07-28",
+      email: "nikhilcaptain28@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/mansi",
-        instagram: "https://instagram.com/mansi",
-        facebook: "https://facebook.com/mansi",
-        twitter: "https://twitter.com/mansi",
+        linkedin: "www.linkedin.com/in/nikhilrathods",
+        instagram:
+          "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy",
+        facebook: "",
       },
-      // joinDate: "2022-08-15",
-      skills: ["Public Speaking", "Media Relations", "Social Media", "Communication Strategy"],
+      skills: ["Full Stack Development"],
     },
     {
       id: "8",
-      name: "Arjun Sharma",
-      role: "Technical Head",
-      committee: "Technical Committee",
-      position: "Head",
-      image: "/technical-student-laptop.png",
-      bio: "Leading the technical committee with expertise in software development and emerging technologies. Passionate about innovation and technical education.",
-      dob: "1999-02-14",
-      email: "arjun@schologamma.com",
-      phone: "+91 98765 43217",
-      // achievements: [
-      //   "Led 25+ technical workshops",
-      //   "Developed forum's official website",
-      //   "Winner of State-level Hackathon",
-      //   "Published 3 technical articles",
-      // ],
-      responsibilities: [
-        "Lead technical committee activities",
-        "Organize coding competitions and hackathons",
-        "Mentor junior developers",
-        "Coordinate with industry experts",
-      ],
+      name: "Akansha Anil Ambadkar",
+      role: "Creative Committee Co-Head",
+      committee: "Creative Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1cLOI6BFGzo5pej-KOxYkS5TCn9sxUyjI",
+      bio: "",
+      dob: "2007-02-24",
+      email: "madhu.ambadkar2003@gmail.com",
+      phone: "8530723327",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/arjun-sharma",
-        instagram: "https://instagram.com/arjun",
-        facebook: "https://facebook.com/arjun",
+        linkedin: "https://www.linkedin.com/in/akansha-ambadkar/",
+        instagram:
+          "https://www.instagram.com/akansciouss?igsh=MTFrbGN5c3ZxNXQzcg==",
       },
-      // joinDate: "2022-09-15",
-      skills: ["Full Stack Development", "AI/ML", "Cloud Computing", "Technical Leadership"],
+      skills: [],
     },
     {
       id: "9",
-      name: "Priya Patel",
-      role: "Creative Head",
-      committee: "Creative Committee",
-      position: "Head",
-      image: "/creative-female-student.png",
-      bio: "Creative visionary leading design initiatives and brand development for the forum. Expert in graphic design and creative strategy.",
-      dob: "1999-05-20",
-      email: "priya@schologamma.com",
-      phone: "+91 98765 43218",
-      // achievements: [
-      //   "Designed 100+ event posters and materials",
-      //   "Rebranded forum visual identity",
-      //   "Won Best Design Award at college fest",
-      //   "Led creative workshops for 200+ students",
-      // ],
-      responsibilities: [
-        "Lead creative committee projects",
-        "Design event materials and branding",
-        "Coordinate with marketing team",
-        "Mentor aspiring designers",
-      ],
+      name: "Anuj Vinod Lakhekar",
+      role: "TechSpot Committee Co-Head",
+      committee: "TechSpot Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1YmLIPIPKM2tct5o3aepfb3ou20diFInr",
+      bio: "Hello I am Anuj from CSE-B, passionate about coding and good at web development.",
+      dob: "2006-09-09",
+      email: "anujlakhekar4@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/priya-patel",
-        instagram: "https://instagram.com/priya",
-        facebook: "https://facebook.com/priya",
+        linkedin:
+          "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
       },
-      // joinDate: "2022-10-01",
-      skills: ["Graphic Design", "UI/UX Design", "Brand Strategy", "Creative Leadership"],
+      skills: ["Web Development", "Coding"],
     },
     {
       id: "10",
-      name: "Rahul Verma",
-      role: "Content Head",
-      committee: "Content Editor Committee",
+      name: "Janvi Akhand",
+      role: "Publicity Head",
+      committee: "Publicity Committee",
       position: "Head",
-      image: "/placeholder-sxulj.png",
-      bio: "Content strategist and editor ensuring high-quality communication across all forum channels. Expert in content creation and editorial processes.",
-      dob: "1998-12-08",
-      email: "rahul@schologamma.com",
-      phone: "+91 98765 43219",
-      // achievements: [
-      //   "Published 50+ articles and blog posts",
-      //   "Increased content engagement by 250%",
-      //   "Won Best Content Creator Award",
-      //   "Established forum's content guidelines",
-      // ],
-      responsibilities: [
-        "Lead content creation strategy",
-        "Edit and review all published content",
-        "Coordinate with social media team",
-        "Train content creators",
-      ],
+      image:
+        "https://drive.google.com/open?id=1hjzTW70HM-jg9hSu11F2P7o9LRvEyQPy",
+      bio: "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
+      dob: "2005-12-17",
+      email: "janviakhand@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/rahul-verma",
-        instagram: "https://instagram.com/rahul",
-        facebook: "https://facebook.com/rahul",
+        linkedin: "https://www.linkedin.com/in/janvi-akhand-6bb310371",
+        instagram: "janviakhand",
       },
-      // joinDate: "2022-09-20",
-      skills: ["Content Writing", "Editorial", "SEO", "Content Strategy"],
+      skills: ["Publicity", "Communication", "Leadership"],
     },
-     {
+    {
       id: "11",
-      name: "Rahul Verm",
-      role: "Content Co-Head",
-      committee: "Content Editor Committee",
+      name: "Santosh Donapurge",
+      role: "TechSpot Committee Co-Head",
+      committee: "TechSpot Committee",
       position: "Co-Head",
-      image: "/placeholder-sxulj.png",
-      bio: "Content strategist and editor ensuring high-quality communication across all forum channels. Expert in content creation and editorial processes.",
-      dob: "1998-10-08",
-      email: "rafdfl@schologamma.com",
-      phone: "+91 98765 42219",
-      // achievements: [
-      //   "Published 50+ articles and blog posts",
-      //   "Increased content engagement by 250%",
-      //   "Won Best Content Creator Award",
-      //   "Established forum's content guidelines",
-      // ],
-      responsibilities: [
-        "Lead content creation strategy",
-        "Edit and review all published content",
-        "Coordinate with social media team",
-        "Train content creators",
-      ],
+      image:
+        "https://drive.google.com/open?id=1m0VBts4QkbMyzSRP_hPMkrXoRYC0F4Dl",
+      bio: "SDE",
+      dob: "2005-11-19",
+      email: "codersento@gmail.com",
+      phone: "",
+      responsibilities: [],
       social: {
-        linkedin: "https://linkedin.com/in/rahul-verma",
-        instagram: "https://instagram.com/rahul",
-        facebook: "https://facebook.com/rahul",
+        linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304",
       },
-      // joinDate: "2022-09-20",
-      skills: ["Content Writing", "Editorial", "SEO", "Content Strategy"],
+      skills: ["Software Development", "Problem Solving", "Team Collaboration"],
     },
-  ]
+    {
+      id: "12",
+      name: "Yashasvi Sandesh Bhambore",
+      role: "Technical Committee Co-Head",
+      committee: "Technical Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1D4TWDoBfdCdtnF35SIjiwvXv6g42jccm",
+      bio: "",
+      dob: "2005-08-27",
+      email: "yashasvibhambore1@jdcoem.ac.in",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
+      },
+      skills: ["Leadership", "Technical Knowledge", "Team Collaboration"],
+    },
+    {
+      id: "13",
+      name: "Om Hemraj Deshmukh",
+      role: "Co-Head in Technical Committee",
+      committee: "Technical Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1FWLs4Vp1uo87wo88aRCtM9AcoyzNOk5H",
+      bio: "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
+      dob: "2005-07-30",
+      email: "omdeshmukh399@jdcoem.ac.in",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/omdeshmukh00",
+        instagram: "https://instagram.com/omdeshmukh00",
+      },
+      skills: ["Leadership", "Problem Solving", "Team Collaboration"],
+    },
+    {
+      id: "14",
+      name: "Nehal Ravindra Zade",
+      role: "Sport Co-Head",
+      committee: "Sports Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1AQodXy-neHmLHMd87XwUfPlbhUh0tDDd",
+      bio: "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
+      dob: "2006-08-04",
+      email: "nehalzade04@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/nehal-zade-7266a4374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram: "https://www.instagram.com/nehalzade1?igsh=ajQ2NDh0bmh6NGZ1",
+      },
+      skills: ["Athletics", "Teamwork", "Leadership", "Sports Management"],
+    },
+    {
+      id: "15",
+      name: "Karishma Naidu",
+      role: "Discipline Committee Co-Head",
+      committee: "Discipline Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1QfG4057acjyyRAsCU-1PnGX-6LqZNP5u",
+      bio: "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
+      dob: "2006-02-26",
+      email: "karishmanaidu035@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/karishma-naidu-915168339",
+      },
+      skills: ["Discipline", "Teamwork", "Leadership", "Adaptability"],
+    },
+    {
+      id: "16",
+      name: "Bhavya Pandey",
+      role: "Content Committee Co-Head",
+      committee: "Content Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=16Xjsqi40HT61aFE1GY7dVGqQ3y3ABG15",
+      bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
+      dob: "2006-01-01",
+      email: "pandeybhavya336@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/bhavya-pandey",
+        instagram:
+          "https://www.instagram.com/bhavya_012006?igsh=YmtqZzA3MXMzZ2Jw",
+      },
+      skills: [
+        "Painting",
+        "Dancing",
+        "Singing",
+        "Face Painting",
+        "Python Programming",
+        "Digital Arts",
+        "Video Editing",
+        "Brand Designing",
+      ],
+    },
+    {
+      id: "17",
+      name: "Sakshi Nitin Gokhe",
+      role: "Event Committee Co-Head",
+      committee: "Event Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1FZ9qxYuxGFp7dzx6PJw5jZh0WBH9SRJT",
+      bio: "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
+      dob: "2006-02-20",
+      email: "sakshigokhe67@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "Sakshi Gokhe",
+        instagram: "_Sakshi_gokhe_",
+      },
+      skills: [
+        "Dancing",
+        "Cooking",
+        "Traveling",
+        "Exploring New Things",
+        "Canva",
+      ],
+    },
+    {
+      id: "18",
+      name: "Mrunmayi Abhay Somalkar",
+      role: "Joint Secretary",
+      committee: "Core Committee",
+      position: "Head",
+      image:
+        "https://drive.google.com/open?id=1uV82gf5d0pSYtXLu94iShFTTgCxuUyCn",
+      bio: "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
+      dob: "2006-02-10",
+      email: "mrunmayisomalkar210@jdcoem.ac.in",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/mrunmayi-somalkar-28256532a",
+        instagram: "https://www.instagram.com/mrunmayiii_s",
+      },
+      skills: ["Hardworking", "Passionate", "Leadership"],
+    },
+    {
+      id: "19",
+      name: "Manswini Unhone",
+      role: "Publicity Committee Co-Head",
+      committee: "Publicity Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=10iuslSQTlnsW89Xns5Slhi7jp1A8jue4",
+      bio: "Hello, I'm Manswini, looking forward to learning new skills.",
+      dob: "2006-03-05",
+      email: "ishuunhone1@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/manswini-unhone",
+        instagram:
+          "https://www.instagram.com/ishhuu_uhh?igsh=NXgwbmFzeG91OWd0&utm_source=ig_contact_invite",
+      },
+      skills: ["Publicity", "Communication", "Teamwork", "Creativity"],
+    },
+    {
+      id: "21",
+      name: "Payal Kumare",
+      role: "Sports Committee Co-Head",
+      committee: "Sports Committee",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1ZTTbgHn5xkiAN22FQbJkw1ZFLjuAkNsp",
+      bio: "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
+      dob: "2006-09-11",
+      email: "payalkumare86686@gmail.com",
+      phone: "8668614175",
+      responsibilities: [],
+      social: {
+        linkedin: "www.linkedin.com/in/payal-kumare86686",
+        instagram: "",
+      },
+      skills: ["Sports Management", "Teamwork", "Leadership", "Discipline"],
+    },
+    {
+      id: "22",
+      name: "Rushang Pravin Chandekar",
+      role: "Student Co-ordinator",
+      committee: "Administration",
+      position: "Student Co-ordinator",
+      image:
+        "https://drive.google.com/open?id=1anXFrDf-f6YWwavBHLXPatTlgRjx1TD5",
+      bio: "",
+      dob: "2005-02-02",
+      email: "rushangchandekar05@gmail.com",
+      phone: "8857842043",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/rushang-chandekar",
+        instagram: "",
+      },
+      skills: ["Leadership", "Coordination", "Management"],
+    },
+  ];
 
   const committees = [
-   "TechSpot Committee",
-"Technical Committee",
-"Creative Committee",
-"Content Editor Committee",
-"Event Management",
-"Publicity Relations",
-"Digital Committee",
-"Sports Committee",
-"Discipline Committee",
-"Startup Committee",
-"NSS Committee",
+    "TechSpot Committee",
+    "Technical Committee",
+    "Creative Committee",
+    "Content Editor Committee",
+    "Event Management",
+    "Publicity Relations",
+    "Digital Committee",
+    "Sports Committee",
+    "Discipline Committee",
+    "Startup Committee",
+    "NSS Committee",
+  ];
 
-  ]
-
-  const positions = ["Admin", "Head", "Co-Head", "Member"]
+  const positions = ["Admin", "Head", "Co-Head", "Member"];
 
   const filteredMembers = teamMembers.filter((member) => {
     const matchesSearch =
       member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.committee.toLowerCase().includes(searchQuery.toLowerCase())
-    const matchesCommittee = selectedCommittee === "all" || member.committee === selectedCommittee
-    const matchesPosition = selectedPosition === "all" || member.position === selectedPosition
+      member.committee.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCommittee =
+      selectedCommittee === "all" || member.committee === selectedCommittee;
+    const matchesPosition =
+      selectedPosition === "all" || member.position === selectedPosition;
 
-    return matchesSearch && matchesCommittee && matchesPosition
-  })
+    return matchesSearch && matchesCommittee && matchesPosition;
+  });
 
   const getPositionColor = (position: string) => {
     switch (position) {
       case "Admin":
-        return "bg-red-500/20 text-red-400 border-red-500/30"
+        return "bg-red-500/20 text-red-400 border-red-500/30";
       case "Head":
-        return "bg-purple-500/20 text-purple-400 border-purple-500/30"
+        return "bg-purple-500/20 text-purple-400 border-purple-500/30";
       case "Co-Head":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30"
+        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
       case "Member":
-        return "bg-green-500/20 text-green-400 border-green-500/30"
+        return "bg-green-500/20 text-green-400 border-green-500/30";
       default:
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30"
+        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
     }
-  }
+  };
 
   const getCommitteeColor = (committee: string) => {
     const colors = {
-      "Content Editor Committee": "bg-orange-500/20 text-orange-400 border-orange-500/30",
-  "Technical Committee": "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
-  "Sports Committee": "bg-red-500/20 text-red-400 border-red-500/30",
-  "Publicity Committee": "bg-teal-500/20 text-teal-400 border-teal-500/30",
-  "Discipline Committee": "bg-gray-500/20 text-gray-400 border-gray-500/30",
-  "Event Committee": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  "Digital Committee": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-  "Techspot Committee": "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-  "Startup Committee": "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-  "NSS Committee": "bg-lime-500/20 text-lime-400 border-lime-500/30"
-    }
-    return colors[committee as keyof typeof colors] || "bg-gray-500/20 text-gray-400 border-gray-500/30"
-  }
+      "Content Editor Committee":
+        "bg-orange-500/20 text-orange-400 border-orange-500/30",
+      "Technical Committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
+      "Sports Committee": "bg-red-500/20 text-red-400 border-red-500/30",
+      "Publicity Committee": "bg-teal-500/20 text-teal-400 border-teal-500/30",
+      "Discipline Committee": "bg-gray-500/20 text-gray-400 border-gray-500/30",
+      "Event Committee": "bg-blue-500/20 text-blue-400 border-blue-500/30",
+      "Digital Committee": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
+      "Techspot Committee":
+        "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+      "Startup Committee":
+        "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+      "NSS Committee": "bg-lime-500/20 text-lime-400 border-lime-500/30",
+    };
+    return (
+      colors[committee as keyof typeof colors] ||
+      "bg-gray-500/20 text-gray-400 border-gray-500/30"
+    );
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -464,7 +559,10 @@ export default function TeamPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="/"
+                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+              >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Home</span>
               </Link>
@@ -491,8 +589,8 @@ export default function TeamPage() {
             Meet Our Team
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            The dedicated individuals who make Schologamma Forum a thriving community of innovation, learning, and
-            excellence.
+            The dedicated individuals who make Schologamma Forum a thriving
+            community of innovation, learning, and excellence.
           </p>
         </div>
 
@@ -519,7 +617,11 @@ export default function TeamPage() {
             >
               <Filter className="w-4 h-4 mr-2" />
               Filters
-              <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${isFilterOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`w-4 h-4 ml-2 transition-transform ${
+                  isFilterOpen ? "rotate-180" : ""
+                }`}
+              />
             </Button>
           </div>
 
@@ -527,8 +629,13 @@ export default function TeamPage() {
           {isFilterOpen && (
             <div className="grid md:grid-cols-2 gap-4 p-6 bg-gray-900/50 rounded-lg border border-gray-700 animate-in slide-in-from-top duration-200">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Committee</label>
-                <Select value={selectedCommittee} onValueChange={setSelectedCommittee}>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Committee
+                </label>
+                <Select
+                  value={selectedCommittee}
+                  onValueChange={setSelectedCommittee}
+                >
                   <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                     <SelectValue placeholder="All Committees" />
                   </SelectTrigger>
@@ -544,8 +651,13 @@ export default function TeamPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Position</label>
-                <Select value={selectedPosition} onValueChange={setSelectedPosition}>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Position
+                </label>
+                <Select
+                  value={selectedPosition}
+                  onValueChange={setSelectedPosition}
+                >
                   <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                     <SelectValue placeholder="All Positions" />
                   </SelectTrigger>
@@ -599,12 +711,16 @@ export default function TeamPage() {
                     />
                   </div>
                   <div className="absolute -top-2 -right-2">
-                    <Badge className={getPositionColor(member.position)}>{member.position}</Badge>
+                    <Badge className={getPositionColor(member.position)}>
+                      {member.position}
+                    </Badge>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-white">{member.name}</h3>
+                  <h3 className="text-lg font-bold text-white">
+                    {member.name}
+                  </h3>
                   <p className="text-orange-400 font-medium">{member.role}</p>
                   <p className="text-gray-400 text-sm">{member.committee}</p>
                 </div>
@@ -616,7 +732,11 @@ export default function TeamPage() {
                       className="text-blue-400 hover:text-blue-300 transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                     </a>
@@ -627,7 +747,11 @@ export default function TeamPage() {
                       className="text-pink-400 hover:text-pink-300 transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
                       </svg>
                     </a>
@@ -638,7 +762,11 @@ export default function TeamPage() {
                       className="text-blue-600 hover:text-blue-500 transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                       </svg>
                     </a>
@@ -659,8 +787,12 @@ export default function TeamPage() {
         {filteredMembers.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">👥</div>
-            <h3 className="text-2xl font-bold text-gray-300 mb-2">No members found</h3>
-            <p className="text-gray-400">Try adjusting your search or filter criteria</p>
+            <h3 className="text-2xl font-bold text-gray-300 mb-2">
+              No members found
+            </h3>
+            <p className="text-gray-400">
+              Try adjusting your search or filter criteria
+            </p>
           </div>
         )}
       </div>
@@ -689,22 +821,35 @@ export default function TeamPage() {
                       className="w-32 h-32 rounded-full object-cover border-4 border-purple-500 mx-auto"
                     />
                     <Badge
-                      className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 ${getPositionColor(selectedMember.position)}`}
+                      className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 ${getPositionColor(
+                        selectedMember.position
+                      )}`}
                     >
                       {selectedMember.position}
                     </Badge>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white">{selectedMember.name}</h2>
-                    <p className="text-orange-400 font-medium text-lg">{selectedMember.role}</p>
-                    <Badge className={getCommitteeColor(selectedMember.committee)}>{selectedMember.committee}</Badge>
+                    <h2 className="text-2xl font-bold text-white">
+                      {selectedMember.name}
+                    </h2>
+                    <p className="text-orange-400 font-medium text-lg">
+                      {selectedMember.role}
+                    </p>
+                    <Badge
+                      className={getCommitteeColor(selectedMember.committee)}
+                    >
+                      {selectedMember.committee}
+                    </Badge>
                   </div>
 
                   <div className="space-y-3 text-sm text-gray-300">
                     <div className="flex items-center justify-center space-x-2">
                       <Calendar className="w-4 h-4 text-purple-400" />
-                      <span>Born: {new Date(selectedMember.dob).toLocaleDateString()}</span>
+                      <span>
+                        Born:{" "}
+                        {new Date(selectedMember.dob).toLocaleDateString()}
+                      </span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <Mail className="w-4 h-4 text-purple-400" />
@@ -726,7 +871,11 @@ export default function TeamPage() {
                         href={selectedMember.social.linkedin}
                         className="text-blue-400 hover:text-blue-300 transition-colors"
                       >
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                       </a>
@@ -736,7 +885,11 @@ export default function TeamPage() {
                         href={selectedMember.social.instagram}
                         className="text-pink-400 hover:text-pink-300 transition-colors"
                       >
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
                         </svg>
                       </a>
@@ -746,7 +899,11 @@ export default function TeamPage() {
                         href={selectedMember.social.facebook}
                         className="text-blue-600 hover:text-blue-500 transition-colors"
                       >
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                         </svg>
                       </a>
@@ -756,7 +913,11 @@ export default function TeamPage() {
                         href={selectedMember.social.twitter}
                         className="text-blue-400 hover:text-blue-300 transition-colors"
                       >
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                         </svg>
                       </a>
@@ -772,15 +933,25 @@ export default function TeamPage() {
                 {/* Details Section */}
                 <div className="md:col-span-2 space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">About</h3>
-                    <p className="text-gray-300 leading-relaxed">{selectedMember.bio}</p>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      About
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      {selectedMember.bio}
+                    </p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">Skills</h3>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      Skills
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedMember.skills.map((skill, index) => (
-                        <Badge key={index} variant="outline" className="border-purple-500/30 text-purple-400">
+                        <Badge
+                          key={index}
+                          variant="outline"
+                          className="border-purple-500/30 text-purple-400"
+                        >
                           {skill}
                         </Badge>
                       ))}
@@ -788,21 +959,28 @@ export default function TeamPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">Key Responsibilities</h3>
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      Key Responsibilities
+                    </h3>
                     <ul className="space-y-2">
-                      {selectedMember.responsibilities.map((responsibility, index) => (
-                        <li key={index} className="flex items-start space-x-3 text-gray-300">
-                          <span className="text-purple-400 mt-1">•</span>
-                          <span>{responsibility}</span>
-                        </li>
-                      ))}
+                      {selectedMember.responsibilities.map(
+                        (responsibility, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-3 text-gray-300"
+                          >
+                            <span className="text-purple-400 mt-1">•</span>
+                            <span>{responsibility}</span>
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
 
                   <div>
                     {/* <h3 className="text-xl font-semibold text-white mb-3">Achievements</h3>
                     <ul className="space-y-2"> */}
-                      {/* {selectedMember.achievements.map((achievement, index) => (
+                    {/* {selectedMember.achievements.map((achievement, index) => (
                         <li key={index} className="flex items-start space-x-3 text-gray-300">
                           <Award className="w-4 h-4 text-orange-400 mt-1 flex-shrink-0" />
                           <span>{achievement}</span>
@@ -819,5 +997,5 @@ export default function TeamPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
