@@ -1,44 +1,100 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Search, Filter, Calendar, MapPin, User, Clock, ArrowLeft, X, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import Link from "next/link"
-import Footer from "@/components/footer"
+import { useState } from "react";
+import {
+  Search,
+  Filter,
+  Calendar,
+  MapPin,
+  User,
+  Clock,
+  ArrowLeft,
+  X,
+  ChevronDown,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 interface Event {
-  id: string
-  title: string
-  description: string
-  date: string
-  time: string
-  venue: string
-  speaker: string
-  image: string
-  committee: string
-  category: string
-  status: "upcoming" | "ongoing" | "past"
-  registrationOpen: boolean
-  maxParticipants?: number
-  currentParticipants?: number
-  objectives: string[]
-  outcomes: string[]
-  schedule: { time: string; activity: string }[]
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  venue: string;
+  speaker: string;
+  image: string;
+  committee: string;
+  category: string;
+  status: "upcoming" | "ongoing" | "past";
+  registrationOpen: boolean;
+  maxParticipants?: number;
+  currentParticipants?: number;
+  objectives: string[];
+  outcomes: string[];
+  schedule: { time: string; activity: string }[];
 }
 
 export default function EventsPage() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCommittee, setSelectedCommittee] = useState("all")
-  const [selectedCategory, setSelectedCategory] = useState("all")
-  const [selectedStatus, setSelectedStatus] = useState("all")
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
-  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCommittee, setSelectedCommittee] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedStatus, setSelectedStatus] = useState("all");
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const events: Event[] = [
+    {
+      id: "2",
+      title: "Ganpati Bappa Festival Celebration",
+      description:
+        "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
+      date: "2025-09-27",
+      time: "6:00 PM",
+      venue: "Main Campus Ground",
+      speaker: "Schologamma",
+      image:
+        "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
+      committee: "Schologamma",
+      category: "Festival",
+      status: "upcoming",
+      registrationOpen: false,
+      maxParticipants: 500,
+      currentParticipants: 320,
+      objectives: [
+        "Invoke blessings of Lord Ganesha",
+        "Promote cultural and spiritual values",
+        "Encourage unity and community participation",
+        "Celebrate with eco-friendly practices",
+      ],
+      outcomes: [
+        "Strengthened community bonding",
+        "Spiritual enrichment for participants",
+        "Joyful cultural celebration",
+      ],
+      schedule: [
+        { time: "6:00 PM", activity: "Ganesh Aarti & Prayer" },
+        { time: "6:30 PM", activity: "Cultural Dance & Music Performances" },
+        { time: "7:30 PM", activity: "Devotional Songs & Bhajans" },
+        { time: "8:15 PM", activity: "Prasad Distribution" },
+        { time: "9:00 PM", activity: "Closing Aarti" },
+      ],
+    },
+  ];
+
+  /* 
+  [
     {
       id: "1",
       title: "Introduction to Figma",
@@ -229,6 +285,8 @@ export default function EventsPage() {
     },
   ]
 
+  */
+
   const committees = [
     "Technical Committee",
     "Creative Committee",
@@ -241,51 +299,73 @@ export default function EventsPage() {
     "Sports committee",
     "Discipline Committee",
     "NSS Committee",
-  ]
+  ];
 
-  const categories = ["Workshop", "Seminar", "Competition", "Bootcamp", "Tutorial", "Masterclass", "Webinar"]
+  const categories = [
+    "Workshop",
+    "Seminar",
+    "Competition",
+    "Bootcamp",
+    "Tutorial",
+    "Masterclass",
+    "Webinar",
+  ];
 
   const filteredEvents = events.filter((event) => {
     const matchesSearch =
       event.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       event.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      event.speaker.toLowerCase().includes(searchQuery.toLowerCase())
-    const matchesCommittee = selectedCommittee === "all" || event.committee === selectedCommittee
-    const matchesCategory = selectedCategory === "all" || event.category === selectedCategory
-    const matchesStatus = selectedStatus === "all" || event.status === selectedStatus
+      event.speaker.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCommittee =
+      selectedCommittee === "all" || event.committee === selectedCommittee;
+    const matchesCategory =
+      selectedCategory === "all" || event.category === selectedCategory;
+    const matchesStatus =
+      selectedStatus === "all" || event.status === selectedStatus;
 
-    return matchesSearch && matchesCommittee && matchesCategory && matchesStatus
-  })
+    return (
+      matchesSearch && matchesCommittee && matchesCategory && matchesStatus
+    );
+  });
 
   const getStatusColor = (status: string) => {
     switch (status) {
       case "upcoming":
-        return "bg-green-500/20 text-green-400 border-green-500/30"
+        return "bg-green-500/20 text-green-400 border-green-500/30";
       case "ongoing":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30"
+        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
       case "past":
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30"
+        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
       default:
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30"
+        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
     }
-  }
+  };
 
   const getCommitteeColor = (committee: string) => {
     const colors = {
-      "Technical Committee": "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "Technical Committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
       "Creative Committee": "bg-pink-500/20 text-pink-400 border-pink-500/30",
-      "Content Editor Committee": "bg-orange-500/20 text-orange-400 border-orange-500/30",
+      "Content Editor Committee":
+        "bg-orange-500/20 text-orange-400 border-orange-500/30",
       "Event Management": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-       "Publicity Committee":"bg-blue-500/20 text-blue-400 border-blue-500/30",
-      "TechSpot Committee":"bg-blue-500/20 text-blue-400 border-blue-500/30",
-    "Digital  Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
-     "Startup Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
-    "Sports committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
-    "Discipline Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
-    "NSS Committee":"bg-purple-500/20 text-purple-400 border-purple-500/30",
-    }
-    return colors[committee as keyof typeof colors] || "bg-gray-500/20 text-gray-400 border-gray-500/30"
-  }
+      "Publicity Committee": "bg-blue-500/20 text-blue-400 border-blue-500/30",
+      "TechSpot Committee": "bg-blue-500/20 text-blue-400 border-blue-500/30",
+      "Digital  Committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "Startup Committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "Sports committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "Discipline Committee":
+        "bg-purple-500/20 text-purple-400 border-purple-500/30",
+      "NSS Committee": "bg-purple-500/20 text-purple-400 border-purple-500/30",
+    };
+    return (
+      colors[committee as keyof typeof colors] ||
+      "bg-gray-500/20 text-gray-400 border-gray-500/30"
+    );
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -305,7 +385,10 @@ export default function EventsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <Link
+                href="/"
+                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+              >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Home</span>
               </Link>
@@ -332,8 +415,8 @@ export default function EventsPage() {
             Schologamma Events
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover workshops, seminars, competitions, and more. Join us in learning, growing, and achieving excellence
-            together.
+            Discover workshops, seminars, competitions, and more. Join us in
+            learning, growing, and achieving excellence together.
           </p>
         </div>
 
@@ -360,7 +443,11 @@ export default function EventsPage() {
             >
               <Filter className="w-4 h-4 mr-2" />
               Filters
-              <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${isFilterOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`w-4 h-4 ml-2 transition-transform ${
+                  isFilterOpen ? "rotate-180" : ""
+                }`}
+              />
             </Button>
           </div>
 
@@ -368,8 +455,13 @@ export default function EventsPage() {
           {isFilterOpen && (
             <div className="grid md:grid-cols-3 gap-4 p-6 bg-gray-900/50 rounded-lg border border-gray-700 animate-in slide-in-from-top duration-200">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Committee</label>
-                <Select value={selectedCommittee} onValueChange={setSelectedCommittee}>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Committee
+                </label>
+                <Select
+                  value={selectedCommittee}
+                  onValueChange={setSelectedCommittee}
+                >
                   <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                     <SelectValue placeholder="All Committees" />
                   </SelectTrigger>
@@ -385,8 +477,13 @@ export default function EventsPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Category</label>
-                <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Category
+                </label>
+                <Select
+                  value={selectedCategory}
+                  onValueChange={setSelectedCategory}
+                >
                   <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                     <SelectValue placeholder="All Categories" />
                   </SelectTrigger>
@@ -402,8 +499,13 @@ export default function EventsPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Status</label>
-                <Select value={selectedStatus} onValueChange={setSelectedStatus}>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Status
+                </label>
+                <Select
+                  value={selectedStatus}
+                  onValueChange={setSelectedStatus}
+                >
                   <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                     <SelectValue placeholder="All Events" />
                   </SelectTrigger>
@@ -432,7 +534,9 @@ export default function EventsPage() {
                   : "border-gray-600 text-white hover:bg-gray-800 bg-transparent"
               }
             >
-              {status === "all" ? "All Events" : status.charAt(0).toUpperCase() + status.slice(1)}
+              {status === "all"
+                ? "All Events"
+                : status.charAt(0).toUpperCase() + status.slice(1)}
             </Button>
           ))}
         </div>
@@ -454,24 +558,32 @@ export default function EventsPage() {
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className={getStatusColor(event.status)}>
-                      {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
+                      {event.status.charAt(0).toUpperCase() +
+                        event.status.slice(1)}
                     </Badge>
                   </div>
                   <div className="absolute top-4 right-4">
-                    <Badge className={getCommitteeColor(event.committee)}>{event.committee}</Badge>
+                    <Badge className={getCommitteeColor(event.committee)}>
+                      {event.committee}
+                    </Badge>
                   </div>
                 </div>
                 <div className="p-6 space-y-4">
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">{event.title}</h3>
-                    <p className="text-gray-400 text-sm line-clamp-2">{event.description}</p>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {event.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm line-clamp-2">
+                      {event.description}
+                    </p>
                   </div>
 
                   <div className="space-y-2 text-sm text-gray-400">
                     <div className="flex items-center space-x-2">
                       <Calendar className="w-4 h-4" />
                       <span>
-                        {new Date(event.date).toLocaleDateString()} at {event.time}
+                        {new Date(event.date).toLocaleDateString()} at{" "}
+                        {event.time}
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
@@ -522,8 +634,12 @@ export default function EventsPage() {
         {filteredEvents.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold text-gray-300 mb-2">No events found</h3>
-            <p className="text-gray-400">Try adjusting your search or filter criteria</p>
+            <h3 className="text-2xl font-bold text-gray-300 mb-2">
+              No events found
+            </h3>
+            <p className="text-gray-400">
+              Try adjusting your search or filter criteria
+            </p>
           </div>
         )}
       </div>
@@ -548,26 +664,36 @@ export default function EventsPage() {
               </Button>
               <div className="absolute bottom-4 left-4 flex space-x-2">
                 <Badge className={getStatusColor(selectedEvent.status)}>
-                  {selectedEvent.status.charAt(0).toUpperCase() + selectedEvent.status.slice(1)}
+                  {selectedEvent.status.charAt(0).toUpperCase() +
+                    selectedEvent.status.slice(1)}
                 </Badge>
-                <Badge className={getCommitteeColor(selectedEvent.committee)}>{selectedEvent.committee}</Badge>
+                <Badge className={getCommitteeColor(selectedEvent.committee)}>
+                  {selectedEvent.committee}
+                </Badge>
               </div>
             </div>
 
             <div className="p-8 space-y-6">
               <div>
-                <h2 className="text-3xl font-bold text-white mb-4">{selectedEvent.title}</h2>
-                <p className="text-gray-300 text-lg">{selectedEvent.description}</p>
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  {selectedEvent.title}
+                </h2>
+                <p className="text-gray-300 text-lg">
+                  {selectedEvent.description}
+                </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-white">Event Details</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    Event Details
+                  </h3>
                   <div className="space-y-3 text-gray-300">
                     <div className="flex items-center space-x-3">
                       <Calendar className="w-5 h-5 text-purple-400" />
                       <span>
-                        {new Date(selectedEvent.date).toLocaleDateString()} at {selectedEvent.time}
+                        {new Date(selectedEvent.date).toLocaleDateString()} at{" "}
+                        {selectedEvent.time}
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -587,19 +713,26 @@ export default function EventsPage() {
 
                 {selectedEvent.registrationOpen && (
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-white">Registration</h3>
+                    <h3 className="text-xl font-semibold text-white">
+                      Registration
+                    </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between text-gray-300">
                         <span>Participants</span>
                         <span>
-                          {selectedEvent.currentParticipants}/{selectedEvent.maxParticipants}
+                          {selectedEvent.currentParticipants}/
+                          {selectedEvent.maxParticipants}
                         </span>
                       </div>
                       <div className="w-full bg-gray-700 rounded-full h-3">
                         <div
                           className="bg-gradient-to-r from-purple-500 to-blue-500 h-3 rounded-full transition-all duration-300"
                           style={{
-                            width: `${((selectedEvent.currentParticipants || 0) / (selectedEvent.maxParticipants || 1)) * 100}%`,
+                            width: `${
+                              ((selectedEvent.currentParticipants || 0) /
+                                (selectedEvent.maxParticipants || 1)) *
+                              100
+                            }%`,
                           }}
                         ></div>
                       </div>
@@ -615,7 +748,10 @@ export default function EventsPage() {
                 <h3 className="text-xl font-semibold text-white">Objectives</h3>
                 <ul className="space-y-2">
                   {selectedEvent.objectives.map((objective, index) => (
-                    <li key={index} className="flex items-start space-x-3 text-gray-300">
+                    <li
+                      key={index}
+                      className="flex items-start space-x-3 text-gray-300"
+                    >
                       <span className="text-purple-400 mt-1">•</span>
                       <span>{objective}</span>
                     </li>
@@ -624,10 +760,15 @@ export default function EventsPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white">Expected Outcomes</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  Expected Outcomes
+                </h3>
                 <ul className="space-y-2">
                   {selectedEvent.outcomes.map((outcome, index) => (
-                    <li key={index} className="flex items-start space-x-3 text-gray-300">
+                    <li
+                      key={index}
+                      className="flex items-start space-x-3 text-gray-300"
+                    >
                       <span className="text-blue-400 mt-1">✓</span>
                       <span>{outcome}</span>
                     </li>
@@ -639,8 +780,13 @@ export default function EventsPage() {
                 <h3 className="text-xl font-semibold text-white">Schedule</h3>
                 <div className="space-y-3">
                   {selectedEvent.schedule.map((item, index) => (
-                    <div key={index} className="flex items-center space-x-4 p-3 bg-gray-800/50 rounded-lg">
-                      <div className="text-orange-400 font-medium min-w-[80px]">{item.time}</div>
+                    <div
+                      key={index}
+                      className="flex items-center space-x-4 p-3 bg-gray-800/50 rounded-lg"
+                    >
+                      <div className="text-orange-400 font-medium min-w-[80px]">
+                        {item.time}
+                      </div>
                       <div className="text-gray-300">{item.activity}</div>
                     </div>
                   ))}
@@ -653,5 +799,5 @@ export default function EventsPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
