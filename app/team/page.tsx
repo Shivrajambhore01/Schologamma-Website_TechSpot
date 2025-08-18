@@ -86,7 +86,7 @@ export default function TeamPage() {
       committee: "Admin",
       position: "Admin",
       image:
-        "https://drive.google.com/open?id=1y_xz0aW-z6iTmN0TuinCTUG_2RzwkjOT",
+        "IMG20250802171750 - Tanvi Sanghani.jpg",
       bio: "Passion for connecting people. I convey our ideas, events, and achievements with clarity, enthusiasm, and impact. I believe in the power of words to inspire participation, foster collaboration, and make our forum a space where creativity and teamwork thrive.",
       dob: "2006-01-24",
       email: "tanvisanghani9@gmail.com",
@@ -108,7 +108,7 @@ export default function TeamPage() {
       committee: "",
       position: "Admin",
       image:
-        "https://drive.google.com/open?id=1fpmfn5vaCSDoOPzPtYz9oDxWxCK27NqZ",
+        "20240924_094947 - Piyush Kolte (1).jpg",
       bio: "I’m Piyush Kolte. I’m an engineering student passionate about technology, innovation, and creative problem-solving. I love exploring new ideas, especially in data, design, and digital ethics, and I'm always looking to learn and grow through real-world experiences.",
       dob: "2005-06-01",
       email: "piyushkolte05@gmail.com",
@@ -130,7 +130,7 @@ export default function TeamPage() {
       committee: "Technical Committee",
       position: "Head",
       image:
-        "https://drive.google.com/open?id=1imNu69wJhneI6UIc8QwfXYnnH80Zgd7l",
+        "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg",
       bio: "Technical Committee Head",
       dob: "2004-09-16",
       email: "adiwankhede01@gmail.com",
@@ -152,7 +152,7 @@ export default function TeamPage() {
       committee: "Creative Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1MkZeIDUnXrNEnZToBTCo67k0IpqC5MJp",
+        "IMG-20250719-WA0011 - Nehal Zade.jpg",
       bio: "",
       dob: "2006-02-22",
       email: "yuvtikarahangdale@gmail.com",
@@ -173,7 +173,7 @@ export default function TeamPage() {
       committee: "StartUp Committee",
       position: "Head",
       image:
-        "https://drive.google.com/open?id=1Z-XmUD3qoSwnSH_of3iMlBm28hOuCgEr",
+        "DSC_3570_Nikhil - Nikhil Rathod.jpg",
       bio: "Full Stack Developer",
       dob: "2003-07-28",
       email: "nikhilcaptain28@gmail.com",
@@ -194,7 +194,7 @@ export default function TeamPage() {
       committee: "Creative Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1cLOI6BFGzo5pej-KOxYkS5TCn9sxUyjI",
+        "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg",
       bio: "",
       dob: "2007-02-24",
       email: "madhu.ambadkar2003@gmail.com",
@@ -214,7 +214,7 @@ export default function TeamPage() {
       committee: "TechSpot Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1YmLIPIPKM2tct5o3aepfb3ou20diFInr",
+        "IMG-20250801-WA0075 - anuj lakhekar.jpg",
       bio: "Hello I am Anuj from CSE-B, passionate about coding and good at web development.",
       dob: "2006-09-09",
       email: "anujlakhekar4@gmail.com",
@@ -235,7 +235,7 @@ export default function TeamPage() {
       committee: "Publicity Committee",
       position: "Head",
       image:
-        "https://drive.google.com/open?id=1hjzTW70HM-jg9hSu11F2P7o9LRvEyQPy",
+        "IMG_5591 - Janvi Akhand.JPG",
       bio: "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
       dob: "2005-12-17",
       email: "janviakhand@gmail.com",
@@ -254,7 +254,7 @@ export default function TeamPage() {
       committee: "TechSpot Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1m0VBts4QkbMyzSRP_hPMkrXoRYC0F4Dl",
+        "1748265675540 - Sento Coder.jpg",
       bio: "SDE",
       dob: "2005-11-19",
       email: "codersento@gmail.com",
@@ -272,7 +272,7 @@ export default function TeamPage() {
       committee: "Technical Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1D4TWDoBfdCdtnF35SIjiwvXv6g42jccm",
+        "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
       bio: "",
       dob: "2005-08-27",
       email: "yashasvibhambore1@jdcoem.ac.in",
@@ -290,7 +290,7 @@ export default function TeamPage() {
       committee: "Technical Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1FWLs4Vp1uo87wo88aRCtM9AcoyzNOk5H",
+        "20250731_190814 - OM DESHMUKH.jpg",
       bio: "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
       dob: "2005-07-30",
       email: "omdeshmukh399@jdcoem.ac.in",
@@ -309,7 +309,7 @@ export default function TeamPage() {
       committee: "Sports Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1AQodXy-neHmLHMd87XwUfPlbhUh0tDDd",
+        "IMG-20250719-WA0011 - Nehal Zade.jpg",
       bio: "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
       dob: "2006-08-04",
       email: "nehalzade04@gmail.com",
@@ -329,7 +329,7 @@ export default function TeamPage() {
       committee: "Discipline Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1QfG4057acjyyRAsCU-1PnGX-6LqZNP5u",
+        "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
       bio: "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
       dob: "2006-02-26",
       email: "karishmanaidu035@gmail.com",
@@ -347,7 +347,7 @@ export default function TeamPage() {
       committee: "Content Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=16Xjsqi40HT61aFE1GY7dVGqQ3y3ABG15",
+        "Document from Bhavya Pandey - Bhavya Pandey.jpg",
       bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
       dob: "2006-01-01",
       email: "pandeybhavya336@gmail.com",
@@ -376,7 +376,7 @@ export default function TeamPage() {
       committee: "Event Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1FZ9qxYuxGFp7dzx6PJw5jZh0WBH9SRJT",
+        "IMG_20250727_231227 - Sakshi Gokhe.jpg",
       bio: "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
       dob: "2006-02-20",
       email: "sakshigokhe67@gmail.com",
@@ -399,9 +399,9 @@ export default function TeamPage() {
       name: "Mrunmayi Abhay Somalkar",
       role: "Joint Secretary",
       committee: "Core Committee",
-      position: "Head",
+      position: "Admin",
       image:
-        "https://drive.google.com/open?id=1uV82gf5d0pSYtXLu94iShFTTgCxuUyCn",
+        "Photo from Mrunmayi - MRUNMAYI SOMALKAR (1).jpg",
       bio: "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
       dob: "2006-02-10",
       email: "mrunmayisomalkar210@jdcoem.ac.in",
@@ -420,7 +420,7 @@ export default function TeamPage() {
       committee: "Publicity Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=10iuslSQTlnsW89Xns5Slhi7jp1A8jue4",
+        "IMG-20241204-WA0001 - Ishu Unhone.jpg",
       bio: "Hello, I'm Manswini, looking forward to learning new skills.",
       dob: "2006-03-05",
       email: "ishuunhone1@gmail.com",
@@ -440,7 +440,7 @@ export default function TeamPage() {
       committee: "Sports Committee",
       position: "Co-Head",
       image:
-        "https://drive.google.com/open?id=1ZTTbgHn5xkiAN22FQbJkw1ZFLjuAkNsp",
+        "BT240083CS - Payal Kumare.jpg",
       bio: "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
       dob: "2006-09-11",
       email: "payalkumare86686@gmail.com",
@@ -459,7 +459,7 @@ export default function TeamPage() {
       committee: "Administration",
       position: "Student Co-ordinator",
       image:
-        "https://drive.google.com/open?id=1anXFrDf-f6YWwavBHLXPatTlgRjx1TD5",
+        "Firefly 20230930195912 - Rushang Chandekar (1).jpg",
       bio: "",
       dob: "2005-02-02",
       email: "rushangchandekar05@gmail.com",
