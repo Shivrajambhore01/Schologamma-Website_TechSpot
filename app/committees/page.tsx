@@ -29,7 +29,7 @@ interface Committee {
   logo: string;
   color: string;
   members: number;
-  established: string;
+  // established: string;
   focus: string[];
   leadership: {
     head: {
@@ -40,7 +40,15 @@ interface Committee {
       contact: { email?: string; phone?: string };
       social: { linkedin?: string; instagram?: string; facebook?: string };
     };
-    coHead?: {
+    coHead1: {
+      name: string;
+      image: string;
+      bio: string;
+      achievements: string[];
+      contact: { email?: string; phone?: string };
+      social: { linkedin?: string; instagram?: string; facebook?: string };
+    };
+    coHead2: {
       name: string;
       image: string;
       bio: string;
@@ -89,15 +97,15 @@ export default function CommitteesPage() {
         "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
       logo: "/placeholder.svg?height=80&width=80&text=🧰",
       color: "blue",
-      members: 9,
-      established: "2020-07-22",
-      focus: ["Hardware Demos", "Gadget Reviews", "Maker Projects", "Talks"],
+      members: 8,
+      // established: "2020-07-22",
+      focus: ["Techniqual events", "organize Hachathons", "Make Projects", "Talks"],
       leadership: {
         head: {
           name: "Shivraj Ambhore",
           image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "Hi I am Shivraj",
+            "Shivraj-Ambhore.jpg",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
           achievements: ["Java", "DSA", "Full stack Development"],
           contact: { email: "shivrajambhore01@gmail.com" },
           social: {
@@ -106,37 +114,76 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
+        },
+        
       },
       membersList: [
         {
-          name: "Pallavi Joshi",
-          role: "Workshop Lead",
+          name: "Sargun singh Bhatia",
+          role: "Member",
           image: "/professional-female-student.png",
           year: "3rd Year",
         },
         {
-          name: "Rudra Mehta",
-          role: "Reviewer",
+          name: "Sachin Bodani",
+          role: "Member",
           image: "/professional-male-student.png",
+          year: "3rd Year",
+        },
+         {
+          name: "Anjali Kundojwar",
+          role: "Member",
+          image: "/professional-female-student.png",
+          year: "2nd Year",
+        },
+          {
+          name: "sanchi Sawale",
+          role: "Member",
+          image: "/professional-female-student.png",
           year: "2nd Year",
         },
       ],
       achievements: [
         {
-          title: "Makers Month 2023",
-          description: "Campus-wide maker showcase",
-          date: "2023-10-01",
-          impact: "Project culture",
+          title: "Schologamma Website",
+          description: "All About schologamma forum",
+          date: "2025-26",
+          impact: "every one can see updates and details of schologamma forum",
         },
       ],
       events: [
         {
-          title: "Raspberry Pi Night",
-          description: "IoT + automation mini builds",
-          date: "2024-03-05",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/techspot-pi-night.png",
-          participants: 70,
+          image: "",
+          participants: 0,
         },
       ],
       activities: ["Weekly talks", "Hands-on builds", "Review sessions"],
@@ -152,7 +199,7 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=📝",
       color: "indigo",
       members: 12,
-      established: "2020-01-15",
+      // established: "2020-01-15",
       focus: [
         "Content Creation",
         "Editorial Review",
@@ -161,32 +208,44 @@ export default function CommitteesPage() {
         "Blog/Newsletter",
       ],
       leadership: {
-        head: {
-          name: "Priya Sharma",
-          image: "/creative-female-student.png",
-          bio: "Final year student passionate about content strategy and digital communication.",
-          achievements: [
-            "Increased forum engagement by 150% through content strategy",
-            "Led rebranding campaign in 2023",
-            "Published 50+ technical/creative articles",
-          ],
-          contact: {
-            email: "priya.content@schologamma.com",
-            phone: "+91 98765 43210",
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
-          social: { linkedin: "https://linkedin.com/in/priyasharma" },
         },
-        coHead: {
-          name: "Rahul Verma",
-          image: "/professional-male-student.png",
-          bio: "Tech writer and SEO enthusiast driving documentation standards.",
-          achievements: [
-            "Drafted content guidelines",
-            "Scaled social reach to 10K+",
-            "Set up documentation workflow",
-          ],
-          contact: { email: "rahul.content@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/rahulverma" },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -263,7 +322,7 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=💻",
       color: "blue",
       members: 12,
-      established: "2019-01-15",
+      // established: "2019-01-15",
       focus: [
         "Web Development",
         "App Development",
@@ -272,22 +331,43 @@ export default function CommitteesPage() {
         "Hackathons",
       ],
       leadership: {
-        head: {
-          name: "Arjun Sharma",
-          image: "/professional-male-student.png",
-          bio: "Full-stack developer keen on modern web and AI.",
-          achievements: [
-            "Built Schologamma website",
-            "Hosted 5 hackathons",
-            "Contributed to open source",
-          ],
-          contact: {
-            email: "arjun.tech@schologamma.com",
-            phone: "+91 91234 56789",
-          },
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
           social: {
-            linkedin: "https://linkedin.com/in/arjunsharma",
-            instagram: "https://instagram.com/kavya_designs",
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
           },
         },
       },
@@ -355,7 +435,7 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🎨",
       color: "pink",
       members: 10,
-      established: "2020-03-10",
+      // established: "2020-03-10",
       focus: [
         "Graphic Design",
         "Video Production",
@@ -365,21 +445,42 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Kavya Mehta",
-          image: "/creative-female-student.png",
-          bio: "Designer focused on brand systems and visual storytelling.",
-          achievements: [
-            "Award-winning forum branding",
-            "100+ event creatives",
-            "Visual identity redesign",
-          ],
-          contact: {
-            email: "kavya.creative@schologamma.com",
-            phone: "+91 98765 43212",
-          },
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
           social: {
-            linkedin: "https://linkedin.com/in/kavyamehta",
-            instagram: "https://instagram.com/kavya_designs",
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
           },
         },
       },
@@ -447,22 +548,47 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🏅",
       color: "emerald",
       members: 12,
-      established: "2017-09-15",
+      // established: "2017-09-15",
       focus: ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
       leadership: {
-        head: {
-          name: "Kabir Singh",
-          image: "/professional-male-student.png",
-          bio: "Athlete and organizer focused on inclusive sports culture.",
-          achievements: [
-            "Organized biggest sports meet 2023",
-            "Campus fitness drive lead",
-          ],
-          contact: {
-            email: "kabir.sports@schologamma.com",
-            phone: "+91 97777 55555",
+       head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
-          social: { linkedin: "https://linkedin.com/in/kabirsingh" },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -519,22 +645,47 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=📣",
       color: "orange",
       members: 9,
-      established: "2018-08-01",
+      // established: "2018-08-01",
       focus: ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
       leadership: {
-        head: {
-          name: "Ishita Roy",
-          image: "/professional-female-student.png",
-          bio: "Campus PR lead who loves storytelling and outreach.",
-          achievements: [
-            "Press coverage in 4 local outlets",
-            "Launched campus-wide notice system",
-          ],
-          contact: {
-            email: "ishita.publicity@schologamma.com",
-            phone: "+91 90000 33333",
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
-          social: { linkedin: "https://linkedin.com/in/ishitaroy" },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -586,19 +737,47 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🛡️",
       color: "indigo",
       members: 10,
-      established: "2018-01-20",
+      // established: "2018-01-20",
       focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
       leadership: {
-        head: {
-          name: "Sanjana Kulkarni",
-          image: "/professional-female-student.png",
-          bio: "Focused on fair, friendly, and safe events.",
-          achievements: [
-            "Developed standard event SOP",
-            "Zero-incident cultural fest 2023",
-          ],
-          contact: { email: "sanjana.discipline@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/sanjanak" },
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -649,19 +828,47 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🗓️",
       color: "orange",
       members: 11,
-      established: "2018-06-10",
+      // established: "2018-06-10",
       focus: ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
       leadership: {
-        head: {
-          name: "Dhruv Malhotra",
-          image: "/professional-male-student.png",
-          bio: "Event planner who loves timelines and checklists.",
-          achievements: [
-            "Delivered 30+ events on time",
-            "Introduced shared runbook",
-          ],
-          contact: { email: "dhruv.events@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/dhruvmalhotra" },
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -712,19 +919,47 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🔗",
       color: "emerald",
       members: 8,
-      established: "2019-09-01",
+      // established: "2019-09-01",
       focus: ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
       leadership: {
-        head: {
-          name: "Parth Desai",
-          image: "/professional-male-student.png",
-          bio: "AV + web tinkerer making events digital-first.",
-          achievements: [
-            "Hybrid events with 1k+ online viewers",
-            "Analytics dashboards for organizers",
-          ],
-          contact: { email: "parth.digital@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/parthdesai" },
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -777,7 +1012,7 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=💡",
       color: "indigo",
       members: 10,
-      established: "2021-01-05",
+      // established: "2021-01-05",
       focus: [
         "Ideation",
         "MVP Building",
@@ -787,15 +1022,43 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Tanya Arora",
-          image: "/professional-female-student.png",
-          bio: "Product thinker helping peers go from idea to MVP.",
-          achievements: [
-            "3 campus startups incubated",
-            "Monthly founder roundtables",
-          ],
-          contact: { email: "tanya.startup@schologamma.com" },
-          social: { linkedin: "https://linkedin.com/in/tanyaarora" },
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
+          },
         },
       },
       membersList: [
@@ -848,7 +1111,7 @@ export default function CommitteesPage() {
       logo: "/placeholder.svg?height=80&width=80&text=🌍",
       color: "green",
       members: 25,
-      established: "2018-07-15",
+      // established: "2018-07-15",
       focus: [
         "Community Service",
         "Social Awareness",
@@ -857,22 +1120,43 @@ export default function CommitteesPage() {
         "Volunteering",
       ],
       leadership: {
-        head: {
-          name: "Arjun Deshmukh",
-          image: "/professional-male-student.png",
-          bio: "Dedicated NSS volunteer with a passion for community development, social service, and youth empowerment.",
-          achievements: [
-            "Led 10+ social awareness drives",
-            "Organized blood donation camps with 500+ donors",
-            "Promoted Swachh Bharat cleanliness campaigns",
-          ],
-          contact: {
-            email: "arjun.nss@schologamma.com",
-            phone: "+91 98765 11111",
-          },
+         head: {
+          name: "Shivraj Ambhore",
+          image:
+            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
+          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+          achievements: ["Java", "DSA", "Full stack Development"],
+          contact: { email: "shivrajambhore01@gmail.com" },
           social: {
-            linkedin: "https://linkedin.com/in/arjundeshmukh",
-            instagram: "https://instagram.com/arjun_nss",
+            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            instagram:
+              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          },
+        },
+         coHead1: {
+          name: "Anuj Lakhekar",
+          image:
+            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          achievements: [""],
+          contact: { email: "anujlakhekar@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+          },
+        },
+         coHead2: {
+          name: "Santosh Donapurge",
+          image:
+            "1748265675540 - Sento Coder.jpg",
+          bio: "SDE",
+          achievements: [""],
+          contact: { email: "codersento@gmail.com" },
+          social: {
+            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "/team",
           },
         },
       },
@@ -1343,7 +1627,7 @@ export default function CommitteesPage() {
                     </Card>
 
                     {/* Co-Head */}
-                    {selectedCommittee.leadership.coHead && (
+                    {selectedCommittee.leadership.coHead1 && (
                       <Card className="bg-gray-800/50 border-gray-700">
                         <CardContent className="p-6 text-center space-y-4">
                           <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
@@ -1352,42 +1636,42 @@ export default function CommitteesPage() {
                           <div className="w-24 h-24 mx-auto">
                             <img
                               src={
-                                selectedCommittee.leadership.coHead.image ||
+                                selectedCommittee.leadership.coHead1.image ||
                                 "/placeholder.svg"
                               }
-                              alt={selectedCommittee.leadership.coHead.name}
+                              alt={selectedCommittee.leadership.coHead1.name}
                               className="w-full h-full rounded-full object-cover border-2 border-blue-500"
                             />
                           </div>
                           <div>
                             <h4 className="text-xl font-bold text-white">
-                              {selectedCommittee.leadership.coHead.name}
+                              {selectedCommittee.leadership.coHead1.name}
                             </h4>
                             <p className="text-gray-300 text-sm mt-2">
-                              {selectedCommittee.leadership.coHead.bio}
+                              {selectedCommittee.leadership.coHead1.bio}
                             </p>
                           </div>
 
                           <div className="space-y-2">
-                            {selectedCommittee.leadership.coHead.contact
+                            {selectedCommittee.leadership.coHead1.contact
                               .email && (
                               <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                                 <Mail className="w-4 h-4" />
                                 <span>
                                   {
-                                    selectedCommittee.leadership.coHead.contact
+                                    selectedCommittee.leadership.coHead1.contact
                                       .email
                                   }
                                 </span>
                               </div>
                             )}
-                            {selectedCommittee.leadership.coHead.contact
+                            {selectedCommittee.leadership.coHead1.contact
                               .phone && (
                               <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
                                 <Phone className="w-4 h-4" />
                                 <span>
                                   {
-                                    selectedCommittee.leadership.coHead.contact
+                                    selectedCommittee.leadership.coHead1.contact
                                       .phone
                                   }
                                 </span>
@@ -1400,7 +1684,7 @@ export default function CommitteesPage() {
                               Key Achievements
                             </h5>
                             <ul className="space-y-1 text-xs text-gray-400">
-                              {selectedCommittee.leadership.coHead.achievements
+                              {selectedCommittee.leadership.coHead1.achievements
                                 .slice(0, 3)
                                 .map((achievement, index) => (
                                   <li
@@ -1414,11 +1698,11 @@ export default function CommitteesPage() {
                             </ul>
                           </div>
                           <div className="flex justify-center space-x-3">
-                            {selectedCommittee.leadership.coHead.social
+                            {selectedCommittee.leadership.coHead1.social
                               .linkedin && (
                               <a
                                 href={
-                                  selectedCommittee.leadership.coHead.social
+                                  selectedCommittee.leadership.coHead1.social
                                     .linkedin
                                 }
                                 className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -1432,11 +1716,122 @@ export default function CommitteesPage() {
                                 </svg>
                               </a>
                             )}
-                            {selectedCommittee.leadership.coHead.social
+                            {selectedCommittee.leadership.coHead1.social
                               .instagram && (
                               <a
                                 href={
-                                  selectedCommittee.leadership.coHead.social
+                                  selectedCommittee.leadership.coHead1.social
+                                    .instagram
+                                }
+                                className="text-pink-400 hover:text-pink-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                </svg>
+                              </a>
+                            )}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    )}
+                     {selectedCommittee.leadership.coHead2 && (
+                      <Card className="bg-gray-800/50 border-gray-700">
+                        <CardContent className="p-6 text-center space-y-4">
+                          <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+                            Co-Head
+                          </Badge>
+                          <div className="w-24 h-24 mx-auto">
+                            <img
+                              src={
+                                selectedCommittee.leadership.coHead2.image ||
+                                "/placeholder.svg"
+                              }
+                              alt={selectedCommittee.leadership.coHead2.name}
+                              className="w-full h-full rounded-full object-cover border-2 border-blue-500"
+                            />
+                          </div>
+                          <div>
+                            <h4 className="text-xl font-bold text-white">
+                              {selectedCommittee.leadership.coHead2.name}
+                            </h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                              {selectedCommittee.leadership.coHead2.bio}
+                            </p>
+                          </div>
+
+                          <div className="space-y-2">
+                            {selectedCommittee.leadership.coHead2.contact
+                              .email && (
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Mail className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead2.contact
+                                      .email
+                                  }
+                                </span>
+                              </div>
+                            )}
+                            {selectedCommittee.leadership.coHead2.contact
+                              .phone && (
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Phone className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead2.contact
+                                      .phone
+                                  }
+                                </span>
+                              </div>
+                            )}
+                          </div>
+
+                          <div>
+                            <h5 className="text-sm font-semibold text-white mb-2">
+                              Key Achievements
+                            </h5>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                              {selectedCommittee.leadership.coHead2.achievements
+                                .slice(0, 3)
+                                .map((achievement, index) => (
+                                  <li
+                                    key={index}
+                                    className="flex items-start space-x-2"
+                                  >
+                                    <Award className="w-3 h-3 text-orange-400 mt-0.5 flex-shrink-0" />
+                                    <span>{achievement}</span>
+                                  </li>
+                                ))}
+                            </ul>
+                          </div>
+                          <div className="flex justify-center space-x-3">
+                            {selectedCommittee.leadership.coHead2.social
+                              .linkedin && (
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead2.social
+                                    .linkedin
+                                }
+                                className="text-blue-400 hover:text-blue-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                              </a>
+                            )}
+                            {selectedCommittee.leadership.coHead2.social
+                              .instagram && (
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead2.social
                                     .instagram
                                 }
                                 className="text-pink-400 hover:text-pink-300 transition-colors"
