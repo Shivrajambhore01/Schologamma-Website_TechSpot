@@ -1,19 +1,8 @@
 [
   {
-    "title": "Hackathon 2025",
-    "description": "A 24-hour coding challenge bringing together developers to build innovative solutions."
-  },
-  {
-    "title": "Cultural Fest 2025",
-    "description": "An annual cultural event showcasing music, dance, and drama performances."
-  },
-  {
-    "title": "Tech Talk Series",
-    "description": "Expert sessions on AI, Web Development, and Cloud Computing."
-  },
-  {
-    "title": "Sports Meet",
-    "description": "Inter-college cricket, football, and athletics competitions."
+    "id": 1,
+    "img": "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
+    "title": "JD Cha Chintamani Event 2025",
+    "description": "A grand cultural and spiritual celebration organized by JDCOEM, honoring Lord Ganesha with devotional activities, performances, and community gatherings."
   }
 ]
-

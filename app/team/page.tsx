@@ -32,7 +32,13 @@ interface TeamMember {
   name: string;
   role: string;
   committee: string;
-  position: "Admin" | "Head" | "Co-Head" | "Member" | "Spokesperson" | "Student Co-ordinator";
+  position:
+    | "Admin"
+    | "Head"
+    | "Co-Head"
+    | "Member"
+    | "Spokesperson"
+    | "Student Co-ordinator";
   image: string;
   bio: string;
   dob: string;
@@ -59,34 +65,12 @@ export default function TeamPage() {
 
   const teamMembers: TeamMember[] = [
     {
-      id: "1",
-      name: "Shivraj Ambhore",
-      role: "TechSpot Committee Head",
-      committee: "TechSpot",
-      position: "Head",
-      image:
-        "Shivraj-Ambhore.jpg",
-      bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-      dob: "2004-02-19",
-      email: "shivrajambhore01@gmail.com",
-      phone: "8010170071",
-      responsibilities: ["Organize Hachathon","Handle forum Website"],
-      social: {
-        linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-        instagram:
-          "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
-        facebook: "",
-      },
-      skills: ["Java", "DSA", "Full stack Development","Github","Chatgpt"],
-    },
-    {
       id: "2",
       name: "Tanvi Sanghani",
       role: "Spokesperson",
       committee: "Admin",
       position: "Admin",
-      image:
-        "IMG20250802171750 - Tanvi Sanghani.jpg",
+      image: "IMG20250802171750 - Tanvi Sanghani.jpg",
       bio: "Passion for connecting people. I convey our ideas, events, and achievements with clarity, enthusiasm, and impact. I believe in the power of words to inspire participation, foster collaboration, and make our forum a space where creativity and teamwork thrive.",
       dob: "2006-01-24",
       email: "tanvisanghani9@gmail.com",
@@ -107,8 +91,7 @@ export default function TeamPage() {
       role: "Joint-Treasure",
       committee: "",
       position: "Admin",
-      image:
-        "20240924_094947 - Piyush Kolte (1).jpg",
+      image: "20240924_094947 - Piyush Kolte (1).jpg",
       bio: "I’m Piyush Kolte. I’m an engineering student passionate about technology, innovation, and creative problem-solving. I love exploring new ideas, especially in data, design, and digital ethics, and I'm always looking to learn and grow through real-world experiences.",
       dob: "2005-06-01",
       email: "piyushkolte05@gmail.com",
@@ -124,13 +107,68 @@ export default function TeamPage() {
       skills: [],
     },
     {
+      id: "18",
+      name: "Mrunmayi Abhay Somalkar",
+      role: "Joint Secretary",
+      committee: "Core Committee",
+      position: "Admin",
+      image: "Photo from Mrunmayi - MRUNMAYI SOMALKAR (1).jpg",
+      bio: "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
+      dob: "2006-02-10",
+      email: "mrunmayisomalkar210@jdcoem.ac.in",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/mrunmayi-somalkar-28256532a",
+        instagram: "https://www.instagram.com/mrunmayiii_s",
+      },
+      skills: ["Hardworking", "Passionate", "Leadership"],
+    },
+    {
+      id: "22",
+      name: "Rushang Pravin Chandekar",
+      role: "Student Co-ordinator",
+      committee: "Administration",
+      position: "Admin",
+      image: "Firefly 20230930195912 - Rushang Chandekar (1).jpg",
+      bio: "",
+      dob: "2005-02-02",
+      email: "rushangchandekar05@gmail.com",
+      phone: "8857842043",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/rushang-chandekar",
+        instagram: "/team",
+      },
+      skills: ["Leadership", "Coordination", "Management"],
+    },
+    {
+      id: "1",
+      name: "Shivraj Ambhore",
+      role: "TechSpot Committee Head",
+      committee: "TechSpot",
+      position: "Head",
+      image: "Shivraj-Ambhore.jpg",
+      bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+      dob: "2004-02-19",
+      email: "shivrajambhore01@gmail.com",
+      phone: "8010170071",
+      responsibilities: ["Organize Hachathon", "Handle forum Website"],
+      social: {
+        linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+        instagram:
+          "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+        facebook: "",
+      },
+      skills: ["Java", "DSA", "Full stack Development", "Github", "Chatgpt"],
+    },
+    {
       id: "4",
       name: "Aditya Wankhede",
       role: "Technical Committee Head",
       committee: "Technical Committee",
       position: "Head",
-      image:
-        "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg",
+      image: "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg",
       bio: "Technical Committee Head",
       dob: "2004-09-16",
       email: "adiwankhede01@gmail.com",
@@ -146,34 +184,12 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "5",
-      name: "Yuvtika Rahangdale",
-      role: "Creative Committee Co-Head",
-      committee: "Creative Committee",
-      position: "Co-Head",
-      image:
-        "IMG-20250719-WA0011 - Nehal Zade.jpg",
-      bio: "",
-      dob: "2006-02-22",
-      email: "yuvtikarahangdale@gmail.com",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/yuvtika-rahangdale",
-        instagram:
-          "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ==",
-        facebook: "",
-      },
-      skills: [],
-    },
-    {
       id: "7",
       name: "Nikhil Rathod",
       role: "StartUp Committee Head",
       committee: "StartUp Committee",
       position: "Head",
-      image:
-        "DSC_3570_Nikhil - Nikhil Rathod.jpg",
+      image: "DSC_3570_Nikhil - Nikhil Rathod.jpg",
       bio: "Full Stack Developer",
       dob: "2003-07-28",
       email: "nikhilcaptain28@gmail.com",
@@ -188,13 +204,150 @@ export default function TeamPage() {
       skills: ["Full Stack Development"],
     },
     {
+      id: "10",
+      name: "Janvi Akhand",
+      role: "Publicity Head",
+      committee: "Publicity Committee",
+      position: "Head",
+      image: "IMG_5591 - Janvi Akhand.JPG",
+      bio: "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
+      dob: "2005-12-17",
+      email: "janviakhand@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/janvi-akhand-6bb310371",
+        instagram: "/team",
+      },
+      skills: ["Publicity", "Communication", "Leadership"],
+    },
+    {
+      id: "23",
+      name: "Trisha Pillay ",
+      role: "Event committee head ",
+      committee: "Event committee",
+      position: "Head",
+      image: "IMG-20250818-WA0017 - Trisha Pillay.jpg",
+      bio: "I'm Trisha Pillay from CSE 3nd year a driver and ambitious person with a versatile ,dynamic , innovative personality",
+      dob: "2005-11-02",
+      email: "trishapillay804@gmail.com",
+      phone: "9284656256",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/trisha-pillay-9a1066321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram: "/team",
+      },
+      skills: ["Communication", "innovative personality", "Management"],
+    },
+    {
+      id: "24",
+      name: "Khushal Tondre ",
+      role: "Sports Committee Head",
+      committee: "Sport committee",
+      position: "Head",
+      image: "IMG_20240926_150056 - khushal tondare.jpg",
+      bio: "",
+      dob: "2005-05-01",
+      email: "khushaltondare16@gmail.com",
+      phone: "8275826355",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/khushal-tondare-0b489822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/khushall_01._?igsh=a3BocTZyN2MxOTB5",
+      },
+      skills: ["Full stack developer", "python", "c++"],
+    },
+    {
+      id: "27",
+      name: "Piyush Sheware ",
+      role: "Content Editor Committee Head",
+      committee: "Content Editor committee",
+      position: "Head",
+      image: "Untitled design - Piyush Sheware.pdf",
+      bio: "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
+      dob: "2006-03-15",
+      email: "shewarwpiyush@gmail.com",
+      phone: "8928322725",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/piyush-sheware-910a68293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/piyush_sheware_?igsh=MWU4Y205eTc4M3cwNQ==",
+      },
+      skills: [
+        "Content Writing & Editing",
+        "Presentation & Communication",
+        "Public Speaking",
+      ],
+    },
+    {
+      id: "28",
+      name: "Sanika Lanjewar ",
+      role: "Digital Committee Head",
+      committee: "Digital committee",
+      position: "Head",
+      image: "IMG_20250731_151647 - Sanika Lanjewar.jpg",
+      bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
+      dob: "2004-12-14",
+      email: "shewarwpiyush@gmail.com",
+      phone: "9309022453",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram: "/team",
+      },
+      skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
+    },
+    {
+      id: "29",
+      name: "Yadvi Bhandarkar",
+      role: "NSS Committee Head",
+      committee: "NSS committee",
+      position: "Head",
+      image: "Passport REsize photo - Yadvi Bhandarkar.jpg",
+      bio: "CSE student Skilled in Python and Exploring Data Science ",
+      dob: "2004-07-30",
+      email: "yadvi@gmail.com",
+      phone: "8459612186",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/yadvi-bhandarkar-b944a1301/",
+        instagram: "/team",
+      },
+      skills: ["Python,", "Data Analytics"],
+    },
+    {
+      id: "5",
+      name: "Yuvtika Rahangdale",
+      role: "Creative Committee Co-Head",
+      committee: "Creative Committee",
+      position: "Co-Head",
+      image: "IMG-20250719-WA0011 - Nehal Zade.jpg",
+      bio: "",
+      dob: "2006-02-22",
+      email: "yuvtikarahangdale@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/yuvtika-rahangdale",
+        instagram:
+          "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ==",
+        facebook: "",
+      },
+      skills: [],
+    },
+    {
       id: "8",
       name: "Akansha Anil Ambadkar",
       role: "Creative Committee Co-Head",
       committee: "Creative Committee",
       position: "Co-Head",
-      image:
-        "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg",
+      image: "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg",
       bio: "",
       dob: "2007-02-24",
       email: "madhu.ambadkar2003@gmail.com",
@@ -213,8 +366,7 @@ export default function TeamPage() {
       role: "TechSpot Committee Co-Head",
       committee: "TechSpot Committee",
       position: "Co-Head",
-      image:
-        "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+      image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
       bio: "Hello I am Anuj from CSE-B, passionate about coding and good at web development.",
       dob: "2006-09-09",
       email: "anujlakhekar4@gmail.com",
@@ -229,32 +381,12 @@ export default function TeamPage() {
       skills: ["Web Development", "Coding"],
     },
     {
-      id: "10",
-      name: "Janvi Akhand",
-      role: "Publicity Head",
-      committee: "Publicity Committee",
-      position: "Head",
-      image:
-        "IMG_5591 - Janvi Akhand.JPG",
-      bio: "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
-      dob: "2005-12-17",
-      email: "janviakhand@gmail.com",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/janvi-akhand-6bb310371",
-        instagram: "/team",
-      },
-      skills: ["Publicity", "Communication", "Leadership"],
-    },
-    {
       id: "11",
       name: "Santosh Donapurge",
       role: "TechSpot Committee Co-Head",
       committee: "TechSpot Committee",
       position: "Co-Head",
-      image:
-        "1748265675540 - Sento Coder.jpg",
+      image: "1748265675540 - Sento Coder.jpg",
       bio: "SDE",
       dob: "2005-11-19",
       email: "codersento@gmail.com",
@@ -262,7 +394,7 @@ export default function TeamPage() {
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304",
-         instagram: "/team",
+        instagram: "/team",
       },
       skills: ["Software Development", "Problem Solving", "Team Collaboration"],
     },
@@ -272,8 +404,7 @@ export default function TeamPage() {
       role: "Technical Committee Co-Head",
       committee: "Technical Committee",
       position: "Co-Head",
-      image:
-        "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
+      image: "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
       bio: "",
       dob: "2005-08-27",
       email: "yashasvibhambore1@jdcoem.ac.in",
@@ -281,7 +412,7 @@ export default function TeamPage() {
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
-         instagram: "/team",
+        instagram: "/team",
       },
       skills: ["Leadership", "Technical Knowledge", "Team Collaboration"],
     },
@@ -291,8 +422,7 @@ export default function TeamPage() {
       role: "Co-Head in Technical Committee",
       committee: "Technical Committee",
       position: "Co-Head",
-      image:
-        "20250731_190814 - OM DESHMUKH.jpg",
+      image: "20250731_190814 - OM DESHMUKH.jpg",
       bio: "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
       dob: "2005-07-30",
       email: "omdeshmukh399@jdcoem.ac.in",
@@ -310,8 +440,7 @@ export default function TeamPage() {
       role: "Sport Co-Head",
       committee: "Sports Committee",
       position: "Co-Head",
-      image:
-        "IMG-20250719-WA0011 - Nehal Zade.jpg",
+      image: "IMG-20250719-WA0011 - Nehal Zade.jpg",
       bio: "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
       dob: "2006-08-04",
       email: "nehalzade04@gmail.com",
@@ -330,8 +459,7 @@ export default function TeamPage() {
       role: "Discipline Committee Co-Head",
       committee: "Discipline Committee",
       position: "Co-Head",
-      image:
-        "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
+      image: "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
       bio: "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
       dob: "2006-02-26",
       email: "karishmanaidu035@gmail.com",
@@ -339,7 +467,7 @@ export default function TeamPage() {
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/karishma-naidu-915168339",
-         instagram: "/team",
+        instagram: "/team",
       },
       skills: ["Discipline", "Teamwork", "Leadership", "Adaptability"],
     },
@@ -349,8 +477,7 @@ export default function TeamPage() {
       role: "Content Committee Co-Head",
       committee: "Content Committee",
       position: "Co-Head",
-      image:
-        "Document from Bhavya Pandey - Bhavya Pandey.jpg",
+      image: "Document from Bhavya Pandey - Bhavya Pandey.jpg",
       bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
       dob: "2006-01-01",
       email: "pandeybhavya336@gmail.com",
@@ -378,8 +505,7 @@ export default function TeamPage() {
       role: "Event Committee Co-Head",
       committee: "Event Committee",
       position: "Co-Head",
-      image:
-        "IMG_20250727_231227 - Sakshi Gokhe.jpg",
+      image: "IMG_20250727_231227 - Sakshi Gokhe.jpg",
       bio: "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
       dob: "2006-02-20",
       email: "sakshigokhe67@gmail.com",
@@ -398,32 +524,12 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "18",
-      name: "Mrunmayi Abhay Somalkar",
-      role: "Joint Secretary",
-      committee: "Core Committee",
-      position: "Admin",
-      image:
-        "Photo from Mrunmayi - MRUNMAYI SOMALKAR (1).jpg",
-      bio: "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
-      dob: "2006-02-10",
-      email: "mrunmayisomalkar210@jdcoem.ac.in",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/mrunmayi-somalkar-28256532a",
-        instagram: "https://www.instagram.com/mrunmayiii_s",
-      },
-      skills: ["Hardworking", "Passionate", "Leadership"],
-    },
-    {
       id: "19",
       name: "Manswini Unhone",
       role: "Publicity Committee Co-Head",
       committee: "Publicity Committee",
       position: "Co-Head",
-      image:
-        "IMG-20241204-WA0001 - Ishu Unhone.jpg",
+      image: "IMG-20241204-WA0001 - Ishu Unhone.jpg",
       bio: "Hello, I'm Manswini, looking forward to learning new skills.",
       dob: "2006-03-05",
       email: "ishuunhone1@gmail.com",
@@ -442,84 +548,25 @@ export default function TeamPage() {
       role: "Sports Committee Co-Head",
       committee: "Sports Committee",
       position: "Co-Head",
-      image:
-        "BT240083CS - Payal Kumare.jpg",
+      image: "BT240083CS - Payal Kumare.jpg",
       bio: "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
       dob: "2006-09-11",
       email: "payalkumare86686@gmail.com",
       phone: "8668614175",
       responsibilities: [],
       social: {
-        linkedin: "www.linkedin.com/in/payal-kumare86686",
-         instagram: "/team",
+        linkedin: "https://www.linkedin.com/in/payal-kumare86686/",
+        instagram: "/team",
       },
       skills: ["Sports Management", "Teamwork", "Leadership", "Discipline"],
     },
     {
-      id: "22",
-      name: "Rushang Pravin Chandekar",
-      role: "Student Co-ordinator",
-      committee: "Administration",
-      position: "Admin",
-      image:
-        "Firefly 20230930195912 - Rushang Chandekar (1).jpg",
-      bio: "",
-      dob: "2005-02-02",
-      email: "rushangchandekar05@gmail.com",
-      phone: "8857842043",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/rushang-chandekar",
-        instagram: "/team",
-      },
-      skills: ["Leadership", "Coordination", "Management"],
-    },
-     {
-      id: "23",
-      name: "Trisha Pillay ",
-      role: "Event committee head ",
-      committee: "Event committee",
-      position: "Head",
-      image:
-        "IMG-20250818-WA0017 - Trisha Pillay.jpg",
-      bio: "I'm Trisha Pillay from CSE 3nd year a driver and ambitious person with a versatile ,dynamic , innovative personality",
-      dob: "2005-11-02",
-      email: "trishapillay804@gmail.com",
-      phone: "9284656256",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/trisha-pillay-9a1066321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "/team",
-      },
-      skills: ["Communication", "innovative personality", "Management"],
-    },
-     {
-      id: "24",
-      name: "Khushal Tondre ",
-      role: "Sports Committee Head",
-      committee: "Sport committee",
-      position: "Head",
-      image:
-        "IMG_20240926_150056 - khushal tondare.jpg",
-      bio: "",
-      dob: "2005-05-01",
-      email: "khushaltondare16@gmail.com",
-      phone: "8275826355",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/khushal-tondare-0b489822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "https://www.instagram.com/khushall_01._?igsh=a3BocTZyN2MxOTB5",
-      },
-      skills: ["Full stack developer", "python", "c++"],
-    },
-      {
       id: "25",
       name: "HITESH MISHRA",
       role: "Discipline Committee Co-Head",
       committee: "Discipline committee",
       position: "Co-Head",
-      image:
-        "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
+      image: "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
       bio: "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
       dob: "2005-09-19",
       email: "hiteshmishra910@gmail.com",
@@ -529,86 +576,28 @@ export default function TeamPage() {
         linkedin: "https://www.linkedin.com/in/Hitesh mishra",
         instagram: "/team",
       },
-      skills: ["C","c++"],
+      skills: ["C", "c++"],
     },
-     {
+    {
       id: "26",
       name: "Mohini Wankhede",
       role: "Publicity Committee Co-Head",
       committee: "Publicity committee",
       position: "Co-Head",
-      image:
-        "IMG_20250802_094903407_HDR - Mohini Wankhede.jpg",
+      image: "IMG_20250802_094903407_HDR - Mohini Wankhede.jpg",
       bio: "I'm Mohini, a Computer Science Engineering student with a curious mindset. I enjoy exploring new things, learning consistently, and improving myself every day. I believe in staying positive and growing step by step.",
       dob: "2006-04-10",
       email: "wankhedemohini4@gmail.com",
       phone: "9834032675",
       responsibilities: [],
       social: {
-        linkedin: "https://www.linkedin.com/in/mohini-wankhede-a2699337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "https://www.instagram.com/mohini_wankhede_10/profilecard/?igsh=MXRyM21kMXoyY2p6Zw==",
+        linkedin:
+          "https://www.linkedin.com/in/mohini-wankhede-a2699337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/mohini_wankhede_10/profilecard/?igsh=MXRyM21kMXoyY2p6Zw==",
       },
-      skills: ["Python","DSA","Teamwork and collaboration "],
+      skills: ["Python", "DSA", "Teamwork and collaboration "],
     },
-      {
-      id: "27",
-      name: "Piyush Sheware ",
-      role: "Content Editor Committee Head",
-      committee: "Content Editor committee",
-      position: "Head",
-      image:
-        "Untitled design - Piyush Sheware.pdf",
-      bio: "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
-      dob: "2006-03-15",
-      email: "shewarwpiyush@gmail.com",
-      phone: "8928322725",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/piyush-sheware-910a68293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "https://www.instagram.com/piyush_sheware_?igsh=MWU4Y205eTc4M3cwNQ==",
-      },
-      skills: ["Content Writing & Editing","Presentation & Communication","Public Speaking"],
-    },
-     {
-      id: "28",
-      name: "Sanika Lanjewar ",
-      role: "Digital Committee Head",
-      committee: "Digital committee",
-      position: "Head",
-      image:
-        "IMG_20250731_151647 - Sanika Lanjewar.jpg",
-      bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
-      dob: "2004-12-14",
-      email: "shewarwpiyush@gmail.com",
-      phone: "9309022453",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "/team",
-      },
-      skills: ["Python,","Javscript ","UI/UX design","HTML & CSS"],
-    },
-
-   {
-      id: "29",
-      name: "Yadvi Bhandarkar",
-      role: "NSS Committee Head",
-      committee: "NSS committee",
-      position: "Head",
-      image:
-        "Passport REsize photo - Yadvi Bhandarkar.jpg",
-      bio: "CSE student Skilled in Python and Exploring Data Science ",
-      dob: "2004-07-30",
-      email: "yadvi@gmail.com",
-      phone: "8459612186",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/yadvi-bhandarkar-b944a1301/",
-        instagram: "/team",
-      },
-      skills: ["Python,","Data Analytics"],
-    },
-
   ];
 
   const committees = [

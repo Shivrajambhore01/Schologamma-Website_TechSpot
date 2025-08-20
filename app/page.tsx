@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-
+import committees from "@/lib/committees.json";
+import events from "@/lib/events.json";
+import team from "@/lib/team.json";
 import {
   Users,
   ArrowRight,
@@ -22,6 +24,11 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Footer from "@/components/footer";
 
+type SearchResult =
+  | { type: "committee"; name: string; description: string, id: string | Number }
+  | { type: "event"; title: string; description: string,  id: string | Number  }
+  | { type: "team"; name: string; role: string,  id: string | Number  };
+
 export default function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,7 +38,8 @@ export default function HomePage() {
   const [visibleElements, setVisibleElements] = useState(new Set());
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const router = useRouter();
-
+  const [searchResults, setSearchResults] = useState(false);
+  const [Results, setResults] = useState<SearchResult[]>([]);
   const heroRef = useRef(null);
   const committeesRef = useRef(null);
   const aboutRef = useRef(null);
@@ -317,6 +325,41 @@ export default function HomePage() {
     },
   ];
 
+  useEffect(() => {
+    const q = searchQuery.toLowerCase().trim();
+
+    if (!q) {
+      setResults([]); // clear results if query is empty
+      return;
+    }
+
+    const filteredCommittees = committees.filter(
+      (c) =>
+        c.name.toLowerCase().includes(q) ||
+        c.description.toLowerCase().includes(q)
+    );
+
+    const filteredEvents = events.filter(
+      (e) =>
+        e.title.toLowerCase().includes(q) ||
+        e.description.toLowerCase().includes(q)
+    );
+
+    const filteredTeam = team.filter(
+      (t) =>
+        t.name.toLowerCase().includes(q) || t.role.toLowerCase().includes(q)
+    );
+
+    // combine all results
+    const allResults = [
+      ...filteredCommittees.map((c) => ({ type: "committee", ...c })),
+      ...filteredEvents.map((e) => ({ type: "event", ...e })),
+      ...filteredTeam.map((t) => ({ type: "team", ...t })),
+    ];
+
+    setResults(allResults);
+  }, [searchQuery, committees, events, team]);
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
       <div className="fixed inset-0 z-0">
@@ -352,22 +395,79 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="hidden md:flex flex-1 max-w-md mx-8">
+            <div className="hidden relative md:flex flex-1 max-w-md mx-8">
               <div className="relative w-full group">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 group-focus-within:text-blue-400 transition-colors" />
                 <Input
                   type="text"
                   placeholder="Search events, committees, members..."
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                  }}
                   onKeyDown={(e) => {
                     if (e.key == "Enter") {
-                    router.push(`/search?query=${searchQuery}`)
+                      e.preventDefault();
+                      window.location.href = `/search?query=${searchQuery}`;
                     }
+                    console.log(e);
                   }}
                   className="pl-10 bg-gray-900/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
                 />
               </div>
+
+              {searchQuery.length > 0 ? (
+                <div className="absolute cursor-pointer  duration-200 ease-linear mt-12 hide-scrollbar scrollbar-hide p-3 rounded-lg w-full h-[560px] overflow-scroll border-2 bg-black/70 backdrop-blur-md">
+                  <h1 className="p-2 duration-300 ease-in">
+                    {" "}
+                    searching for "{searchQuery}"
+                  </h1>
+                  <div>
+                    {Results.map((re, i) => {
+                      return (
+                        <div key={i} className="p-2 border-b border-gray-700">
+                          {re.type === "committee" && (
+                            <div
+                              onClick={() => {
+                                window.location.href = `/search?query=${searchQuery}`;
+                              }}
+                              className="p-2 bg-green-400/30 rounded-lg"
+                            >
+                              <strong>Committee:</strong> {re.name} <br />
+                              <span className="text-sm">{re.description}</span>
+                            </div>
+                          )}
+
+                          {re.type === "event" && (
+                            <div
+                              onClick={() => {
+                                window.location.href = `/events/${re.id}`;
+                              }}
+                              className="p-2 bg-pink-300/30 rounded-lg"
+                            >
+                              <strong>Event:</strong> {re.title} <br />
+                              <span className="text-sm">{re.description}</span>
+                            </div>
+                          )}
+
+                          {re.type === "team" && (
+                            <div
+                              onClick={() => {
+                                window.location.href = `/team/${re.id}`;
+                              }}
+                              className="p-2 bg-yellow-300/30 rounded-lg"
+                            >
+                              <strong>Team:</strong> {re.name} - {re.role}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
@@ -408,9 +508,14 @@ export default function HomePage() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
                 <Input
                   type="text"
-                  placeholder="Search..."
+                  placeholder="Search and Enter..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key == "Enter") {
+                      router.push(`/search?query=${searchQuery}`);
+                    }
+                  }}
                   className="pl-10 bg-gray-900/50 border-gray-700 text-white placeholder-gray-400"
                 />
               </div>
@@ -677,7 +782,7 @@ export default function HomePage() {
             </p>
           </div>
 
-         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {committees.map((committee, index) => (
               <Card
                 key={index}
@@ -694,30 +799,30 @@ export default function HomePage() {
               >
                 <CardContent className="p-8 text-center space-y-6 relative overflow-hidden">
                   <a href="/committees">
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                    {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                     {committee.icon}
                   </div> */}
-                  <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
-                    <img
-                      src={committee.image}
-                      alt={committee.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
+                      <img
+                        src={committee.image}
+                        alt={committee.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
 
-                  <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
-                    {committee.name}
-                  </h3>
-                  {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
+                      {committee.name}
+                    </h3>
+                    {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                     {committee.description}
                   </p> */}
-                  {/* <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
+                    {/* <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
                     <Users className="w-4 h-4" />
                     <span>{committee.members} Members</span>
                   </div> */}
-{/*                 
+                    {/*                 
                     <Button
                       variant="outline"
                       className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent transform group-hover:scale-105 transition-all duration-300"
