@@ -677,7 +677,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {committees.map((committee, index) => (
               <Card
                 key={index}
@@ -693,12 +693,13 @@ export default function HomePage() {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardContent className="p-8 text-center space-y-6 relative overflow-hidden">
+                  <a href="/committees">
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                     {committee.icon}
                   </div> */}
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
+                  <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
                     <img
                       src={committee.image}
                       alt={committee.name}
@@ -709,20 +710,20 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
                     {committee.name}
                   </h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                  {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                     {committee.description}
-                  </p>
-                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
+                  </p> */}
+                  {/* <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
                     <Users className="w-4 h-4" />
                     <span>{committee.members} Members</span>
-                  </div>
-                  <a href="/committees">
+                  </div> */}
+{/*                 
                     <Button
                       variant="outline"
                       className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent transform group-hover:scale-105 transition-all duration-300"
                     >
                       Learn More
-                    </Button>
+                    </Button> */}
                   </a>
                 </CardContent>
               </Card>
