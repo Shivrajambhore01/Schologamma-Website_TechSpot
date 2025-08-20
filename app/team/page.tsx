@@ -643,15 +643,15 @@ export default function TeamPage() {
   const getPositionColor = (position: string) => {
     switch (position) {
       case "Admin":
-        return "bg-red-500/20 text-red-400 border-red-500/30";
+        return "bg-red-500/60 text-red-150 border-red-500/20";
       case "Head":
-        return "bg-purple-500/20 text-purple-400 border-purple-500/30";
+        return "bg-purple-500/60 text-purple-100 border-purple-500/30";
       case "Co-Head":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
+        return "bg-blue-500/60 text-blue-100 border-blue-500/30";
       case "Member":
-        return "bg-green-500/20 text-green-400 border-green-500/30";
+        return "bg-green-500/60 text-green-100 border-green-500/30";
       default:
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
+        return "bg-gray-500/60 text-gray-100 border-gray-500/30";
     }
   };
 
@@ -841,7 +841,7 @@ export default function TeamPage() {
             >
               <CardContent className="p-6 text-center space-y-4">
                 <div className="relative">
-                  <div className="w-24 h-24 mx-auto mb-4">
+                  <div className="w-34 h-34 mx-auto mb-4">
                     <img
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
@@ -859,8 +859,8 @@ export default function TeamPage() {
                   <h3 className="text-lg font-bold text-white">
                     {member.name}
                   </h3>
-                  <p className="text-orange-400 font-medium">{member.role}</p>
-                  <p className="text-gray-400 text-sm">{member.committee}</p>
+                  <p className="text-orange-400 font-large">{member.role}</p>
+                  {/* <p className="text-gray-400 text-sm">{member.committee}</p> */}
                 </div>
 
                 <div className="flex justify-center space-x-3">
@@ -956,10 +956,10 @@ export default function TeamPage() {
                     <img
                       src={selectedMember.image || "/placeholder.svg"}
                       alt={selectedMember.name}
-                      className="w-32 h-32 rounded-full object-cover border-4 border-purple-500 mx-auto"
+                      className="w-40 h-40 rounded-full object-cover border-4 border-purple-500 mx-auto"
                     />
                     <Badge
-                      className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 ${getPositionColor(
+                      className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2  ${getPositionColor(
                         selectedMember.position
                       )}`}
                     >
@@ -997,10 +997,10 @@ export default function TeamPage() {
                       <Phone className="w-4 h-4 text-purple-400" />
                       <span>{selectedMember.phone}</span>
                     </div>
-                    <div className="flex items-center justify-center space-x-2">
+                    {/* <div className="flex items-center justify-center space-x-2">
                       <Users className="w-4 h-4 text-purple-400" />
-                      {/* <span>Joined: {new Date(selectedMember.joinDate).toLocaleDateString()}</span> */}
-                    </div>
+                      <span>Joined: {new Date(selectedMember.joinDate).toLocaleDateString()}</span>
+                    </div> */}
                   </div>
 
                   <div className="flex justify-center space-x-4">
@@ -1095,7 +1095,7 @@ export default function TeamPage() {
                       ))}
                     </div>
                   </div>
-
+{/* 
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-3">
                       Key Responsibilities
@@ -1113,7 +1113,7 @@ export default function TeamPage() {
                         )
                       )}
                     </ul>
-                  </div>
+                  </div> */}
 
                   <div>
                     {/* <h3 className="text-xl font-semibold text-white mb-3">Achievements</h3>

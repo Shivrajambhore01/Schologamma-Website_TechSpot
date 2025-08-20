@@ -38,6 +38,34 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
+/* Animated custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* small size */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937; /* gray-800 */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* gray-600 */
+  border-radius: 10px;
+  border: 2px solid #1f2937;
+  transition: all 0.3s ease-in-out; /* 🔥 smooth animation */
+}
+
+/* Hover effect */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #f97316; /* orange-500 */
+  width: 10px; /* 🔥 expands smoothly */
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
 
 .dark {
   --background: oklch(0.145 0 0);

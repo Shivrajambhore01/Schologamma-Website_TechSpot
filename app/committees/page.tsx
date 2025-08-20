@@ -95,7 +95,7 @@ export default function CommitteesPage() {
         "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
       fullDescription:
         "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
-      logo: "/placeholder.svg?height=80&width=80&text=🧰",
+      logo: "college.jpeg",
       color: "blue",
       members: 8,
       // established: "2020-07-22",
@@ -114,7 +114,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -127,7 +127,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -140,7 +140,7 @@ export default function CommitteesPage() {
               "/team",
           },
         },
-        
+
       },
       membersList: [
         {
@@ -155,13 +155,13 @@ export default function CommitteesPage() {
           image: "/professional-male-student.png",
           year: "3rd Year",
         },
-         {
+        {
           name: "Anjali Kundojwar",
           role: "Member",
           image: "/professional-female-student.png",
           year: "2nd Year",
         },
-          {
+        {
           name: "sanchi Sawale",
           role: "Member",
           image: "/professional-female-student.png",
@@ -208,7 +208,7 @@ export default function CommitteesPage() {
         "Blog/Newsletter",
       ],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -221,7 +221,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -234,7 +234,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -331,7 +331,7 @@ export default function CommitteesPage() {
         "Hackathons",
       ],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -344,7 +344,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -357,7 +357,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -457,7 +457,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -470,7 +470,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -551,7 +551,7 @@ export default function CommitteesPage() {
       // established: "2017-09-15",
       focus: ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
       leadership: {
-       head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -564,7 +564,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -577,7 +577,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -648,7 +648,7 @@ export default function CommitteesPage() {
       // established: "2018-08-01",
       focus: ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -661,7 +661,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -674,7 +674,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -740,7 +740,7 @@ export default function CommitteesPage() {
       // established: "2018-01-20",
       focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -753,7 +753,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -766,7 +766,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -831,7 +831,7 @@ export default function CommitteesPage() {
       // established: "2018-06-10",
       focus: ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -844,7 +844,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -857,7 +857,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -922,7 +922,7 @@ export default function CommitteesPage() {
       // established: "2019-09-01",
       focus: ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -935,7 +935,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -948,7 +948,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -1034,7 +1034,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -1047,7 +1047,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -1120,7 +1120,7 @@ export default function CommitteesPage() {
         "Volunteering",
       ],
       leadership: {
-         head: {
+        head: {
           name: "Shivraj Ambhore",
           image:
             "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
@@ -1133,7 +1133,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
           },
         },
-         coHead1: {
+        coHead1: {
           name: "Anuj Lakhekar",
           image:
             "IMG-20250801-WA0075 - anuj lakhekar.jpg",
@@ -1146,7 +1146,7 @@ export default function CommitteesPage() {
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
-         coHead2: {
+        coHead2: {
           name: "Santosh Donapurge",
           image:
             "1748265675540 - Sento Coder.jpg",
@@ -1251,7 +1251,7 @@ export default function CommitteesPage() {
       return colorMap[color] || colorMap.blue;
     }
 
-    return colorMap[color] || colorMap.blue;
+    return colorMap.blue;
   };
 
   type Status = "completed" | "ongoing" | "upcoming";
@@ -1340,21 +1340,22 @@ export default function CommitteesPage() {
               key={committee.id}
               className={`bg-gradient-to-br ${getColorClasses(
                 committee.color
-              )} backdrop-blur-sm border transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group cursor-pointer`}
+              )} backdrop-blur-sm border transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group cursor-pointer bg-blue-90/40 border-blue-900/50`}
             >
               <CardContent className="p-6 text-center space-y-4 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Committee Logo */}
                 <div className="relative z-10">
-                  <div className="w-28 h-28 mx-auto mb-4 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                  <div className="w-34 h-34 mx-auto mb-4 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 overflow-hidden">
                     <img
                       src={committee.logo || "/placeholder.svg"}
                       alt={`${committee.name} logo`}
-                      className="w-16 h-16 object-contain"
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                 </div>
+
 
                 {/* Committee Name */}
                 <h3 className="text-lg font-bold text-white group-hover:text-orange-300 transition-colors duration-300 relative z-10">
@@ -1362,9 +1363,9 @@ export default function CommitteesPage() {
                 </h3>
 
                 {/* Small About Description */}
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 text-sm leading-relaxed relative z-10">
+                {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 text-sm leading-relaxed relative z-10">
                   {committee.description}
-                </p>
+                </p> */}
 
                 {/* Member Count */}
                 <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 relative z-10">
@@ -1405,7 +1406,9 @@ export default function CommitteesPage() {
       {/* Committee Detail Modal */}
       {selectedCommittee && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-gray-700">
+          <div className="bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-gray-700 custom-scrollbar">
+
+
             <div className="relative">
               <div
                 className={`h-32 bg-gradient-to-r ${getColorClasses(
@@ -1415,9 +1418,9 @@ export default function CommitteesPage() {
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
                     <img
-                      src={selectedCommittee.logo || "/placeholder.svg"}
+                      src={selectedCommittee.logo || "college.jpeg"}
                       alt={`${selectedCommittee.name} logo`}
-                      className="w-10 h-10 object-contain"
+                      className="w-16 h-16  object-fill rounded-full"
                     />
                   </div>
                   <h2 className="text-3xl font-bold text-white">
@@ -1430,15 +1433,14 @@ export default function CommitteesPage() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setSelectedCommittee(null)}
-                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white"
-              >
+                className="  absolute top-2 right-2 md:top-4 md:right-4  bg-black/50 hover:bg-black/70 text-white">
                 <X className="w-5 h-5" />
               </Button>
             </div>
 
-            <div className="p-8">
+            <div className="p-5">
               <Tabs defaultValue="overview" className="w-full">
-                <TabsList className="grid w-full grid-cols-5 bg-gray-800">
+                <TabsList className="grid w-full  flex flex-wrap grid-cols-5 bg-gray-800">
                   <TabsTrigger value="overview">Overview</TabsTrigger>
                   <TabsTrigger value="leadership">Leadership</TabsTrigger>
                   <TabsTrigger value="members">Members</TabsTrigger>
@@ -1499,10 +1501,10 @@ export default function CommitteesPage() {
                     </div>
                     <div className="bg-gray-800/50 rounded-lg p-4">
                       <Calendar className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-white">
+                      {/* <div className="text-2xl font-bold text-white">
                         {new Date().getFullYear() -
                           new Date(selectedCommittee.established).getFullYear()}
-                      </div>
+                      </div> */}
                       <div className="text-gray-400">Years Active</div>
                     </div>
                     <div className="bg-gray-800/50 rounded-lg p-4">
@@ -1567,7 +1569,7 @@ export default function CommitteesPage() {
                           )}
                         </div>
 
-                        <div>
+                        {/* <div>
                           <h5 className="text-sm font-semibold text-white mb-2">
                             Key Achievements
                           </h5>
@@ -1584,44 +1586,44 @@ export default function CommitteesPage() {
                                 </li>
                               ))}
                           </ul>
-                        </div>
+                        </div> */}
                         <div className="flex justify-center space-x-3">
                           {selectedCommittee.leadership.head.social
                             .linkedin && (
-                            <a
-                              href={
-                                selectedCommittee.leadership.head.social
-                                  .linkedin
-                              }
-                              className="text-blue-400 hover:text-blue-300 transition-colors"
-                            >
-                              <svg
-                                className="w-4 h-4"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.head.social
+                                    .linkedin
+                                }
+                                className="text-blue-400 hover:text-blue-300 transition-colors"
                               >
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                              </svg>
-                            </a>
-                          )}
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                              </a>
+                            )}
                           {selectedCommittee.leadership.head.social
                             .instagram && (
-                            <a
-                              href={
-                                selectedCommittee.leadership.head.social
-                                  .instagram
-                              }
-                              className="text-pink-400 hover:text-pink-300 transition-colors"
-                            >
-                              <svg
-                                className="w-4 h-4"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.head.social
+                                    .instagram
+                                }
+                                className="text-pink-400 hover:text-pink-300 transition-colors"
                               >
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                              </svg>
-                            </a>
-                          )}
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                </svg>
+                              </a>
+                            )}
                         </div>
                       </CardContent>
                     </Card>
@@ -1655,30 +1657,30 @@ export default function CommitteesPage() {
                           <div className="space-y-2">
                             {selectedCommittee.leadership.coHead1.contact
                               .email && (
-                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                <Mail className="w-4 h-4" />
-                                <span>
-                                  {
-                                    selectedCommittee.leadership.coHead1.contact
-                                      .email
-                                  }
-                                </span>
-                              </div>
-                            )}
+                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                  <Mail className="w-4 h-4" />
+                                  <span>
+                                    {
+                                      selectedCommittee.leadership.coHead1.contact
+                                        .email
+                                    }
+                                  </span>
+                                </div>
+                              )}
                             {selectedCommittee.leadership.coHead1.contact
                               .phone && (
-                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                <Phone className="w-4 h-4" />
-                                <span>
-                                  {
-                                    selectedCommittee.leadership.coHead1.contact
-                                      .phone
-                                  }
-                                </span>
-                              </div>
-                            )}
+                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                  <Phone className="w-4 h-4" />
+                                  <span>
+                                    {
+                                      selectedCommittee.leadership.coHead1.contact
+                                        .phone
+                                    }
+                                  </span>
+                                </div>
+                              )}
                           </div>
-
+                          {/* 
                           <div>
                             <h5 className="text-sm font-semibold text-white mb-2">
                               Key Achievements
@@ -1696,49 +1698,49 @@ export default function CommitteesPage() {
                                   </li>
                                 ))}
                             </ul>
-                          </div>
+                          </div> */}
                           <div className="flex justify-center space-x-3">
                             {selectedCommittee.leadership.coHead1.social
                               .linkedin && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.coHead1.social
-                                    .linkedin
-                                }
-                                className="text-blue-400 hover:text-blue-300 transition-colors"
-                              >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
+                                <a
+                                  href={
+                                    selectedCommittee.leadership.coHead1.social
+                                      .linkedin
+                                  }
+                                  className="text-blue-400 hover:text-blue-300 transition-colors"
                                 >
-                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                              </a>
-                            )}
+                                  <svg
+                                    className="w-4 h-4"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                  </svg>
+                                </a>
+                              )}
                             {selectedCommittee.leadership.coHead1.social
                               .instagram && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.coHead1.social
-                                    .instagram
-                                }
-                                className="text-pink-400 hover:text-pink-300 transition-colors"
-                              >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
+                                <a
+                                  href={
+                                    selectedCommittee.leadership.coHead1.social
+                                      .instagram
+                                  }
+                                  className="text-pink-400 hover:text-pink-300 transition-colors"
                                 >
-                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                                </svg>
-                              </a>
-                            )}
+                                  <svg
+                                    className="w-4 h-4"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                  </svg>
+                                </a>
+                              )}
                           </div>
                         </CardContent>
                       </Card>
                     )}
-                     {selectedCommittee.leadership.coHead2 && (
+                    {selectedCommittee.leadership.coHead2 && (
                       <Card className="bg-gray-800/50 border-gray-700">
                         <CardContent className="p-6 text-center space-y-4">
                           <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
@@ -1766,31 +1768,31 @@ export default function CommitteesPage() {
                           <div className="space-y-2">
                             {selectedCommittee.leadership.coHead2.contact
                               .email && (
-                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                <Mail className="w-4 h-4" />
-                                <span>
-                                  {
-                                    selectedCommittee.leadership.coHead2.contact
-                                      .email
-                                  }
-                                </span>
-                              </div>
-                            )}
+                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                  <Mail className="w-4 h-4" />
+                                  <span>
+                                    {
+                                      selectedCommittee.leadership.coHead2.contact
+                                        .email
+                                    }
+                                  </span>
+                                </div>
+                              )}
                             {selectedCommittee.leadership.coHead2.contact
                               .phone && (
-                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                <Phone className="w-4 h-4" />
-                                <span>
-                                  {
-                                    selectedCommittee.leadership.coHead2.contact
-                                      .phone
-                                  }
-                                </span>
-                              </div>
-                            )}
+                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                  <Phone className="w-4 h-4" />
+                                  <span>
+                                    {
+                                      selectedCommittee.leadership.coHead2.contact
+                                        .phone
+                                    }
+                                  </span>
+                                </div>
+                              )}
                           </div>
 
-                          <div>
+                          {/* <div>
                             <h5 className="text-sm font-semibold text-white mb-2">
                               Key Achievements
                             </h5>
@@ -1807,44 +1809,44 @@ export default function CommitteesPage() {
                                   </li>
                                 ))}
                             </ul>
-                          </div>
+                          </div> */}
                           <div className="flex justify-center space-x-3">
                             {selectedCommittee.leadership.coHead2.social
                               .linkedin && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.coHead2.social
-                                    .linkedin
-                                }
-                                className="text-blue-400 hover:text-blue-300 transition-colors"
-                              >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
+                                <a
+                                  href={
+                                    selectedCommittee.leadership.coHead2.social
+                                      .linkedin
+                                  }
+                                  className="text-blue-400 hover:text-blue-300 transition-colors"
                                 >
-                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                              </a>
-                            )}
+                                  <svg
+                                    className="w-4 h-4"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                  </svg>
+                                </a>
+                              )}
                             {selectedCommittee.leadership.coHead2.social
                               .instagram && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.coHead2.social
-                                    .instagram
-                                }
-                                className="text-pink-400 hover:text-pink-300 transition-colors"
-                              >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
+                                <a
+                                  href={
+                                    selectedCommittee.leadership.coHead2.social
+                                      .instagram
+                                  }
+                                  className="text-pink-400 hover:text-pink-300 transition-colors"
                                 >
-                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                                </svg>
-                              </a>
-                            )}
+                                  <svg
+                                    className="w-4 h-4"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                  </svg>
+                                </a>
+                              )}
                           </div>
                         </CardContent>
                       </Card>
