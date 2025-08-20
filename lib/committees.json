@@ -1,46 +1,1018 @@
 [
   {
+    "id": "techspot",
     "name": "Techspot Committee",
-    "description": "Handles all technical activities including coding events, hackathons, and workshops."
+    "description": "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
+    "fullDescription": "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🧰",
+    "color": "blue",
+    "members": 8,
+    "focus": [
+      "Techniqual events",
+      "organize Hachathons",
+      "Make Projects",
+      "Talks"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Shivraj Ambhore",
+        "image": "Shivraj-Ambhore.jpg",
+        "bio": "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+        "achievements": [
+          "Java",
+          "DSA",
+          "Full stack Development"
+        ],
+        "contact": {
+          "email": "shivrajambhore01@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/shivraj-ambhore",
+          "instagram": "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw=="
+        }
+      },
+      "coHead1": {
+        "name": "Anuj Lakhekar",
+        "image": "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+        "bio": "Hello I am Anuj from cse b passionate about coading and good at web dev",
+        "achievements": [
+          ""
+        ],
+        "contact": {
+          "email": "anujlakhekar@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ=="
+        }
+      },
+      "coHead2": {
+        "name": "Santosh Donapurge",
+        "image": "1748265675540 - Sento Coder.jpg",
+        "bio": "SDE",
+        "achievements": [
+          ""
+        ],
+        "contact": {
+          "email": "codersento@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "/team"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Sargun singh Bhatia",
+        "role": "Member",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Sachin Bodani",
+        "role": "Member",
+        "image": "/professional-male-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Anjali Kundojwar",
+        "role": "Member",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "sanchi Sawale",
+        "role": "Member",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Schologamma Website",
+        "description": "All About schologamma forum",
+        "date": "2025-26",
+        "impact": "every one can see updates and details of schologamma forum"
+      }
+    ],
+    "events": [
+      {
+        "title": "",
+        "description": "",
+        "date": "",
+        "status": "upcoming",
+        "image": "",
+        "participants": 0
+      }
+    ],
+    "activities": [
+      "Weekly talks",
+      "Hands-on builds",
+      "Review sessions"
+    ],
+    "gallery": [
+      "/techspot-pi-night.png"
+    ]
   },
   {
-    "name": "Event Committee",
-    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
-  },
-  {
-    "name": "Sports Committee",
-    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
-  },
-  {
-    "name": "Startup Committee",
-    "description": "Supports startups, idea incubation, and business competitions."
-  },
-  {
-    "name": "creative Committee",
-    "description": "Handles all technical activities including coding events, hackathons, and workshops."
-  },
-  {
-    "name": "Publicity Committee",
-    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
-  },
-  {
-    "name": "Decipline Committee",
-    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
-  },
-  {
-    "name": "Techniqual Committee",
-    "description": "Supports startups, idea incubation, and business competitions."
-  },
-   {
-    "name": "NSS Committee",
-    "description": "Organizes cultural fests, celebrations, and promotes student creativity."
-  },
-  {
+    "id": "content-editor",
     "name": "Content Editor Committee",
-    "description": "Encourages sportsmanship and organizes tournaments and fitness activities."
+    "description": "Managing content creation, editorial processes, and digital storytelling for the forum.",
+    "fullDescription": "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
+    "logo": "/placeholder.svg?height=80&width=80&text=📝",
+    "color": "indigo",
+    "members": 12,
+    "focus": [
+      "Content Creation",
+      "Editorial Review",
+      "Documentation",
+      "Copy Editing",
+      "Blog/Newsletter"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Piyush Sheware",
+        "image": "Untitled design - Piyush Sheware.pdf",
+        "bio": "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
+        "achievements": [],
+        "contact": {
+          "email": "shewarwpiyush@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/piyush-sheware-910a68293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/piyush_sheware_?igsh=MWU4Y205eTc4M3cwNQ=="
+        }
+      },
+      "coHead1": {
+        "name": "Bhavya Pandey",
+        "image": "Document from Bhavya Pandey - Bhavya Pandey.jpg",
+        "bio": "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
+        "achievements": [],
+        "contact": {
+          "email": "pandeybhavya336@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/bhavya-pandey",
+          "instagram": "https://www.instagram.com/bhavya_012006?igsh=YmtqZzA3MXMzZ2Jw"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Anita Patel",
+        "role": "Senior Writer",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Vikash Kumar",
+        "role": "Social Media Manager",
+        "image": "/professional-male-student-glasses.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "Sneha Reddy",
+        "role": "Content Reviewer",
+        "image": "/creative-female-student.png",
+        "year": "4th Year"
+      },
+      {
+        "name": "Arjun Singh",
+        "role": "Technical Writer",
+        "image": "/technical-student-laptop.png",
+        "year": "3rd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Best Content Strategy 2023",
+        "description": "Recognized for innovative content planning",
+        "date": "2023-12-15",
+        "impact": "200% engagement increase"
+      }
+    ],
+    "events": [
+      {
+        "title": "Content Writing Workshop",
+        "description": "Hands-on writing and editing",
+        "date": "2024-02-15",
+        "status": "upcoming",
+        "image": "/web-dev-bootcamp-poster.png",
+        "participants": 45
+      },
+      {
+        "title": "Digital Marketing Seminar",
+        "description": "Content + SEO fundamentals",
+        "date": "2023-11-10",
+        "status": "completed",
+        "image": "/digital-marketing-masterclass-poster.png",
+        "participants": 60
+      }
+    ],
+    "activities": [
+      "Weekly content planning",
+      "Monthly newsletter",
+      "Docs & guides",
+      "Event coverage",
+      "Editorial reviews"
+    ],
+    "gallery": [
+      "/canva-tutorial-poster.png",
+      "/digital-marketing-masterclass-poster.png"
+    ]
   },
   {
-    "name": "Techniqual Committee",
-    "description": "Supports startups, idea incubation, and business competitions."
+    "id": "technical",
+    "name": "Technical Committee",
+    "description": "Focused on coding, development, and technical projects for the forum.",
+    "fullDescription": "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
+    "logo": "/placeholder.svg?height=80&width=80&text=💻",
+    "color": "blue",
+    "members": 12,
+    "focus": [
+      "Web Development",
+      "App Development",
+      "AI/ML",
+      "Blockchain",
+      "Hackathons"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Aditya Wankhede",
+        "image": "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg",
+        "bio": "Technical Committee Head",
+        "achievements": [],
+        "contact": {
+          "email": "adiwankhede01@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/aditya-wankhede-348676309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/a.d.i.t.y.a_01._?igsh=ZHoya2J1dXA4am1x"
+        }
+      },
+      "coHead1": {
+        "name": "Yashasvi Sandesh Bhambore",
+        "image": "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
+        "bio": "",
+        "achievements": [
+          "Leadership",
+          "Technical Knowledge",
+          "Team Collaboration"
+        ],
+        "contact": {
+          "email": "yashasvibhambore1@jdcoem.ac.in"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
+          "instagram": "/team"
+        }
+      },
+      "coHead2": {
+        "name": "Om Hemraj Deshmukh",
+        "image": "20250731_190814 - OM DESHMUKH.jpg",
+        "bio": "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
+        "achievements": [
+          "Leadership",
+          "Problem Solving",
+          "Team Collaboration"
+        ],
+        "contact": {
+          "email": "omdeshmukh399@jdcoem.ac.in"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/omdeshmukh00",
+          "instagram": "https://instagram.com/omdeshmukh00"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Sneha Verma",
+        "role": "Frontend Developer",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Rohit Agarwal",
+        "role": "Backend Developer",
+        "image": "/professional-male-student.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "Kunal Joshi",
+        "role": "AI/ML Specialist",
+        "image": "/professional-male-student-glasses.png",
+        "year": "3rd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Hackathon Excellence 2023",
+        "description": "Largest coding competition on campus",
+        "date": "2023-10-10",
+        "impact": "Tech culture boost"
+      }
+    ],
+    "events": [
+      {
+        "title": "Web Development Bootcamp",
+        "description": "HTML/CSS/JS crash course",
+        "date": "2024-01-25",
+        "status": "completed",
+        "image": "/web-dev-bootcamp-poster.png",
+        "participants": 90
+      },
+      {
+        "title": "AI & ML Hackathon",
+        "description": "24-hour challenge",
+        "date": "2024-03-15",
+        "status": "upcoming",
+        "image": "/hackathon-poster.png",
+        "participants": 120
+      }
+    ],
+    "activities": [
+      "Website maintenance",
+      "Tech workshops",
+      "Open-source sprints",
+      "Event tech support"
+    ],
+    "gallery": [
+      "/web-dev-bootcamp-poster.png"
+    ]
+  },
+  {
+    "id": "creative",
+    "name": "Creative Committee",
+    "description": "Handling design, graphics, multimedia content, and creative project development.",
+    "fullDescription": "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🎨",
+    "color": "pink",
+    "members": 10,
+    "focus": [
+      "Graphic Design",
+      "Video Production",
+      "Photography",
+      "Brand Identity",
+      "Creative Campaigns"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Yuvtika Rahangdale",
+        "image": "IMG-20250719-WA0011 - Nehal Zade.jpg",
+        "bio": "",
+        "achievements": [],
+        "contact": {
+          "email": "yuvtikarahangdale@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/yuvtika-rahangdale",
+          "instagram": "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ=="
+        }
+      },
+      "coHead1": {
+        "name": "Akansha Anil Ambadkar",
+        "image": "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg",
+        "bio": "",
+        "achievements": [],
+        "contact": {
+          "email": "madhu.ambadkar2003@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/akansha-ambadkar/",
+          "instagram": "https://www.instagram.com/akansciouss?igsh=MTFrbGN5c3ZxNXQzcg=="
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Ravi Kumar",
+        "role": "Video Editor",
+        "image": "/professional-male-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Pooja Singh",
+        "role": "Graphic Designer",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "Nisha Patel",
+        "role": "UI/UX Designer",
+        "image": "/creative-female-student.png",
+        "year": "3rd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Best Design Portfolio 2023",
+        "description": "Outstanding creative work and innovation",
+        "date": "2023-11-20",
+        "impact": "Brand uplift"
+      }
+    ],
+    "events": [
+      {
+        "title": "Canva Advanced Tutorial",
+        "description": "Design workflows & shortcuts",
+        "date": "2024-01-08",
+        "status": "completed",
+        "image": "/canva-tutorial-poster.png",
+        "participants": 65
+      },
+      {
+        "title": "Photography Workshop",
+        "description": "Shooting + post-processing",
+        "date": "2024-02-25",
+        "status": "upcoming",
+        "image": "/web-dev-bootcamp-poster.png",
+        "participants": 40
+      }
+    ],
+    "activities": [
+      "Poster design",
+      "Social graphics",
+      "Event photo/video",
+      "Brand guidelines"
+    ],
+    "gallery": [
+      "/canva-tutorial-poster.png"
+    ]
+  },
+  {
+    "id": "sports",
+    "name": "Sports Committee",
+    "description": "Encourages athletic spirit and organizes sports tournaments.",
+    "fullDescription": "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🏅",
+    "color": "emerald",
+    "members": 12,
+    "focus": [
+      "Cricket",
+      "Football",
+      "Athletics",
+      "Badminton",
+      "Fitness"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Khushal Tondre",
+        "image": "IMG_20240926_150056 - khushal tondare.jpg",
+        "bio": "",
+        "achievements": [
+          "Full stack developer",
+          "python",
+          "c++"
+        ],
+        "contact": {
+          "email": "khushaltondare16@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/khushal-tondare-0b489822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/khushall_01._?igsh=a3BocTZyN2MxOTB5"
+        }
+      },
+      "coHead1": {
+        "name": "Nehal Ravindra Zade",
+        "image": "IMG-20250719-WA0011 - Nehal Zade.jpg",
+        "bio": "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
+        "achievements": [
+          "Athletics",
+          "Teamwork",
+          "Leadership",
+          "Sports Management"
+        ],
+        "contact": {
+          "email": "nehalzade04@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/nehal-zade-7266a4374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/nehalzade1?igsh=ajQ2NDh0bmh6NGZ1"
+        }
+      },
+      "coHead2": {
+        "name": "Payal Kumare",
+        "image": "BT240083CS - Payal Kumare.jpg",
+        "bio": "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
+        "achievements": [
+          "Sports Management",
+          "Teamwork",
+          "Leadership",
+          "Discipline"
+        ],
+        "contact": {
+          "email": "payalkumare86686@gmail.com"
+        },
+        "social": {
+          "linkedin": "www.linkedin.com/in/payal-kumare86686",
+          "instagram": "/team"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Aisha Khan",
+        "role": "Athletics Captain",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Rohit Mehra",
+        "role": "Football Lead",
+        "image": "/professional-male-student.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "Diya Jain",
+        "role": "Badminton Lead",
+        "image": "/professional-female-student.png",
+        "year": "1st Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Intercollege Winners 2023",
+        "description": "Gold in athletics relay",
+        "date": "2023-12-05",
+        "impact": "Reputation boost"
+      }
+    ],
+    "events": [
+      {
+        "title": "Sports Meet",
+        "description": "Track and field + team sports",
+        "date": "2024-03-10",
+        "status": "upcoming",
+        "image": "/sports-meet.png",
+        "participants": 350
+      }
+    ],
+    "activities": [
+      "Weekly training",
+      "Intra-college leagues",
+      "Fitness sessions"
+    ],
+    "gallery": [
+      "/sports-meet.png"
+    ]
+  },
+  {
+    "id": "publicity",
+    "name": "Publicity Committee",
+    "description": "Spreads the word through PR, announcements, and outreach.",
+    "fullDescription": "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
+    "logo": "/placeholder.svg?height=80&width=80&text=📣",
+    "color": "orange",
+    "members": 9,
+    "focus": [
+      "PR & Outreach",
+      "Announcements",
+      "Campaigns",
+      "Brand Voice"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Janvi Akhand",
+        "image": "IMG_5591 - Janvi Akhand.JPG",
+        "bio": "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
+        "achievements": [
+          "Publicity",
+          "Communication",
+          "Leadership"
+        ],
+        "contact": {
+          "email": "janviakhand@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/janvi-akhand-6bb310371",
+          "instagram": "/team"
+        }
+      },
+      "coHead1": {
+        "name": "Manswini Unhone",
+        "image": "IMG-20241204-WA0001 - Ishu Unhone.jpg",
+        "bio": "Hello, I'm Manswini, looking forward to learning new skills.",
+        "achievements": [
+          "Publicity",
+          "Communication",
+          "Teamwork",
+          "Creativity"
+        ],
+        "contact": {
+          "email": "ishuunhone1@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/manswini-unhone",
+          "instagram": "https://www.instagram.com/ishhuu_uhh?igsh=NXgwbmFzeG91OWd0&utm_source=ig_contact_invite"
+        }
+      },
+      "coHead2": {
+        "name": "Mohini Wankhede",
+        "image": "IMG_20250802_094903407_HDR - Mohini Wankhede.jpg",
+        "bio": "I'm Mohini, a Computer Science Engineering student with a curious mindset. I enjoy exploring new things, learning consistently, and improving myself every day. I believe in staying positive and growing step by step.",
+        "achievements": [
+          "Python",
+          "DSA",
+          "Teamwork and collaboration "
+        ],
+        "contact": {
+          "email": "wankhedemohini4@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/mohini-wankhede-a2699337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/mohini_wankhede_10/profilecard/?igsh=MXRyM21kMXoyY2p6Zw=="
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Harsh Vaid",
+        "role": "Announcements Lead",
+        "image": "/professional-male-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Mahek Jain",
+        "role": "Outreach Coordinator",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Campus Awareness 2023",
+        "description": "Record event impressions",
+        "date": "2023-10-28",
+        "impact": "High turnout"
+      }
+    ],
+    "events": [
+      {
+        "title": "Publicity Drive",
+        "description": "Standees, posters, and mic announcements",
+        "date": "2024-01-30",
+        "status": "completed",
+        "image": "/publicity-drive.png",
+        "participants": 60
+      }
+    ],
+    "activities": [
+      "Posters & standees",
+      "Press notes",
+      "Mic announcements",
+      "Classroom visits"
+    ],
+    "gallery": [
+      "/publicity-drive.png"
+    ]
+  },
+  {
+    "id": "discipline",
+    "name": "Discipline Committee",
+    "description": "Maintains decorum, safety, and code of conduct at events.",
+    "fullDescription": "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🛡️",
+    "color": "indigo",
+    "members": 10,
+    "focus": [
+      "Code of Conduct",
+      "Safety",
+      "Crowd Control",
+      "Compliance"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Karishma Naidu",
+        "image": "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
+        "bio": "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
+        "achievements": [
+          "Discipline",
+          "Teamwork",
+          "Leadership",
+          "Adaptability"
+        ],
+        "contact": {
+          "email": "karishmanaidu035@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/karishma-naidu-915168339",
+          "instagram": "/team"
+        }
+      },
+      "coHead1": {
+        "name": "HITESH MISHRA",
+        "image": "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
+        "bio": "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
+        "achievements": [
+          "C",
+          "c++"
+        ],
+        "contact": {
+          "email": "hiteshmishra910@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/Hitesh mishra",
+          "instagram": "/team"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Mohit Patil",
+        "role": "Security Marshal",
+        "image": "/professional-male-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Riya Sen",
+        "role": "Volunteer Lead",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Safe Fest 2023",
+        "description": "Managed 2k+ attendees without incident",
+        "date": "2023-12-18",
+        "impact": "Model SOP adopted"
+      }
+    ],
+    "events": [
+      {
+        "title": "Volunteer Orientation",
+        "description": "Rules, roles, and emergency drills",
+        "date": "2024-02-05",
+        "status": "completed",
+        "image": "/discipline-orientation.png",
+        "participants": 80
+      }
+    ],
+    "activities": [
+      "Queue & entry systems",
+      "Backstage control",
+      "Emergency response readiness"
+    ],
+    "gallery": [
+      "/discipline-orientation.png"
+    ]
+  },
+  {
+    "id": "event",
+    "name": "Event committee",
+    "description": "Plans, schedules, and executes club/forum events.",
+    "fullDescription": "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🗓️",
+    "color": "orange",
+    "members": 11,
+    "focus": [
+      "Planning",
+      "Budgeting",
+      "Vendor & Venue",
+      "Stage Management"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Trisha Pillay",
+        "image": "IMG-20250818-WA0017 - Trisha Pillay.jpg",
+        "bio": "I'm Trisha Pillay from CSE 3nd year a driver and ambitious person with a versatile ,dynamic , innovative personality",
+        "achievements": [
+          "Communication",
+          "innovative personality",
+          "Management"
+        ],
+        "contact": {
+          "email": "trishapillay804@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/trisha-pillay-9a1066321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "/team"
+        }
+      },
+      "coHead1": {
+        "name": "Sakshi Nitin Gokhe",
+        "image": "IMG_20250727_231227 - Sakshi Gokhe.jpg",
+        "bio": "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
+        "achievements": [
+          "Dancing",
+          "Cooking",
+          "Traveling",
+          "Exploring New Things",
+          "Canva"
+        ],
+        "contact": {
+          "email": "sakshigokhe67@gmail.com"
+        },
+        "social": {
+          "linkedin": "/team",
+          "instagram": "/team"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Kripa Shah",
+        "role": "Stage Manager",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Yash Tiwari",
+        "role": "Logistics",
+        "image": "/professional-male-student.png",
+        "year": "2nd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Zero-Delay Fest 2022",
+        "description": "All slots started on time",
+        "date": "2022-12-12",
+        "impact": "Operational excellence"
+      }
+    ],
+    "events": [
+      {
+        "title": "Annual Forum Day",
+        "description": "Flagship multi-track event",
+        "date": "2024-02-20",
+        "status": "completed",
+        "image": "/forum-day.png",
+        "participants": 800
+      }
+    ],
+    "activities": [
+      "Event timelines",
+      "Volunteer rosters",
+      "Stage/backstage ops"
+    ],
+    "gallery": [
+      "/forum-day.png"
+    ]
+  },
+  {
+    "id": "digital",
+    "name": "Digital Committee",
+    "description": "Oversees digital platforms, streaming, and analytics.",
+    "fullDescription": "The Digital Committee focuses on livestreams, recordings, on-site AV, analytics, and website/app enhancements to improve digital reach.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🔗",
+    "color": "emerald",
+    "members": 8,
+    "focus": [
+      "Livestream",
+      "Video/Audio",
+      "Web/App Enhancements",
+      "Analytics"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Sanika Lanjewar",
+        "image": "IMG_20250731_151647 - Sanika Lanjewar.jpg",
+        "bio": "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
+        "achievements": [
+          "Python,",
+          "Javscript ",
+          "UI/UX design",
+          "HTML & CSS"
+        ],
+        "contact": {
+          "email": "shewarwpiyush@gmail.com"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "/team"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Sana Qadri",
+        "role": "Video Production",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Jay Patel",
+        "role": "Streaming Lead",
+        "image": "/professional-male-student.png",
+        "year": "2nd Year"
+      },
+      {
+        "name": "Ritika Shah",
+        "role": "Web Analyst",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Best Digital Campaign 2023",
+        "description": "Highest traffic and reach",
+        "date": "2023-11-25",
+        "impact": "Record engagement",
+        "image": "/digital-campaign.png"
+      }
+    ],
+    "events": [
+      {
+        "title": "Livestream Masterclass",
+        "description": "Tech and best practices",
+        "date": "2024-03-01",
+        "status": "upcoming",
+        "image": "/livestream-masterclass.png",
+        "participants": 50
+      }
+    ],
+    "activities": [
+      "Livestreaming",
+      "AV setup",
+      "Analytics reporting",
+      "Website/app updates"
+    ],
+    "gallery": [
+      "/livestream-masterclass.png"
+    ]
+  },
+  {
+    "id": "startup",
+    "name": "Startup Committee",
+    "description": "Supports student entrepreneurs with mentorship, funding, and networking.",
+    "fullDescription": "The Startup Committee provides a launchpad for student ventures through workshops, mentorship sessions, pitch events, and industry networking.",
+    "logo": "/placeholder.svg?height=80&width=80&text=🚀",
+    "color": "purple",
+    "members": 7,
+    "focus": [
+      "Business Plans",
+      "Funding & Grants",
+      "Mentorship",
+      "Pitch Events",
+      "Legal & IP"
+    ],
+    "leadership": {
+      "head": {
+        "name": "Nikhil Rathod",
+        "image": "DSC_3570_Nikhil - Nikhil Rathod.jpg",
+        "bio": "Full Stack Developer",
+        "achievements": [
+          "Full Stack Development"
+        ],
+        "contact": {
+          "email": "nikhilcaptain28@gmail.com"
+        },
+        "social": {
+          "linkedin": "www.linkedin.com/in/nikhilrathods",
+          "instagram": "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy"
+        }
+      }
+    },
+    "membersList": [
+      {
+        "name": "Priya Sharma",
+        "role": "Venture Analyst",
+        "image": "/professional-female-student.png",
+        "year": "3rd Year"
+      },
+      {
+        "name": "Siddharth Verma",
+        "role": "Pitch Trainer",
+        "image": "/professional-male-student.png",
+        "year": "4th Year"
+      },
+      {
+        "name": "Ruchika Gupta",
+        "role": "Networking Lead",
+        "image": "/professional-female-student.png",
+        "year": "2nd Year"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Startup Idol 2023",
+        "description": "Successfully launched 5 student startups",
+        "date": "2023-11-22",
+        "impact": "Raised 500k in seed funding"
+      }
+    ],
+    "events": [
+      {
+        "title": "Idea Pitch Competition",
+        "description": "Pitch your business idea to a panel",
+        "date": "2024-03-20",
+        "status": "upcoming",
+        "image": "/idea-pitch.png",
+        "participants": 25
+      }
+    ],
+    "activities": [
+      "Mentorship sessions",
+      "Grant application support",
+      "Legal workshops",
+      "Industry networking"
+    ],
+    "gallery": [
+      "/idea-pitch.png"
+    ]
   }
 ]
