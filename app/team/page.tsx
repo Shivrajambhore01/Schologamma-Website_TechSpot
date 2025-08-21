@@ -342,6 +342,30 @@ export default function TeamPage() {
       skills: [],
     },
     {
+      id: "BT240165CS",
+      name: "Anushka Sonone",
+      role: "Event Committee Co head",
+      committee: "Event",
+      position: "Co-Head",
+      image:
+        "https://drive.google.com/open?id=1IwiF3ulAmG9nEfNN0sUprWJ2jfjTbEA1",
+      bio: "",
+      dob: "23/12/2006",
+      email: "anushkasonone9@gmail.com",
+      phone: "",
+      responsibilities: [
+        "Event planning",
+        "Assisting in committee coordination",
+      ],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/anushka-sonone-785b8a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/anushhka_.s?igsh=MWNsZjBqcm9pc3U1cQ==",
+      },
+      skills: [],
+    },
+    {
       id: "8",
       name: "Akansha Anil Ambadkar",
       role: "Creative Committee Co-Head",
@@ -1084,7 +1108,7 @@ export default function TeamPage() {
                       ))}
                     </div>
                   </div>
-{/* 
+                  {/* 
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-3">
                       Key Responsibilities

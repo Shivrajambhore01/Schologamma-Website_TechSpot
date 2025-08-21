@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import committees from "@/lib/committees.json";
+import events from "@/lib/events.json";
+import team from "@/lib/team.json";
+
 import {
   Users,
   ArrowRight,
@@ -20,6 +24,36 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Footer from "@/components/footer";
 
+type Committee = {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  members: number;
+  color: string;
+  hoverColor: string;
+  type?: string; // if you’re tagging type manually
+};
+
+type Event = {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  type?: string;
+};
+
+type TeamMember = {
+  id: number;
+  name: string;
+  role: string;
+  img: string;
+  type?: string;
+};
+
+// Final result type (union)
+type SearchResult = Committee | Event | TeamMember;
+
 export default function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,7 +62,7 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleElements, setVisibleElements] = useState(new Set());
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
+  const [Result, setResult] = useState<any[]>([]);
   const heroRef = useRef(null);
   const committeesRef = useRef(null);
   const aboutRef = useRef(null);
@@ -184,19 +218,19 @@ export default function HomePage() {
   // latest update deta
 
   /*  {
-      title: "LogicQuest 1.1 Registration Open",
-      date: "1 week ago",
-      description: "Annual coding competition registration is now open. Don't miss this opportunity!",
-      type: "event",
-      icon: <Trophy className="w-5 h-5" />,
-    },
-    {
-      title: "Committee Recruitment Drive",
-      date: "2 weeks ago",
-      description: "Join our dynamic committees and be part of Schologamma's growth journey.",
-      type: "recruitment",
-      icon: <Users className="w-5 h-5" />,
-    }, */
+        title: "LogicQuest 1.1 Registration Open",
+        date: "1 week ago",
+        description: "Annual coding competition registration is now open. Don't miss this opportunity!",
+        type: "event",
+        icon: <Trophy className="w-5 h-5" />,
+      },
+      {
+        title: "Committee Recruitment Drive",
+        date: "2 weeks ago",
+        description: "Join our dynamic committees and be part of Schologamma's growth journey.",
+        type: "recruitment",
+        icon: <Users className="w-5 h-5" />,
+      }, */
 
   const featuredEvents = [
     {
@@ -212,35 +246,35 @@ export default function HomePage() {
   ];
 
   /*
-    {
-      title: "Introduction to Figma",
-      date: "Oct 27, 2023",
-      time: "4:00 PM",
-      venue: "VS 207 JDCOEM",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
-      status: "upcoming",
-      committee: "Technical Committee",
-    },
       {
-      title: "LogicQuest 1.1",
-      date: "Mar 1, 2024",
-      time: "10:00 AM",
-      venue: "Main Auditorium",
-      image: "/logic-quest-coding-competition.png",
-      status: "upcoming",
-      committee: "Technical Committee",
-    },
-    {
-      title: "Canva Advanced Tutorial",
-      date: "Jan 8, 2024",
-      time: "2:00 PM",
-      venue: "Computer Lab",
-      image: "/canva-tutorial-poster.png",
-      status: "completed",
-      committee: "Creative Committee",
-    },
-    */
+        title: "Introduction to Figma",
+        date: "Oct 27, 2023",
+        time: "4:00 PM",
+        venue: "VS 207 JDCOEM",
+        image:
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
+        status: "upcoming",
+        committee: "Technical Committee",
+      },
+        {
+        title: "LogicQuest 1.1",
+        date: "Mar 1, 2024",
+        time: "10:00 AM",
+        venue: "Main Auditorium",
+        image: "/logic-quest-coding-competition.png",
+        status: "upcoming",
+        committee: "Technical Committee",
+      },
+      {
+        title: "Canva Advanced Tutorial",
+        date: "Jan 8, 2024",
+        time: "2:00 PM",
+        venue: "Computer Lab",
+        image: "/canva-tutorial-poster.png",
+        status: "completed",
+        committee: "Creative Committee",
+      },
+      */
 
   const galleryCategories = [
     {
@@ -314,6 +348,45 @@ export default function HomePage() {
     },
   ];
 
+  useEffect(() => {
+    const q = searchQuery.toLowerCase().trim();
+
+    if (!q) {
+      setResult([]); // clear results if query is empty
+      return;
+    }
+
+    const filteredCommittees = committees.filter(
+      (c) =>
+        (c.name ?? "").toString().toLowerCase().includes(q) ||
+        (c.description ?? "").toString().toLowerCase().includes(q) ||
+        (c.id ?? "").toString().toLowerCase().includes(q) // if you want id search
+    );
+
+    const filteredEvents = events.filter(
+      (e) =>
+        (e.title ?? "").toString().toLowerCase().includes(q) ||
+        (e.description ?? "").toString().toLowerCase().includes(q) ||
+        (e.id ?? "").toString().toLowerCase().includes(q)
+    );
+
+    const filteredTeam = team.filter(
+      (t) =>
+        (t.name ?? "").toString().toLowerCase().includes(q) ||
+        (t.role ?? "").toString().toLowerCase().includes(q) ||
+        (t.id ?? "").toString().toLowerCase().includes(q)
+    );
+
+    // combine all results
+    const allResults = [
+      ...filteredCommittees.map((c) => ({ type: "committee", ...c })),
+      ...filteredEvents.map((e) => ({ type: "event", ...e })),
+      ...filteredTeam.map((t) => ({ type: "team", ...t })),
+    ];
+
+    setResult(allResults);
+  }, [searchQuery]);
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
       <div className="fixed inset-0 z-0">
@@ -357,9 +430,46 @@ export default function HomePage() {
                   placeholder="Search events, committees, members..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key == "Enter") {
+                      window.location.href = `/search?query=${searchQuery}`;
+                    }
+                  }}
                   className="pl-10 bg-gray-900/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
                 />
               </div>
+              {searchQuery && Result.length > 0 && (
+                <div className="absolute custom-scrollbar mt-12 w-[360px] bg-gray-900 border border-gray-700 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto">
+                  {Result.map((item) => (
+                    <div
+                      key={`${item.type}-${item.id}`}
+                      onClick={() => {
+                        if (item.type === "event")
+                          window.location.href = `/events/${item.id}`;
+                        if (item.type === "committee")
+                          window.location.href = `/search?query=${item.name}`;
+                        if (item.type === "team")
+                          window.location.href = `/team/${item.id}`;
+                      }}
+                      className="p-2 rounded-md hover:bg-gray-800 cursor-pointer"
+                    >
+                      <p className="text-sm text-white">
+                        {item.type === "event" && item.title}
+                        {item.type === "committee" && item.name}
+                        {item.type === "team" && item.name}
+                      </p>
+                      <p className="text-xs text-gray-400 truncate">
+                        {item.type === "event" && item.description}
+                        {item.type === "committee" && item.description}
+                        {item.type === "team" && item.role}
+                      </p>
+                      <span className="text-[10px] uppercase text-blue-400">
+                        {item.type}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
@@ -556,36 +666,36 @@ export default function HomePage() {
               >
                 <CardContent className="p-8 text-center space-y-6 relative overflow-hidden">
                   <a href="/committees">
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                    {committee.icon}
-                  </div> */}
-                  <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
-                    <img
-                      src={committee.image}
-                      alt={committee.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                    {/* <div className="text-5xl mb-6 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                      {committee.icon}
+                    </div> */}
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-orange-400 transform group-hover:scale-110 transition-all duration-300">
+                      <img
+                        src={committee.image}
+                        alt={committee.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
 
-                  <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
-                    {committee.name}
-                  </h3>
-                  {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {committee.description}
-                  </p> */}
-                  {/* <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
-                    <Users className="w-4 h-4" />
-                    <span>{committee.members} Members</span>
-                  </div> */}
-{/*                 
-                    <Button
-                      variant="outline"
-                      className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent transform group-hover:scale-105 transition-all duration-300"
-                    >
-                      Learn More
-                    </Button> */}
+                    <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
+                      {committee.name}
+                    </h3>
+                    {/* <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                      {committee.description}
+                    </p> */}
+                    {/* <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
+                      <Users className="w-4 h-4" />
+                      <span>{committee.members} Members</span>
+                    </div> */}
+                    {/*                 
+                      <Button
+                        variant="outline"
+                        className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent transform group-hover:scale-105 transition-all duration-300"
+                      >
+                        Learn More
+                      </Button> */}
                   </a>
                 </CardContent>
               </Card>
@@ -730,12 +840,12 @@ export default function HomePage() {
                     {update.description}
                   </p>
                   {/* <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent"
-                  >
-                    Read More
-                  </Button> */}
+                      variant="outline"
+                      size="sm"
+                      className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent"
+                    >
+                      Read More
+                    </Button> */}
                 </CardContent>
               </Card>
             ))}
@@ -815,11 +925,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   {/* <Button
-                    variant="outline"
-                    className="border-gray-600 text-white hover:bg-blue-500 hover:border-blue-500 w-full bg-transparent"
-                  >
-                    {event.status === "upcoming" ? "Register Now" : "View Details"}
-                  </Button> */}
+                      variant="outline"
+                      className="border-gray-600 text-white hover:bg-blue-500 hover:border-blue-500 w-full bg-transparent"
+                    >
+                      {event.status === "upcoming" ? "Register Now" : "View Details"}
+                    </Button> */}
                 </CardContent>
               </Card>
             ))}

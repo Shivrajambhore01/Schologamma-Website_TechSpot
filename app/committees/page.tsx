@@ -99,12 +99,16 @@ export default function CommitteesPage() {
       color: "blue",
       members: 8,
       // established: "2020-07-22",
-      focus: ["Techniqual events", "organize Hachathons", "Make Projects", "Talks"],
+      focus: [
+        "Techniqual events",
+        "organize Hachathons",
+        "Make Projects",
+        "Talks",
+      ],
       leadership: {
         head: {
           name: "Shivraj Ambhore",
-          image:
-            "Shivraj-Ambhore.jpg",
+          image: "Shivraj-Ambhore.jpg",
           bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
           achievements: ["Java", "DSA", "Full stack Development"],
           contact: { email: "shivrajambhore01@gmail.com" },
@@ -116,55 +120,53 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
-
       },
       membersList: [
         {
           name: "Sargun singh Bhatia",
           role: "Member",
-          image: "/professional-female-student.png",
+          image: "",
           year: "3rd Year",
         },
         {
           name: "Sachin Bodani",
           role: "Member",
-          image: "/professional-male-student.png",
+          image: "",
           year: "3rd Year",
         },
         {
           name: "Anjali Kundojwar",
           role: "Member",
-          image: "/professional-female-student.png",
+          image: "",
           year: "2nd Year",
         },
         {
           name: "sanchi Sawale",
           role: "Member",
-          image: "/professional-female-student.png",
+          image: "",
           year: "2nd Year",
         },
       ],
@@ -198,7 +200,7 @@ export default function CommitteesPage() {
         "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
       logo: "/placeholder.svg?height=80&width=80&text=📝",
       color: "indigo",
-      members: 12,
+      members: 8,
       // established: "2020-01-15",
       focus: [
         "Content Creation",
@@ -209,71 +211,44 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
+          name: "Piyush Sheware",
           image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+            "http://localhost:3000/Untitled%20design%20-%20Piyush%20Sheware.pdf",
+          bio: "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
+          achievements: ["content editor"],
+          contact: { email: "shewarwpiyush@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            linkedin:
+              "https://www.linkedin.com/in/piyush-sheware-910a68293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+              "https://www.instagram.com/piyush_sheware_/?igsh=MWU4Y205eTc4M3cwNQ%3D%3D#",
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Bhavya Pandey",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
+          achievements: ["Painting", "Dancing", "Singing"],
+          contact: { email: "pandeybhavya336@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "https://www.linkedin.com/in/bhavya-pandey",
             instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+              "https://www.instagram.com/bhavya_012006/?igsh=YmtqZzA3MXMzZ2Jw#",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
+          name: "Unknown",
+          image: "unknoe",
+          bio: "",
           achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          contact: { email: "unknown" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin: "",
+            instagram: "/team",
           },
         },
       },
-      membersList: [
-        {
-          name: "Anita Patel",
-          role: "Senior Writer",
-          image: "/professional-female-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Vikash Kumar",
-          role: "Social Media Manager",
-          image: "/professional-male-student-glasses.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Sneha Reddy",
-          role: "Content Reviewer",
-          image: "/creative-female-student.png",
-          year: "4th Year",
-        },
-        {
-          name: "Arjun Singh",
-          role: "Technical Writer",
-          image: "/technical-student-laptop.png",
-          year: "3rd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Best Content Strategy 2023",
@@ -321,7 +296,7 @@ export default function CommitteesPage() {
         "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
       logo: "/placeholder.svg?height=80&width=80&text=💻",
       color: "blue",
-      members: 12,
+      members: 8,
       // established: "2019-01-15",
       focus: [
         "Web Development",
@@ -332,65 +307,56 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Aditya Wankhede",
+          image: "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg", // local image (make sure it's in your /public or assets folder)
+          bio: "Technical Committee Head",
+          achievements: ["Technical Committee Head"], // took from role
+          contact: {
+            email: "adiwankhede01@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            linkedin:
+              "https://www.linkedin.com/in/aditya-wankhede-348676309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+              "https://www.instagram.com/a.d.i.t.y.a_01._?igsh=ZHoya2J1dXA4am1x",
+            facebook: "",
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Yashasvi Sandesh Bhambore",
+          image: "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
+          bio: "",
+          achievements: [
+            "Leadership",
+            "Technical Knowledge",
+            "Team Collaboration",
+          ],
+          contact: {
+            email: "yashasvibhambore1@jdcoem.ac.in",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+            linkedin: "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
+            instagram: "/team",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "Om Hemraj Deshmukh",
+          image: "20250731_190814 - OM DESHMUKH.jpg",
+          bio: "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
+          achievements: ["Leadership", "Problem Solving", "Team Collaboration"],
+          contact: {
+            email: "omdeshmukh399@jdcoem.ac.in",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin: "https://www.linkedin.com/in/omdeshmukh00",
+            instagram: "https://instagram.com/omdeshmukh00",
           },
         },
       },
-      membersList: [
-        {
-          name: "Sneha Verma",
-          role: "Frontend Developer",
-          image: "/professional-female-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Rohit Agarwal",
-          role: "Backend Developer",
-          image: "/professional-male-student.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Kunal Joshi",
-          role: "AI/ML Specialist",
-          image: "/professional-male-student-glasses.png",
-          year: "3rd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Hackathon Excellence 2023",
@@ -459,51 +425,31 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
-      membersList: [
-        {
-          name: "Ravi Kumar",
-          role: "Video Editor",
-          image: "/professional-male-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Pooja Singh",
-          role: "Graphic Designer",
-          image: "/professional-female-student.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Nisha Patel",
-          role: "UI/UX Designer",
-          image: "/creative-female-student.png",
-          year: "3rd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Best Design Portfolio 2023",
@@ -566,28 +512,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -663,28 +608,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -755,28 +699,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -832,42 +775,48 @@ export default function CommitteesPage() {
       focus: ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
+          name: "Trisha Pillay",
           image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+            "https://drive.google.com/uc?export=view&id=1du2ZHLCIQqKaMgSGwVzDGbrRbLepmxsH", // fixed link for <img src="">
+          bio: "I'm Trisha Pillay from CSE 3rd year, a driven and ambitious person with a versatile, dynamic, innovative personality.",
+          achievements: [
+            "Event committee head",
+            "Committee leadership",
+            "Event coordination",
+          ],
+          contact: {
+            email: "trishapillay804@gmail.com",
+            phone: "9284656256",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-            instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+            linkedin:
+              "https://www.linkedin.com/in/trisha-pillay-9a1066321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "Trishhhh_aa",
           },
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -937,28 +886,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -1036,28 +984,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -1135,28 +1082,27 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Anuj Lakhekar",
-          image:
-            "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
           bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
           achievements: [""],
           contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin:
+              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
               "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
           },
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image:
-            "1748265675540 - Sento Coder.jpg",
+          image: "1748265675540 - Sento Coder.jpg",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "/team",
+            linkedin:
+              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
           },
         },
       },
@@ -1356,7 +1302,6 @@ export default function CommitteesPage() {
                   </div>
                 </div>
 
-
                 {/* Committee Name */}
                 <h3 className="text-lg font-bold text-white group-hover:text-orange-300 transition-colors duration-300 relative z-10">
                   {committee.name}
@@ -1407,8 +1352,6 @@ export default function CommitteesPage() {
       {selectedCommittee && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
           <div className="bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-gray-700 custom-scrollbar">
-
-
             <div className="relative">
               <div
                 className={`h-32 bg-gradient-to-r ${getColorClasses(
@@ -1433,7 +1376,8 @@ export default function CommitteesPage() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setSelectedCommittee(null)}
-                className="  absolute top-2 right-2 md:top-4 md:right-4  bg-black/50 hover:bg-black/70 text-white">
+                className="  absolute top-2 right-2 md:top-4 md:right-4  bg-black/50 hover:bg-black/70 text-white"
+              >
                 <X className="w-5 h-5" />
               </Button>
             </div>
@@ -1590,40 +1534,40 @@ export default function CommitteesPage() {
                         <div className="flex justify-center space-x-3">
                           {selectedCommittee.leadership.head.social
                             .linkedin && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.head.social
-                                    .linkedin
-                                }
-                                className="text-blue-400 hover:text-blue-300 transition-colors"
+                            <a
+                              href={
+                                selectedCommittee.leadership.head.social
+                                  .linkedin
+                              }
+                              className="text-blue-400 hover:text-blue-300 transition-colors"
+                            >
+                              <svg
+                                className="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
                               >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                              </a>
-                            )}
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                              </svg>
+                            </a>
+                          )}
                           {selectedCommittee.leadership.head.social
                             .instagram && (
-                              <a
-                                href={
-                                  selectedCommittee.leadership.head.social
-                                    .instagram
-                                }
-                                className="text-pink-400 hover:text-pink-300 transition-colors"
+                            <a
+                              href={
+                                selectedCommittee.leadership.head.social
+                                  .instagram
+                              }
+                              className="text-pink-400 hover:text-pink-300 transition-colors"
+                            >
+                              <svg
+                                className="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
                               >
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                                </svg>
-                              </a>
-                            )}
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                              </svg>
+                            </a>
+                          )}
                         </div>
                       </CardContent>
                     </Card>
@@ -1657,28 +1601,28 @@ export default function CommitteesPage() {
                           <div className="space-y-2">
                             {selectedCommittee.leadership.coHead1.contact
                               .email && (
-                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                  <Mail className="w-4 h-4" />
-                                  <span>
-                                    {
-                                      selectedCommittee.leadership.coHead1.contact
-                                        .email
-                                    }
-                                  </span>
-                                </div>
-                              )}
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Mail className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead1.contact
+                                      .email
+                                  }
+                                </span>
+                              </div>
+                            )}
                             {selectedCommittee.leadership.coHead1.contact
                               .phone && (
-                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                  <Phone className="w-4 h-4" />
-                                  <span>
-                                    {
-                                      selectedCommittee.leadership.coHead1.contact
-                                        .phone
-                                    }
-                                  </span>
-                                </div>
-                              )}
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Phone className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead1.contact
+                                      .phone
+                                  }
+                                </span>
+                              </div>
+                            )}
                           </div>
                           {/* 
                           <div>
@@ -1702,40 +1646,40 @@ export default function CommitteesPage() {
                           <div className="flex justify-center space-x-3">
                             {selectedCommittee.leadership.coHead1.social
                               .linkedin && (
-                                <a
-                                  href={
-                                    selectedCommittee.leadership.coHead1.social
-                                      .linkedin
-                                  }
-                                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead1.social
+                                    .linkedin
+                                }
+                                className="text-blue-400 hover:text-blue-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                  </svg>
-                                </a>
-                              )}
+                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                              </a>
+                            )}
                             {selectedCommittee.leadership.coHead1.social
                               .instagram && (
-                                <a
-                                  href={
-                                    selectedCommittee.leadership.coHead1.social
-                                      .instagram
-                                  }
-                                  className="text-pink-400 hover:text-pink-300 transition-colors"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead1.social
+                                    .instagram
+                                }
+                                className="text-pink-400 hover:text-pink-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                                  </svg>
-                                </a>
-                              )}
+                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                </svg>
+                              </a>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
@@ -1768,28 +1712,28 @@ export default function CommitteesPage() {
                           <div className="space-y-2">
                             {selectedCommittee.leadership.coHead2.contact
                               .email && (
-                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                  <Mail className="w-4 h-4" />
-                                  <span>
-                                    {
-                                      selectedCommittee.leadership.coHead2.contact
-                                        .email
-                                    }
-                                  </span>
-                                </div>
-                              )}
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Mail className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead2.contact
+                                      .email
+                                  }
+                                </span>
+                              </div>
+                            )}
                             {selectedCommittee.leadership.coHead2.contact
                               .phone && (
-                                <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
-                                  <Phone className="w-4 h-4" />
-                                  <span>
-                                    {
-                                      selectedCommittee.leadership.coHead2.contact
-                                        .phone
-                                    }
-                                  </span>
-                                </div>
-                              )}
+                              <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                                <Phone className="w-4 h-4" />
+                                <span>
+                                  {
+                                    selectedCommittee.leadership.coHead2.contact
+                                      .phone
+                                  }
+                                </span>
+                              </div>
+                            )}
                           </div>
 
                           {/* <div>
@@ -1813,40 +1757,40 @@ export default function CommitteesPage() {
                           <div className="flex justify-center space-x-3">
                             {selectedCommittee.leadership.coHead2.social
                               .linkedin && (
-                                <a
-                                  href={
-                                    selectedCommittee.leadership.coHead2.social
-                                      .linkedin
-                                  }
-                                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead2.social
+                                    .linkedin
+                                }
+                                className="text-blue-400 hover:text-blue-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                  </svg>
-                                </a>
-                              )}
+                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                              </a>
+                            )}
                             {selectedCommittee.leadership.coHead2.social
                               .instagram && (
-                                <a
-                                  href={
-                                    selectedCommittee.leadership.coHead2.social
-                                      .instagram
-                                  }
-                                  className="text-pink-400 hover:text-pink-300 transition-colors"
+                              <a
+                                href={
+                                  selectedCommittee.leadership.coHead2.social
+                                    .instagram
+                                }
+                                className="text-pink-400 hover:text-pink-300 transition-colors"
+                              >
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
                                 >
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
-                                  </svg>
-                                </a>
-                              )}
+                                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.612-.123-.837-.348-.225-.225-.348-.522-.348-.837s.123-.612.348-.837c.225-.225.522-.348.837-.348s.612.123.837.348c.225.225.348.522.348.837s-.123.612-.348.837c-.225.225-.522.348-.837.348z" />
+                                </svg>
+                              </a>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
