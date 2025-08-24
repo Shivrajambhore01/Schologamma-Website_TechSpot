@@ -226,7 +226,7 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Bhavya Pandey",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+          image: "Document from Bhavya Pandey - Bhavya Pandey.jpg",
           bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
           achievements: ["Painting", "Dancing", "Singing"],
           contact: { email: "pandeybhavya336@gmail.com" },
@@ -400,7 +400,7 @@ export default function CommitteesPage() {
         "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
       logo: "/placeholder.svg?height=80&width=80&text=🎨",
       color: "pink",
-      members: 10,
+      members: 8,
       // established: "2020-03-10",
       focus: [
         "Graphic Design",
@@ -411,41 +411,45 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "",
+          image: "",
+          bio: "",
+          achievements: ["", "", ""],
+          contact: { email: "" },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-            instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+            linkedin: "",
+            instagram: "",
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Yuvtika Rahangdale",
+          image: "", // no image provided yet
+          bio: "Creative Committee Co-Head",
+          achievements: ["Creative Committee Co-Head"],
+          contact: {
+            email: "yuvtikarahangdale@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "https://www.linkedin.com/in/yuvtika-rahangdale",
             instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+              "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ==",
+            facebook: "",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "Akansha Anil Ambadkar",
+          image: "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg", // put inside /public folder if it's a local file
+          bio: "Creative Committee Co-Head",
+          achievements: ["Creative Committee Co-Head"],
+          contact: {
+            email: "madhu.ambadkar2003@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram: "/team",
+            linkedin: "https://www.linkedin.com/in/akansha-ambadkar/",
+            instagram:
+              "https://www.instagram.com/akansciouss?igsh=MTFrbGN5c3ZxNXQzcg==",
           },
         },
       },
@@ -493,69 +497,74 @@ export default function CommitteesPage() {
         "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
       logo: "/placeholder.svg?height=80&width=80&text=🏅",
       color: "emerald",
-      members: 12,
+      members: 8,
       // established: "2017-09-15",
       focus: ["Cricket", "Football", "Athletics", "Badminton", "Fitness"],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Khushal Tondre",
+          image: "IMG_20240926_150056 - khushal tondare.jpg",
+          bio: "Sports Committee Head",
+          achievements: [
+            "Sports Committee Head",
+            "Full stack developer",
+            "Python",
+            "C++",
+          ],
+          contact: {
+            email: "khushaltondare16@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            linkedin:
+              "https://www.linkedin.com/in/khushal-tondare-0b489822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+              "https://www.instagram.com/khushall_01._?igsh=a3BocTZyN2MxOTB5",
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Nehal Ravindra Zade",
+          image: "IMG-20250719-WA0011 - Nehal Zade.jpg",
+          bio: "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
+          achievements: [
+            "Athletics",
+            "Teamwork",
+            "Leadership",
+            "Sports Management",
+          ],
+          contact: {
+            email: "nehalzade04@gmail.com",
+            phone: "",
+          },
           social: {
             linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              "https://www.linkedin.com/in/nehal-zade-7266a4374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+              "https://www.instagram.com/nehalzade1?igsh=ajQ2NDh0bmh6NGZ1",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "Payal Kumare",
+          image: "BT240083CS - Payal Kumare.jpg", // place inside /public if it's local
+          bio: "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
+          achievements: [
+            "Sports Committee Co-Head",
+            "Sports Management",
+            "Teamwork",
+            "Leadership",
+            "Discipline",
+          ],
+          contact: {
+            email: "payalkumare86686@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram: "/team",
+            linkedin: "https://www.linkedin.com/in/payal-kumare86686/",
+            instagram: "/team", // looks like placeholder, can replace with real link
           },
         },
       },
-      membersList: [
-        {
-          name: "Aisha Khan",
-          role: "Athletics Captain",
-          image: "/professional-female-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Rohit Mehra",
-          role: "Football Lead",
-          image: "/professional-male-student.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Diya Jain",
-          role: "Badminton Lead",
-          image: "/professional-female-student.png",
-          year: "1st Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Intercollege Winners 2023",
@@ -589,63 +598,62 @@ export default function CommitteesPage() {
         "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
       logo: "/placeholder.svg?height=80&width=80&text=📣",
       color: "orange",
-      members: 9,
+      members: 8,
       // established: "2018-08-01",
       focus: ["PR & Outreach", "Announcements", "Campaigns", "Brand Voice"],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
-          social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-            instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+          name: "Janvi Akhand",
+          image: "IMG_5591 - Janvi Akhand.JPG",
+          bio: "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
+          achievements: ["Publicity", "Communication", "Leadership"],
+          contact: {
+            email: "janviakhand@gmail.com",
+            phone: "",
           },
-        },
-        coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
-          },
-        },
-        coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
-          social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "https://www.linkedin.com/in/janvi-akhand-6bb310371",
             instagram: "/team",
           },
         },
+        coHead1: {
+          name: "Manswini Unhone",
+          image: "IMG-20241204-WA0001 - Ishu Unhone.jpg",
+          bio: "Hello, I'm Manswini, looking forward to learning new skills.",
+          achievements: [
+            "Publicity",
+            "Communication",
+            "Teamwork",
+            "Creativity",
+          ],
+          contact: {
+            email: "ishuunhone1@gmail.com",
+            phone: "",
+          },
+          social: {
+            linkedin: "https://www.linkedin.com/in/manswini-unhone",
+            instagram:
+              "https://www.instagram.com/ishhuu_uhh?igsh=NXgwbmFzeG91OWd0&utm_source=ig_contact_invite",
+          },
+        },
+        coHead2: {
+          name: "Mohini Wankhede",
+          image: "IMG_20250802_094903407_HDR - Mohini Wankhede.jpg",
+          bio: "I'm Mohini, a Computer Science Engineering student with a curious mindset. I enjoy exploring new things, learning consistently, and improving myself every day. I believe in staying positive and growing step by step.",
+          achievements: ["Python", "DSA", "Teamwork and collaboration"],
+          contact: {
+            email: "wankhedemohini4@gmail.com",
+            phone: "",
+          },
+          social: {
+            linkedin:
+              "https://www.linkedin.com/in/mohini-wankhede-a2699337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/mohini_wankhede_10/profilecard/?igsh=MXRyM21kMXoyY2p6Zw==",
+          },
+        },
       },
-      membersList: [
-        {
-          name: "Harsh Vaid",
-          role: "Announcements Lead",
-          image: "/professional-male-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Mahek Jain",
-          role: "Outreach Coordinator",
-          image: "/professional-female-student.png",
-          year: "2nd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Campus Awareness 2023",
@@ -685,10 +693,10 @@ export default function CommitteesPage() {
       focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
+          name: "",
           image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+            "",
+          bio: "",
           achievements: ["Java", "DSA", "Full stack Development"],
           contact: { email: "shivrajambhore01@gmail.com" },
           social: {
@@ -698,16 +706,22 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Karishma Naidu",
+          image: "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
+          bio: "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
+          achievements: [
+            "Discipline",
+            "Teamwork",
+            "Leadership",
+            "Adaptability",
+          ],
+          contact: {
+            email: "karishmanaidu035@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+            linkedin: "https://www.linkedin.com/in/karishma-naidu-915168339",
+            instagram: "/team",
           },
         },
         coHead2: {
@@ -724,18 +738,6 @@ export default function CommitteesPage() {
         },
       },
       membersList: [
-        {
-          name: "Mohit Patil",
-          role: "Security Marshal",
-          image: "/professional-male-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Riya Sen",
-          role: "Volunteer Lead",
-          image: "/professional-female-student.png",
-          year: "2nd Year",
-        },
       ],
       achievements: [
         {

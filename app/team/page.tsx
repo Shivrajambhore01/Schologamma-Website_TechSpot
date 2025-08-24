@@ -327,7 +327,7 @@ export default function TeamPage() {
       role: "Creative Committee Co-Head",
       committee: "Creative Committee",
       position: "Co-Head",
-      image: "IMG-20250719-WA0011 - Nehal Zade.jpg",
+      image: "",
       bio: "",
       dob: "2006-02-22",
       email: "yuvtikarahangdale@gmail.com",
