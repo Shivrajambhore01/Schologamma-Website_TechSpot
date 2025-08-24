@@ -417,7 +417,7 @@ export default function CommitteesPage() {
           achievements: [],
           contact: {
             email: "raichandshefali6@gmail.com",
-            phone: "8767991276",
+            phone: "",
           },
           social: {
             linkedin: "https://www.linkedin.com/in/sheefali-raichand-977534323",

@@ -300,7 +300,7 @@ export default function TeamPage() {
       bio: "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
       dob: "2006-09-01",
       email: "raichandshefali6@gmail.com",
-      phone: "8767991276",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/sheefali-raichand-977534323",
