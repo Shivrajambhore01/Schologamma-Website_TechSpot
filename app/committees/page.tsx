@@ -411,14 +411,18 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "",
-          image: "",
-          bio: "",
-          achievements: ["", "", ""],
-          contact: { email: "" },
+          name: "Sheefali Raichand",
+          image: "Sheefali-Raichand.jpg",
+          bio: "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
+          achievements: [],
+          contact: {
+            email: "raichandshefali6@gmail.com",
+            phone: "8767991276",
+          },
           social: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/sheefali-raichand-977534323",
             instagram: "",
+            facebook: "",
           },
         },
         coHead1: {
@@ -899,14 +903,19 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "",
-          image: "",
+          name: "Dhruvakumar Sanjayrao Doras",
+          image: "Dhruvakumar-Sanjayrao-Doras.jpg",
           bio: "",
-          achievements: [""],
-          contact: { email: "" },
+          achievements: [],
+          contact: {
+            email: "dhruvdoras3@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "",
-            instagram: "",
+            linkedin:
+              "https://www.linkedin.com/in/dhruv-doras-8b8b56328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "dhruv_s_doras_",
+            facebook: "",
           },
         },
         coHead2: {
