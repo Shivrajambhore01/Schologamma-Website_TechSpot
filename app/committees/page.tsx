@@ -694,8 +694,7 @@ export default function CommitteesPage() {
       leadership: {
         head: {
           name: "",
-          image:
-            "",
+          image: "",
           bio: "",
           achievements: ["Java", "DSA", "Full stack Development"],
           contact: { email: "shivrajambhore01@gmail.com" },
@@ -737,8 +736,7 @@ export default function CommitteesPage() {
           },
         },
       },
-      membersList: [
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Safe Fest 2023",
@@ -985,16 +983,19 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Vishakha S Pawade",
+          image:
+            "https://drive.google.com/open?id=1KKwaOnx0YpgzJM_rHkSwhiz3v9XXck7O",
+          bio: "Co-Head of the Startup Community from 2nd Year CSE-C Department.",
+          achievements: [],
+          contact: {
+            email: "vishakhapawade@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+            linkedin: "",
+            instagram: "https://instagram.com/vishakha__pawade",
+            facebook: "",
           },
         },
         coHead2: {
@@ -1059,7 +1060,7 @@ export default function CommitteesPage() {
         "The NSS (National Service Scheme) Committee inspires students to contribute towards community service and social responsibility. Through awareness drives, social activities, and volunteering, we work for the welfare of society while promoting leadership, discipline, and empathy among students.",
       logo: "/placeholder.svg?height=80&width=80&text=🌍",
       color: "green",
-      members: 25,
+      members: 8,
       // established: "2018-07-15",
       focus: [
         "Community Service",
@@ -1083,28 +1084,36 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Romil Burile",
+          image:
+            "https://drive.google.com/open?id=1j1KlNIFGFSbAgBRYewQiR9QXXVEUulSe",
+          bio: "I am Romil Burile, Co Head of NSS Committee from 2nd year CSE A Department.",
+          achievements: [],
+          contact: {
+            email: "romilburile@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+            linkedin: "",
+            instagram: "",
+            facebook: "",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "Manaswi Gajanan Lodam",
+          image: "Manaswi-Gajanan-Lodam.jpg",
+          bio: "I am a disciplined and organised person.",
+          achievements: [],
+          contact: {
+            email: "manaswilodam@gmail.com",
+            phone: "",
+          },
           social: {
             linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram: "/team",
+              "https://www.linkedin.com/in/manaswi-lodam-a95793342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram:
+              "https://www.instagram.com/manaswi_lodam?igsh=MWU3ZXV3bzF1M3U3YQ==",
+            facebook: "",
           },
         },
       },
