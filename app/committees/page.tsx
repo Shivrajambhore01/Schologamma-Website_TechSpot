@@ -688,7 +688,7 @@ export default function CommitteesPage() {
         "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
       logo: "/placeholder.svg?height=80&width=80&text=🛡️",
       color: "indigo",
-      members: 10,
+      members: 8,
       // established: "2018-01-20",
       focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
       leadership: {
@@ -724,15 +724,18 @@ export default function CommitteesPage() {
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "HITESH MISHRA",
+          image: "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
+          bio: "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
+          achievements: [],
+          contact: {
+            email: "hiteshmishra910@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "https://www.linkedin.com/in/Hitesh mishra",
             instagram: "/team",
+            facebook: "",
           },
         },
       },
@@ -770,7 +773,7 @@ export default function CommitteesPage() {
         "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
       logo: "/placeholder.svg?height=80&width=80&text=🗓️",
       color: "orange",
-      members: 11,
+      members: 8,
       // established: "2018-06-10",
       focus: ["Planning", "Budgeting", "Vendor & Venue", "Stage Management"],
       leadership: {
@@ -786,7 +789,7 @@ export default function CommitteesPage() {
           ],
           contact: {
             email: "trishapillay804@gmail.com",
-            phone: "9284656256",
+            phone: "",
           },
           social: {
             linkedin:
@@ -795,28 +798,36 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
-          achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          name: "Anushka Sonone",
+          image:
+            "https://drive.google.com/open?id=1IwiF3ulAmG9nEfNN0sUprWJ2jfjTbEA1",
+          bio: "",
+          achievements: [],
+          contact: {
+            email: "anushkasonone9@gmail.com",
+            phone: "",
+          },
           social: {
             linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              "https://www.linkedin.com/in/anushka-sonone-785b8a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+              "https://www.instagram.com/anushhka_.s?igsh=MWNsZjBqcm9pc3U1cQ==",
+            facebook: "",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
-          achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          name: "Sakshi Nitin Gokhe",
+          image: "IMG_20250727_231227 - Sakshi Gokhe.jpg",
+          bio: "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
+          achievements: [],
+          contact: {
+            email: "sakshigokhe67@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "/team",
             instagram: "/team",
+            facebook: "",
           },
         },
       },
@@ -872,58 +883,45 @@ export default function CommitteesPage() {
       focus: ["Livestream", "Video/Audio", "Web/App Enhancements", "Analytics"],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Sanika Lanjewar",
+          image: "IMG_20250731_151647 - Sanika Lanjewar.jpg",
+          bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions.",
+          achievements: [],
+          contact: {
+            email: "shewarwpiyush@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-            instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+            linkedin:
+              "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "/team",
+            facebook: "",
           },
         },
         coHead1: {
-          name: "Anuj Lakhekar",
-          image: "IMG-20250801-WA0075 - anuj lakhekar.jpg",
-          bio: "Hello I am Anuj  from cse b passionate about coading and good at web dev",
+          name: "",
+          image: "",
+          bio: "",
           achievements: [""],
-          contact: { email: "anujlakhekar@gmail.com" },
+          contact: { email: "" },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram:
-              "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+            linkedin: "",
+            instagram: "",
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
+          name: "",
+          image: "",
+          bio: "",
           achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          contact: { email: "" },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram: "/team",
+            linkedin: "",
+            instagram: "",
           },
         },
       },
-      membersList: [
-        {
-          name: "Sana Qureshi",
-          role: "Stream Engineer",
-          image: "/professional-female-student.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Aman Gupta",
-          role: "Editor",
-          image: "/professional-male-student.png",
-          year: "3rd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Seamless Hybrid 2023",
@@ -950,7 +948,6 @@ export default function CommitteesPage() {
       ],
       gallery: ["/digital-av-workshop.png"],
     },
-
     {
       id: "startup",
       name: "Startup Committee",
@@ -959,7 +956,7 @@ export default function CommitteesPage() {
         "The Startup Committee helps students validate ideas, build MVPs, connect with mentors, and pitch to investors.",
       logo: "/placeholder.svg?height=80&width=80&text=💡",
       color: "indigo",
-      members: 10,
+      members: 8,
       // established: "2021-01-05",
       focus: [
         "Ideation",
@@ -970,16 +967,19 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Nikhil Rathod",
+          image: "DSC_3570_Nikhil - Nikhil Rathod.jpg",
+          bio: "Full Stack Developer",
+          achievements: [],
+          contact: {
+            email: "nikhilcaptain28@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            linkedin: "www.linkedin.com/in/nikhilrathods",
             instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+              "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy",
+            facebook: "",
           },
         },
         coHead1: {
@@ -999,32 +999,18 @@ export default function CommitteesPage() {
           },
         },
         coHead2: {
-          name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
-          bio: "SDE",
+          name: "",
+          image: "",
+          bio: "",
           achievements: [""],
-          contact: { email: "codersento@gmail.com" },
+          contact: { email: "" },
           social: {
-            linkedin:
-              "https://www.linkedin.com/in/santosh-donapurge-bb1835304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            instagram: "/team",
+            linkedin: "",
+            instagram: "",
           },
         },
       },
-      membersList: [
-        {
-          name: "Kartik Rao",
-          role: "Pitch Coach",
-          image: "/professional-male-student.png",
-          year: "4th Year",
-        },
-        {
-          name: "Nivedita Paul",
-          role: "Research Lead",
-          image: "/professional-female-student.png",
-          year: "2nd Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Demo Day 2023",
@@ -1071,16 +1057,18 @@ export default function CommitteesPage() {
       ],
       leadership: {
         head: {
-          name: "Shivraj Ambhore",
-          image:
-            "https://drive.google.com/open?id=1X-4r14KBPa-yeFsudR3gJAMGGfhqs0WK",
-          bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Yadvi Bhandarkar",
+          image: "Passport REsize photo - Yadvi Bhandarkar.jpg",
+          bio: "CSE student skilled in Python and exploring Data Science.",
+          achievements: [],
+          contact: {
+            email: "yadvi@gmail.com",
+            phone: "",
+          },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
-            instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+            linkedin: "https://www.linkedin.com/in/yadvi-bhandarkar-b944a1301/",
+            instagram: "/team",
+            facebook: "",
           },
         },
         coHead1: {
@@ -1117,32 +1105,7 @@ export default function CommitteesPage() {
           },
         },
       },
-      membersList: [
-        {
-          name: "Sneha Rathi",
-          role: "Volunteer Coordinator",
-          image: "/professional-female-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Manoj Yadav",
-          role: "Health Camp Organizer",
-          image: "/professional-male-student.png",
-          year: "2nd Year",
-        },
-        {
-          name: "Priya Nair",
-          role: "Environment Lead",
-          image: "/professional-female-student.png",
-          year: "4th Year",
-        },
-        {
-          name: "Rahul Patil",
-          role: "Event Volunteer",
-          image: "/professional-male-student.png",
-          year: "1st Year",
-        },
-      ],
+      membersList: [],
       achievements: [
         {
           title: "Best NSS Unit Award",

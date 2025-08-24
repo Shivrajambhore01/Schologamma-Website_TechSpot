@@ -113,6 +113,25 @@ export default function TeamPage() {
       skills: ["UI/UX Designing", "Graphics Designing", "Communication"],
     },
     {
+      id: "15",
+      name: "Prathamesh Ratnaparkhi",
+      role: "Treasurer",
+      committee: "Finance",
+      position: "Admin",
+      image: "Prathamesh-Ratnaparkhi.jpg",
+      bio: "",
+      dob: "2004-12-30",
+      email: "prathmeshratnaparkhi2@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "www.linkedin.com/in/prathamesh-ratnaparkhi3012",
+        instagram:
+          "https://www.instagram.com/pj_ratnaparkhi?igsh=NDl0MHd4NnhpZ2dj",
+      },
+      skills: ["HTML", "CSS", "Java", "Canva (Intermediate)"],
+    },
+    {
       id: "10",
       name: "Anjali Sonekar",
       role: "Secretary",
@@ -220,7 +239,7 @@ export default function TeamPage() {
       bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
       dob: "2004-02-19",
       email: "shivrajambhore01@gmail.com",
-      phone: "8010170071",
+      phone: "",
       responsibilities: ["Organize Hachathon", "Handle forum Website"],
       social: {
         linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
@@ -299,7 +318,7 @@ export default function TeamPage() {
       bio: "I'm Trisha Pillay from CSE 3nd year a driver and ambitious person with a versatile ,dynamic , innovative personality",
       dob: "2005-11-02",
       email: "trishapillay804@gmail.com",
-      phone: "9284656256",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
@@ -318,7 +337,7 @@ export default function TeamPage() {
       bio: "",
       dob: "2005-05-01",
       email: "khushaltondare16@gmail.com",
-      phone: "8275826355",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
@@ -338,7 +357,7 @@ export default function TeamPage() {
       bio: "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
       dob: "2006-03-15",
       email: "shewarwpiyush@gmail.com",
-      phone: "8928322725",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
@@ -362,7 +381,7 @@ export default function TeamPage() {
       bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
       dob: "2004-12-14",
       email: "shewarwpiyush@gmail.com",
-      phone: "9309022453",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
@@ -381,7 +400,7 @@ export default function TeamPage() {
       bio: "CSE student Skilled in Python and Exploring Data Science ",
       dob: "2004-07-30",
       email: "yadvi@gmail.com",
-      phone: "8459612186",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/yadvi-bhandarkar-b944a1301/",
@@ -399,7 +418,7 @@ export default function TeamPage() {
       bio: "",
       dob: "2006-01-23",
       email: "vishakhapawade@gmail.com",
-      phone: "8669025561",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "",
@@ -440,7 +459,7 @@ export default function TeamPage() {
       bio: "I am Romil Burile, Co Head of NSS Committee from 2nd year CSE A Department.",
       dob: "2006-08-29",
       email: "romilburile@gmail.com",
-      phone: "9309072566",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "",
@@ -459,7 +478,7 @@ export default function TeamPage() {
       bio: "I am a disciplined and organised person.",
       dob: "2006-09-02",
       email: "manaswilodam@gmail.com",
-      phone: "7620801213",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
@@ -505,7 +524,7 @@ export default function TeamPage() {
       bio: "",
       dob: "2007-02-24",
       email: "madhu.ambadkar2003@gmail.com",
-      phone: "8530723327",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/akansha-ambadkar/",
@@ -706,7 +725,7 @@ export default function TeamPage() {
       bio: "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
       dob: "2006-09-11",
       email: "payalkumare86686@gmail.com",
-      phone: "8668614175",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/payal-kumare86686/",
@@ -724,7 +743,7 @@ export default function TeamPage() {
       bio: "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
       dob: "2005-09-19",
       email: "hiteshmishra910@gmail.com",
-      phone: "8928322725",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/Hitesh mishra",
@@ -742,7 +761,7 @@ export default function TeamPage() {
       bio: "I'm Mohini, a Computer Science Engineering student with a curious mindset. I enjoy exploring new things, learning consistently, and improving myself every day. I believe in staying positive and growing step by step.",
       dob: "2006-04-10",
       email: "wankhedemohini4@gmail.com",
-      phone: "9834032675",
+      phone: "",
       responsibilities: [],
       social: {
         linkedin:
