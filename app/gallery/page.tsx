@@ -40,232 +40,159 @@ export default function GalleryPage() {
     { id: "seminars", name: "Seminars", icon: <Lightbulb className="w-4 h-4" /> },
     { id: "hackathons", name: "Hackathons", icon: <Code className="w-4 h-4" /> },
     { id: "networking", name: "Networking", icon: <Camera className="w-4 h-4" /> },
+     { id: "Installation", name: "Installation", icon: <Camera className="w-4 h-4" /> },
+      { id: "Ganpati", name: "Ganpati bappa", icon: <Camera className="w-4 h-4" /> },
   ]
 
   const galleryItems = [
     {
       id: 1,
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
-      alt: "Figma Workshop",
-      title: "Introduction to Figma Workshop",
-      category: "workshops",
-      date: "Oct 27, 2023",
-      description: "Students learning design fundamentals with Figma",
+      src: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
     },
-    {
+     {
       id: 2,
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-14%20223324-0KI5TyovEk2vyFyMYfVXN3A2XDIUfS.png",
-      alt: "Team Group Photo",
-      title: "Annual Schologamma Team Gathering",
-      category: "team",
-      date: "Aug 14, 2023",
-      description: "Complete team photo at our annual gathering",
+      src: "inst2.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
     },
-    {
+     {
       id: 3,
-      src: "/logic-quest-coding-competition.png",
-      alt: "LogicQuest Competition",
-      title: "LogicQuest 1.1 - Coding Competition",
-      category: "competitions",
-      date: "Mar 1, 2024",
-      description: "Annual coding competition with exciting challenges",
+      src: "inst16.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
     },
-    {
-      id: 4,
-      src: "/canva-tutorial-poster.png",
-      alt: "Canva Tutorial",
-      title: "Advanced Canva Tutorial Session",
-      category: "workshops",
-      date: "Jan 8, 2024",
-      description: "Learning advanced design techniques with Canva",
-    },
-    {
-      id: 5,
-      src: "/ai-ml-workshop-poster.png",
-      alt: "AI/ML Workshop",
-      title: "AI & Machine Learning Workshop",
-      category: "workshops",
-      date: "Feb 15, 2024",
-      description: "Exploring the future of artificial intelligence",
-    },
-    {
-      id: 6,
-      src: "/web-dev-bootcamp-poster.png",
-      alt: "Web Development Bootcamp",
-      title: "Full Stack Web Development Bootcamp",
-      category: "workshops",
-      date: "Jan 20, 2024",
-      description: "Comprehensive web development training program",
-    },
-    {
-      id: 7,
-      src: "/digital-marketing-masterclass-poster.png",
-      alt: "Digital Marketing Event",
-      title: "Digital Marketing Masterclass",
-      category: "events",
-      date: "Dec 10, 2023",
-      description: "Learning modern digital marketing strategies",
-    },
-    {
-      id: 8,
-      src: "/professional-male-student.png",
-      alt: "Committee Meeting",
-      title: "Technical Committee Planning Session",
-      category: "team",
-      date: "Nov 5, 2023",
-      description: "Strategic planning for upcoming technical events",
-    },
-    {
-      id: 9,
-      src: "/creative-female-student.png",
-      alt: "Creative Session",
-      title: "Creative Committee Brainstorming",
-      category: "team",
-      date: "Oct 15, 2023",
-      description: "Ideation session for creative projects",
-    },
-    {
-      id: 10,
-      src: "/placeholder.svg?height=300&width=400&text=Blockchain+Seminar",
-      alt: "Blockchain Seminar",
-      title: "Blockchain Technology Seminar",
-      category: "seminars",
-      date: "Sep 20, 2023",
-      description: "Understanding cryptocurrency and blockchain fundamentals",
-    },
-    {
-      id: 11,
-      src: "/placeholder.svg?height=300&width=400&text=Cybersecurity+Workshop",
-      alt: "Cybersecurity Workshop",
-      title: "Cybersecurity Awareness Workshop",
-      category: "seminars",
-      date: "Nov 15, 2023",
-      description: "Learning about digital security and ethical hacking",
-    },
-    {
-      id: 12,
-      src: "/placeholder.svg?height=300&width=400&text=Startup+Pitch",
-      alt: "Startup Pitch Competition",
-      title: "Innovation Startup Pitch Competition",
-      category: "competitions",
-      date: "Dec 5, 2023",
-      description: "Students presenting innovative startup ideas",
-    },
-    {
-      id: 13,
-      src: "/placeholder.svg?height=300&width=400&text=Code+Hackathon",
-      alt: "24-Hour Hackathon",
-      title: "24-Hour Coding Hackathon",
-      category: "hackathons",
-      date: "Jan 15, 2024",
-      description: "Intensive coding marathon with innovative solutions",
-    },
-    {
-      id: 14,
-      src: "/placeholder.svg?height=300&width=400&text=Industry+Meet",
-      alt: "Industry Networking",
-      title: "Industry Professional Networking Event",
-      category: "networking",
-      date: "Feb 10, 2024",
-      description: "Connecting students with industry professionals",
-    },
-    {
+     {
       id: 15,
-      src: "/placeholder.svg?height=300&width=400&text=Alumni+Meet",
-      alt: "Alumni Meetup",
-      title: "Alumni Success Stories Session",
-      category: "networking",
-      date: "Mar 20, 2024",
-      description: "Learning from successful alumni experiences",
+      src: "inst19.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
     },
-    {
+  {
       id: 16,
-      src: "/placeholder.svg?height=300&width=400&text=IoT+Workshop",
-      alt: "IoT Workshop",
-      title: "Internet of Things Workshop",
-      category: "workshops",
-      date: "Apr 5, 2024",
-      description: "Hands-on experience with IoT devices and sensors",
+      src: "inst20.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
     },
-    {
+ 
+     {
+      id: 4,
+      src: "inst5.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+       {
+      id: 14,
+      src: "inst18.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+ 
+     {
+      id: 5,
+      src: "inst6.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 6,
+      src: "inst7.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 7,
+      src: "inst8.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 8,
+      src: "inst9.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+       {
+      id: 9,
+      src: "inst10.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 10,
+      src: "inst14.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 11,
+      src: "inst15.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 12,
+      src: "inst13.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
+      id: 13,
+      src: "inst12.jpg",
+      alt: "Installation",
+      title: "Installation ceremony",
+      category: "Installation",
+    },
+     {
       id: 17,
-      src: "/placeholder.svg?height=300&width=400&text=Data+Science",
-      alt: "Data Science Seminar",
-      title: "Data Science and Analytics Seminar",
-      category: "seminars",
-      date: "Apr 18, 2024",
-      description: "Exploring big data and predictive analytics",
+      src: "g1.jpg",
+      title: "Flash mob ganpati bappa",
+      category: "Ganpati",
     },
-    {
+     {
       id: 18,
-      src: "/placeholder.svg?height=300&width=400&text=Mobile+Dev",
-      alt: "Mobile Development",
-      title: "Mobile App Development Bootcamp",
-      category: "workshops",
-      date: "May 2, 2024",
-      description: "Building cross-platform mobile applications",
+      src: "g2.jpg",
+     title: "Flash mob ganpati bappa",
+      category: "Ganpati",
     },
-    {
+       {
       id: 19,
-      src: "/placeholder.svg?height=300&width=400&text=Game+Jam",
-      alt: "Game Development Jam",
-      title: "48-Hour Game Development Jam",
-      category: "hackathons",
-      date: "May 15, 2024",
-      description: "Creating innovative games in 48 hours",
+      src: "g3.jpg",
+     title: "Flash mob ganpati bappa",
+      category: "Ganpati",
     },
-    {
-      id: 20,
-      src: "/placeholder.svg?height=300&width=400&text=Tech+Talk",
-      alt: "Tech Talk Series",
-      title: "Monthly Tech Talk Series",
-      category: "seminars",
-      date: "Jun 1, 2024",
-      description: "Regular sessions on emerging technologies",
-    },
-    {
+  
+       {
       id: 21,
-      src: "/placeholder.svg?height=300&width=400&text=Project+Expo",
-      alt: "Project Exhibition",
-      title: "Annual Project Exhibition",
-      category: "events",
-      date: "Jun 20, 2024",
-      description: "Showcasing student innovation and creativity",
+      src: "g5.jpg",
+     title: "Flash mob ganpati bappa",
+      category: "Ganpati",
     },
-    {
-      id: 22,
-      src: "/placeholder.svg?height=300&width=400&text=Mentorship",
-      alt: "Mentorship Program",
-      title: "Student Mentorship Program Launch",
-      category: "networking",
-      date: "Jul 5, 2024",
-      description: "Connecting junior and senior students for guidance",
-    },
-    {
-      id: 23,
-      src: "/placeholder.svg?height=300&width=400&text=Cloud+Computing",
-      alt: "Cloud Computing Workshop",
-      title: "Cloud Computing and DevOps Workshop",
-      category: "workshops",
-      date: "Jul 18, 2024",
-      description: "Learning cloud platforms and deployment strategies",
-    },
-    {
-      id: 24,
-      src: "/placeholder.svg?height=300&width=400&text=Research+Symposium",
-      alt: "Research Symposium",
-      title: "Student Research Symposium",
-      category: "seminars",
-      date: "Aug 10, 2024",
-      description: "Presenting cutting-edge student research projects",
-    },
+  
+ 
   ]
 
   const filteredItems = galleryItems.filter((item) => {
     const matchesCategory = selectedCategory === "all" || item.category === selectedCategory
     const matchesSearch =
-      item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchQuery.toLowerCase())
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    // item.description.toLowerCase().includes(searchQuery.toLowerCase())
     return matchesCategory && matchesSearch
   })
 
@@ -321,11 +248,10 @@ export default function GalleryPage() {
                   variant={selectedCategory === category.id ? "default" : "outline"}
                   size="sm"
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`${
-                    selectedCategory === category.id
+                  className={`${selectedCategory === category.id
                       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
                       : "border-gray-600 text-gray-300 hover:text-white hover:border-orange-500"
-                  } transition-all duration-300`}
+                    } transition-all duration-300`}
                 >
                   {category.icon}
                   <span className="ml-2">{category.name}</span>
@@ -346,50 +272,39 @@ export default function GalleryPage() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-animate id="gallery-grid">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-animate id="gallery-grid">
             {filteredItems.map((item, index) => (
               <Card
                 key={item.id}
-                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${
-                  visibleElements.has("gallery-grid")
+                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${visibleElements.has("gallery-grid")
                     ? "animate-in slide-in-from-bottom duration-700"
                     : "opacity-0 translate-y-8"
-                }`}
+                  }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative h-48 overflow-hidden">
+                  {/* Image fills card */}
                   <img
                     src={item.src || "/placeholder.svg"}
                     alt={item.alt}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-2 py-1 bg-black/50 backdrop-blur-sm rounded-full text-xs text-gray-300">
-                      {item.date}
-                    </span>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button
-                      size="sm"
-                      className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30"
-                    >
-                      <ImageIcon className="w-4 h-4 mr-2" />
-                      View Full
-                    </Button>
+
+                  {/* Dark gradient overlay for readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+
+                  {/* Title Tag (overlay) */}
+                  <div className="absolute bottom-4 left-4">
+                    <h3 className="font-semibold text-white bg-black/60 backdrop-blur-sm px-3 py-1 rounded-md text-sm group-hover:bg-orange-500/80 transition-colors duration-300">
+                      {item.title}
+                    </h3>
                   </div>
                 </div>
-                <CardContent className="p-4 space-y-2">
-                  <h3 className="font-semibold text-white group-hover:text-orange-300 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {item.description}
-                  </p>
-                </CardContent>
               </Card>
             ))}
           </div>
+
 
           {filteredItems.length === 0 && (
             <div className="text-center py-16">

@@ -76,13 +76,13 @@ export default function HomePage() {
       title: "Innovation Meets Excellence",
       subtitle:
         "Join the premier student forum at JD College of Engineering & Management",
-      image: "technical-student-laptop.png",
+      image: "inst2.jpg",
     },
     {
       title: "Empowering Future Leaders",
       subtitle:
         "Discover opportunities, build connections, and shape your career",
-      image: "college.jpeg",
+      image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
     },
     {
       title: "Learn, Grow, Achieve",
@@ -278,74 +278,28 @@ export default function HomePage() {
 
   const galleryCategories = [
     {
-      title: "Workshop Sessions",
-      description: "Hands-on learning experiences and skill development",
+      title: "Installation ceremony",
+      // description: "Hands-on learning experiences and skill development",
       images: [
         {
-          src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
-          alt: "Figma Workshop Session",
-          caption: "Introduction to Figma - Design Workshop",
+          src: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+          alt: "installation",
+          caption: "installation ceremony",
         },
         {
-          src: "/canva-tutorial-poster.png",
-          alt: "Canva Tutorial",
-          caption: "Advanced Canva Tutorial Session",
+         src: "inst2.jpg",
+          alt: "installation",
+          caption: "installation ceremony",
         },
         {
-          src: "/web-dev-bootcamp-poster.png",
-          alt: "Web Development Bootcamp",
-          caption: "Full Stack Web Development Bootcamp",
+           src: "inst19.jpg",
+          alt: "installation",
+          caption: "installation ceremony",
         },
       ],
       icon: <Award className="w-6 h-6" />,
       color: "from-dark-500/20 to-purple-500/20",
-    },
-    {
-      title: "Team Activities",
-      description: "Collaborative projects and team building moments",
-      images: [
-        {
-          src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-14%20223324-0KI5TyovEk2vyFyMYfVXN3A2XDIUfS.png",
-          alt: "Team Group Photo",
-          caption: "Annual Schologamma Team Gathering",
-        },
-        {
-          src: "/professional-male-student.png",
-          alt: "Team Meeting",
-          caption: "Committee Planning Session",
-        },
-        {
-          src: "/creative-female-student.png",
-          alt: "Creative Session",
-          caption: "Creative Committee Brainstorming",
-        },
-      ],
-      icon: <Users className="w-6 h-6" />,
-      color: "from-green-500/20 to-teal-500/20",
-    },
-    {
-      title: "Competitions & Events",
-      description: "Coding competitions and technical challenges",
-      images: [
-        {
-          src: "/logic-quest-coding-competition.png",
-          alt: "LogicQuest Competition",
-          caption: "LogicQuest 1.1 - Annual Coding Competition",
-        },
-        {
-          src: "/ai-ml-workshop-poster.png",
-          alt: "AI/ML Workshop",
-          caption: "Artificial Intelligence & Machine Learning Workshop",
-        },
-        {
-          src: "/digital-marketing-masterclass-poster.png",
-          alt: "Digital Marketing Event",
-          caption: "Digital Marketing Masterclass",
-        },
-      ],
-      icon: <Trophy className="w-6 h-6" />,
-      color: "from-orange-500/20 to-yellow-500/20",
-    },
+    }
   ];
 
   useEffect(() => {
@@ -359,8 +313,8 @@ export default function HomePage() {
     const filteredCommittees = committees.filter(
       (c) =>
         (c.name ?? "").toString().toLowerCase().includes(q) ||
-        (c.description ?? "").toString().toLowerCase().includes(q) ||
-        (c.id ?? "").toString().toLowerCase().includes(q) // if you want id search
+        (c.description ?? "").toString().toLowerCase().includes(q)
+        // (c.id ?? "").toString().toLowerCase().includes(q) // if you want id search
     );
 
     const filteredEvents = events.filter(
@@ -623,7 +577,76 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+ <section
+        id="updates"
+        ref={updatesRef}
+        className="relative z-10 py-20 px-4 bg-gray-900/30"
+        data-animate
+      >
+        <div className="max-w-7xl mx-auto">
+          <div
+            className={`text-center mb-16 ${
+              visibleElements.has("updates")
+                ? "animate-in fade-in duration-1000"
+                : "opacity-0"
+            }`}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+              Latest Updates
+            </h2>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+              Stay informed with the latest news, announcements, and
+              opportunities from Schologamma Forum.
+            </p>
+          </div>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {latestUpdates.map((update, index) => (
+              <Card
+                key={index}
+                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
+                  visibleElements.has("updates")
+                    ? "animate-in slide-in-from-bottom duration-700"
+                    : "opacity-0 translate-y-8"
+                }`}
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2 text-orange-400">
+                      {update.icon}
+                      <span className="text-sm font-medium capitalize">
+                        {update.type}
+                      </span>
+                    </div>
+                    <span className="text-xs text-gray-500">{update.date}</span>
+                  </div>
+                  {update.img ? (
+                    <div>
+                      <img className="rounded-lg" src={update?.img} />
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
+                    {update.title}
+                  </h3>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                    {update.description}
+                  </p>
+                  {/* <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent"
+                    >
+                      Read More
+                    </Button> */}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
       <section
         id="committees"
         ref={committeesRef}
@@ -782,78 +805,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        id="updates"
-        ref={updatesRef}
-        className="relative z-10 py-20 px-4 bg-gray-900/30"
-        data-animate
-      >
-        <div className="max-w-7xl mx-auto">
-          <div
-            className={`text-center mb-16 ${
-              visibleElements.has("updates")
-                ? "animate-in fade-in duration-1000"
-                : "opacity-0"
-            }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
-              Latest Updates
-            </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Stay informed with the latest news, announcements, and
-              opportunities from Schologamma Forum.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {latestUpdates.map((update, index) => (
-              <Card
-                key={index}
-                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
-                  visibleElements.has("updates")
-                    ? "animate-in slide-in-from-bottom duration-700"
-                    : "opacity-0 translate-y-8"
-                }`}
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2 text-orange-400">
-                      {update.icon}
-                      <span className="text-sm font-medium capitalize">
-                        {update.type}
-                      </span>
-                    </div>
-                    <span className="text-xs text-gray-500">{update.date}</span>
-                  </div>
-                  {update.img ? (
-                    <div>
-                      <img className="rounded-lg" src={update?.img} />
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                  <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
-                    {update.title}
-                  </h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {update.description}
-                  </p>
-                  {/* <Button
-                      variant="outline"
-                      size="sm"
-                      className="border-gray-600 text-white hover:bg-orange-500 hover:border-orange-500 w-full bg-transparent"
-                    >
-                      Read More
-                    </Button> */}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
+  <section
         id="events"
         ref={eventsRef}
         className="relative z-10 py-20 px-4"
@@ -994,9 +946,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {galleryCategories[0].title}
                 </h3>
-                <p className="text-gray-400 text-sm">
-                  {galleryCategories[0].description}
-                </p>
+             
               </div>
             </div>
 
@@ -1021,20 +971,14 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Button
-                        size="sm"
-                        className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30"
-                      >
-                        <ImageIcon className="w-4 h-4 mr-2" />
-                        View Full
-                      </Button>
+      
                     </div>
                   </div>
-                  <CardContent className="p-4">
+                  {/* <CardContent className="p-4">
                     <p className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300 text-center">
                       {image.caption}
                     </p>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               ))}
             </div>

@@ -213,7 +213,7 @@ export default function CommitteesPage() {
         head: {
           name: "Piyush Sheware",
           image:
-            "http://localhost:3000/Untitled%20design%20-%20Piyush%20Sheware.pdf",
+            "piyushSH.jpg",
           bio: "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
           achievements: ["content editor"],
           contact: { email: "shewarwpiyush@gmail.com" },
@@ -237,13 +237,13 @@ export default function CommitteesPage() {
           },
         },
         coHead2: {
-          name: "Unknown",
-          image: "unknoe",
-          bio: "",
+          name: "Anushka Moon ",
+          image: "Screenshot_2025-08-25-19-55-41-93_99c04817c0de5652397fc8b56c3b3817 - Anushka Moon.jpg",
+          bio: "Co-Head of the Content Committee, passionate about creating engaging, impactful, and creative content strategies. Skilled in leading teams, managing ideas, and ensuring quality communication that connects with audiences",
           achievements: [""],
-          contact: { email: "unknown" },
+          contact: { email: "anushkamoon16@gmail.com" },
           social: {
-            linkedin: "",
+            linkedin: "https://www.instagram.com/_jeonsuax06?igsh=MWlrbmY2aW5mamUwaw==",
             instagram: "/team",
           },
         },
@@ -251,29 +251,22 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Best Content Strategy 2023",
-          description: "Recognized for innovative content planning",
-          date: "2023-12-15",
-          impact: "200% engagement increase",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Content Writing Workshop",
-          description: "Hands-on writing and editing",
-          date: "2024-02-15",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/web-dev-bootcamp-poster.png",
-          participants: 45,
+          image: "",
+          participants: 0,
         },
-        {
-          title: "Digital Marketing Seminar",
-          description: "Content + SEO fundamentals",
-          date: "2023-11-10",
-          status: "completed",
-          image: "/digital-marketing-masterclass-poster.png",
-          participants: 60,
-        },
+      
       ],
       activities: [
         "Weekly content planning",
@@ -359,29 +352,29 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Hackathon Excellence 2023",
-          description: "Largest coding competition on campus",
-          date: "2023-10-10",
-          impact: "Tech culture boost",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Web Development Bootcamp",
-          description: "HTML/CSS/JS crash course",
-          date: "2024-01-25",
-          status: "completed",
-          image: "/web-dev-bootcamp-poster.png",
-          participants: 90,
-        },
-        {
-          title: "AI & ML Hackathon",
-          description: "24-hour challenge",
-          date: "2024-03-15",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/hackathon-poster.png",
-          participants: 120,
+          image: "",
+          participants: 0,
         },
+        // {
+        //   title: "AI & ML Hackathon",
+        //   description: "24-hour challenge",
+        //   date: "2024-03-15",
+        //   status: "upcoming",
+        //   image: "/hackathon-poster.png",
+        //   participants: 120,
+        // },
       ],
       activities: [
         "Website maintenance",
@@ -412,7 +405,7 @@ export default function CommitteesPage() {
       leadership: {
         head: {
           name: "Sheefali Raichand",
-          image: "Sheefali-Raichand.jpg",
+          image: "IMG-20240924-WA0007 - Sheefali Raichand.jpg",
           bio: "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
           achievements: [],
           contact: {
@@ -460,29 +453,29 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Best Design Portfolio 2023",
-          description: "Outstanding creative work and innovation",
-          date: "2023-11-20",
-          impact: "Brand uplift",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Canva Advanced Tutorial",
-          description: "Design workflows & shortcuts",
-          date: "2024-01-08",
-          status: "completed",
-          image: "/canva-tutorial-poster.png",
-          participants: 65,
-        },
-        {
-          title: "Photography Workshop",
-          description: "Shooting + post-processing",
-          date: "2024-02-25",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/web-dev-bootcamp-poster.png",
-          participants: 40,
+          image: "",
+          participants: 0,
         },
+        // {
+        //   title: "Photography Workshop",
+        //   description: "Shooting + post-processing",
+        //   date: "2024-02-25",
+        //   status: "upcoming",
+        //   image: "/web-dev-bootcamp-poster.png",
+        //   participants: 40,
+        // },
       ],
       activities: [
         "Poster design",
