@@ -232,6 +232,47 @@ export default function TeamPage() {
       },
       skills: ["Leadership", "Coordination", "Management"],
     },
+        {
+      id: "28",
+      name: "Sanika Lanjewar ",
+      role: "Digital Committee Head",
+      committee: "Digital committee",
+      position: "Head",
+      image: "IMG_20250731_151647 - Sanika Lanjewar.jpg",
+      bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
+      dob: "2004-12-14",
+      email: "shewarwpiyush@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram: "/team",
+      },
+      skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
+    },
+       {
+      id: "16",
+      name: "Sheefali Raichand",
+      role: "Creative Committee Head",
+      committee: "Creative",
+      position: "Head",
+      image: "IMG-20240924-WA0007 - Sheefali Raichand.jpg",
+      bio: "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
+      dob: "2006-09-01",
+      email: "raichandshefali6@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "https://www.linkedin.com/in/sheefali-raichand-977534323",
+      },
+      skills: [
+        "Good communication skill",
+        "Quick learner",
+        "DSA",
+        "Basic Python",
+      ],
+    },
     {
       id: "1",
       name: "Shivraj Ambhore",
@@ -273,48 +314,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-    {
-      id: "7",
-      name: "Nikhil Rathod",
-      role: "StartUp Committee Head",
-      committee: "StartUp Committee",
-      position: "Head",
-      image: "DSC_3570_Nikhil - Nikhil Rathod.jpg",
-      bio: "Full Stack Developer",
-      dob: "2003-07-28",
-      email: "nikhilcaptain28@gmail.com",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin: "www.linkedin.com/in/nikhilrathods",
-        instagram:
-          "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy",
-        facebook: "",
-      },
-      skills: ["Full Stack Development"],
-    },
-    {
-      id: "16",
-      name: "Sheefali Raichand",
-      role: "Creative Committee Head",
-      committee: "Creative",
-      position: "Head",
-      image: "IMG-20240924-WA0007 - Sheefali Raichand.jpg",
-      bio: "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
-      dob: "2006-09-01",
-      email: "raichandshefali6@gmail.com",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin: "https://www.linkedin.com/in/sheefali-raichand-977534323",
-      },
-      skills: [
-        "Good communication skill",
-        "Quick learner",
-        "DSA",
-        "Basic Python",
-      ],
-    },
+   
     {
       id: "10",
       name: "Janvi Akhand",
@@ -396,25 +396,7 @@ export default function TeamPage() {
         "Public Speaking",
       ],
     },
-    {
-      id: "28",
-      name: "Sanika Lanjewar ",
-      role: "Digital Committee Head",
-      committee: "Digital committee",
-      position: "Head",
-      image: "IMG_20250731_151647 - Sanika Lanjewar.jpg",
-      bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
-      dob: "2004-12-14",
-      email: "shewarwpiyush@gmail.com",
-      phone: "",
-      responsibilities: [],
-      social: {
-        linkedin:
-          "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        instagram: "/team",
-      },
-      skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
-    },
+
     {
       id: "29",
       name: "Yadvi Bhandarkar",
@@ -433,7 +415,27 @@ export default function TeamPage() {
       },
       skills: ["Python,", "Data Analytics"],
     },
-  
+   {
+      id: "7",
+      name: "Nikhil Rathod",
+      role: "StartUp Committee Head",
+      committee: "StartUp Committee",
+      position: "Head",
+      image: "DSC_3570_Nikhil - Nikhil Rathod.jpg",
+      bio: "Full Stack Developer",
+      dob: "2003-07-28",
+      email: "nikhilcaptain28@gmail.com",
+      phone: "",
+      responsibilities: [],
+      social: {
+        linkedin: "www.linkedin.com/in/nikhilrathods",
+        instagram:
+          "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy",
+        facebook: "",
+      },
+      skills: ["Full Stack Development"],
+    },
+
     {
       id: "5",
       name: "Yuvtika Rahangdale",
