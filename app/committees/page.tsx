@@ -95,7 +95,7 @@ export default function CommitteesPage() {
         "Manages Techspot initiatives: tech talks, reviews, and maker sessions.",
       fullDescription:
         "Techspot committee is the hub for gadget reviews, demos, maker-space builds, and weekly lightning talks on emerging tech.",
-      logo: "college.jpeg",
+      logo: "techspotlogo.webp",
       color: "blue",
       members: 8,
       // established: "2020-07-22",
@@ -198,7 +198,7 @@ export default function CommitteesPage() {
         "Managing content creation, editorial processes, and digital storytelling for the forum.",
       fullDescription:
         "The Content Editor Committee is responsible for creating, curating, and managing all written and digital content for Schologamma. We maintain quality, voice, and consistency across platforms.",
-      logo: "/placeholder.svg?height=80&width=80&text=📝",
+      logo: "contentlogo.webp",
       color: "indigo",
       members: 8,
       // established: "2020-01-15",
@@ -287,7 +287,7 @@ export default function CommitteesPage() {
         "Focused on coding, development, and technical projects for the forum.",
       fullDescription:
         "The Technical Committee drives innovation through software development, web technologies, and emerging tech solutions. It manages the website, organizes hackathons, and supports tech-driven initiatives.",
-      logo: "/placeholder.svg?height=80&width=80&text=💻",
+      logo: "tecnicallogo.webp",
       color: "blue",
       members: 8,
       // established: "2019-01-15",
@@ -391,7 +391,7 @@ export default function CommitteesPage() {
         "Handling design, graphics, multimedia content, and creative project development.",
       fullDescription:
         "The Creative Committee brings artistic vision to life through innovative design solutions, multimedia content creation, and creative project management. We handle branding, posters, social graphics, and campaigns.",
-      logo: "/placeholder.svg?height=80&width=80&text=🎨",
+      logo: "creativelogo.webp",
       color: "pink",
       members: 8,
       // established: "2020-03-10",
@@ -492,7 +492,7 @@ export default function CommitteesPage() {
         "Encourages athletic spirit and organizes sports tournaments.",
       fullDescription:
         "The Sports Committee promotes fitness and team spirit through inter- and intra-college tournaments and regular training sessions.",
-      logo: "/placeholder.svg?height=80&width=80&text=🏅",
+      logo: "sportslogo.webp",
       color: "emerald",
       members: 8,
       // established: "2017-09-15",
@@ -593,7 +593,7 @@ export default function CommitteesPage() {
       description: "Spreads the word through PR, announcements, and outreach.",
       fullDescription:
         "The Publicity Committee handles announcements, posters, press notes, and campus outreach to maximize event awareness.",
-      logo: "/placeholder.svg?height=80&width=80&text=📣",
+      logo: "publicitylogo.webp",
       color: "orange",
       members: 8,
       // established: "2018-08-01",
@@ -683,22 +683,22 @@ export default function CommitteesPage() {
       description: "Maintains decorum, safety, and code of conduct at events.",
       fullDescription:
         "The Discipline Committee ensures smooth, safe, and respectful participation by setting and enforcing event guidelines.",
-      logo: "/placeholder.svg?height=80&width=80&text=🛡️",
+      logo: "diciplinelogo.webp",
       color: "indigo",
       members: 8,
       // established: "2018-01-20",
       focus: ["Code of Conduct", "Safety", "Crowd Control", "Compliance"],
       leadership: {
         head: {
-          name: "",
-          image: "",
-          bio: "",
-          achievements: ["Java", "DSA", "Full stack Development"],
-          contact: { email: "shivrajambhore01@gmail.com" },
+          name: "Mayur Londhekar ",
+          image: "IMG_20250801_115807 - Mayur Londhekar.jpg",
+          bio: "Head of the Discipline Committee, passionate social worker, and dedicated sportsman — recognized for leadership, discipline, and teamwork. Committed to serving society, inspiring others, and striving for excellence both on and off the field.",
+          achievements: [],
+          contact: { email: "mayurlondhekar1105@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/shivraj-ambhore",
+            linkedin: "https://www.linkedin.com/in/mayur-londhekar-b47b64278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram:
-              "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+              "https://www.instagram.com/mayur_londhekar01?igsh=MXA3djI0NXl0emowYg==",
           },
         },
         coHead1: {
@@ -768,7 +768,7 @@ export default function CommitteesPage() {
       description: "Plans, schedules, and executes club/forum events.",
       fullDescription:
         "The Event committee manages end-to-end event lifecycle: ideation, budgeting, permissions, scheduling, and execution.",
-      logo: "/placeholder.svg?height=80&width=80&text=🗓️",
+      logo: "eventlogo.webp",
       color: "orange",
       members: 8,
       // established: "2018-06-10",
@@ -873,7 +873,7 @@ export default function CommitteesPage() {
       description: "Oversees digital platforms, streaming, and analytics.",
       fullDescription:
         "The Digital Committee focuses on livestreams, recordings, on-site AV, analytics, and website/app enhancements to improve digital reach.",
-      logo: "/placeholder.svg?height=80&width=80&text=🔗",
+      logo: "digitallogo.webp",
       color: "emerald",
       members: 8,
       // established: "2019-09-01",
@@ -956,7 +956,7 @@ export default function CommitteesPage() {
       description: "Fosters entrepreneurship, ideation, and incubation.",
       fullDescription:
         "The Startup Committee helps students validate ideas, build MVPs, connect with mentors, and pitch to investors.",
-      logo: "/placeholder.svg?height=80&width=80&text=💡",
+      logo: "startupplogo.webp",
       color: "indigo",
       members: 8,
       // established: "2021-01-05",

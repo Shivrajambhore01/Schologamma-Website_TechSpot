@@ -87,7 +87,7 @@ export default function HomePage() {
     {
       title: "Learn, Grow, Achieve",
       subtitle: "Participate in workshops, seminars, and technical events",
-      image: "jdcoemstudent.jpeg",
+      image: "schologammalogo.webp",
     },
   ];
 
@@ -163,7 +163,7 @@ export default function HomePage() {
       name: "Technical Committee",
       description: "Organizing technical workshops and coding events",
       // icon: "⚙️",
-      image: "jdcoemlogo.png",
+      image: "tecnicallogo.webp",
       members: 8,
       color: "from-green-500/20 to-teal-500/20",
       hoverColor: "hover:shadow-green-500/30",
@@ -171,7 +171,7 @@ export default function HomePage() {
     {
       name: "TechSpot Committee",
       description: "Planning and executing all forum technical events",
-      image: "jdcoemlogo.png",
+      image: "techspotlogo.webp",
       members: 8,
       color: "from-orange-500/20 to-yellow-500/20",
       hoverColor: "hover:shadow-orange-500/30",
@@ -179,7 +179,7 @@ export default function HomePage() {
     {
       name: "Creative Committee",
       description: "Handling design, graphics, and creative projects",
-      image: "jdcoemlogo.png",
+      image: "creativelogo.webp",
       members: 8,
       color: "from-pink-500/20 to-rose-500/20",
       hoverColor: "hover:shadow-pink-500/30",
