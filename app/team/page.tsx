@@ -33,12 +33,12 @@ interface TeamMember {
   role: string;
   committee: string;
   position:
-    | "Admin"
-    | "Head"
-    | "Co-Head"
-    | "Member"
-    | "Spokesperson"
-    | "Student Co-ordinator";
+  | "Admin"
+  | "Head"
+  | "Co-Head"
+  | "Member"
+  | "Spokesperson"
+  | "Student Co-ordinator";
   image: string;
   bio: string;
   dob: string;
@@ -133,7 +133,7 @@ export default function TeamPage() {
       },
       skills: ["C", "C++", "Python (basic)"],
     },
-     {
+    {
       id: "18",
       name: "Mrunmayi Abhay Somalkar",
       role: "Joint Secretary",
@@ -151,7 +151,7 @@ export default function TeamPage() {
       },
       skills: ["Hardworking", "Passionate", "Leadership"],
     },
-        {
+    {
       id: "15",
       name: "Prathamesh Ratnaparkhi",
       role: "Treasurer",
@@ -170,7 +170,7 @@ export default function TeamPage() {
       },
       skills: ["HTML", "CSS", "Java", "Canva (Intermediate)"],
     },
-  
+
     {
       id: "3",
       name: "Piyush Sunil Kolte",
@@ -192,7 +192,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-      {
+    {
       id: "2",
       name: "Tanvi Sanghani",
       role: "Spokesperson",
@@ -213,7 +213,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-   
+
     {
       id: "22",
       name: "Rushang Pravin Chandekar",
@@ -232,11 +232,7 @@ export default function TeamPage() {
       },
       skills: ["Leadership", "Coordination", "Management"],
     },
-<<<<<<< HEAD
-      {
-=======
-        {
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
+    {
       id: "28",
       name: "Sanika Lanjewar ",
       role: "Digital Committee Head",
@@ -255,11 +251,7 @@ export default function TeamPage() {
       },
       skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
     },
-<<<<<<< HEAD
-     {
-=======
-       {
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
+    {
       id: "16",
       name: "Sheefali Raichand",
       role: "Creative Committee Head",
@@ -322,11 +314,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-<<<<<<< HEAD
 
-=======
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
-   
     {
       id: "10",
       name: "Janvi Akhand",
@@ -408,8 +396,7 @@ export default function TeamPage() {
         "Public Speaking",
       ],
     },
-<<<<<<< HEAD
-     {
+    {
       id: "27",
       name: "Mayur Londhekar ",
       role: "Discipline Committee Head",
@@ -423,7 +410,7 @@ export default function TeamPage() {
       responsibilities: [],
       social: {
         linkedin: "https://www.linkedin.com/in/mayur-londhekar-b47b64278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-               instagram:
+        instagram:
           "https://www.instagram.com/mayur_londhekar01?igsh=MXA3djI0NXl0emowYg==",
       },
       skills: [
@@ -431,9 +418,7 @@ export default function TeamPage() {
         "c",
       ],
     },
-=======
 
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
     {
       id: "29",
       name: "Yadvi Bhandarkar",
@@ -452,11 +437,7 @@ export default function TeamPage() {
       },
       skills: ["Python,", "Data Analytics"],
     },
-<<<<<<< HEAD
-      {
-=======
-   {
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
+    {
       id: "7",
       name: "Nikhil Rathod",
       role: "StartUp Committee Head",
@@ -476,10 +457,7 @@ export default function TeamPage() {
       },
       skills: ["Full Stack Development"],
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
+    
     {
       id: "5",
       name: "Yuvtika Rahangdale",
@@ -500,7 +478,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-        {
+    {
       id: "8",
       name: "Akansha Anil Ambadkar",
       role: "Creative Committee",
@@ -519,7 +497,7 @@ export default function TeamPage() {
       },
       skills: [],
     },
-     {
+    {
       id: "BT240165CS",
       name: "Anushka Sonone",
       role: "Event Committee ",
@@ -567,7 +545,7 @@ export default function TeamPage() {
         "Canva",
       ],
     },
-        {
+    {
       id: "17",
       name: "Dhruvakumar Sanjayrao Doras",
       role: "Digital committee",
@@ -629,7 +607,7 @@ export default function TeamPage() {
       },
       skills: ["Python", "Java", "Communication"],
     },
-   
+
 
     {
       id: "9",
@@ -705,7 +683,7 @@ export default function TeamPage() {
       },
       skills: ["Leadership", "Problem Solving", "Team Collaboration"],
     },
-       {
+    {
       id: "21",
       name: "Payal Kumare",
       role: "Sports Committee ",
@@ -742,7 +720,7 @@ export default function TeamPage() {
       },
       skills: ["Athletics", "Teamwork", "Leadership", "Sports Management"],
     },
-   
+
     {
       id: "16",
       name: "Bhavya Pandey",
@@ -771,7 +749,7 @@ export default function TeamPage() {
         "Brand Designing",
       ],
     },
-     {
+    {
       id: "29",
       name: "Anushka Moon ",
       role: "Content Committee",
@@ -793,7 +771,7 @@ export default function TeamPage() {
         "artist ",
       ],
     },
-    
+
     {
       id: "19",
       name: "Manswini Unhone",
@@ -813,7 +791,7 @@ export default function TeamPage() {
       },
       skills: ["Publicity", "Communication", "Teamwork", "Creativity"],
     },
-     {
+    {
       id: "26",
       name: "Mohini Wankhede",
       role: "Publicity Committee ",
@@ -833,7 +811,7 @@ export default function TeamPage() {
       },
       skills: ["Python", "DSA", "Teamwork and collaboration "],
     },
-     {
+    {
       id: "15",
       name: "Karishma Naidu",
       role: "Discipline Committee ",
@@ -869,8 +847,8 @@ export default function TeamPage() {
       },
       skills: ["C", "c++"],
     },
-   
-      {
+
+    {
       id: "6",
       name: "Vishakha S Pawade",
       role: "Startup Community",
@@ -1037,9 +1015,8 @@ export default function TeamPage() {
               <Filter className="w-4 h-4 mr-2" />
               Filters
               <ChevronDown
-                className={`w-4 h-4 ml-2 transition-transform ${
-                  isFilterOpen ? "rotate-180" : ""
-                }`}
+                className={`w-4 h-4 ml-2 transition-transform ${isFilterOpen ? "rotate-180" : ""
+                  }`}
               />
             </Button>
           </div>
