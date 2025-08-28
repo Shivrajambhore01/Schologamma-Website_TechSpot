@@ -420,7 +420,7 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Yuvtika Rahangdale",
-          image: "", // no image provided yet
+          image: "IMG-20250720-WA0197 - Yuvtika Rahangdale.jpg", // no image provided yet
           bio: "Creative Committee Co-Head",
           achievements: ["Creative Committee Co-Head"],
           contact: {
@@ -564,20 +564,20 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Intercollege Winners 2023",
-          description: "Gold in athletics relay",
-          date: "2023-12-05",
-          impact: "Reputation boost",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Sports Meet",
-          description: "Track and field + team sports",
-          date: "2024-03-10",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/sports-meet.png",
-          participants: 350,
+          image: "",
+          participants:0,
         },
       ],
       activities: [
@@ -653,20 +653,20 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Campus Awareness 2023",
-          description: "Record event impressions",
-          date: "2023-10-28",
-          impact: "High turnout",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Publicity Drive",
-          description: "Standees, posters, and mic announcements",
-          date: "2024-01-30",
-          status: "completed",
-          image: "/publicity-drive.png",
-          participants: 60,
+          title: "",
+          description: "",
+          date: "",
+          status: "upcoming",
+          image: "",
+          participants: 0,
         },
       ],
       activities: [
@@ -739,20 +739,20 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Safe Fest 2023",
-          description: "Managed 2k+ attendees without incident",
-          date: "2023-12-18",
-          impact: "Model SOP adopted",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Volunteer Orientation",
-          description: "Rules, roles, and emergency drills",
-          date: "2024-02-05",
-          status: "completed",
-          image: "/discipline-orientation.png",
-          participants: 80,
+             title: "",
+          description: "",
+          date: "",
+          status: "upcoming",
+          image: "",
+          participants: 0,
         },
       ],
       activities: [
@@ -777,7 +777,7 @@ export default function CommitteesPage() {
         head: {
           name: "Trisha Pillay",
           image:
-            "https://drive.google.com/uc?export=view&id=1du2ZHLCIQqKaMgSGwVzDGbrRbLepmxsH", // fixed link for <img src="">
+            "IMG-20250818-WA0017 - Trisha Pillay.jpg", // fixed link for <img src="">
           bio: "I'm Trisha Pillay from CSE 3rd year, a driven and ambitious person with a versatile, dynamic, innovative personality.",
           achievements: [
             "Event committee head",
@@ -797,7 +797,7 @@ export default function CommitteesPage() {
         coHead1: {
           name: "Anushka Sonone",
           image:
-            "https://drive.google.com/open?id=1IwiF3ulAmG9nEfNN0sUprWJ2jfjTbEA1",
+            "20250730_150849 - Anushka Sonone.jpg",
           bio: "",
           achievements: [],
           contact: {
@@ -829,35 +829,35 @@ export default function CommitteesPage() {
         },
       },
       membersList: [
-        {
-          name: "Kripa Shah",
-          role: "Stage Manager",
-          image: "/professional-female-student.png",
-          year: "3rd Year",
-        },
-        {
-          name: "Yash Tiwari",
-          role: "Logistics",
-          image: "/professional-male-student.png",
-          year: "2nd Year",
-        },
+        // {
+        //   name: "Kripa Shah",
+        //   role: "Stage Manager",
+        //   image: "/professional-female-student.png",
+        //   year: "3rd Year",
+        // },
+        // {
+        //   name: "Yash Tiwari",
+        //   role: "Logistics",
+        //   image: "/professional-male-student.png",
+        //   year: "2nd Year",
+        // },
       ],
       achievements: [
         {
-          title: "Zero-Delay Fest 2022",
-          description: "All slots started on time",
-          date: "2022-12-12",
-          impact: "Operational excellence",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Annual Forum Day",
-          description: "Flagship multi-track event",
-          date: "2024-02-20",
-          status: "completed",
-          image: "/forum-day.png",
-          participants: 800,
+          title: "",
+          description: "",
+          date: "",
+          status: "upcoming",
+          image: "",
+          participants: 0,
         },
       ],
       activities: [
@@ -897,7 +897,7 @@ export default function CommitteesPage() {
         },
         coHead1: {
           name: "Dhruvakumar Sanjayrao Doras",
-          image: "Dhruvakumar-Sanjayrao-Doras.jpg",
+          image: "IMG-20250824-WA0041 - Dhruv Doras.jpg",
           bio: "",
           achievements: [],
           contact: {
@@ -908,7 +908,7 @@ export default function CommitteesPage() {
             linkedin:
               "https://www.linkedin.com/in/dhruv-doras-8b8b56328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             instagram: "dhruv_s_doras_",
-            facebook: "",
+          
           },
         },
         coHead2: {
@@ -926,20 +926,20 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Seamless Hybrid 2023",
-          description: "Zero-downtime streaming across tracks",
-          date: "2023-11-05",
-          impact: "Remote reach",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Live AV Setup 101",
-          description: "Hands-on with mixers/cams",
-          date: "2024-01-18",
-          status: "completed",
-          image: "/digital-av-workshop.png",
-          participants: 55,
+          title: "",
+          description: "",
+          date: "",
+          status: "upcoming",
+          image: "",
+          participants:0,
         },
       ],
       activities: [
@@ -1015,20 +1015,20 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Demo Day 2023",
-          description: "Raised seed grants for 2 teams",
-          date: "2023-09-05",
-          impact: "Early funding",
+          title: "",
+          description: "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Startup Bootcamp",
-          description: "Problem → MVP → Pitch",
-          date: "2024-02-28",
-          status: "completed",
-          image: "/startup-bootcamp.png",
-          participants: 110,
+          title: "",
+          description: "",
+          date: "",
+          status: "upcoming",
+          image: "",
+          participants: 0,
         },
       ],
       activities: [
@@ -1076,7 +1076,7 @@ export default function CommitteesPage() {
         coHead1: {
           name: "Romil Burile",
           image:
-            "https://drive.google.com/open?id=1j1KlNIFGFSbAgBRYewQiR9QXXVEUulSe",
+            "IMG_20241203_160702 - Romil Burile (1).jpg",
           bio: "I am Romil Burile, Co Head of NSS Committee from 2nd year CSE A Department.",
           achievements: [],
           contact: {
@@ -1091,7 +1091,7 @@ export default function CommitteesPage() {
         },
         coHead2: {
           name: "Manaswi Gajanan Lodam",
-          image: "Manaswi-Gajanan-Lodam.jpg",
+          image: "Screenshot_2025-08-06-20-50-10-919_com.miui.gallery - Manaswi Lodam (1).jpg",
           bio: "I am a disciplined and organised person.",
           achievements: [],
           contact: {
@@ -1110,30 +1110,21 @@ export default function CommitteesPage() {
       membersList: [],
       achievements: [
         {
-          title: "Best NSS Unit Award",
+          title: "",
           description:
-            "Awarded for outstanding contribution to community service in 2023",
-          date: "2023-12-10",
-          impact: "Enhanced social impact and student engagement",
+            "",
+          date: "",
+          impact: "",
         },
       ],
       events: [
         {
-          title: "Blood Donation Camp",
-          description: "Organized a blood donation drive with local hospitals",
-          date: "2024-03-12",
-          status: "completed",
-          image: "/blood-donation-camp.png",
-          participants: 150,
-        },
-        {
-          title: "Tree Plantation Drive",
-          description:
-            "Encouraging green initiatives and awareness on environmental conservation",
-          date: "2024-06-05",
+          title: "",
+          description: "",
+          date: "",
           status: "upcoming",
-          image: "/tree-plantation-drive.png",
-          participants: 80,
+          image: "",
+          participants: 0,
         },
       ],
       activities: [
