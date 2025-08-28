@@ -232,7 +232,11 @@ export default function TeamPage() {
       },
       skills: ["Leadership", "Coordination", "Management"],
     },
+<<<<<<< HEAD
       {
+=======
+        {
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
       id: "28",
       name: "Sanika Lanjewar ",
       role: "Digital Committee Head",
@@ -251,7 +255,11 @@ export default function TeamPage() {
       },
       skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
     },
+<<<<<<< HEAD
      {
+=======
+       {
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
       id: "16",
       name: "Sheefali Raichand",
       role: "Creative Committee Head",
@@ -314,7 +322,10 @@ export default function TeamPage() {
       },
       skills: [],
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
    
     {
       id: "10",
@@ -397,6 +408,7 @@ export default function TeamPage() {
         "Public Speaking",
       ],
     },
+<<<<<<< HEAD
      {
       id: "27",
       name: "Mayur Londhekar ",
@@ -419,6 +431,9 @@ export default function TeamPage() {
         "c",
       ],
     },
+=======
+
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
     {
       id: "29",
       name: "Yadvi Bhandarkar",
@@ -437,7 +452,11 @@ export default function TeamPage() {
       },
       skills: ["Python,", "Data Analytics"],
     },
+<<<<<<< HEAD
       {
+=======
+   {
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
       id: "7",
       name: "Nikhil Rathod",
       role: "StartUp Committee Head",
@@ -457,6 +476,10 @@ export default function TeamPage() {
       },
       skills: ["Full Stack Development"],
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd9c7be48b9b7cb8bf397ffa5bc31233669a7e11
     {
       id: "5",
       name: "Yuvtika Rahangdale",
