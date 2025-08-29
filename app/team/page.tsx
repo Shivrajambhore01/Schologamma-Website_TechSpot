@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Search,
   Filter,
@@ -33,12 +33,12 @@ interface TeamMember {
   role: string;
   committee: string;
   position:
-  | "Admin"
-  | "Head"
-  | "Co-Head"
-  | "Member"
-  | "Spokesperson"
-  | "Student Co-ordinator";
+    | "Admin"
+    | "Head"
+    | "Co-Head"
+    | "Member"
+    | "Spokesperson"
+    | "Student Co-ordinator";
   image: string;
   bio: string;
   dob: string;
@@ -62,15 +62,17 @@ export default function TeamPage() {
   const [selectedPosition, setSelectedPosition] = useState("all");
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [filteredMembers, setfilteredMembers] = useState([]);
 
   const teamMembers: TeamMember[] = [
     {
-      id: "11",
+      id: "1",
       name: "Shivam Naredi",
       role: "President",
       committee: "Admin",
       position: "Admin",
-      image: "WhatsApp Image 2025-08-20 at 22.41.54_75edb947 - Shivam Naredi.jpg",
+      image:
+        "WhatsApp Image 2025-08-20 at 22.41.54_75edb947 - Shivam Naredi.jpg",
       bio: "",
       dob: "2004-08-03",
       email: "shivamgdgjdcoem@gmail.com",
@@ -93,7 +95,7 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "9",
+      id: "2",
       name: "Ruchi Ritesh Jaiswal",
       role: "Vice President",
       committee: "Admin",
@@ -114,7 +116,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "10",
+      id: "3",
       name: "Anjali Sonekar",
       role: "Secretary",
       committee: "Admin",
@@ -134,7 +136,7 @@ export default function TeamPage() {
       skills: ["C", "C++", "Python (basic)"],
     },
     {
-      id: "18",
+      id: "4",
       name: "Mrunmayi Abhay Somalkar",
       role: "Joint Secretary",
       committee: "Core Committee",
@@ -152,7 +154,7 @@ export default function TeamPage() {
       skills: ["Hardworking", "Passionate", "Leadership"],
     },
     {
-      id: "15",
+      id: "5",
       name: "Prathamesh Ratnaparkhi",
       role: "Treasurer",
       committee: "Finance",
@@ -172,7 +174,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "3",
+      id: "6",
       name: "Piyush Sunil Kolte",
       role: "Joint-Treasure",
       committee: "",
@@ -193,7 +195,7 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "2",
+      id: "7",
       name: "Tanvi Sanghani",
       role: "Spokesperson",
       committee: "Admin",
@@ -215,7 +217,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "22",
+      id: "8",
       name: "Rushang Pravin Chandekar",
       role: "Student Co-ordinator",
       committee: "Administration",
@@ -233,7 +235,7 @@ export default function TeamPage() {
       skills: ["Leadership", "Coordination", "Management"],
     },
     {
-      id: "28",
+      id: "9",
       name: "Sanika Lanjewar ",
       role: "Digital Committee Head",
       committee: "Digital committee",
@@ -252,7 +254,7 @@ export default function TeamPage() {
       skills: ["Python,", "Javscript ", "UI/UX design", "HTML & CSS"],
     },
     {
-      id: "16",
+      id: "10",
       name: "Sheefali Raichand",
       role: "Creative Committee Head",
       committee: "Creative",
@@ -274,7 +276,7 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "1",
+      id: "11",
       name: "Shivraj Ambhore",
       role: "TechSpot Committee Head",
       committee: "TechSpot",
@@ -294,7 +296,7 @@ export default function TeamPage() {
       skills: ["Java", "DSA", "Full stack Development", "Github", "Chatgpt"],
     },
     {
-      id: "4",
+      id: "12",
       name: "Aditya Wankhede",
       role: "Technical Committee Head",
       committee: "Technical Committee",
@@ -316,7 +318,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "10",
+      id: "13",
       name: "Janvi Akhand",
       role: "Publicity Head",
       committee: "Publicity Committee",
@@ -334,7 +336,7 @@ export default function TeamPage() {
       skills: ["Publicity", "Communication", "Leadership"],
     },
     {
-      id: "23",
+      id: "14",
       name: "Trisha Pillay ",
       role: "Event committee head ",
       committee: "Event committee",
@@ -353,7 +355,7 @@ export default function TeamPage() {
       skills: ["Communication", "innovative personality", "Management"],
     },
     {
-      id: "24",
+      id: "15",
       name: "Khushal Tondre ",
       role: "Sports Committee Head",
       committee: "Sport committee",
@@ -373,7 +375,7 @@ export default function TeamPage() {
       skills: ["Full stack developer", "python", "c++"],
     },
     {
-      id: "30",
+      id: "16",
       name: "Piyush Sheware ",
       role: "Content Editor Committee Head",
       committee: "Content Editor committee",
@@ -397,7 +399,7 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "27",
+      id: "17",
       name: "Mayur Londhekar ",
       role: "Discipline Committee Head",
       committee: "Discipline",
@@ -409,18 +411,16 @@ export default function TeamPage() {
       phone: "",
       responsibilities: [],
       social: {
-        linkedin: "https://www.linkedin.com/in/mayur-londhekar-b47b64278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin:
+          "https://www.linkedin.com/in/mayur-londhekar-b47b64278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         instagram:
           "https://www.instagram.com/mayur_londhekar01?igsh=MXA3djI0NXl0emowYg==",
       },
-      skills: [
-        "DSA",
-        "c",
-      ],
+      skills: ["DSA", "c"],
     },
 
     {
-      id: "29",
+      id: "18",
       name: "Yadvi Bhandarkar",
       role: "NSS Committee Head",
       committee: "NSS committee",
@@ -438,7 +438,7 @@ export default function TeamPage() {
       skills: ["Python,", "Data Analytics"],
     },
     {
-      id: "7",
+      id: "19",
       name: "Nikhil Rathod",
       role: "StartUp Committee Head",
       committee: "StartUp Committee",
@@ -457,9 +457,9 @@ export default function TeamPage() {
       },
       skills: ["Full Stack Development"],
     },
-    
+
     {
-      id: "5",
+      id: "20",
       name: "Yuvtika Rahangdale",
       role: "Creative Committee",
       committee: "Creative Committee",
@@ -479,7 +479,7 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "8",
+      id: "21",
       name: "Akansha Anil Ambadkar",
       role: "Creative Committee",
       committee: "Creative Committee",
@@ -498,13 +498,12 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "BT240165CS",
+      id: "22",
       name: "Anushka Sonone",
       role: "Event Committee ",
       committee: "Event",
       position: "Co-Head",
-      image:
-        "20250730_150849 - Anushka Sonone.jpg",
+      image: "20250730_150849 - Anushka Sonone.jpg",
       bio: "",
       dob: "23/12/2006",
       email: "anushkasonone9@gmail.com",
@@ -522,7 +521,7 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "17",
+      id: "23",
       name: "Sakshi Nitin Gokhe",
       role: "Event Committee ",
       committee: "Event Committee",
@@ -546,7 +545,7 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "17",
+      id: "24",
       name: "Dhruvakumar Sanjayrao Doras",
       role: "Digital committee",
       committee: "Digital",
@@ -565,13 +564,12 @@ export default function TeamPage() {
       skills: [],
     },
     {
-      id: "5",
+      id: "25",
       name: "Romil Burile",
       role: "NSS Committee",
       committee: "NSS",
       position: "Co-Head",
-      image:
-        "IMG_20241203_160702 - Romil Burile (1).jpg",
+      image: "IMG_20241203_160702 - Romil Burile (1).jpg",
       bio: "I am Romil Burile, Co Head of NSS Committee from 2nd year CSE A Department.",
       dob: "2006-08-29",
       email: "romilburile@gmail.com",
@@ -586,12 +584,13 @@ export default function TeamPage() {
     },
 
     {
-      id: "7",
+      id: "26",
       name: "Manaswi Gajanan Lodam",
       role: "NSS Committee",
       committee: "NSS",
       position: "Co-Head",
-      image: "Screenshot_2025-08-06-20-50-10-919_com.miui.gallery - Manaswi Lodam (1).jpg",
+      image:
+        "Screenshot_2025-08-06-20-50-10-919_com.miui.gallery - Manaswi Lodam (1).jpg",
       bio: "I am a disciplined and organised person.",
       dob: "2006-09-02",
       email: "manaswilodam@gmail.com",
@@ -608,9 +607,8 @@ export default function TeamPage() {
       skills: ["Python", "Java", "Communication"],
     },
 
-
     {
-      id: "9",
+      id: "27",
       name: "Anuj Vinod Lakhekar",
       role: "TechSpot Committee",
       committee: "TechSpot Committee",
@@ -630,7 +628,7 @@ export default function TeamPage() {
       skills: ["Web Development", "Coding"],
     },
     {
-      id: "11",
+      id: "28",
       name: "Santosh Donapurge",
       role: "TechSpot Committee",
       committee: "TechSpot Committee",
@@ -648,7 +646,7 @@ export default function TeamPage() {
       skills: ["Software Development", "Problem Solving", "Team Collaboration"],
     },
     {
-      id: "12",
+      id: "29",
       name: "Yashasvi Sandesh Bhambore",
       role: "Technical Committee",
       committee: "Technical Committee",
@@ -666,7 +664,7 @@ export default function TeamPage() {
       skills: ["Leadership", "Technical Knowledge", "Team Collaboration"],
     },
     {
-      id: "13",
+      id: "30",
       name: "Om Hemraj Deshmukh",
       role: "Technical Committee",
       committee: "Technical Committee",
@@ -684,7 +682,7 @@ export default function TeamPage() {
       skills: ["Leadership", "Problem Solving", "Team Collaboration"],
     },
     {
-      id: "21",
+      id: "31",
       name: "Payal Kumare",
       role: "Sports Committee ",
       committee: "Sports Committee",
@@ -702,7 +700,7 @@ export default function TeamPage() {
       skills: ["Sports Management", "Teamwork", "Leadership", "Discipline"],
     },
     {
-      id: "14",
+      id: "32",
       name: "Nehal Ravindra Zade",
       role: "Sport Committee",
       committee: "Sports Committee",
@@ -722,7 +720,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "16",
+      id: "33",
       name: "Bhavya Pandey",
       role: "Content Committee",
       committee: "Content Committee",
@@ -750,30 +748,27 @@ export default function TeamPage() {
       ],
     },
     {
-      id: "29",
+      id: "34",
       name: "Anushka Moon ",
       role: "Content Committee",
       committee: "Content Committee",
       position: "Co-Head",
-      image: "Screenshot_2025-08-25-19-55-41-93_99c04817c0de5652397fc8b56c3b3817 - Anushka Moon.jpg",
+      image:
+        "Screenshot_2025-08-25-19-55-41-93_99c04817c0de5652397fc8b56c3b3817 - Anushka Moon.jpg",
       bio: "Co-Head of the Content Committee, passionate about creating engaging, impactful, and creative content strategies. Skilled in leading teams, managing ideas, and ensuring quality communication that connects with audiences",
       dob: "2006-06-01",
       email: "anuskamoon16@gmail.com",
       phone: "9322370821",
       responsibilities: [],
       social: {
-        linkedin: "https://www.instagram.com/_jeonsuax06?igsh=MWlrbmY2aW5mamUwaw==",
+        linkedin:
+          "https://www.instagram.com/_jeonsuax06?igsh=MWlrbmY2aW5mamUwaw==",
       },
-      skills: [
-        "Communication",
-        "leadership",
-        "hardworking",
-        "artist ",
-      ],
+      skills: ["Communication", "leadership", "hardworking", "artist "],
     },
 
     {
-      id: "19",
+      id: "35",
       name: "Manswini Unhone",
       role: "Publicity Committee",
       committee: "Publicity Committee",
@@ -792,7 +787,7 @@ export default function TeamPage() {
       skills: ["Publicity", "Communication", "Teamwork", "Creativity"],
     },
     {
-      id: "26",
+      id: "36",
       name: "Mohini Wankhede",
       role: "Publicity Committee ",
       committee: "Publicity committee",
@@ -812,7 +807,7 @@ export default function TeamPage() {
       skills: ["Python", "DSA", "Teamwork and collaboration "],
     },
     {
-      id: "15",
+      id: "37",
       name: "Karishma Naidu",
       role: "Discipline Committee ",
       committee: "Discipline Committee",
@@ -830,7 +825,7 @@ export default function TeamPage() {
       skills: ["Discipline", "Teamwork", "Leadership", "Adaptability"],
     },
     {
-      id: "25",
+      id: "38",
       name: "HITESH MISHRA",
       role: "Discipline Committee",
       committee: "Discipline committee",
@@ -849,7 +844,7 @@ export default function TeamPage() {
     },
 
     {
-      id: "6",
+      id: "39",
       name: "Vishakha S Pawade",
       role: "Startup Community",
       committee: "Startup Community",
@@ -886,18 +881,26 @@ export default function TeamPage() {
 
   const positions = ["Admin", "Head", "Co-Head", "Member"];
 
-  const filteredMembers = teamMembers.filter((member) => {
-    const matchesSearch =
-      member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.committee.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCommittee =
-      selectedCommittee === "all" || member.committee === selectedCommittee;
-    const matchesPosition =
-      selectedPosition === "all" || member.position === selectedPosition;
+  useEffect(() => {
+    const fillers = teamMembers.filter((member) => {
+      const matchesSearch =
+        member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        member.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        member.committee.toLowerCase().includes(searchQuery.toLowerCase());
 
-    return matchesSearch && matchesCommittee && matchesPosition;
-  });
+      const matchesCommittee =
+        selectedCommittee === "all" ||
+        member.committee.toLowerCase() === selectedCommittee.toLowerCase();
+
+      const matchesPosition =
+        selectedPosition === "all" ||
+        member.position.toLowerCase() === selectedPosition.toLowerCase();
+
+      return matchesSearch && matchesCommittee && matchesPosition;
+    });
+
+    setfilteredMembers(fillers);
+  }, [searchQuery, selectedCommittee, selectedPosition]);
 
   const getPositionColor = (position: string) => {
     switch (position) {
@@ -1015,8 +1018,9 @@ export default function TeamPage() {
               <Filter className="w-4 h-4 mr-2" />
               Filters
               <ChevronDown
-                className={`w-4 h-4 ml-2 transition-transform ${isFilterOpen ? "rotate-180" : ""
-                  }`}
+                className={`w-4 h-4 ml-2 transition-transform ${
+                  isFilterOpen ? "rotate-180" : ""
+                }`}
               />
             </Button>
           </div>
