@@ -287,19 +287,19 @@ export default function HomePage() {
           caption: "installation ceremony",
         },
         {
-         src: "inst2.jpg",
+          src: "inst2.jpg",
           alt: "installation",
           caption: "installation ceremony",
         },
         {
-           src: "inst19.jpg",
+          src: "inst19.jpg",
           alt: "installation",
           caption: "installation ceremony",
         },
       ],
       icon: <Award className="w-6 h-6" />,
       color: "from-dark-500/20 to-purple-500/20",
-    }
+    },
   ];
 
   useEffect(() => {
@@ -314,7 +314,7 @@ export default function HomePage() {
       (c) =>
         (c.name ?? "").toString().toLowerCase().includes(q) ||
         (c.description ?? "").toString().toLowerCase().includes(q)
-        // (c.id ?? "").toString().toLowerCase().includes(q) // if you want id search
+      // (c.id ?? "").toString().toLowerCase().includes(q) // if you want id search
     );
 
     const filteredEvents = events.filter(
@@ -469,6 +469,38 @@ export default function HomePage() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 bg-gray-900/50 border-gray-700 text-white placeholder-gray-400"
                 />
+                {searchQuery && Result.length > 0 && (
+                  <div className="absolute custom-scrollbar mt-12 w-[360px] bg-gray-900 border border-gray-700 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto">
+                    {Result.map((item) => (
+                      <div
+                        key={`${item.type}-${item.id}`}
+                        onClick={() => {
+                          if (item.type === "event")
+                            window.location.href = `/events/${item.id}`;
+                          if (item.type === "committee")
+                            window.location.href = `/search?query=${item.name}`;
+                          if (item.type === "team")
+                            window.location.href = `/team/${item.id}`;
+                        }}
+                        className="p-2 rounded-md hover:bg-gray-800 cursor-pointer"
+                      >
+                        <p className="text-sm text-white">
+                          {item.type === "event" && item.title}
+                          {item.type === "committee" && item.name}
+                          {item.type === "team" && item.name}
+                        </p>
+                        <p className="text-xs text-gray-400 truncate">
+                          {item.type === "event" && item.description}
+                          {item.type === "committee" && item.description}
+                          {item.type === "team" && item.role}
+                        </p>
+                        <span className="text-[10px] uppercase text-blue-400">
+                          {item.type}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
               {navItems.map((item, index) => (
                 <Link
@@ -577,7 +609,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
- <section
+      <section
         id="updates"
         ref={updatesRef}
         className="relative z-10 py-20 px-4 bg-gray-900/30"
@@ -805,7 +837,7 @@ export default function HomePage() {
         </div>
       </section>
 
-  <section
+      <section
         id="events"
         ref={eventsRef}
         className="relative z-10 py-20 px-4"
@@ -946,7 +978,6 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {galleryCategories[0].title}
                 </h3>
-             
               </div>
             </div>
 
@@ -970,9 +1001,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      
-                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   {/* <CardContent className="p-4">
                     <p className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300 text-center">
