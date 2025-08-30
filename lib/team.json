@@ -1,11 +1,11 @@
 [
   {
-    "id": "11",
+    "id": "1",
     "name": "Shivam Naredi",
     "role": "President",
     "committee": "Admin",
     "position": "Admin",
-    "image": "Shivam-Naredi.jpg",
+    "image": "WhatsApp Image 2025-08-20 at 22.41.54_75edb947 - Shivam Naredi.jpg",
     "bio": "",
     "dob": "2004-08-03",
     "email": "shivamgdgjdcoem@gmail.com",
@@ -17,15 +17,23 @@
       "facebook": "",
       "twitter": ""
     },
-    "skills": ["Python", "SQL", "Excel", "Agentic AI", "Management", "Networking", "Machine Learning"]
+    "skills": [
+      "Python",
+      "SQL",
+      "Excel",
+      "Agentic AI",
+      "Management",
+      "Networking",
+      "Machine Learning"
+    ]
   },
   {
-    "id": "9",
+    "id": "2",
     "name": "Ruchi Ritesh Jaiswal",
     "role": "Vice President",
     "committee": "Admin",
     "position": "Admin",
-    "image": "Ruchi-Ritesh-Jaiswal.jpg",
+    "image": "1000296443 - Tanjiro Kamado.jpg",
     "bio": "",
     "dob": "2005-08-21",
     "email": "tanjjirokamado2108@gmail.com",
@@ -37,15 +45,19 @@
       "facebook": "",
       "twitter": ""
     },
-    "skills": ["UI/UX Designing", "Graphics Designing", "Communication"]
+    "skills": [
+      "UI/UX Designing",
+      "Graphics Designing",
+      "Communication"
+    ]
   },
   {
-    "id": "10",
+    "id": "3",
     "name": "Anjali Sonekar",
     "role": "Secretary",
     "committee": "Admin",
     "position": "Admin",
-    "image": "Anjali-Sonekar.jpg",
+    "image": "Snapchat-1930806880 - Anjali Sonekar (1).jpg",
     "bio": "I'm a 2nd-year CSE student and currently the Secretary of the Schologamma forum, looking forward to organizing grand events with excitement.",
     "dob": "2006-11-05",
     "email": "sonekaranjali98@gmail.com",
@@ -57,29 +69,63 @@
       "facebook": "",
       "twitter": ""
     },
-    "skills": ["C", "C++", "Python (basic)"]
+    "skills": [
+      "C",
+      "C++",
+      "Python (basic)"
+    ]
   },
   {
-    "id": "2",
-    "name": "Tanvi Sanghani",
-    "role": "Spokesperson",
-    "committee": "Admin",
+    "id": "4",
+    "name": "Mrunmayi Abhay Somalkar",
+    "role": "Joint Secretary",
+    "committee": "Core Committee",
     "position": "Admin",
-    "image": "IMG20250802171750 - Tanvi Sanghani.jpg",
-    "bio": "Passion for connecting people. I convey our ideas, events, and achievements with clarity, enthusiasm, and impact. I believe in the power of words to inspire participation, foster collaboration, and make our forum a space where creativity and teamwork thrive.",
-    "dob": "2006-01-24",
-    "email": "tanvisanghani9@gmail.com",
+    "image": "Photo from Mrunmayi - MRUNMAYI SOMALKAR (1).jpg",
+    "bio": "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
+    "dob": "2006-02-10",
+    "email": "mrunmayisomalkar210@jdcoem.ac.in",
     "phone": "",
     "responsibilities": [],
     "social": {
-      "linkedin": "https://www.linkedin.com/in/tanvi-sanghani-381076375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "instagram": "https://www.instagram.com/_tanu__24?igsh=MTFwMWxvdW84ZjV3bA==",
-      "facebook": ""
+      "linkedin": "https://www.linkedin.com/in/mrunmayi-somalkar-28256532a",
+      "instagram": "https://www.instagram.com/mrunmayiii_s",
+      "facebook": "",
+      "twitter": ""
     },
-    "skills": []
+    "skills": [
+      "Hardworking",
+      "Passionate",
+      "Leadership"
+    ]
   },
   {
-    "id": "3",
+    "id": "5",
+    "name": "Prathamesh Ratnaparkhi",
+    "role": "Treasurer",
+    "committee": "Finance",
+    "position": "Admin",
+    "image": "FORUM PIC - Prathamesh Ratnaparkhi.jpg",
+    "bio": "Skilled at maintaining transparency, ensuring timely collections, and managing funds responsibly to support organizational goals. Experienced in teamwork, decision-making, and applying corporate qualities like accountability and efficiency to achieve smooth operations.",
+    "dob": "2004-12-30",
+    "email": "prathmeshratnaparkhi2@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "www.linkedin.com/in/prathamesh-ratnaparkhi3012",
+      "instagram": "https://www.instagram.com/pj_ratnaparkhi?igsh=NDl0MHd4NnhpZ2dj",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "HTML",
+      "CSS",
+      "Java",
+      "Canva (Intermediate)"
+    ]
+  },
+  {
+    "id": "6",
     "name": "Piyush Sunil Kolte",
     "role": "Joint-Treasure",
     "committee": "",
@@ -93,35 +139,38 @@
     "social": {
       "linkedin": "https://www.linkedin.com/in/piyush-kolte-3939282a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "instagram": "https://www.instagram.com/piyush_kolte01?igsh=MWF2YWgxYmx4a3UxOA==",
-      "facebook": ""
+      "facebook": "",
+      "twitter": ""
     },
     "skills": []
   },
   {
-    "id": "18",
-    "name": "Mrunmayi Abhay Somalkar",
-    "role": "Joint Secretary",
-    "committee": "Core Committee",
+    "id": "7",
+    "name": "Tanvi Sanghani",
+    "role": "Spokesperson",
+    "committee": "Admin",
     "position": "Admin",
-    "image": "Photo from Mrunmayi - MRUNMAYI SOMALKAR (1).jpg",
-    "bio": "I'm a BTech 2nd-year student in Computer Science and I'm very passionate and hardworking about the work I take on.",
-    "dob": "2006-02-10",
-    "email": "mrunmayisomalkar210@jdcoem.ac.in",
+    "image": "IMG20250802171750 - Tanvi Sanghani.jpg",
+    "bio": "Passion for connecting people. I convey our ideas, events, and achievements with clarity, enthusiasm, and impact. I believe in the power of words to inspire participation, foster collaboration, and make our forum a space where creativity and teamwork thrive.",
+    "dob": "2006-01-24",
+    "email": "tanvisanghani9@gmail.com",
     "phone": "",
     "responsibilities": [],
     "social": {
-      "linkedin": "https://www.linkedin.com/in/mrunmayi-somalkar-28256532a",
-      "instagram": "https://www.instagram.com/mrunmayiii_s"
+      "linkedin": "https://www.linkedin.com/in/tanvi-sanghani-381076375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/_tanu__24?igsh=MTFwMWxvdW84ZjV3bA==",
+      "facebook": "",
+      "twitter": ""
     },
-    "skills": ["Hardworking", "Passionate", "Leadership"]
+    "skills": []
   },
   {
-    "id": "22",
+    "id": "8",
     "name": "Rushang Pravin Chandekar",
     "role": "Student Co-ordinator",
     "committee": "Administration",
     "position": "Admin",
-    "image": "Firefly 20230930195912 - Rushang Chandekar (1).jpg",
+    "image": "rushmoon.jpg",
     "bio": "",
     "dob": "2005-02-02",
     "email": "rushangchandekar05@gmail.com",
@@ -129,8 +178,752 @@
     "responsibilities": [],
     "social": {
       "linkedin": "https://www.linkedin.com/in/rushang-chandekar",
-      "instagram": "/team"
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
     },
-    "skills": ["Leadership", "Coordination", "Management"]
+    "skills": [
+      "Leadership",
+      "Coordination",
+      "Management"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Sanika Lanjewar",
+    "role": "Digital Committee Head",
+    "committee": "Digital committee",
+    "position": "Head",
+    "image": "IMG_20250731_151647 - Sanika Lanjewar.jpg",
+    "bio": "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions",
+    "dob": "2004-12-14",
+    "email": "shewarwpiyush@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/sanika-lanjewar-84260b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Python",
+      "Javscript",
+      "UI/UX design",
+      "HTML & CSS"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Sheefali Raichand",
+    "role": "Creative Committee Head",
+    "committee": "Creative",
+    "position": "Head",
+    "image": "IMG-20240924-WA0007 - Sheefali Raichand.jpg",
+    "bio": "Creative Committee Head | Passionate about design, innovation, and bringing fresh ideas to life | Believer in teamwork & creativity as the key to success.",
+    "dob": "2006-09-01",
+    "email": "raichandshefali6@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/sheefali-raichand-977534323",
+      "instagram": "",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Good communication skill",
+      "Quick learner",
+      "DSA",
+      "Basic Python"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Shivraj Ambhore",
+    "role": "TechSpot Committee Head",
+    "committee": "TechSpot",
+    "position": "Head",
+    "image": "Shivraj-Ambhore.jpg",
+    "bio": "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
+    "dob": "2004-02-19",
+    "email": "shivrajambhore01@gmail.com",
+    "phone": "",
+    "responsibilities": [
+      "Organize Hachathon",
+      "Handle forum Website"
+    ],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/shivraj-ambhore",
+      "instagram": "https://www.instagram.com/shivraj_ambhore01?igsh=MWQxNzkxNnRrZ2hlZw==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Java",
+      "DSA",
+      "Full stack Development",
+      "Github",
+      "Chatgpt"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Aditya Wankhede",
+    "role": "Technical Committee Head",
+    "committee": "Technical Committee",
+    "position": "Head",
+    "image": "Picsart_25-08-10_22-13-26-600 (1) - Aditya Wankhede.jpg",
+    "bio": "Technical Committee Head",
+    "dob": "2004-09-16",
+    "email": "adiwankhede01@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/aditya-wankhede-348676309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/a.d.i.t.y.a_01._?igsh=ZHoya2J1dXA4am1x",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": []
+  },
+  {
+    "id": "13",
+    "name": "Janvi Akhand",
+    "role": "Publicity Head",
+    "committee": "Publicity Committee",
+    "position": "Head",
+    "image": "IMG_5591 - Janvi Akhand.JPG",
+    "bio": "Leading publicity at Schologamma Forum, I’m passionate about building bridges between our vision and the audiences who can bring it to life.",
+    "dob": "2005-12-17",
+    "email": "janviakhand@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/janvi-akhand-6bb310371",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Publicity",
+      "Communication",
+      "Leadership"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Trisha Pillay",
+    "role": "Event Committee Head",
+    "committee": "Event Committee",
+    "position": "Head",
+    "image": "IMG-20250818-WA0017 - Trisha Pillay.jpg",
+    "bio": "I'm Trisha Pillay from CSE 3rd year, a driven and ambitious person with a versatile, dynamic, innovative personality.",
+    "dob": "2005-11-02",
+    "email": "trishapillay804@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/trisha-pillay-9a1066321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Communication",
+      "Innovative Personality",
+      "Management"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Khushal Tondre",
+    "role": "Sports Committee Head",
+    "committee": "Sports Committee",
+    "position": "Head",
+    "image": "IMG_20240926_150056 - khushal tondare.jpg",
+    "bio": "",
+    "dob": "2005-05-01",
+    "email": "khushaltondare16@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/khushal-tondare-0b489822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/khushall_01._?igsh=a3BocTZyN2MxOTB5",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Full stack developer",
+      "Python",
+      "C++"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Piyush Sheware",
+    "role": "Content Editor Committee Head",
+    "committee": "Content Editor Committee",
+    "position": "Head",
+    "image": "piyushSH.jpg",
+    "bio": "I am an engineering student and the Content Committee Head, where I get to blend creativity with technology. I enjoy shaping ideas into engaging content and building connections through impactful communication.",
+    "dob": "2006-03-15",
+    "email": "shewarwpiyush@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/piyush-sheware-910a68293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/piyush_sheware_?igsh=MWU4Y205eTc4M3cwNQ==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Content Writing & Editing",
+      "Presentation & Communication",
+      "Public Speaking"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Mayur Londhekar",
+    "role": "Discipline Committee Head",
+    "committee": "Discipline",
+    "position": "Head",
+    "image": "IMG_20250801_115807 - Mayur Londhekar.jpg",
+    "bio": "Head of the Discipline Committee, passionate social worker, and dedicated sportsman — recognized for leadership, discipline, and teamwork. Committed to serving society, inspiring others, and striving for excellence both on and off the field.",
+    "dob": "2005-01-01",
+    "email": "mayurlondhekar1105@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/mayur-londhekar-b47b64278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/mayur_londhekar01?igsh=MXA3djI0NXl0emowYg==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "DSA",
+      "C"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Yadvi Bhandarkar",
+    "role": "NSS Committee Head",
+    "committee": "NSS Committee",
+    "position": "Head",
+    "image": "Passport REsize photo - Yadvi Bhandarkar.jpg",
+    "bio": "CSE student skilled in Python and exploring Data Science.",
+    "dob": "2004-07-30",
+    "email": "yadvi@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/yadvi-bhandarkar-b944a1301/",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Python",
+      "Data Analytics"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Nikhil Rathod",
+    "role": "StartUp Committee Head",
+    "committee": "StartUp Committee",
+    "position": "Head",
+    "image": "DSC_3570_Nikhil - Nikhil Rathod.jpg",
+    "bio": "Full Stack Developer",
+    "dob": "2003-07-28",
+    "email": "nikhilcaptain28@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "www.linkedin.com/in/nikhilrathods",
+      "instagram": "https://www.instagram.com/nikhil_captainn?utm_source=qr&igsh=aTIxOGM1Nmd5d2Yy",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Full Stack Development"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Yuvtika Rahangdale",
+    "role": "Creative Committee",
+    "committee": "Creative Committee",
+    "position": "Co-Head",
+    "image": "IMG-20250720-WA0197 - Yuvtika Rahangdale.jpg",
+    "bio": "",
+    "dob": "2006-02-22",
+    "email": "yuvtikarahangdale@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/yuvtika-rahangdale",
+      "instagram": "https://www.instagram.com/yuvtika_04?igsh=MWQyeHVtMmhlOXN6cQ==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": []
+  },
+  {
+    "id": "21",
+    "name": "Akansha Anil Ambadkar",
+    "role": "Creative Committee",
+    "committee": "Creative Committee",
+    "position": "Co-Head",
+    "image": "Pi7_Passport_Photo (1) - Akansha Ambadkar.jpeg",
+    "bio": "",
+    "dob": "2007-02-24",
+    "email": "madhu.ambadkar2003@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/akansha-ambadkar/",
+      "instagram": "https://www.instagram.com/akansciouss?igsh=MTFrbGN5c3ZxNXQzcg==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": []
+  },
+  {
+    "id": "22",
+    "name": "Anushka Sonone",
+    "role": "Event Committee",
+    "committee": "Event",
+    "position": "Co-Head",
+    "image": "20250730_150849 - Anushka Sonone.jpg",
+    "bio": "",
+    "dob": "2006-12-23",
+    "email": "anushkasonone9@gmail.com",
+    "phone": "",
+    "responsibilities": [
+      "Event planning",
+      "Assisting in committee coordination"
+    ],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/anushka-sonone-785b8a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/anushhka_.s?igsh=MWNsZjBqcm9pc3U1cQ==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": []
+  },
+  {
+    "id": "23",
+    "name": "Sakshi Nitin Gokhe",
+    "role": "Event Committee",
+    "committee": "Event Committee",
+    "position": "Co-Head",
+    "image": "IMG_20250727_231227 - Sakshi Gokhe.jpg",
+    "bio": "My name is Sakshi Gokhe. I am from CSE-A 2nd year. Beyond my love for technology, I thrive on creativity and self-expression. I am passionate about dancing, cooking, traveling, and exploring new things, which fuel my imagination. I am also skilled in using Canva.",
+    "dob": "2006-02-20",
+    "email": "sakshigokhe67@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "/team",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Dancing",
+      "Cooking",
+      "Traveling",
+      "Exploring New Things",
+      "Canva"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Dhruvakumar Sanjayrao Doras",
+    "role": "Digital Committee",
+    "committee": "Digital",
+    "position": "Co-Head",
+    "image": "IMG-20250824-WA0041 - Dhruv Doras.jpg",
+    "bio": "",
+    "dob": "2006-05-26",
+    "email": "dhruvdoras3@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/dhruv-doras-8b8b56328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "dhruv_s_doras_",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": []
+  },
+  {
+    "id": "25",
+    "name": "Romil Burile",
+    "role": "NSS Committee",
+    "committee": "NSS",
+    "position": "Co-Head",
+    "image": "IMG_20241203_160702 - Romil Burile (1).jpg",
+    "bio": "I am Romil Burile, Co Head of NSS Committee from 2nd year CSE A Department.",
+    "dob": "2006-08-29",
+    "email": "romilburile@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "",
+      "instagram": "",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Communication"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Manaswi Gajanan Lodam",
+    "role": "NSS Committee",
+    "committee": "NSS",
+    "position": "Co-Head",
+    "image": "Screenshot_2025-08-06-20-50-10-919_com.miui.gallery - Manaswi Lodam (1).jpg",
+    "bio": "I am a disciplined and organised person.",
+    "dob": "2006-09-02",
+    "email": "manaswilodam@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/manaswi-lodam-a95793342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/manaswi_lodam?igsh=MWU3ZXV3bzF1M3U3YQ==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Python",
+      "Java",
+      "Communication"
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Anuj Vinod Lakhekar",
+    "role": "TechSpot Committee",
+    "committee": "TechSpot Committee",
+    "position": "Co-Head",
+    "image": "IMG-20250801-WA0075 - anuj lakhekar.jpg",
+    "bio": "Hello I am Anuj from CSE-B, passionate about coding and good at web development.",
+    "dob": "2006-09-09",
+    "email": "anujlakhekar4@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/anuj-lakhekar-72a43033b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/anuj_lakhekar?igsh=MWxob3V0NzQzaWJyaQ==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Web Development",
+      "Coding"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Santosh Donapurge",
+    "role": "TechSpot Committee",
+    "committee": "TechSpot Committee",
+    "position": "Co-Head",
+    "image": "1748265675540 - Sento Coder.jpg",
+    "bio": "SDE",
+    "dob": "2005-11-19",
+    "email": "codersento@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/santosh-donapurge-bb1835304",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Software Development",
+      "Problem Solving",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Yashasvi Sandesh Bhambore",
+    "role": "Technical Committee",
+    "committee": "Technical Committee",
+    "position": "Co-Head",
+    "image": "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
+    "bio": "",
+    "dob": "2005-08-27",
+    "email": "yashasvibhambore1@jdcoem.ac.in",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Leadership",
+      "Technical Knowledge",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Om Hemraj Deshmukh",
+    "role": "Technical Committee",
+    "committee": "Technical Committee",
+    "position": "Co-Head",
+    "image": "20250731_190814 - OM DESHMUKH.jpg",
+    "bio": "I'm Om Deshmukh studying at JDCOEM CSE 2nd yr, holding a role of Co-Head in Technical Committee of Schologamma Forum 2026.",
+    "dob": "2005-07-30",
+    "email": "omdeshmukh399@jdcoem.ac.in",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/omdeshmukh00",
+      "instagram": "https://instagram.com/omdeshmukh00",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Leadership",
+      "Problem Solving",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Payal Kumare",
+    "role": "Sports Committee",
+    "committee": "Sports Committee",
+    "position": "Co-Head",
+    "image": "BT240083CS - Payal Kumare.jpg",
+    "bio": "I am a Computer Science Engineering student with interest in technology and problem-solving. Along with academics, I actively participate in sports and serve as the Co-Head of our college Sports Committee. I believe in teamwork, discipline, and continuous learning to grow both personally and professionally.",
+    "dob": "2006-09-11",
+    "email": "payalkumare86686@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/payal-kumare86686/",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Sports Management",
+      "Teamwork",
+      "Leadership",
+      "Discipline"
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Nehal Ravindra Zade",
+    "role": "Sports Committee",
+    "committee": "Sports Committee",
+    "position": "Co-Head",
+    "image": "IMG-20250719-WA0011 - Nehal Zade.jpg",
+    "bio": "I am a passionate athlete and team player, bringing energy, discipline, and dedication to every game. With sportsmanship and leadership on and off the field, I strive to motivate others, promote healthy competition, and make sports a vibrant part of campus life.",
+    "dob": "2006-08-04",
+    "email": "nehalzade04@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/nehal-zade-7266a4374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/nehalzade1?igsh=ajQ2NDh0bmh6NGZ1",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Athletics",
+      "Teamwork",
+      "Leadership",
+      "Sports Management"
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Bhavya Pandey",
+    "role": "Content Committee",
+    "committee": "Content Committee",
+    "position": "Co-Head",
+    "image": "Document from Bhavya Pandey - Bhavya Pandey.jpg",
+    "bio": "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
+    "dob": "2006-01-01",
+    "email": "pandeybhavya336@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/bhavya-pandey",
+      "instagram": "https://www.instagram.com/bhavya_012006?igsh=YmtqZzA3MXMzZ2Jw",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Painting",
+      "Dancing",
+      "Singing",
+      "Face Painting",
+      "Python Programming",
+      "Digital Arts",
+      "Video Editing",
+      "Brand Designing"
+    ]
+  },
+  {
+    "id": "34",
+    "name": "Anushka Moon",
+    "role": "Content Committee",
+    "committee": "Content Committee",
+    "position": "Co-Head",
+    "image": "Screenshot_2025-08-25-19-55-41-93_99c04817c0de5652397fc8b56c3b3817 - Anushka Moon.jpg",
+    "bio": "Co-Head of the Content Committee, passionate about creating engaging, impactful, and creative content strategies. Skilled in leading teams, managing ideas, and ensuring quality communication that connects with audiences",
+    "dob": "2006-06-01",
+    "email": "anuskamoon16@gmail.com",
+    "phone": "9322370821",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.instagram.com/_jeonsuax06?igsh=MWlrbmY2aW5mamUwaw==",
+      "instagram": "",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Communication",
+      "Leadership",
+      "Hardworking",
+      "Artist"
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Manswini Unhone",
+    "role": "Publicity Committee",
+    "committee": "Publicity Committee",
+    "position": "Co-Head",
+    "image": "IMG-20241204-WA0001 - Ishu Unhone.jpg",
+    "bio": "Hello, I'm Manswini, looking forward to learning new skills.",
+    "dob": "2006-03-05",
+    "email": "ishuunhone1@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/manswini-unhone",
+      "instagram": "https://www.instagram.com/ishhuu_uhh?igsh=NXgwbmFzeG91OWd0&utm_source=ig_contact_invite",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Publicity",
+      "Communication",
+      "Teamwork",
+      "Creativity"
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Mohini Wankhede",
+    "role": "Publicity Committee",
+    "committee": "Publicity Committee",
+    "position": "Co-Head",
+    "image": "IMG_20250802_094903407_HDR - Mohini Wankhede.jpg",
+    "bio": "I'm Mohini, a Computer Science Engineering student with a curious mindset. I enjoy exploring new things, learning consistently, and improving myself every day. I believe in staying positive and growing step by step.",
+    "dob": "2006-04-10",
+    "email": "wankhedemohini4@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/mohini-wankhede-a2699337a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/mohini_wankhede_10/profilecard/?igsh=MXRyM21kMXoyY2p6Zw==",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Python",
+      "DSA",
+      "Teamwork and collaboration"
+    ]
+  },
+  {
+    "id": "37",
+    "name": "Karishma Naidu",
+    "role": "Discipline Committee",
+    "committee": "Discipline Committee",
+    "position": "Co-Head",
+    "image": "IMG-20250425-WA0009 - H-H .Karishma Naidu.jpg",
+    "bio": "I am currently pursuing my B.Tech degree in Computer Science. I am a kind and hardworking person, eager to learn and grow.",
+    "dob": "2006-02-26",
+    "email": "karishmanaidu035@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/karishma-naidu-915168339",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "Discipline",
+      "Teamwork",
+      "Leadership",
+      "Adaptability"
+    ]
+  },
+  {
+    "id": "38",
+    "name": "HITESH MISHRA",
+    "role": "Discipline Committee",
+    "committee": "Discipline Committee",
+    "position": "Co-Head",
+    "image": "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
+    "bio": "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
+    "dob": "2005-09-19",
+    "email": "hiteshmishra910@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/Hitesh mishra",
+      "instagram": "/team",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "C",
+      "C++"
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Vishakha S Pawade",
+    "role": "Startup Community",
+    "committee": "Startup Community",
+    "position": "Co-Head",
+    "image": "Vishakha-S-Pawade.jpg",
+    "bio": "",
+    "dob": "2006-01-23",
+    "email": "vishakhapawade@gmail.com",
+    "phone": "",
+    "responsibilities": [],
+    "social": {
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/vishakha__pawade",
+      "facebook": "",
+      "twitter": ""
+    },
+    "skills": [
+      "DSA",
+      "Communication",
+      "C Programming"
+    ]
   }
 ]
