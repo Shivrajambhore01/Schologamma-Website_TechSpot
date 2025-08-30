@@ -87,7 +87,7 @@ export default function HomePage() {
     {
       title: "Learn, Grow, Achieve",
       subtitle: "Participate in workshops, seminars, and technical events",
-      image: "schologammalogo.webp",
+      image: "sschologroup.jpg",
     },
   ];
 
@@ -206,7 +206,7 @@ export default function HomePage() {
   const latestUpdates = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "Upcoming",
+      date: "Ongoing",
       description:
         "Join us for the vibrant Ganesh Chaturthi celebrations with cultural programs, aarti, and prasad distribution.",
       type: "event",
@@ -235,12 +235,12 @@ export default function HomePage() {
   const featuredEvents = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "Sep 18, 2025",
-      time: "6:00 PM",
+      date: "27 Aug, 2025",
+      time: "1:00 PM",
       venue: "Main Campus Ground",
       image:
         "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
-      status: "upcoming",
+      status: "ongoing",
       committee: "Cultural Committee",
     },
   ];

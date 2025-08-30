@@ -61,17 +61,17 @@ export default function EventsPage() {
       description:
         "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
       date: "2025-09-27",
-      time: "6:00 PM",
+      time: "12:00 PM",
       venue: "Main Campus Ground",
       speaker: "Schologamma",
       image:
         "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
       committee: "Schologamma",
       category: "Festival",
-      status: "upcoming",
+      status: "ongoing",
       registrationOpen: false,
-      maxParticipants: 500,
-      currentParticipants: 320,
+      // maxParticipants: 500,
+      // currentParticipants: 320,
       objectives: [
         "Invoke blessings of Lord Ganesha",
         "Promote cultural and spiritual values",
@@ -84,11 +84,9 @@ export default function EventsPage() {
         "Joyful cultural celebration",
       ],
       schedule: [
-        { time: "6:00 PM", activity: "Ganesh Aarti & Prayer" },
-        { time: "6:30 PM", activity: "Cultural Dance & Music Performances" },
-        { time: "7:30 PM", activity: "Devotional Songs & Bhajans" },
-        { time: "8:15 PM", activity: "Prasad Distribution" },
-        { time: "9:00 PM", activity: "Closing Aarti" },
+        { time: "27 aug, 01:00 PM - 03:00 PM", activity: "Ganesh Sthapna" },
+        { time: "02 Sep, 01:00 PM - 05:00 PM", activity: "Visarjan Sohala" },
+   
       ],
     },
   ];
