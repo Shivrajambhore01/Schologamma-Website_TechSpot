@@ -206,7 +206,7 @@ export default function HomePage() {
   const latestUpdates = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "Upcoming",
+      date: "onGoing",
       description:
         "Join us for the vibrant Ganesh Chaturthi celebrations with cultural programs, aarti, and prasad distribution.",
       type: "event",
@@ -229,7 +229,7 @@ export default function HomePage() {
         "A formal event celebrating the successful installation of Schologamma with speeches, acknowledgments, and demonstrations.",
       type: "event",
       icon: <SparkleIcon className="w-5 h-5" />,
-      img: "",
+      img: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
     },
   ];
 
@@ -253,33 +253,31 @@ export default function HomePage() {
   const featuredEvents = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "Sep 27, 2025",
-      time: "6:00 PM",
+      date: "Aug 27, 2025",
+      time: "1:00 PM",
       venue: "Main Campus Ground",
       image:
         "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
       status: "ongoing",
-      committee: "Cultural Committee",
+      committee: "Schologamma",
     },
     {
       title: "DevOps Workshop",
       date: "Aug 29, 2025",
       time: "10:00 AM",
-      venue: "Tech Innovation Lab, Main Campus",
-      image:
-        "",
+      venue: "JD college of Eng",
+      image: "",
       status: "past",
-      committee: "Tech Committee",
+      committee: "Schologamma",
     },
     {
       title: "Schologamma Installation Ceremony",
       date: "Aug 02, 2025",
       time: "4:00 PM",
-      venue: "Main AI Room",
-      image:
-        "",
+      venue: "Schologamma",
+      image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
       status: "past",
-      committee: "Organizing Committee",
+      committee: "Schologamma",
     },
   ];
 
@@ -650,56 +648,57 @@ export default function HomePage() {
       <section
         id="updates"
         ref={updatesRef}
-        className="relative z-10 py-20 px-4 bg-gray-900/30"
+        className="relative z-10 py-16 px-4 bg-gray-900/30"
         data-animate
       >
         <div className="max-w-7xl mx-auto">
+          {/* Heading */}
           <div
-            className={`text-center mb-16 ${
+            className={`text-center mb-12 ${
               visibleElements.has("updates")
                 ? "animate-in fade-in duration-1000"
                 : "opacity-0"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
               Latest Updates
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+            <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
               Stay informed with the latest news, announcements, and
               opportunities from Schologamma Forum.
             </p>
           </div>
 
-          {/* Scrollable row with buttons */}
+          {/* Scrollable Row */}
           <div className="relative">
-            {/* Left button */}
+            {/* Left Button */}
             <button
               onClick={() =>
                 document
                   .getElementById("updates-row")
-                  ?.scrollBy({ left: -6000, behavior: "smooth" })
+                  ?.scrollBy({ left: -300, behavior: "smooth" })
               }
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 p-3 rounded-full z-10"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
             >
               ◀
             </button>
 
-            {/* Horizontal scroll container */}
+            {/* Scroll Container */}
             <div
               id="updates-row"
-              className="flex p-3 custom-scrollbar space-x-6 overflow-x-auto scroll-smooth scrollbar-hide px-12"
+              className="flex space-x-4 custom-scrollbar overflow-x-auto scroll-smooth scrollbar-hide px-2"
             >
               {latestUpdates.map((update, index) => (
                 <Card
                   key={index}
-                  className={`min-w-[300px] max-w-sm flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
+                  className={`min-w-[250px] sm:min-w-[280px] max-w-xs flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
                     visibleElements.has("updates")
                       ? "animate-in slide-in-from-bottom duration-700"
                       : "opacity-0 translate-y-8"
                   }`}
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <CardContent className="p-6 space-y-4">
+                  <CardContent className="p-5 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2 text-orange-400">
                         {update.icon}
@@ -713,15 +712,15 @@ export default function HomePage() {
                     </div>
                     {update.img && (
                       <img
-                        className="rounded-lg"
+                        className="rounded-lg w-full object-cover"
                         src={update.img}
                         alt={update.title}
                       />
                     )}
-                    <h3 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
                       {update.title}
                     </h3>
-                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                    <p className="text-gray-400 group-hover:text-gray-300 text-sm sm:text-base transition-colors duration-300">
                       {update.description}
                     </p>
                   </CardContent>
@@ -729,14 +728,14 @@ export default function HomePage() {
               ))}
             </div>
 
-            {/* Right button */}
+            {/* Right Button */}
             <button
               onClick={() =>
                 document
                   .getElementById("updates-row")
-                  ?.scrollBy({ left: 350, behavior: "smooth" })
+                  ?.scrollBy({ left: 300, behavior: "smooth" })
               }
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 p-3 rounded-full z-10"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
             >
               ▶
             </button>
@@ -909,83 +908,112 @@ export default function HomePage() {
         data-animate
       >
         <div className="max-w-7xl mx-auto">
+          {/* Heading */}
           <div
-            className={`text-center mb-16 ${
+            className={`text-center mb-12 ${
               visibleElements.has("events")
                 ? "animate-in fade-in duration-1000"
                 : "opacity-0"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
               Featured Events
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+            <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
               Discover our upcoming workshops, seminars, and competitions
               designed to enhance your skills and knowledge.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredEvents.map((event, index) => (
-              <Card
-                key={index}
-                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-blue-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${
-                  visibleElements.has("events")
-                    ? "animate-in slide-in-from-bottom duration-700"
-                    : "opacity-0 translate-y-8"
-                }`}
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={event.image || "/placeholder.svg"}
-                    alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        event.status === "upcoming"
-                          ? "bg-green-500/20 text-green-400 border border-green-500/30"
-                          : "bg-gray-500/20 text-gray-400 border border-gray-500/30"
-                      }`}
-                    >
-                      {event.status}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
-                      {event.title}
-                    </h3>
-                    <p className="text-sm text-orange-400">{event.committee}</p>
-                  </div>
-                  <div className="space-y-2 text-sm text-gray-400">
-                    <div className="flex items-center space-x-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>
-                        {event.date} at {event.time}
+          {/* Horizontal Scrollable Events */}
+          <div className="relative">
+            {/* Left Button */}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("events-row")
+                  ?.scrollBy({ left: -300, behavior: "smooth" })
+              }
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
+            >
+              ◀
+            </button>
+
+            {/* Scroll Container */}
+            <div
+              id="events-row"
+              className="flex space-x-6 overflow-x-auto overflow-y-hidden scroll-smooth scrollbar-hide px-2"
+            >
+              {featuredEvents.map((event, index) => (
+                <Card
+                  key={index}
+                  className={`min-w-[250px] sm:min-w-[280px] max-w-xs flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-blue-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${
+                    visibleElements.has("events")
+                      ? "animate-in slide-in-from-bottom duration-700"
+                      : "opacity-0 translate-y-8"
+                  }`}
+                  style={{ animationDelay: `${index * 150}ms` }}
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={event.image || "/placeholder.svg"}
+                      alt={event.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 right-4">
+                      <span
+                        className={`px-3 py-1 rounded-full text-xs font-medium ${
+                          event.status === "upcoming"
+                            ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                            : "bg-gray-500/20 text-gray-400 border border-gray-500/30"
+                        }`}
+                      >
+                        {event.status}
                       </span>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <Users className="w-4 h-4" />
-                      <span>{event.venue}</span>
-                    </div>
                   </div>
-                  {/* <Button
-                      variant="outline"
-                      className="border-gray-600 text-white hover:bg-blue-500 hover:border-blue-500 w-full bg-transparent"
-                    >
-                      {event.status === "upcoming" ? "Register Now" : "View Details"}
-                    </Button> */}
-                </CardContent>
-              </Card>
-            ))}
+                  <CardContent className="p-5 space-y-4">
+                    <div className="space-y-2">
+                      <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
+                        {event.title}
+                      </h3>
+                      <p className="text-sm text-orange-400">
+                        {event.committee}
+                      </p>
+                    </div>
+                    <div className="space-y-2 text-sm text-gray-400">
+                      <div className="flex items-center space-x-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>
+                          {event.date} at {event.time}
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <Users className="w-4 h-4" />
+                        <span>{event.venue}</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Right Button */}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("events-row")
+                  ?.scrollBy({ left: 300, behavior: "smooth" })
+              }
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
+            >
+              ▶
+            </button>
           </div>
 
+          {/* View All Events Button */}
           <div
-            className={`text-center mt-16 ${
+            className={`text-center mt-12 ${
               visibleElements.has("events")
                 ? "animate-in slide-in-from-bottom duration-1000 delay-500"
                 : "opacity-0"
