@@ -213,6 +213,24 @@ export default function HomePage() {
       icon: <SparkleIcon className="w-5 h-5" />,
       img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
     },
+    {
+      title: "DevOps Workshop",
+      date: "Completed",
+      description:
+        "A hands-on workshop on DevOps practices including CI/CD pipelines, automation, and containerization.",
+      type: "event",
+      icon: <SparkleIcon className="w-5 h-5" />,
+      img: "",
+    },
+    {
+      title: "Schologamma Installation Ceremony",
+      date: "Completed",
+      description:
+        "A formal event celebrating the successful installation of Schologamma with speeches, acknowledgments, and demonstrations.",
+      type: "event",
+      icon: <SparkleIcon className="w-5 h-5" />,
+      img: "",
+    },
   ];
 
   // latest update deta
@@ -235,13 +253,33 @@ export default function HomePage() {
   const featuredEvents = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "Sep 18, 2025",
+      date: "Sep 27, 2025",
       time: "6:00 PM",
       venue: "Main Campus Ground",
       image:
         "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
-      status: "upcoming",
+      status: "ongoing",
       committee: "Cultural Committee",
+    },
+    {
+      title: "DevOps Workshop",
+      date: "Aug 29, 2025",
+      time: "10:00 AM",
+      venue: "Tech Innovation Lab, Main Campus",
+      image:
+        "",
+      status: "past",
+      committee: "Tech Committee",
+    },
+    {
+      title: "Schologamma Installation Ceremony",
+      date: "Aug 02, 2025",
+      time: "4:00 PM",
+      venue: "Main AI Room",
+      image:
+        "",
+      status: "past",
+      committee: "Organizing Committee",
     },
   ];
 
@@ -639,7 +677,7 @@ export default function HomePage() {
               onClick={() =>
                 document
                   .getElementById("updates-row")
-                  ?.scrollBy({ left: -350, behavior: "smooth" })
+                  ?.scrollBy({ left: -6000, behavior: "smooth" })
               }
               className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 p-3 rounded-full z-10"
             >
@@ -649,12 +687,12 @@ export default function HomePage() {
             {/* Horizontal scroll container */}
             <div
               id="updates-row"
-              className="flex justify-center space-x-6 overflow-x-auto scroll-smooth scrollbar-hide px-12"
+              className="flex p-3 custom-scrollbar space-x-6 overflow-x-auto scroll-smooth scrollbar-hide px-12"
             >
               {latestUpdates.map((update, index) => (
                 <Card
                   key={index}
-                  className={`min-w-[280px] max-w-sm flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
+                  className={`min-w-[300px] max-w-sm flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
                     visibleElements.has("updates")
                       ? "animate-in slide-in-from-bottom duration-700"
                       : "opacity-0 translate-y-8"
