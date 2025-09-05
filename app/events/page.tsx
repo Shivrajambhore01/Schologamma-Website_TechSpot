@@ -100,7 +100,7 @@ export default function EventsPage() {
       time: "11:00 AM",
       venue: "JD College And Management",
       speaker: "Schologamma",
-      image: "",
+      image: "DevOps.jpg",
       committee: "Schologamma",
       category: "Workshop",
       status: "past",

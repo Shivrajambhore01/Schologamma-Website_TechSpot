@@ -220,7 +220,7 @@ export default function HomePage() {
         "A hands-on workshop on DevOps practices including CI/CD pipelines, automation, and containerization.",
       type: "event",
       icon: <SparkleIcon className="w-5 h-5" />,
-      img: "",
+      img: "DevOps.jpg",
     },
     {
       title: "Schologamma Installation Ceremony",
@@ -266,7 +266,7 @@ export default function HomePage() {
       date: "Aug 29, 2025",
       time: "10:00 AM",
       venue: "JD college of Eng",
-      image: "",
+      image: "DevOps.jpg",
       status: "past",
       committee: "Schologamma",
     },
@@ -669,76 +669,49 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Scrollable Row */}
-          <div className="relative">
-            {/* Left Button */}
-            <button
-              onClick={() =>
-                document
-                  .getElementById("updates-row")
-                  ?.scrollBy({ left: -300, behavior: "smooth" })
-              }
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
-            >
-              ◀
-            </button>
-
-            {/* Scroll Container */}
-            <div
-              id="updates-row"
-              className="flex space-x-4 custom-scrollbar overflow-x-auto scroll-smooth scrollbar-hide px-2"
-            >
-              {latestUpdates.map((update, index) => (
-                <Card
-                  key={index}
-                  className={`min-w-[250px] sm:min-w-[280px] max-w-xs flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
-                    visibleElements.has("updates")
-                      ? "animate-in slide-in-from-bottom duration-700"
-                      : "opacity-0 translate-y-8"
-                  }`}
-                  style={{ animationDelay: `${index * 150}ms` }}
-                >
-                  <CardContent className="p-5 space-y-3">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2 text-orange-400">
-                        {update.icon}
-                        <span className="text-sm font-medium capitalize">
-                          {update.type}
-                        </span>
-                      </div>
-                      <span className="text-xs text-gray-500">
-                        {update.date}
+          {/* Grid Layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-2">
+            {latestUpdates.map((update, index) => (
+              <Card
+                key={index}
+                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group ${
+                  visibleElements.has("updates")
+                    ? "animate-in slide-in-from-bottom duration-700"
+                    : "opacity-0 translate-y-8"
+                }`}
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardContent className="p-5 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2 text-orange-400">
+                      {update.icon}
+                      <span className="text-sm font-medium capitalize">
+                        {update.type}
                       </span>
                     </div>
-                    {update.img && (
+                    <span className="text-xs text-gray-500">{update.date}</span>
+                  </div>
+
+                  {/* Fixed-size responsive image holder */}
+                  {update.img && (
+                    <div className="w-full h-40 sm:h-48 md:h-56 lg:h-60 overflow-hidden rounded-lg">
                       <img
-                        className="rounded-lg w-full object-cover"
+                        className="w-full h-full object-cover"
                         src={update.img}
                         alt={update.title}
                       />
-                    )}
-                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
-                      {update.title}
-                    </h3>
-                    <p className="text-gray-400 group-hover:text-gray-300 text-sm sm:text-base transition-colors duration-300">
-                      {update.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                    </div>
+                  )}
 
-            {/* Right Button */}
-            <button
-              onClick={() =>
-                document
-                  .getElementById("updates-row")
-                  ?.scrollBy({ left: 300, behavior: "smooth" })
-              }
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
-            >
-              ▶
-            </button>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
+                    {update.title}
+                  </h3>
+                  <p className="text-gray-400 group-hover:text-gray-300 text-sm sm:text-base transition-colors duration-300">
+                    {update.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

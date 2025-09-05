@@ -1,48 +1,87 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { ArrowLeft, ImageIcon, Award, Users, Trophy, Calendar, Search, Lightbulb, Camera, Code } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import Link from "next/link"
-import Footer from "@/components/footer"
+import { useState, useEffect } from "react";
+import {
+  ArrowLeft,
+  ImageIcon,
+  Award,
+  Users,
+  Trophy,
+  Calendar,
+  Search,
+  Lightbulb,
+  Camera,
+  Code,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState("all")
-  const [searchQuery, setSearchQuery] = useState("")
-  const [visibleElements, setVisibleElements] = useState(new Set())
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleElements, setVisibleElements] = useState(new Set());
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleElements((prev) => new Set([...prev, entry.target.id]))
+            setVisibleElements((prev) => new Set([...prev, entry.target.id]));
           }
-        })
+        });
       },
-      { threshold: 0.1, rootMargin: "50px" },
-    )
+      { threshold: 0.1, rootMargin: "50px" }
+    );
 
-    const elements = document.querySelectorAll("[data-animate]")
-    elements.forEach((el) => observer.observe(el))
+    const elements = document.querySelectorAll("[data-animate]");
+    elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect()
-  }, [])
+    return () => observer.disconnect();
+  }, []);
 
   const categories = [
     { id: "all", name: "All", icon: <ImageIcon className="w-4 h-4" /> },
     { id: "workshops", name: "Workshops", icon: <Award className="w-4 h-4" /> },
-    { id: "team", name: "Team Activities", icon: <Users className="w-4 h-4" /> },
-    { id: "competitions", name: "Competitions", icon: <Trophy className="w-4 h-4" /> },
+    {
+      id: "team",
+      name: "Team Activities",
+      icon: <Users className="w-4 h-4" />,
+    },
+    {
+      id: "competitions",
+      name: "Competitions",
+      icon: <Trophy className="w-4 h-4" />,
+    },
     { id: "events", name: "Events", icon: <Calendar className="w-4 h-4" /> },
-    { id: "seminars", name: "Seminars", icon: <Lightbulb className="w-4 h-4" /> },
-    { id: "hackathons", name: "Hackathons", icon: <Code className="w-4 h-4" /> },
-    { id: "networking", name: "Networking", icon: <Camera className="w-4 h-4" /> },
-     { id: "Installation", name: "Installation", icon: <Camera className="w-4 h-4" /> },
-      { id: "Ganpati", name: "Ganpati bappa", icon: <Camera className="w-4 h-4" /> },
-  ]
+    {
+      id: "seminars",
+      name: "Seminars",
+      icon: <Lightbulb className="w-4 h-4" />,
+    },
+    {
+      id: "hackathons",
+      name: "Hackathons",
+      icon: <Code className="w-4 h-4" />,
+    },
+    {
+      id: "networking",
+      name: "Networking",
+      icon: <Camera className="w-4 h-4" />,
+    },
+    {
+      id: "Installation",
+      name: "Installation",
+      icon: <Camera className="w-4 h-4" />,
+    },
+    {
+      id: "Ganpati",
+      name: "Ganpati bappa",
+      icon: <Camera className="w-4 h-4" />,
+    },
+  ];
 
   const galleryItems = [
     {
@@ -52,149 +91,173 @@ export default function GalleryPage() {
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 2,
       src: "inst2.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 3,
       src: "inst16.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 15,
       src: "inst19.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-  {
+    {
       id: 16,
       src: "inst20.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
- 
-     {
+
+    {
       id: 4,
       src: "inst5.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-       {
+    {
       id: 14,
       src: "inst18.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
- 
-     {
+
+    {
       id: 5,
       src: "inst6.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 6,
       src: "inst7.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 7,
       src: "inst8.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 8,
       src: "inst9.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-       {
+    {
       id: 9,
       src: "inst10.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 10,
       src: "inst14.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 11,
       src: "inst15.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 12,
       src: "inst13.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 13,
       src: "inst12.jpg",
       alt: "Installation",
       title: "Installation ceremony",
       category: "Installation",
     },
-     {
+    {
       id: 17,
       src: "g1.jpg",
       title: "Flash mob ganpati bappa",
       category: "Ganpati",
     },
-     {
+    {
       id: 18,
       src: "g2.jpg",
-     title: "Flash mob ganpati bappa",
+      title: "Flash mob ganpati bappa",
       category: "Ganpati",
     },
-       {
+    {
       id: 19,
       src: "g3.jpg",
-     title: "Flash mob ganpati bappa",
+      title: "Flash mob ganpati bappa",
       category: "Ganpati",
     },
-  
-       {
+
+    {
       id: 21,
       src: "g5.jpg",
-     title: "Flash mob ganpati bappa",
+      title: "Flash mob ganpati bappa",
       category: "Ganpati",
     },
-  
- 
-  ]
+    {
+      id: 22,
+      src: "DevOps.jpg",
+      title: "Dev Ops",
+      category: "Dev ops",
+    },
+    {
+      id: 23,
+      src: "DevOps1.jpg",
+      title: "Dev Ops",
+      category: "Dev ops",
+    },
+    {
+      id: 24,
+      src: "DevOps2.jpg",
+      title: "Dev Ops",
+      category: "Dev ops",
+    },
+    {
+      id: 25,
+      src: "DevOps3.jpg",
+      title: "Dev Ops",
+      category: "Dev ops",
+    },
+  ];
 
   const filteredItems = galleryItems.filter((item) => {
-    const matchesCategory = selectedCategory === "all" || item.category === selectedCategory
-    const matchesSearch =
-      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    const matchesCategory =
+      selectedCategory === "all" || item.category === selectedCategory;
+    const matchesSearch = item.title
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
     // item.description.toLowerCase().includes(searchQuery.toLowerCase())
-    return matchesCategory && matchesSearch
-  })
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -223,7 +286,11 @@ export default function GalleryPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link href="/">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-400 hover:text-white"
+                >
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back to Home
                 </Button>
@@ -245,13 +312,16 @@ export default function GalleryPage() {
               {categories.map((category) => (
                 <Button
                   key={category.id}
-                  variant={selectedCategory === category.id ? "default" : "outline"}
+                  variant={
+                    selectedCategory === category.id ? "default" : "outline"
+                  }
                   size="sm"
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`${selectedCategory === category.id
+                  className={`${
+                    selectedCategory === category.id
                       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
                       : "border-gray-600 text-gray-300 hover:text-white hover:border-orange-500"
-                    } transition-all duration-300`}
+                  } transition-all duration-300`}
                 >
                   {category.icon}
                   <span className="ml-2">{category.name}</span>
@@ -272,14 +342,19 @@ export default function GalleryPage() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-animate id="gallery-grid">
+          <div
+            className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            data-animate
+            id="gallery-grid"
+          >
             {filteredItems.map((item, index) => (
               <Card
                 key={item.id}
-                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${visibleElements.has("gallery-grid")
+                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700 hover:border-orange-500 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl group overflow-hidden ${
+                  visibleElements.has("gallery-grid")
                     ? "animate-in slide-in-from-bottom duration-700"
                     : "opacity-0 translate-y-8"
-                  }`}
+                }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative h-48 overflow-hidden">
@@ -293,7 +368,6 @@ export default function GalleryPage() {
                   {/* Dark gradient overlay for readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
-
                   {/* Title Tag (overlay) */}
                   <div className="absolute bottom-4 left-4">
                     <h3 className="font-semibold text-white bg-black/60 backdrop-blur-sm px-3 py-1 rounded-md text-sm group-hover:bg-orange-500/80 transition-colors duration-300">
@@ -305,11 +379,12 @@ export default function GalleryPage() {
             ))}
           </div>
 
-
           {filteredItems.length === 0 && (
             <div className="text-center py-16">
               <div className="text-gray-400 text-lg mb-4">No items found</div>
-              <p className="text-gray-500">Try adjusting your search or filter criteria</p>
+              <p className="text-gray-500">
+                Try adjusting your search or filter criteria
+              </p>
             </div>
           )}
         </div>
@@ -318,5 +393,5 @@ export default function GalleryPage() {
       {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }

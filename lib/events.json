@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "img": "",
+    "img": "../public/DevOps.jpg",
     "title": "DevOps Workshop",
     "description": "A technical workshop focused on DevOps practices including CI/CD pipelines, automation, and containerization. Students gained practical exposure to modern deployment strategies."
   },
