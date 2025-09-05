@@ -108,7 +108,7 @@ export default function CommitteesPage() {
       leadership: {
         head: {
           name: "Shivraj Ambhore",
-          image: "Shivraj-Ambhore.jpg",
+          image: "Picture1.png",
           bio: "I am a Computer Science Engineering student passionate about Java, Data Structures & Algorithms, and Web Development, with a strong focus on problem-solving and building impactful projects.",
           achievements: ["Java", "DSA", "Full stack Development"],
           contact: { email: "shivrajambhore01@gmail.com" },
@@ -133,7 +133,7 @@ export default function CommitteesPage() {
         },
         coHead2: {
           name: "Santosh Donapurge",
-          image: "1748265675540 - Sento Coder.jpg",
+          image: "Picture2.png",
           bio: "SDE",
           achievements: [""],
           contact: { email: "codersento@gmail.com" },
@@ -722,7 +722,7 @@ export default function CommitteesPage() {
         },
         coHead2: {
           name: "HITESH MISHRA",
-          image: "IMG-20250727-WA0026 - HITESH MISHRA.jpg",
+          image: "Picture11.png",
           bio: "Hello everyone My name is HITESH MISHRA CURRENTLY PERSUING BTECH UNDERGRAD DEGREE FROM JD COLLEGE OF ENGINEERING IN CSE BRANCH.",
           achievements: [],
           contact: {
@@ -828,20 +828,7 @@ export default function CommitteesPage() {
           },
         },
       },
-      membersList: [
-        // {
-        //   name: "Kripa Shah",
-        //   role: "Stage Manager",
-        //   image: "/professional-female-student.png",
-        //   year: "3rd Year",
-        // },
-        // {
-        //   name: "Yash Tiwari",
-        //   role: "Logistics",
-        //   image: "/professional-male-student.png",
-        //   year: "2nd Year",
-        // },
-      ],
+      membersList: [  ],
       achievements: [
         {
           title: "",
@@ -912,14 +899,14 @@ export default function CommitteesPage() {
           },
         },
         coHead2: {
-          name: "",
-          image: "",
+          name: "Sumit Wani ",
+          image: "BT240180CS - Sumeet Wani.jpg",
           bio: "",
           achievements: [""],
-          contact: { email: "" },
+          contact: { email: "summitwani17@gmail.com" },
           social: {
-            linkedin: "",
-            instagram: "",
+            linkedin: "https://www.linkedin.com/in/sumeet-wani-a3a61a32a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            instagram: "https://www.instagram.com/sculpsumit?igsh=MWloNXEzaDBoNG40MA==",
           },
         },
       },
@@ -987,7 +974,7 @@ export default function CommitteesPage() {
         coHead1: {
           name: "Vishakha S Pawade",
           image:
-            "https://drive.google.com/open?id=1KKwaOnx0YpgzJM_rHkSwhiz3v9XXck7O",
+            "Picture12.png",
           bio: "Co-Head of the Startup Community from 2nd Year CSE-C Department.",
           achievements: [],
           contact: {
@@ -1001,14 +988,14 @@ export default function CommitteesPage() {
           },
         },
         coHead2: {
-          name: "",
-          image: "",
+          name: "Mohammed Abu Zaid Ansari",
+          image: "100000397 - Mohd. Abu Zaid Ansari.jpeg",
           bio: "",
           achievements: [""],
-          contact: { email: "" },
+          contact: { email: "529.abuzaidansari@gmail.com" },
           social: {
-            linkedin: "",
-            instagram: "",
+            linkedin: "https://www.linkedin.com/in/zaid2392?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+           
           },
         },
       },
@@ -1046,7 +1033,7 @@ export default function CommitteesPage() {
         "Encouraging student participation in community service, social responsibility, and nation-building activities.",
       fullDescription:
         "The NSS (National Service Scheme) Committee inspires students to contribute towards community service and social responsibility. Through awareness drives, social activities, and volunteering, we work for the welfare of society while promoting leadership, discipline, and empathy among students.",
-      logo: "/placeholder.svg?height=80&width=80&text=🌍",
+      logo: "Nss.jpg",
       color: "green",
       members: 8,
       // established: "2018-07-15",
