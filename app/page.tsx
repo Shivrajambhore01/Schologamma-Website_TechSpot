@@ -76,18 +76,18 @@ export default function HomePage() {
       title: "Innovation Meets Excellence",
       subtitle:
         "Join the premier student forum at JD College of Engineering & Management",
-      image: "inst2.jpg",
+      image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
     },
     {
       title: "Empowering Future Leaders",
       subtitle:
         "Discover opportunities, build connections, and shape your career",
-      image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+      image: "inst2.jpg",
     },
     {
       title: "Learn, Grow, Achieve",
       subtitle: "Participate in workshops, seminars, and technical events",
-      image: "schologammalogo.webp",
+      image: "geminiScholo.png",
     },
   ];
 
@@ -206,23 +206,14 @@ export default function HomePage() {
   const latestUpdates = [
     {
       title: "Ganpati Bappa Festival Celebration",
-      date: "onGoing",
+      date: "Completed",
       description:
         "Join us for the vibrant Ganesh Chaturthi celebrations with cultural programs, aarti, and prasad distribution.",
       type: "event",
       icon: <SparkleIcon className="w-5 h-5" />,
       img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
     },
-    {
-      title: "DevOps Workshop",
-      date: "Completed",
-      description:
-        "A hands-on workshop on DevOps practices including CI/CD pipelines, automation, and containerization.",
-      type: "event",
-      icon: <SparkleIcon className="w-5 h-5" />,
-      img: "DevOps.jpg",
-    },
-    {
+   {
       title: "Schologamma Installation Ceremony",
       date: "Completed",
       description:
@@ -279,39 +270,7 @@ export default function HomePage() {
       status: "past",
       committee: "Schologamma",
     },
-  ];
-
-  /*
-      {
-        title: "Introduction to Figma",
-        date: "Oct 27, 2023",
-        time: "4:00 PM",
-        venue: "VS 207 JDCOEM",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-17%20221146-c3djdDYAyC4NAcx1pqYvrh4fYn2w9X.png",
-        status: "upcoming",
-        committee: "Technical Committee",
-      },
-        {
-        title: "LogicQuest 1.1",
-        date: "Mar 1, 2024",
-        time: "10:00 AM",
-        venue: "Main Auditorium",
-        image: "/logic-quest-coding-competition.png",
-        status: "upcoming",
-        committee: "Technical Committee",
-      },
-      {
-        title: "Canva Advanced Tutorial",
-        date: "Jan 8, 2024",
-        time: "2:00 PM",
-        venue: "Computer Lab",
-        image: "/canva-tutorial-poster.png",
-        status: "completed",
-        committee: "Creative Committee",
-      },
-      */
-
+    ];
   const galleryCategories = [
     {
       title: "Installation ceremony",
