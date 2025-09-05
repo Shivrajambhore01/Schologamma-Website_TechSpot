@@ -227,25 +227,25 @@ export default function GalleryPage() {
       id: 22,
       src: "DevOps.jpg",
       title: "Dev Ops",
-      category: "Dev ops",
+      category: "events",
     },
     {
       id: 23,
       src: "DevOps1.jpg",
       title: "Dev Ops",
-      category: "Dev ops",
+      category: "events",
     },
     {
       id: 24,
       src: "DevOps2.jpg",
       title: "Dev Ops",
-      category: "Dev ops",
+      category: "events",
     },
     {
       id: 25,
       src: "DevOps3.jpg",
       title: "Dev Ops",
-      category: "Dev ops",
+      category: "events",
     },
   ];
 
