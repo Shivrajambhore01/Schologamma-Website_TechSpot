@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import rawEvents from "@/lib/events.json";
 import {
   Search,
   Filter,
@@ -26,25 +27,8 @@ import {
 import Link from "next/link";
 import Footer from "@/components/footer";
 
-interface Event {
-  id: string;
-  title: string;
-  description: string;
-  date: string;
-  time: string;
-  venue: string;
-  speaker: string;
-  image: string;
-  committee: string;
-  category: string;
-  status: "upcoming" | "ongoing" | "past";
-  registrationOpen: boolean;
-  maxParticipants?: number;
-  currentParticipants?: number;
-  objectives: string[];
-  outcomes: string[];
-  schedule: { time: string; activity: string }[];
-}
+type RawEvent = typeof rawEvents[number];
+interface Event extends RawEvent { id: number | string; }
 
 export default function EventsPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,112 +38,11 @@ export default function EventsPage() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const events: Event[] = [
-    {
-      id: "2",
-      title: "Ganpati Bappa Festival Celebration",
-      description:
-        "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
-      date: "2025-08-27",
-      time: "1:00 PM",
-      venue: "Main Campus Ground",
-      speaker: "Schologamma",
-      image:
-        "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
-      committee: "Schologamma",
-      category: "Festival",
-      status: "ongoing",
-      registrationOpen: false,
-      maxParticipants: 500,
-      currentParticipants: 320,
-      objectives: [
-        "Invoke blessings of Lord Ganesha",
-        "Promote cultural and spiritual values",
-        "Encourage unity and community participation",
-        "Celebrate with eco-friendly practices",
-      ],
-      outcomes: [
-        "Strengthened community bonding",
-        "Spiritual enrichment for participants",
-        "Joyful cultural celebration",
-      ],
-      schedule: [
-        { time: "27.08.2025", activity: "Ganesh Sthapna" },
-        { time: "28.08.2025", activity: "Radio Mirchi/Mini Games" },
-        { time: "29.08.2025", activity: "Competitions" },
-        { time: "30.08.2025", activity: "Talent Hunt" },
-        { time: "2.09.2025", activity: "Visarjan" },
-      ],
-    },
-    {
-      id: "3",
-      title: "DevOps Workshop",
-      description:
-        "A technical workshop focused on DevOps practices including CI/CD pipelines, automation, and containerization. Students gained practical exposure to modern deployment strategies.",
-      date: "2025-08-29",
-      time: "11:00 AM",
-      venue: "JD College And Management",
-      speaker: "Schologamma",
-      image: "DevOps.jpg",
-      committee: "Schologamma",
-      category: "Workshop",
-      status: "past",
-      registrationOpen: false,
-      maxParticipants: 80,
-      currentParticipants: 72,
-      objectives: [
-        "Introduce students to DevOps culture and tools",
-        "Provide hands-on experience in CI/CD pipelines",
-        "Highlight automation and container management",
-      ],
-      outcomes: [
-        "Students built and deployed sample apps",
-        "Better understanding of CI/CD concepts",
-        "Practical exposure to DevOps workflows",
-      ],
-      schedule: [
-        { time: "10:00 AM", activity: "Introduction to DevOps" },
-        { time: "10:30 AM", activity: "CI/CD Pipeline Demo" },
-        { time: "12:00 PM", activity: "Containerization with Docker" },
-        { time: "1:00 PM", activity: "Hands-on Deployment Activity" },
-        { time: "2:00 PM", activity: "Closing Remarks & Q&A" },
-      ],
-    },
-    {
-      id: "4",
-      title: "Schologamma Installation Ceremony",
-      description:
-        "A formal event celebrating the installation of Schologamma. The ceremony included speeches, acknowledgments, and a demonstration of the system’s features for the community.",
-      date: "2025-08-02",
-      time: "4:00 PM",
-      venue: "JD College And Management",
-      speaker: "Schologamma ",
-      image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
-      committee: "Schologamma",
-      category: "Ceremony",
-      status: "past",
-      registrationOpen: false,
-      maxParticipants: 150,
-      currentParticipants: 140,
-      objectives: [
-        "Celebrate the successful setup of Schologamma",
-        "Showcase system features to students and staff",
-        "Acknowledge contributions of team members",
-      ],
-      outcomes: [
-        "System officially launched for use",
-        "Increased awareness about Schologamma features",
-        "Motivated students to engage in technical projects",
-      ],
-      schedule: [
-        { time: "4:00 PM", activity: "Welcome & Opening Speech" },
-        { time: "4:15 PM", activity: "Overview of Schologamma" },
-        { time: "4:45 PM", activity: "Installation Ceremony & Ribbon Cutting" },
-        { time: "5:15 PM", activity: "System Demonstration" },
-        { time: "6:00 PM", activity: "Closing & Vote of Thanks" },
-      ],
-    },
-  ];
+  const events: Event[] = (rawEvents as any[]).map(e => ({
+    ...e,
+    id: e.id,
+    image: e.image || e.img || "/placeholder.svg",
+  }));
 
   /* 
   [

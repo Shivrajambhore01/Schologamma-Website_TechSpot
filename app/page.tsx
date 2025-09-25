@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+  import { getLatestUpdates } from "@/lib/events";
 import committees from "@/lib/committees.json";
 import events from "@/lib/events.json";
 import team from "@/lib/team.json";
@@ -32,7 +33,7 @@ type Committee = {
   members: number;
   color: string;
   hoverColor: string;
-  type?: string; // if you’re tagging type manually
+  type?: string; 
 };
 
 type Event = {
@@ -203,26 +204,8 @@ export default function HomePage() {
     // },
   ];
 
-  const latestUpdates = [
-    {
-      title: "Ganpati Bappa Festival Celebration",
-      date: "Completed",
-      description:
-        "Join us for the vibrant Ganesh Chaturthi celebrations with cultural programs, aarti, and prasad distribution.",
-      type: "event",
-      icon: <SparkleIcon className="w-5 h-5" />,
-      img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
-    },
-   {
-      title: "Schologamma Installation Ceremony",
-      date: "Completed",
-      description:
-        "A formal event celebrating the successful installation of Schologamma with speeches, acknowledgments, and demonstrations.",
-      type: "event",
-      icon: <SparkleIcon className="w-5 h-5" />,
-      img: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
-    },
-  ];
+  // Dynamically derived from events.json so adding a new event automatically appears here
+  const latestUpdates = getLatestUpdates();
 
   // latest update deta
 
@@ -267,6 +250,15 @@ export default function HomePage() {
       time: "4:00 PM",
       venue: "Schologamma",
       image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+      status: "past",
+      committee: "Schologamma",
+    },
+    {
+      title: "Logic Building",
+      date: "Sep 18, 2025",
+      time: "11:00 AM",
+      venue: "Schologamma",
+      image: "Logic.jpg",
       status: "past",
       committee: "Schologamma",
     },

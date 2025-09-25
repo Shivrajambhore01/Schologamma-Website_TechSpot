@@ -225,6 +225,18 @@ export default function GalleryPage() {
     },
     {
       id: 22,
+      src: "ganpatiV1.jpg",
+      title: "Visarjan Of Ganpati bapa",
+      category: "Ganpati",
+    },
+    {
+      id: 28,
+      src: "GanpatiV2.jpg",
+      title: "Visarjan Of Ganpati bapa",
+      category: "Ganpati",
+    },
+    {
+      id: 29,
       src: "DevOps.jpg",
       title: "Dev Ops",
       category: "seminars",
@@ -246,6 +258,18 @@ export default function GalleryPage() {
       src: "DevOps3.jpg",
       title: "Dev Ops",
       category: "seminars",
+    },
+    {
+      id: 26,
+      src: "Logic.jpg",
+      title: "Logic Building",
+      category: "events",
+    },
+    {
+      id: 27,
+      src: "Logic2.jpg",
+      title: "Logic Building",
+      category: "events",
     },
   ];
 
