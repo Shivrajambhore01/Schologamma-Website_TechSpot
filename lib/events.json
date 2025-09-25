@@ -158,41 +158,58 @@
     "img": "Logic.jpg",
     "image": "Logic.jpg",
     "committee": "Schologamma",
-    "category": "Ceremony",
+    "category": "event",
     "status": "past",
     "registrationOpen": false,
     "maxParticipants": 150,
     "currentParticipants": 140,
     "objectives": [
-      "Celebrate the successful setup of Schologamma",
-      "Showcase system features to students and staff",
-      "Acknowledge contributions of team members"
+      ""
     ],
     "outcomes": [
-      "System officially launched for use",
-      "Increased awareness about Schologamma features",
-      "Motivated students to engage in technical projects"
+      ""
     ],
     "schedule": [
       {
-        "time": "04:00 PM",
+        "time": "11:00 AM",
         "activity": "Welcome & Opening Speech"
       },
       {
-        "time": "04:15 PM",
-        "activity": "Overview of Schologamma"
+        "time": "1:15 AM",
+        "activity": "Ending"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Teachers Day ",
+    "description": "Teachers Day Event .",
+    "date": "2025-09-18",
+    "time": "11:00 AM",
+    "venue": "JD College And Management",
+    "speaker": "Schologamma",
+    "img": "Teachers1.jpg",
+    "image": "Teachers1.jpg",
+    "committee": "Schologamma",
+    "category": "event",
+    "status": "past",
+    "registrationOpen": false,
+    "maxParticipants": 150,
+    "currentParticipants": 140,
+    "objectives": [
+      ""
+    ],
+    "outcomes": [
+      ""
+    ],
+    "schedule": [
+      {
+        "time": "11:00 AM",
+        "activity": "Welcome & Opening Speech"
       },
       {
-        "time": "04:45 PM",
-        "activity": "Installation Ceremony & Ribbon Cutting"
-      },
-      {
-        "time": "05:15 PM",
-        "activity": "System Demonstration"
-      },
-      {
-        "time": "06:00 PM",
-        "activity": "Closing & Vote of Thanks"
+        "time": "1:15 AM",
+        "activity": "Ending"
       }
     ]
   }

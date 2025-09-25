@@ -271,6 +271,18 @@ export default function GalleryPage() {
       title: "Logic Building",
       category: "events",
     },
+    {
+      id: 30,
+      src: "Teachers1.jpg",
+      title: "Tearchers Day",
+      category: "events",
+    },
+    {
+      id: 31,
+      src: "Teachers2.jpg",
+      title: "Tearchers Day",
+      category: "events",
+    },
   ];
 
   const filteredItems = galleryItems.filter((item) => {
