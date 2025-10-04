@@ -283,6 +283,48 @@ export default function GalleryPage() {
       title: "Tearchers Day",
       category: "events",
     },
+    {
+      id: 32,
+      src: "Tree_Plantation.jpg",
+      title: "Tree planting",
+      category: "events",
+    },
+    {
+      id: 33,
+      src: "Tree_Plantation.jpg",
+      title: "Tree planting",
+      category: "events",
+    },
+    {
+      id: 34,
+      src: "Tree2.jpg",
+      title: "Tree planting",
+      category: "events",
+    },
+    {
+      id: 35,
+      src: "Tree3.jpg",
+      title: "Tree planting",
+      category: "events",
+    },
+    {
+      id: 36,
+      src: "Gandhi1.jpg",
+      title: " Gandhi Jayanti",
+      category: "events",
+    },
+    {
+      id: 37,
+      src: "Gandhi2.jpg",
+      title: " Gandhi Jayanti",
+      category: "events",
+    },
+    {
+      id: 38,
+      src: "Gandhi3.jpg",
+      title: " Gandhi Jayanti",
+      category: "events",
+    },
   ];
 
   const filteredItems = galleryItems.filter((item) => {

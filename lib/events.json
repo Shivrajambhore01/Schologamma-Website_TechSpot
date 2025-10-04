@@ -212,5 +212,63 @@
         "activity": "Ending"
       }
     ]
-  }
+  },
+  {
+    "id": 7,
+    "title": "Tree Plantation Event",
+    "description": "Join us for a campus tree plantation drive to promote green campus initiatives, environmental awareness and community participation. Saplings and planting materials will be provided.",
+    "date": "2025-08-27",
+    "time": "10:00 AM",
+    "venue": "Main Campus Ground",
+    "speaker": "Schologamma",
+    "img": "Tree_Plantation.jpg",
+    "image": "Tree_Plantation.jpg",
+    "committee": "Schologamma",
+    "category": "Environmental",
+    "status": "past",
+    "registrationOpen": false,
+    "maxParticipants": 500,
+    "currentParticipants": 320,
+    "objectives": [
+      "Promote campus greening",
+      "Encourage community participation",
+      "Educate participants on tree care and sustainability"
+    ],
+    "outcomes": [
+      "New saplings planted on campus",
+      "Increased environmental awareness",
+      "Stronger community engagement"
+    ],
+    "schedule": [
+    ]
+  },
+  {
+  "id": 8,
+  "title": "Gani Jayanti Celebration",
+  "description": "Celebrate Gani Jayanti with prayers, bhajans, cultural performances and community participation. Eco-friendly practices and prasadam will be provided.",
+  "date": "2026-02-xx",
+  "time": "10:00 AM",
+  "venue": "Main Campus Ground",
+  "speaker": "Schologamma",
+  "img": "Gandhi1.jpg",
+  "image": "Gandhi1.jpg",
+  "committee": "Cultural Committee",
+  "category": "Festival",
+  "status": "upcoming",
+  "registrationOpen": true,
+  "maxParticipants": 500,
+  "currentParticipants": 0,
+  "objectives": [
+    "Invoke blessings and cultural values",
+    "Encourage community participation",
+    "Promote eco-friendly celebration practices"
+  ],
+  "outcomes": [
+    "Stronger community bonding",
+    "Increased cultural awareness",
+    "Successful, eco-friendly celebration"
+  ],
+  "schedule": [
+  ]
+}
 ]
