@@ -103,7 +103,7 @@ export default function Footer() {
                     className="w-9 h-9 p-0 bg-gray-800/50 hover:bg-pink-600 transition-colors"
                     asChild
                   >
-                    <a href="#" aria-label="Instagram">
+                    <a href="https://www.instagram.com/schologamma_jd/?igsh=MTh2NHo3dTJ6dmVrbQ%3D%3D#" aria-label="Instagram">
                       <Instagram className="w-4 h-4" />
                     </a>
                   </Button>
