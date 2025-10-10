@@ -152,14 +152,7 @@ export default function HomePage() {
   ];
 
   const committees = [
-    // {
-    //   name: "Content Editor Committee",
-    //   description: "Managing content creation and editorial processes",
-    //   icon: "📝",
-    //   members: 12,
-    //   color: "from-blue-500/20 to-purple-500/20",
-    //   hoverColor: "hover:shadow-blue-500/30",
-    // },
+   
     {
       name: "Technical Committee",
       description: "Organizing technical workshops and coding events",
@@ -186,43 +179,33 @@ export default function HomePage() {
       hoverColor: "hover:shadow-pink-500/30",
     },
 
-    // {
-    //   name: "Public Relations",
-    //   description: "Managing external communications and partnerships",
-    //   icon: "🤝",
-    //   members: 6,
-    //   color: "from-indigo-500/20 to-blue-500/20",
-    //   hoverColor: "hover:shadow-indigo-500/30",
-    // },
-    // {
-    //   name: "Finance Committee",
-    //   description: "Handling budgets and financial planning",
-    //   icon: "💰",
-    //   members: 5,
-    //   color: "from-emerald-500/20 to-green-500/20",
-    //   hoverColor: "hover:shadow-emerald-500/30",
-    // },
+ 
   ];
 
-  // Dynamically derived from events.json so adding a new event automatically appears here
-  const latestUpdates = getLatestUpdates();
+ 
+const latestUpdates = [
+    {
+      title: "Ganpati Bappa Festival Celebration",
+      date: "Completed",
+      description:
+        "Join us for the vibrant Ganesh Chaturthi celebrations with cultural programs, aarti, and prasad distribution.",
+      type: "event",
+      icon: <SparkleIcon className="w-5 h-5" />,
+      img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
+    },
+   {
+      title: "Schologamma Installation Ceremony",
+      date: "Completed",
+      description:
+        "A formal event celebrating the successful installation of Schologamma with speeches, acknowledgments, and demonstrations.",
+      type: "event",
+      icon: <SparkleIcon className="w-5 h-5" />,
+      img: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+    },
+  ];
 
-  // latest update deta
 
-  /*  {
-        title: "LogicQuest 1.1 Registration Open",
-        date: "1 week ago",
-        description: "Annual coding competition registration is now open. Don't miss this opportunity!",
-        type: "event",
-        icon: <Trophy className="w-5 h-5" />,
-      },
-      {
-        title: "Committee Recruitment Drive",
-        date: "2 weeks ago",
-        description: "Join our dynamic committees and be part of Schologamma's growth journey.",
-        type: "recruitment",
-        icon: <Users className="w-5 h-5" />,
-      }, */
+
 
   const featuredEvents = [
     {

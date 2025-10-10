@@ -225,15 +225,14 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Bhavya Pandey",
-          image: "Document from Bhavya Pandey - Bhavya Pandey.jpg",
-          bio: "Hello, I am Bhavya Pandey from Section B. I am a creative and passionate individual with talents in painting, dancing, singing, and face painting. I am very curious-minded and eager to learn, currently exploring areas like Python programming, digital arts, video editing, and brand designing.",
-          achievements: ["Painting", "Dancing", "Singing"],
-          contact: { email: "pandeybhavya336@gmail.com" },
+          name: "Shravani Darvekar",
+          image: "content.jpg",
+          bio: "",
+          achievements: [],
+          contact: { email: "darvekarshravani@gmail.com" },
           social: {
-            linkedin: "https://www.linkedin.com/in/bhavya-pandey",
-            instagram:
-              "https://www.instagram.com/bhavya_012006/?igsh=YmtqZzA3MXMzZ2Jw#",
+            linkedin: "https://www.linkedin.com/in/shravani-darvekar-1675b9371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+           
           },
         },
         coHead2: {
@@ -317,21 +316,17 @@ export default function CommitteesPage() {
           },
         },
         coHead1: {
-          name: "Yashasvi Sandesh Bhambore",
-          image: "IMG_20250815_171101 - YASHASVI BHAMBORE.jpg",
+          name: "Yash Sonare",
+          image: "technical.png",
           bio: "",
-          achievements: [
-            "Leadership",
-            "Technical Knowledge",
-            "Team Collaboration",
-          ],
+          achievements: [],
           contact: {
-            email: "yashasvibhambore1@jdcoem.ac.in",
-            phone: "",
+            email: "yashsonare64@gmail.com",
+            phone: "9860828940",
           },
           social: {
-            linkedin: "https://www.linkedin.com/in/yashasvi-bhambore-893bb9355",
-            instagram: "/team",
+            linkedin: "https://www.linkedin.com/in/yash-sonare-472312301/",
+            instagram: "https://www.instagram.com/yazz.1120/?next=%2F",
           },
         },
         coHead2: {
