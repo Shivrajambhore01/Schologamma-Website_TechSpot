@@ -18,7 +18,7 @@ export default function Footer() {
     { name: "Technical Committee", href: "/committees#technical" },
     { name: "Creative Committee", href: "/committees#creative" },
     { name: "Content Editor", href: "/committees#content-editor" },
-    { name: "Event Management", href: "/committees#event-management" },
+    { name: "Techspot Committee", href: "/committees#Techspot-committee" },
   ]
 
   const resources = [
