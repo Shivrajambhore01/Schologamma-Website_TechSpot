@@ -154,7 +154,7 @@ export default function EventsPage() {
             </div>
 
             <div className="flex items-center space-x-3">
-        
+              <div className="h-6 w-px bg-gray-600"></div>
               <span className="text-lg font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Events
               </span>
