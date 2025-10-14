@@ -113,7 +113,7 @@ export default function Footer() {
                     className="w-9 h-9 p-0 bg-gray-800/50 hover:bg-blue-700 transition-colors"
                     asChild
                   >
-                    <a href="#" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/company/schologamma-forum/" aria-label="LinkedIn">
                       <Linkedin className="w-4 h-4" />
                     </a>
                   </Button>
