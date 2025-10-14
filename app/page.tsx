@@ -70,7 +70,13 @@ export default function HomePage() {
   const updatesRef = useRef(null);
   const eventsRef = useRef(null);
   const galleryRef = useRef(null);
-
+  const [dots, setDots] = useState<{ 
+    left: string; 
+    top: string; 
+    delay: string; 
+    duration: string; 
+  }[]>([]);
+  
   const fullText = "Welcome to Schologamma Forum";
   const heroSlides = [
     {
@@ -91,6 +97,18 @@ export default function HomePage() {
       image: "Schologamma logo.png",
     },
   ];
+
+  useEffect(() => {
+    // Generate random dots only once after mount
+    const generatedDots = Array.from({ length: 50 }, () => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 3}s`,
+      duration: `${2 + Math.random() * 2}s`,
+    }));
+    setDots(generatedDots);
+  }, []); // runs only once
+  
 
   useEffect(() => {
     if (isTyping && typedText.length < fullText.length) {
@@ -338,6 +356,21 @@ const latestUpdates = [
             background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.1), transparent 40%)`,
           }}
         ></div>
+      
+        <div className="absolute inset-0">
+      {dots.map((dot, i) => (
+        <div
+          key={i}
+          className="absolute w-1 h-1 bg-blue-400 rounded-full animate-pulse"
+          style={{
+            left: dot.left,
+            top: dot.top,
+            animationDelay: dot.delay,
+            animationDuration: dot.duration,
+          }}
+        ></div>
+      ))}
+    </div>
       </div>
 
       <nav className="relative z-50 bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0">
