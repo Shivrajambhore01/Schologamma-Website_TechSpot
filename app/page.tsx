@@ -311,17 +311,8 @@ const latestUpdates = [
     setResult(allResults);
   }, [searchQuery]);
 
-  return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
-      <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.1), transparent 40%)`,
-          }}
-        ></div>
-        <div className=" absolute inset-0">
+  /*
+  <div className=" absolute inset-0">
           {[...Array(50)].map((_, i) => (
             <div
               key={i}
@@ -335,6 +326,18 @@ const latestUpdates = [
             ></div>
           ))}
         </div>
+  */
+
+  return (
+    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
+      <div className="fixed inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.1), transparent 40%)`,
+          }}
+        ></div>
       </div>
 
       <nav className="relative z-50 bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0">
