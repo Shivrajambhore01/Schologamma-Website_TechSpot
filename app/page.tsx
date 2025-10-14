@@ -88,7 +88,7 @@ export default function HomePage() {
     {
       title: "Learn, Grow, Achieve",
       subtitle: "Participate in workshops, seminars, and technical events",
-      image: "geminiScholo.png",
+      image: "20251014_162456.png",
     },
   ];
 
@@ -345,6 +345,7 @@ const latestUpdates = [
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent animate-pulse">
+                <img src="./20251014_162456.png" className="w-24 h-24 m-1" />
                 Schologamma
               </div>
             </div>
