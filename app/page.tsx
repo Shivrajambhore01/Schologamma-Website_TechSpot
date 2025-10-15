@@ -98,8 +98,8 @@ export default function HomePage() {
     },
   ];
 
-  useEffect(() => {
-    // Generate random dots only once after mount
+useEffect(() => {
+  const generateDots = () => {
     const generatedDots = Array.from({ length: 50 }, () => ({
       left: `${Math.random() * 100}%`,
       top: `${Math.random() * 100}%`,
@@ -107,8 +107,18 @@ export default function HomePage() {
       duration: `${2 + Math.random() * 2}s`,
     }));
     setDots(generatedDots);
-  }, []); // runs only once
-  
+  };
+
+  // Generate initially
+  generateDots();
+
+  // Regenerate every 5 seconds (adjust as needed)
+  const interval = setInterval(generateDots, 1000);
+
+  // Cleanup on unmount
+  return () => clearInterval(interval);
+}, []);
+
 
   useEffect(() => {
     if (isTyping && typedText.length < fullText.length) {
@@ -128,13 +138,13 @@ export default function HomePage() {
     return () => clearInterval(interval);
   }, [heroSlides.length]);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  // useEffect(() => {
+  //   const handleMouseMove = (e) => {
+  //     setMousePosition({ x: e.clientX, y: e.clientY });
+  //   };
+  //   window.addEventListener("mousemove", handleMouseMove);
+  //   return () => window.removeEventListener("mousemove", handleMouseMove);
+  // }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -872,7 +882,7 @@ const latestUpdates = [
           {/* Horizontal Scrollable Events */}
           <div className="relative">
             {/* Left Button */}
-            <button
+            {/* <button
               onClick={() =>
                 document
                   .getElementById("events-row")
@@ -881,7 +891,7 @@ const latestUpdates = [
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
             >
               ◀
-            </button>
+            </button> */}
 
             {/* Scroll Container */}
             <div
@@ -943,7 +953,7 @@ const latestUpdates = [
             </div>
 
             {/* Right Button */}
-            <button
+            {/* <button
               onClick={() =>
                 document
                   .getElementById("events-row")
@@ -952,7 +962,7 @@ const latestUpdates = [
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full z-20"
             >
               ▶
-            </button>
+            </button> */}
           </div>
 
           {/* View All Events Button */}

@@ -40,7 +40,33 @@
 }
 /* Animated custom scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 6px; /* small size */
+  width: 4px; /* small size */
+}
+/* ===== Custom Stylish Scrollbar for Events Section ===== */
+#events-row::-webkit-scrollbar {
+  height: 6px; /* smaller height */
+}
+
+#events-row::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* faint background */
+  border-radius: 10px;
+}
+
+#events-row::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #152642, #f97316); /* blue → orange */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#events-row::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #47b0dd, #0b99e0);
+  transform: scaleY(1.4);
+}
+
+/* For Firefox */
+#events-row {
+  scrollbar-width: thin;
+  scrollbar-color: #785527 transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -57,7 +83,7 @@
 
 /* Hover effect */
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #f97316; /* orange-500 */
+  background-color: #f2b50c; /* orange-500 */
   width: 10px; /* 🔥 expands smoothly */
 }
 
@@ -100,7 +126,7 @@
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-1: oklch(50.744% 0.05259 271.001);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
