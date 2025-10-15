@@ -113,7 +113,7 @@ useEffect(() => {
   generateDots();
 
   // Regenerate every 5 seconds (adjust as needed)
-  const interval = setInterval(generateDots, 1000);
+  const interval = setInterval(generateDots, 2000);
 
   // Cleanup on unmount
   return () => clearInterval(interval);
