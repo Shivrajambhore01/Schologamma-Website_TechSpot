@@ -867,7 +867,7 @@ export default function CommitteesPage() {
           bio: "A passionate Computer Science and Engineering student exploring the intersection of technology, design, and creativity. With experience in UI/UX, branding, and media, and a keen interest in machine learning and blockchain, always eager to create impactful digital solutions.",
           achievements: [],
           contact: {
-            email: "shewarwpiyush@gmail.com",
+            email: "lanjewarsanika@gmail.com",
             phone: "",
           },
           social: {
