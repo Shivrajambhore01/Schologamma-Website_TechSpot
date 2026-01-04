@@ -98,12 +98,12 @@
     ],
     "events": [
       {
-        "title": "",
-        "description": "",
-        "date": "",
-        "status": "upcoming",
-        "image": "",
-        "participants": 0
+        "title": "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
+        "description": "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
+        "date": "2025-01-15",
+        "status": "completed",
+        "image": "/ignite.jpeg",
+        "participants": 180
       }
     ],
     "activities": [

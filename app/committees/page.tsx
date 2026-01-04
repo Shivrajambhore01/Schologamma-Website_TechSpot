@@ -179,15 +179,15 @@ export default function CommitteesPage() {
         },
       ],
       events: [
-        {
-          title: "",
-          description: "",
-          date: "",
-          status: "upcoming",
-          image: "",
-          participants: 0,
-        },
-      ],
+      {
+        title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
+        description: "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
+        date: "2025-12-24",
+        status: "completed",
+        image: "/ignite.jpeg",
+        participants: 80
+      }
+    ],
       activities: ["Weekly talks", "Hands-on builds", "Review sessions"],
       gallery: ["/techspot-pi-night.png"],
     },

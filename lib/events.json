@@ -181,7 +181,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Teachers Day ",
     "description": "Teachers Day Event .",
     "date": "2025-09-18",
@@ -269,6 +269,61 @@
     "Successful, eco-friendly celebration"
   ],
   "schedule": [
+  ]
+},
+{
+  "id": 9,
+  "title": "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
+  "description": "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building. Learn industry insights and networking strategies.",
+  "date": "2025-12-24",
+  "time": "2:00 PM",
+  "venue": "Main Campus Ground",
+  "speaker": "Schologamma",
+  "img": "/ignite.jpeg",
+  "image": "/ignite.jpeg",
+  "committee": "Techspot",
+  "category": "Workshop",
+  "status": "completed",
+  "registrationOpen": false,
+  "maxParticipants": 100,
+  "currentParticipants": 80,
+  "objectives": [
+    "Guide students on career planning and roadmap",
+    "Introduce Data Structures & Algorithms concepts",
+    "Provide web development fundamentals",
+    "Enhance LinkedIn profiles for job readiness"
+  ],
+  "outcomes": [
+    "Students gained career clarity",
+    "Better understanding of DSA importance",
+    "Practical web development insights",
+    "Improved LinkedIn presence"
+  ],
+  "schedule": [
+    {
+      "time": "2:00 PM",
+      "activity": "Welcome & Introduction"
+    },
+    {
+      "time": "2:15 PM",
+      "activity": "Career Roadmap Session"
+    },
+    {
+      "time": "3:00 PM",
+      "activity": "DSA Fundamentals"
+    },
+    {
+      "time": "3:45 PM",
+      "activity": "Web Development Basics"
+    },
+    {
+      "time": "4:30 PM",
+      "activity": "LinkedIn Profile Building"
+    },
+    {
+      "time": "5:15 PM",
+      "activity": "Q&A & Closing Remarks"
+    }
   ]
 }
 ]
