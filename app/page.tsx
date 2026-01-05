@@ -217,7 +217,7 @@ const latestUpdates = [
     date: "Completed - Aug 27, 2025",
     description: "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
     type: "event",
-    icon: "SparkleIcon",
+    icon: <SparkleIcon className="w-5 h-5" />,
     img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
   },
   {
@@ -225,7 +225,7 @@ const latestUpdates = [
     date: "Completed - Aug 29, 2025",
     description: "A technical workshop focused on DevOps practices including CI/CD pipelines, automation, and containerization. Students gained practical exposure to modern deployment strategies.",
     type: "event",
-    icon: "SparkleIcon",
+    icon: <SparkleIcon className="w-5 h-5" />,
     img: "DevOps.jpg",
   },
   {
@@ -233,13 +233,40 @@ const latestUpdates = [
     date: "Completed - Dec 24, 2025",
     description: "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
     type: "event",
-    icon: "SparkleIcon",
+    icon: <SparkleIcon className="w-5 h-5" />,
     img: "/ignite.jpeg",
   },
 ];
 
 
   const featuredEvents = [
+      {
+    title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
+    date: "Dec 24, 2025",
+    time: "2:00 PM",
+    venue: "Main Campus Ground",
+    image: "/ignite.jpeg",
+    status: "completed",
+    committee: "Techspot",
+  },
+    {
+    title: "DevOps Workshop",
+    date: "Aug 29, 2025",
+    time: "11:00 AM",
+    venue: "JD College And Management",
+    image: "DevOps.jpg",
+    status: "past",
+    committee: "Schologamma",
+  },
+  {
+    title: "Schologamma Installation Ceremony",
+    date: "Aug 02, 2025",
+    time: "4:00 PM",
+    venue: "JD College And Management",
+    image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
+    status: "past",
+    committee: "Schologamma",
+  },
   {
     title: "Ganpati Bappa Festival Celebration",
     date: "Aug 27, 2025",
@@ -257,33 +284,6 @@ const latestUpdates = [
     image: "Tree_Plantation.jpg",
     status: "past",
     committee: "Schologamma",
-  },
-  {
-    title: "Schologamma Installation Ceremony",
-    date: "Aug 02, 2025",
-    time: "4:00 PM",
-    venue: "JD College And Management",
-    image: "WhatsApp Image 2025-08-21 at 21.23.07_78a14539.jpg",
-    status: "past",
-    committee: "Schologamma",
-  },
-  {
-    title: "DevOps Workshop",
-    date: "Aug 29, 2025",
-    time: "11:00 AM",
-    venue: "JD College And Management",
-    image: "DevOps.jpg",
-    status: "past",
-    committee: "Schologamma",
-  },
-  {
-    title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
-    date: "Dec 24, 2025",
-    time: "2:00 PM",
-    venue: "Main Campus Ground",
-    image: "/ignite.jpeg",
-    status: "completed",
-    committee: "Techspot",
   },
 ];
 
