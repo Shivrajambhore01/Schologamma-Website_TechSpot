@@ -269,7 +269,7 @@ const latestUpdates = [
   },
   {
     title: "Ganpati Bappa Festival Celebration",
-    date: "Aug 27, 2025",
+    date: "September 14",
     time: "1:00 PM",
     venue: "Main Campus Ground",
     image: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
