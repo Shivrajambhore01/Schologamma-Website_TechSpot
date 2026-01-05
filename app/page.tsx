@@ -230,7 +230,7 @@ const latestUpdates = [
   },
   {
     title: "Ganpati Bappa Festival Celebration",
-    date: "Completed - Aug 27, 2025",
+    date: "Completed - September 14",
     description: "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
     type: "event",
     icon: <SparkleIcon className="w-5 h-5" />,
