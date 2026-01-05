@@ -213,12 +213,12 @@ useEffect(() => {
  
 const latestUpdates = [
   {
-    title: "Ganpati Bappa Festival Celebration",
-    date: "Completed - Aug 27, 2025",
-    description: "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
+    title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
+    date: "Completed - Dec 24, 2025",
+    description: "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
     type: "event",
     icon: <SparkleIcon className="w-5 h-5" />,
-    img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
+    img: "/ignite.jpeg",
   },
   {
     title: "DevOps Workshop",
@@ -229,12 +229,12 @@ const latestUpdates = [
     img: "DevOps.jpg",
   },
   {
-    title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
-    date: "Completed - Dec 24, 2025",
-    description: "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
+    title: "Ganpati Bappa Festival Celebration",
+    date: "Completed - Aug 27, 2025",
+    description: "Celebrate the divine presence of Lord Ganesha with devotion and joy! Join us for Ganesh Chaturthi festivities filled with prayers, cultural performances, and community spirit.",
     type: "event",
     icon: <SparkleIcon className="w-5 h-5" />,
-    img: "/ignite.jpeg",
+    img: "https://thumbs.dreamstime.com/b/ganesh-chaturthi-lord-ganesha-festival-copy-space-clean-minimal-banner-template-design-ganesh-chaturthi-lord-ganesha-332278839.jpg",
   },
 ];
 
