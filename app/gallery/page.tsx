@@ -325,6 +325,24 @@ export default function GalleryPage() {
       title: " Gandhi Jayanti",
       category: "events",
     },
+     {
+      id: 39,
+      src: "NAVAROHAN.jpg",
+      title: "Navarohan Launch",
+      category: "events",
+    },
+    {
+      id: 40,
+      src: "NAVAROHAN3.jpg",
+      title: "Navarohan Launch",
+      category: "events",
+    },
+    {
+      id: 41,
+      src: "NAVAROHAN2.jpg",
+      title: "Navarohan Launch",
+      category: "events",
+    },
   ];
 
   const filteredItems = galleryItems.filter((item) => {

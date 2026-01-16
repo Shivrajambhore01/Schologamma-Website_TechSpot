@@ -212,13 +212,13 @@ useEffect(() => {
 
  
 const latestUpdates = [
-  {
-    title: "IGNITE: Career Roadmap, DSA, Web Development & LinkedIn Session",
-    date: "Completed - Dec 24, 2025",
-    description: "Interactive session covering career planning, data structures & algorithms, web development basics, and LinkedIn profile building.",
+ {
+    title: "Navarohan: Schologamma T-shirt & Website Launch",
+    date: "Completed - Jan 14, 2026",
+    description: "Launch event introducing the new Schologamma T-shirt and unveiling the Schologamma website. Includes a live demo, distribution, and walkthrough of key features.",
     type: "event",
     icon: <SparkleIcon className="w-5 h-5" />,
-    img: "/ignite.jpeg",
+    img: "NAVAROHAN.jpg",
   },
   {
     title: "DevOps Workshop",

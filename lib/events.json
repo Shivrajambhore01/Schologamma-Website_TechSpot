@@ -325,5 +325,55 @@
       "activity": "Q&A & Closing Remarks"
     }
   ]
-}
+},
+  {
+    "id": 10,
+    "title": "Navarohan: Schologamma T-shirt & Website Launch",
+    "description": "Launch event introducing the new Schologamma T-shirt and unveiling the Schologamma website. Includes a live demo, distribution, and walkthrough of key features.",
+    "date": "2026-01-14",
+    "time": "12:00 PM - 2:00 PM",
+    "venue": "Main Campus Ground",
+    "speaker": "Schologamma",
+    "img": "NAVAROHAN.jpg",
+    "image": "NAVAROHAN3.jpg",
+    "committee": "Schologamma",
+    "category": "Launch",
+    "status": "past",
+    "registrationOpen": false,
+    "maxParticipants": 300,
+    "currentParticipants": 0,
+    "objectives": [
+      "Introduce the Schologamma branded T-shirt",
+      "Unveil and demonstrate the new Schologamma website",
+      "Engage students with the platform’s features",
+      "Gather feedback for future improvements"
+    ],
+    "outcomes": [
+      "Successful launch of T-shirt and website",
+      "Students familiarized with site features",
+      "Initial feedback collected for iterations"
+    ],
+    "schedule": [
+      {
+        "time": "12:00 PM",
+        "activity": "Welcome & Opening"
+      },
+      {
+        "time": "12:10 PM",
+        "activity": "T-shirt Unveiling"
+      },
+      {
+        "time": "12:30 PM",
+        "activity": "Website Launch & Live Demo"
+      },
+      {
+        "time": "1:15 PM",
+        "activity": "Q&A and Feedback"
+      },
+      {
+        "time": "1:45 PM",
+        "activity": "Closing & Networking"
+      }
+    ]
+  }
 ]
